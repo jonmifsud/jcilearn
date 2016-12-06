@@ -1,0 +1,32 @@
+//
+// VARIABLES 
+//
+
+// Tamplate Main Color Variables
+$main-color-1: #3496DA;             // Mostly Used Gradient Background Color
+
+// Text Color
+$light-color:       #FFFFFF;            // Light Color
+$dark-color:      	#646464;            // Semi-Dark Color
+
+// Background-color
+$background-1:      #FFFFFF;            // Mostly Used Light Background Color
+$background-2:      #F8F8F8;            // Mostly Used Semi Dark Background Color
+$background-3:      #2A3855;            // Mostly Used Dark Background Color
+
+// Other Defult Color
+$shadow-color:      #000000;
+
+// Defult Broder Radius
+$border-radius:     20px;
+
+
+// Font Variables Name
+$font-1: 'helveticaneuebold';
+$font-2: 'helveticaneuelight';
+
+
+
+// This File Import Some Helping Function
+@import "media-queries.scss";
+@import "function.scss";

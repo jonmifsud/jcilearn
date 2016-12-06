@@ -1,0 +1,701 @@
+// Css Style List
+@import "css-tree.scss";
+
+// Templage Defult Veriables
+@import "variable.scss";
+
+// This File Import Some Helping Function
+@import "defult-style.scss";
+
+@import "lib/plugin.scss";
+@import "lib/style.scss";
+@import "lib/bootstrap.min.scss";
+@import "responsive.scss";
+@import "stylesheet.scss";
+
+
+/****************************************************************
+    START MAIN CSS STYLE
+*****************************************************************/
+
+
+.features-item {
+    .each-features {
+        margin-bottom: 110px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/**
+ * ------------------------
+ * Default Background Color 
+ * ------------------------
+*/
+.background-1 {
+    background-color: $background-1;
+}
+
+.background-2 {
+    background-color: $background-2;
+}
+
+.background-3 {
+    background-color: $background-3;
+}
+
+
+
+
+/**
+ * ----------------
+ * Background image
+ * ----------------
+*/
+.image-bg-1 {
+    @include background-image( $images-name: '../images/background-1.jpg', $repeat: no-repeat );
+}
+
+.image-bg-2 {
+    @include background-image( $images-name: '../images/background-2.jpg', $repeat: no-repeat, $position: top);
+}
+
+
+
+
+/**
+ * =======================
+ * Navigation
+ * =======================
+ */
+.main-navbar-top {
+    border: 0px solid;
+    background-color: $main-color-1;
+    top: 0px;
+    @include transition( 0.4s );
+
+    .navbar-toggle {
+        margin-top: 20px;
+
+        span {
+            background-color: $background-1;
+        }
+    }
+
+    .navbar-header {
+        .navbar-brand {
+            display: block;
+            height: 89px;
+            padding: 19px;
+
+            img {
+                display: block;
+                height: 100%;
+                max-width: initial;
+            }
+        }
+    }
+
+    .navbar-nav {
+        margin-top: 7px;
+        padding: 10px;
+
+        li {
+            .btn-big {
+                img {
+                    max-width: 55px;
+                }
+
+                .fa {
+                    font-size: 40px;
+                    color: $light-color;
+                    top: 5px;
+                }
+            }
+            .btn-nav,
+            .btn-big {
+                margin-right: 25px;
+            }
+            .btn-nav {
+                padding: 9px 0;
+                font-family: $font-1;
+                color: $light-color;
+                font-weight: 400;
+                font-size: 15px;
+                margin-top: 7px;
+                position: relative;
+                text-transform: uppercase;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $light-color;
+                    opacity: 0;
+                    @include transform( translate3d( 0, -10px, 0 ) );
+                    @include transition( 0.4s );
+                }
+
+                &:hover {
+                    color: $light-color;
+                }
+            }
+
+            &.active {
+                .btn-nav {
+                    color: $light-color;
+                
+                    &:before {
+                        opacity: 1;
+                        @include transform( translate3d(0, 0, 0));
+                    }
+                }
+            }
+
+            &:last-child {
+                a {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+
+    &.navbar-home {
+        top: 0px
+    }
+}
+
+
+
+
+
+/**
+ * --------------
+ * Tab Item Style
+ * --------------
+ */
+.tab-item {
+    
+    .nav-tabs {
+        position: relative;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: flex;
+        -ms-box-orient: horizontal;
+        -ms-box-pack: center;
+        -webkit-flex-flow: row wrap;
+        -moz-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        border-bottom: 2px solid $main-color-1;
+
+        li {
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            margin-bottom: -2px;
+
+            a {
+                &,
+                &:hover,
+                &:focus {
+                    font-size: 40px;
+                    font-family: $font-1;
+                    padding: 17px 10px;
+                    display: block;
+                    text-align: center;
+                    border-radius: 20px 20px 0 0;
+                    border: 2px solid $main-color-1;
+                    margin-right: 15px;
+                    color: $main-color-1;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+
+            }
+
+            &.active {
+                a {
+                    &,
+                    &:focus {
+                        border-bottom-color: transparent;
+                    }
+                }
+            }
+
+            &:last-child {
+                a {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+
+        .tab-pane {
+            // padding: 40px;
+            background-color: $background-1;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+}
+
+
+
+
+/**
+ * --------------
+ * Guide Item Style
+ * --------------
+ */
+.guide-team {
+
+}
+
+.guide-team-content {
+    .each-item {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .each-item-inner {
+        display: inline-block;
+        border: 2px solid $main-color-1;
+        position: relative;
+        @include border-radius( $border-radius );
+    }
+}
+
+
+
+/**
+ * ------------------------
+ * Guide Item Left TimeLine
+ * ------------------------
+ */
+.timeline {
+    counter-reset: section;
+    
+    &:before {
+        width: 2px;
+        height: 100%;
+        content: '';
+        position: absolute;
+        left: -60px;
+        background: $main-color-1;
+    }
+    
+    .each-item-inner {
+        &::before {
+            content: counter(section);
+            counter-increment: section;
+            position: absolute;
+            left: -81px;
+            top: 50%;
+            transform: translate3d(0, -50%, 0);
+            width: 40px;
+            height: 40px;
+            border: 2px solid $main-color-1;
+            border-radius: 50%;
+            background-color: $background-1;
+            color: $main-color-1;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 24px;
+            font-family: $font-1;
+        }
+    }
+}
+
+
+
+
+/**
+ * ---------------------------------
+ * Guide Item and Comment Item Style
+ * ---------------------------------
+ */
+.guide-team-content,
+.comments {
+    position: relative;
+
+    .media {
+        .media-left {
+            padding-right: 25px;
+            position: relative;
+        }
+    }
+
+    .features-image {
+        max-width: 83px;
+        height: auto;
+    }
+
+    .title {
+        margin: 10px 0 0 0;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .content-left {
+        padding: 29px;
+        // border-right: 1px solid $main-color-1;
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            right: 0;
+            top: 0;
+            background-color: $main-color-1;
+        }
+
+        .title {
+            text-transform: uppercase;
+        }
+    }
+    .content-right {
+        padding: 25px 21px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            left: -1px;
+            top: 0;
+            background-color: $main-color-1;
+        }
+    }
+
+    .pera {
+        text-align: left;
+    }
+
+    .flag {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        max-width: 43px;
+    }
+
+    .profile-pic {
+        max-width: 64px;
+        @include border-radius( 50% );
+    }
+
+    .profile-meta {
+        margin-top: 14px;
+
+        p {
+            display: inline-block;
+            float: left;
+            margin-bottom: 0;
+            font-family: $font-1;
+            color: $main-color-1;
+            margin-right: 10px;
+            font-size: 22px;
+            text-align: left;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+
+        .fa {
+            position: relative;
+            top: 2px;
+            margin-right: 2px;
+        }
+    }
+
+    .content-defult {
+        padding: 25px 21px 25px 21px;
+
+        .profile-meta {
+            margin-top: 22px;
+            overflow: hidden;
+
+            p {
+                display: block;
+                float: none;
+                margin-bottom: 10px;
+                margin-right: 0;
+                font-size: 24px;
+                text-align: center;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+
+            .fa {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.small-text {
+    font-size: 16px;
+}
+
+
+
+/**
+ * -------------
+ * Comment Style
+ * -------------
+ */
+.comments {
+    .comments-inner {
+        display: inline-block;
+        border: 2px solid $main-color-1;
+        position: relative;
+    }
+
+    .each-item {
+        .each-item-inner {
+            padding: 50px 60px 10px 60px;
+
+            &.comments-option {
+                padding: 50px 40px 20px 40px;
+            }
+        }
+    }
+
+    .comments-option {
+        .see-more {
+            font-family: $font-2;
+            font-size: 16px;
+            color: $dark-color;
+
+        }
+    }
+
+    .comments-pagination {
+        font-family: $font-1;
+        font-size: 16px;
+        color: $dark-color;
+    }
+
+}
+
+
+
+/**
+ * --------------------
+ * Single Comment Style
+ * --------------------
+ */
+.single-comment {
+    .pera {
+        color: $main-color-1;
+        text-align: left;
+    }
+
+    .media {
+        .media-left {
+            padding-right: 40px;
+        }
+        .media-body {
+            vertical-align: middle;
+        }
+    }
+}
+
+
+
+
+
+/**
+ * -----------------------
+ * Search Form Style 
+ * -----------------------
+ */
+.search-form {
+    border: 2px solid;
+    border-color: $main-color-1;
+    border-radius: 15px;
+    max-width: 350px;
+
+    .form-control,
+    .btn {
+        margin: 0px;
+        height: 55px;
+        border: 0px solid;
+        background-color: transparent;
+    }
+
+    .form-control {
+        @include placeholder-color($dark-color);
+        color: $dark-color;
+        font-size: 16px
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 0 16px;
+        color: $main-color-1;
+
+        &:hover {
+            color: darken($main-color-1, 10%);
+        }
+    }
+}
+
+
+
+
+
+/**
+ * -------------------------------
+ * Modules Slider Navigation Style
+ * -------------------------------
+ */
+.modules-slider {
+    .item {
+        padding: 15px;
+    }
+
+    .owl-controls {
+        .owl-next,
+        .owl-prev {
+            width: 45px;
+            height: 90px;
+            border-radius: 0 !important;
+            position: absolute;
+            overflow: hidden;
+            background-color: transparent !important;
+            top: 50%;
+            @include transform( translate3d(0, -50%, 0) );
+            opacity: 1 !important;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 200%;
+                height: 100%;
+                border-top: 2px solid $main-color-1;
+                border-right: 2px solid $main-color-1;
+                top: 0;
+            }
+        }
+
+        .owl-next {
+            right: -70px;
+
+            &:before {
+                right: 50%;
+                transform: rotate(45deg);
+            }
+        }
+
+        .owl-prev {
+            left: -70px;
+
+            &:before {
+                left: 50%;
+                transform: rotate(-135deg);
+            }
+        }
+    }
+}
+
+
+
+
+/**
+ * -------------------------------
+ * Modules Item Style
+ * -------------------------------
+ */
+.modules {
+    .modules-inner {
+        border: 2px solid $main-color-1;
+        padding: 80px 30px 45px 30px;
+        margin-bottom: 10px;
+        @include border-radius( $border-radius );
+    }
+
+    img {
+        max-width: 171px;
+        margin: auto;
+    }
+
+    .title {
+        margin: 55px 0 0 0;
+    }
+}
+
+
+
+/**
+ * --------------
+ * Footer Style 
+ * --------------
+ */
+.footer-section-1 {
+    background-color: $main-color-1;
+    position: relative;
+    overflow: hidden;
+
+    .other-link {
+        .title {
+            line-height: 31px;
+            margin-top: 0px;
+            font-size: 15px;
+            color: $light-color;
+        }
+
+        .link-group {
+            a {
+                color: $light-color;
+                display: block;
+                text-align: left;
+
+                &:hover {
+                    color: $light-color;
+                }
+            }
+        }
+
+        .each-section {
+            display: inline-block;
+            margin-right: 30px;
+            float: left;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .link {
+        color: $light-color;
+        font-size: 15px;
+    }
+}

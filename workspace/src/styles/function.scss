@@ -1,0 +1,183 @@
+// Less Function:
+//==================================
+
+@mixin text-shadow( $value: 0 0 0 #FFFFFF){
+    -webkit-text-shadow:    $value ;
+    -moz-text-shadow:       $value ;
+    -ms-text-shadow:        $value ;
+    -o-text-shadow:         $value ;
+    text-shadow:            $value ;
+}
+
+@mixin box-shadow( $value: 0 0 0 #FFFFFF){
+    -webkit-box-shadow:     $value;
+    -moz-box-shadow:        $value;
+    -ms-box-shadow:         $value;
+    -o-box-shadow:          $value;
+    box-shadow:             $value;
+}
+
+@mixin border-radius( $value: 0  ){
+    -webkit-border-radius:  $value ;
+    -moz-border-radius:     $value ;
+    -ms-border-radius:      $value ;
+    -o-border-radius:       $value ;
+    border-radius:          $value ;
+}
+
+
+@mixin background-image( $images-name, $repeat: no-repeat, $bg-att: initial, $bg-size: cover, $bg-c: #fff, $position: 50% 50% ){
+    background-image:           url($images-name);
+    -webkit-background-size:    $bg-size;
+    -moz-background-size:       $bg-size;
+    -ms-background-size:        $bg-size;
+    -o-background-size:         $bg-size;
+    background-size:            $bg-size;
+    background-position:        $position;
+    background-attachment:      $bg-att;
+    background-repeat:          $repeat;
+    background-color:           $bg-c;
+}
+
+@mixin transform( $value: 0.4s) {
+    -webkit-transform:          $value ;
+    -moz-transform:             $value ;
+    -ms-transform:              $value ;
+    -o-transform:               $value ;
+    transform:                  $value ;
+}
+
+@mixin transition( $value: 200ms, $direction: ease-out ){
+    -webkit-transition:         all $value $direction;
+    -moz-transition:            all $value $direction;
+    -o-transition:              all $value $direction;
+    -ms-transition:             all $value $direction;
+    transition:                 all $value $direction;
+    @include font-smoothing();
+}
+
+@mixin transform-style( $value: preserve-3d) {
+    -webkit-transform-style:    $value;
+    -moz-transform-style:       $value;
+    -o-transform-style:         $value;
+    -ms-transform-style:        $value;
+    transform-style:            $value;
+}
+
+@mixin transition-delay( $value) {
+    -webkit-transition-delay:   $value;
+    -moz-transition-delay:      $value;
+    -o-transition-delay:        $value;
+    transition-delay:           $value;
+}
+
+@mixin transform-origin( $x: 0, $y: 0 ) {
+    -webkit-transform-origin:   $x $y;
+    -moz-transform-origin:      $x $y;
+    -ms-transform-origin:       $x $y;
+    -o-transform-origin:        $x $y;
+    transform-origin:           $x $y;
+}
+
+@mixin font-smoothing() {
+    -webkit-font-smoothing:     antialiased;
+    -moz-osx-font-smoothing:    grayscale;
+}
+
+
+// INPUT FORM PLACEHOLDER COLOR   
+@mixin placeholder-color( $value) {
+    &::-webkit-input-placeholder {
+        color:              $value ;
+    }
+    &:-moz-placeholder {
+        color:              $value;
+    }
+    &::-moz-placeholder {
+        color:              $value ;
+    }
+    &:-ms-input-placeholder {
+        color:              $value ;
+    }
+}
+
+
+// MIXINS COLOR GRADIENT
+@mixin color-gradient($color-1: $main-color-1, $color-2: $main-color-1, $rotate: 130deg, $alpha: 1) {
+    background-image: -webkit-linear-gradient(
+        $rotate, 
+        rgba(red($color-1), green($color-1), blue($color-1), $alpha) 0%, 
+        rgba(red($color-2), green($color-2), blue($color-2), $alpha) 100%
+    );
+    background-image: -moz-linear-gradient(
+        $rotate, 
+        rgba(red($color-1), green($color-1), blue($color-1), $alpha) 0%, 
+        rgba(red($color-2), green($color-2), blue($color-2), $alpha) 100%
+    );
+    background-image: -ms-linear-gradient(
+        $rotate, 
+        rgba(red($color-1), green($color-1), blue($color-1), $alpha) 0%, 
+        rgba(red($color-2), green($color-2), blue($color-2), $alpha) 100%
+    );
+    background-image: -o-linear-gradient(
+        $rotate, 
+        rgba(red($color-1), green($color-1), blue($color-1), $alpha) 0%, 
+        rgba(red($color-2), green($color-2), blue($color-2), $alpha) 100%
+    );
+    background-image: linear-gradient(
+        $rotate, 
+        rgba(red($color-1), green($color-1), blue($color-1), $alpha) 0%, 
+        rgba(red($color-2), green($color-2), blue($color-2), $alpha) 100%
+    );
+}
+
+
+@mixin animation-tool( $class-name, $animation-style: preserve-3d, $duration: 2s ) {
+    -webkit-transform-style: $animation-style;
+    -moz-transform-style: $animation-style;
+    -ms-transform-style: $animation-style;
+    -o-transform-style: $animation-style;
+    transform-style: $animation-style;
+
+    -webkit-animation-name: $class-name;
+    -moz-animation-name: $class-name;
+    -ms-animation-name: $class-name;
+    -o-animation-name: $class-name;
+    animation-name: $class-name;
+
+    -webkit-animation-duration: $duration;
+    -moz-animation-duration: $duration;
+    -ms-animation-duration: $duration;
+    -o-animation-duration: $duration;
+    animation-duration: $duration;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+}
+
+
+
+@mixin btn-color( $bg-color: $main-color-2, $bg-hover-color: $main-color-2, $color: $light-color, $hover-color: $light-color, $effect-color: fade(#fff, 25%) ) {
+    background-color: $bg-color;
+    color: $color;
+
+    &:after {
+        background-color: $effect-color;
+    }
+
+    &:hover {
+        background-color: $bg-hover-color;
+        color: $hover-color
+    }
+}
+
