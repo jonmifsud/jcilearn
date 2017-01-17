@@ -15,6 +15,7 @@ class datasourcestory extends SectionDatasource
 
     public $dsParamINCLUDEDELEMENTS = array(
         'title: formatted',
+        'subtitle: formatted',
         'text: formatted',
         'date',
         'user'
@@ -34,7 +35,7 @@ class datasourcestory extends SectionDatasource
                 'website' => 'http://localhost/jcilearn',
                 'email' => 'zzftn90@gmail.com'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2016-12-05T15:02:09+00:00'
+            'release-date' => '2016-12-07T10:12:19+00:00'
         );
     }
     public function getSource()

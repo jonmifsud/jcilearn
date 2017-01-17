@@ -36,7 +36,10 @@ gulp.task('scripts', function() {
   //   gutil.log(e);
   //   s.end();
   // });
-  return gulp.src('src/scripts/**/*.js')
+  return gulp.src([
+      'src/scripts/lib/*.js',
+      'src/scripts/custom/*.js'
+      ])
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))

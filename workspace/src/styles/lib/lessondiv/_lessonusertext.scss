@@ -1,0 +1,127 @@
+.lesson-top-picture img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.lesson-text {
+  text-align: justify;
+}
+
+.lesson-definitions {
+  display: inline-block;
+  color: $website-color;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 10px;
+}
+
+.lesson-definitions-line {
+  display: inline-block;
+  color: $website-color;
+  padding: 2px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.user-definitions-line-right .collab-div-image .media-object .profile-pic {
+  width: 500px;
+  height: 300px;
+}
+
+.user-definitions-line-right .user-image {
+  width: 2000px;
+  height: 1000px;
+}
+
+
+.user-definitions-line-right{
+    .collab-div-image{
+        .media-object{
+            .profile-pic{
+                width: 500px;
+                height: 300px;
+            }
+        }
+    }
+    .user-image{
+        width: 2000px;
+        height: 1000px;
+    }
+}
+
+.lesson-definitions-line-left {
+  float: left;
+  width: 40%;
+  text-align: left;
+  color: $website-color;
+}
+
+.lesson-definitions-line-right {
+  float: right;
+  color: $website-color;
+  width: 60%;
+  display: inline-block;
+  border: 2px solid $website-color;
+  color: $website-color;
+  text-align: right;
+}
+
+.user-definitions-line {
+  display: inline-block;
+  color: $website-color;
+  padding: 2px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-height: 310px;
+}
+
+.user-definitions-line-left {
+  float: right;
+  color: $website-color;
+  width: 50%;
+  display: inline-block;
+  color: $website-color;
+  text-align: left;
+  padding: 40px;
+  max-height: 300px;
+}
+
+.user-definitions-line-right {
+  float: right;
+  color: $website-color;
+  width: 50%;
+  display: inline-block;
+  color: $website-color;
+  text-align: right;
+  padding: 40px;
+  max-height: 300px;
+}
+
+.blue-text {
+  color: $website-color;
+}
+
+.blue-text-in-line {
+  color: $website-color;
+  width: 30%;
+  display: inline;
+}
+
+.bold {
+  color: $website-color;
+  font-weight: bold;
+}
+
+.center-profile-meta {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

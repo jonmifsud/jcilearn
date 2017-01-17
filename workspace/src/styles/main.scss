@@ -1,17 +1,33 @@
 // Css Style List
 @import "css-tree.scss";
 
+//Style
+@import "stylesheet.scss";
+// @import ""
+
+//FONT-AWESOME
+@import "lib/custom/font-awesome";
+//@import "font-awesome.css";
+
+
 // Templage Defult Veriables
-@import "variable.scss";
+@import "variable";
 
 // This File Import Some Helping Function
-@import "defult-style.scss";
+@import "defult-style";
 
-@import "lib/plugin.scss";
-@import "lib/style.scss";
-@import "lib/bootstrap.min.scss";
-@import "responsive.scss";
-@import "stylesheet.scss";
+@import "lib/plugin";
+@import "lib/style";
+@import "lib/bootstrap.min";
+@import "responsive";
+@import "stylesheet";
+@import "lib/sliderjs/owl";
+@import "lib/button/button";
+@import "lib/lessondiv/lesson";
+@import "lib/modules/module";
+@import "lib/collabhelp";
+@import "lib/base";
+@import "lib/lessondiv/lessonusertext";
 
 
 /****************************************************************
@@ -698,4 +714,12 @@
         color: $light-color;
         font-size: 15px;
     }
+}
+
+.login-field{
+    width: 600px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: right;
 }

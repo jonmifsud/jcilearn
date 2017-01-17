@@ -20,7 +20,16 @@ class datasourceproject extends SectionDatasource
         'title: formatted',
         'text: formatted',
         'date',
-        'user'
+        'user',
+        'overview: formatted',
+        'subtitle: formatted',
+        'problem: formatted',
+        'proposedsolution: formatted',
+        'stakeholders: formatted',
+        'partners: formatted',
+        'strategy: formatted',
+        'outcome: formatted',
+        'lessonlearnt: formatted'
     );
     
     public function __construct($env = null, $process_params = true)
@@ -37,7 +46,7 @@ class datasourceproject extends SectionDatasource
                 'website' => 'http://localhost/jcilearn',
                 'email' => 'zzftn90@gmail.com'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2016-12-05T10:45:00+00:00'
+            'release-date' => '2016-12-20T16:24:35+00:00'
         );
     }
     public function getSource()

@@ -3,6 +3,8 @@
 
 
 <xsl:import href="../sections/user.xsl"/>
+<xsl:import href="../sections/likeviewsoutput.xsl"/>
+<xsl:import href="../sections/likeviews.xsl"/>
 
     <xsl:template match="*[section/@handle='lesson']//entry" mode='author-picture'>
         <xsl:param name='include-name' select='false()'/>
@@ -47,8 +49,16 @@
 
                             <h3 class="title"><xsl:value-of select="/data/users/entry[@id = current()/profile/item/@id]/name"/></h3>
                             <div class="profile-meta">
-                                <p><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="like-views"/></p>
-                                <p><i class="fa fa-like-love-streamline"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
+                                <p class="blue-text-in-line" id="like" data-entry='{@id}'>
+                                    <i class="fa fa-heart-o"></i>
+                                    <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
+                                </p>
+                                <span id="likeOutput" value="0" style="font-size: 27px;">0</span>
+                                
+                                <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
+                                <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
+                                
+                            <br/>
                             </div>
 
                         </div> <!-- /.media-body -->

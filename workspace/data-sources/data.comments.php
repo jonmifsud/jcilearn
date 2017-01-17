@@ -17,7 +17,7 @@ class datasourcecomments extends SectionDatasource
     public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
     
     public $dsParamFILTERS = array(
-        '257' => '{$ds-lesson.system-id},{$ds-task.system-id},{$ds-project.system-id},{$ds-story.system-id}',
+        '257' => '{$ds-lesson.system-id},{$ds-task.system-id},{$ds-discussion.system-id},{$ds-project.system-id},{$ds-story.system-id},{$ds-challenge.system-id}',
     );
         
     public $dsParamINCLUDEDELEMENTS = array(
@@ -30,7 +30,7 @@ class datasourcecomments extends SectionDatasource
     public function __construct($env = null, $process_params = true)
     {
         parent::__construct($env, $process_params);
-        $this->_dependencies = array('$ds-lesson.system-id', '$ds-task.system-id', '$ds-project.system-id', '$ds-story.system-id');
+        $this->_dependencies = array('$ds-lesson.system-id', '$ds-task.system-id', '$ds-discussion.system-id', '$ds-project.system-id', '$ds-story.system-id', '$ds-challenge.system-id');
     }
     public function about()
     {
@@ -41,7 +41,7 @@ class datasourcecomments extends SectionDatasource
                 'website' => 'http://localhost/jcilearn',
                 'email' => 'zzftn90@gmail.com'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2016-12-05T15:05:01+00:00'
+            'release-date' => '2016-12-12T08:42:13+00:00'
         );
     }
     public function getSource()

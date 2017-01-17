@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/master.xsl"/>
 <xsl:import href="../sections/lesson.xsl"/>
+<xsl:import href="../sections/user.xsl"/>
+<xsl:import href="../sections/comment.xsl"/>
+<xsl:import href="../sections/learnfilesubheader.xsl"/>
 
-<xsl:template match="/data">
-	
+    <xsl:template match="/data">
+            <!-- Start: Features Section 
+            =================================-->
+            <div class="features-section">
+                <div class="container">
+                    <div class="row features-item section-separator">
 
-
-        <!-- Start: Features Section 
-        =================================-->
-        <div class="features-section">
-            <div class="container">
-                <div class="row features-item section-separator" style="padding-bottom: 0px;">
-
-                    <div class="col-xs-12 each-features">
-
-                        <div class="btn-form col-xs-12 text-center margin-t-20">
-                            <a href="#" class="btn btn-border">Study</a>
-                            <a href="#" class="btn btn-fill">Explore</a>
-                            <a href="#" class="btn btn-border">Collab</a>
-                        </div>
-
-                    </div>
+                    <xsl:call-template name="learnfilesubheader"/>
 
                     <div class="col-xs-12 each-features">
                         
@@ -56,9 +47,7 @@
 
                             </div>
                         </div> <!-- End: .each-item -->
-
-                    </div>
-<!-- -->            
+                    </div>        
                     
                         <div class="col-xs-12 each-features">
 
@@ -69,7 +58,7 @@
                                     <!-- Start: Section Header -->
                                     <div class="section-header relative text-center">
                                     
-                                        <h2 class="section-heading"><xsl:value-of select="/data/project/entry/title" /></h2>
+                                        <h2 class="section-heading" style="text-transform: uppercase;"><xsl:value-of select="/data/project/entry/title" /></h2>
                                         <p><xsl:value-of select="/data/project/entry/date"/></p>
                                     </div> 
                                     <div class="guide-team-inner">
@@ -77,27 +66,25 @@
                                             <div class="lesson-top-picture">
                                                 <div class="media">                               
                                                     <div class="media-body-left">
-                                                    <img class="media-object profile-pic" src="assets/images/guide-team/profile-2.png" alt="Media Team Profile Image"/>
-                                                        <img class="flag" src="assets/images/guide-team/flag-1.png" alt="Flag"/>
+                                                        <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
+                                                            <img class="flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
                                                     </div>   
                                                     <div class="media-body-left">
-                                                    <img class="media-object profile-pic" src="assets/images/guide-team/profile-2.png" alt="Media Team Profile Image"/>
-                                                        <img class="flag" src="assets/images/guide-team/flag-1.png" alt="Flag"/>
+                                                        <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
+                                                            <img class="flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
                                                     </div>
-                                                    </div>      
-                                                </div> <!-- /.media-body -->
+                                                </div>      
                                             </div>
-                                        </div>                     
-                                    </div>
+                                        </div>
+                                    </div>                     
+                                </div>
 
 			                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
 			                             <div class="lesson-text">
 			                             <br/>
-			                                    <h3 class="title-centre">OVERVIEW</h3>
-			                                <p class="lesson-text">
-			                                	
+			                                <h3 class="title-centre">OVERVIEW</h3>
+			                                <p class="lesson-text">			                                	
 			                                	<xsl:value-of select="/data/project/entry/text" />
-
 			                                </p><br/>
 			                             </div>
 			                             
@@ -130,22 +117,21 @@
 			                                    </div>
 			                                </form>
 			                                    <br/><br/>
-			                                <form class="form-inline single-form">
-			                                    <div class="form-group input-outer" style="width: 100%;">
-			                                        <div class="select-outer">
-			                                            <select class="form-control contact-plan" style="color: #3489DA;">
-			                                                <option value="subject1" disabled="" selected="">Interest</option>
-			                                                <option value="BusinessConsulting">Business consulting</option>
-			                                                <option value="TextConsulting">Text consulting</option>
-			                                                <option value="Advisory">Advisory</option>
-			                                                <option value="Audit-$-assurance">Audit &amp; assurance</option>
-			                                            </select>
-			                                        </div>
-			                                    </div>
-			                                </form>
+		                                <form class="form-inline single-form">
+		                                    <div class="form-group input-outer" style="width: 100%;">
+		                                        <div class="select-outer">
+		                                            <select class="form-control contact-plan" style="color: #3489DA;">
+		                                                <option value="subject1" disabled="" selected="">Interest</option>
+		                                                <option value="BusinessConsulting">Business consulting</option>
+		                                                <option value="TextConsulting">Text consulting</option>
+		                                                <option value="Advisory">Advisory</option>
+		                                                <option value="Audit-$-assurance">Audit &amp; assurance</option>
+		                                            </select>
+		                                        </div>
+		                                    </div>
+		                                </form>
 
 			                        </div> 
-
                                 </div>
                             </div>
                         </div>
@@ -156,124 +142,196 @@
                         <div class="modules-slider">
                             <div class="modules-slider-wrapper owl-carousel">
 
-                                 <img src="assets/images/pix.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
+                                 <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
-                                <img src="assets/images/pix.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
+                                <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
-                                <img src="assets/images/pix.png"  style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
+                                <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
-                                 <img src="assets/images/pix.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
+                                <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
-                                  <img src="assets/images/pix.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
+                                <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
                             </div> <!-- /.modules-slider-wrapper -->
                         </div> <!-- /.modules-slider -->
 
                     </div> <!-- /.each-features -->
-                   <div class="col-xs-12 each-features text-center">
-                   <br/>
-                   </div>
+
+                    <div class="col-xs-12 each-features text-center">
+                    <br/>
+                    </div>
+
                     <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                                <div class="row comments-inner">
+                        <div class="row comments-inner">
+                             SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT 
+                             SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT 
+                        </div>
+                    </div>
 
-                                     SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT 
-                                     SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT  SOME TEXT 
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 each-features">
-                            <br/><br/>
-                            </div>
+                    <div class="col-xs-12 each-features">
+                        <br/><br/>
+                    </div>
 
                     <div class="col-xs-12 each-features">
 
-                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                                <div class="center-profile-meta" style="margin-bottom: 30px;">
-                                    <p class="blue-text-in-line"><i class="fa fa-man-people-streamline-user"></i>10</p>
-                                    <p class="blue-text-in-line"><i class="fa fa-like-love-streamline"></i> 23 </p><br/>
+                        <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                            <div class="center-profile-meta" style="margin-bottom: 30px;">
+                                <p class="blue-text-in-line"><i class="fa fa-man-people-streamline-user"></i>10</p>
+                                <p class="blue-text-in-line"><i class="fa fa-like-love-streamline"></i> 23 </p><br/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 each-features">  <!-- /.comments -->                      
+                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                            <div class="row comments-inner">
+                                
+                                <xsl:apply-templates select="/data/comments/entry" mode="comment"/>
+                               
+                                <div class="each-item-inner comments-option overflow" style="padding-right: 30px; padding-left: 30px;" > 
+                                    <a href="#" class="btn right-icon see-more pull-left">See more comments <i class="fa fa-angle-down"></i></a>
+                                    <p class="comments-pagination pull-right">2 of 14</p>
                                 </div>
                             </div>
-
-                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                                <div class="row comments-inner">
-
-                                    <div class="each-item">
-                                        <div class="each-item-inner">
-                                            
-                                            <div class="media">
-                                                <div class="media-left">
-
-                                                    <img class="media-object profile-pic" src="assets/images/guide-team/profile-4.png" alt="Media Team Profile Image"/>
-                                                    <img class="flag" src="assets/images/guide-team/flag-1.png" alt="Flag"/>
-                                                
-                                                </div> <!-- /.media-left -->
-                                                <div class="media-body">
-
-                                                    <h3 class="title">James Azzopardi</h3>
-                                                    <p class="pera">
-                                                    	<xsl:value-of select="/data/commentslist/entry/fullcommentbox/item"/>
-                                                    </p>
-
-                                                </div> <!-- /.media-body -->
-                                            </div> <!-- /.media -->
-
-                                        </div>
-                                    </div> <!-- /.each-item -->
-
-                                    <div class="each-item">
-                                        <div class="each-item-inner">
-                                            
-                                            <div class="media">
-                                                <div class="media-left">
-
-                                                    <img class="media-object profile-pic" src="assets/images/guide-team/profile-4.png" alt="Media Team Profile Image"/>
-                                                    <img class="flag" src="assets/images/guide-team/flag-1.png" alt="Flag"/>
-                                                
-                                                </div> <!-- /.media-left -->
-                                                <div class="media-body">
-
-                                                    <h3 class="title">James Azzopardi</h3>
-                                                    <p class="pera">An incredibly informative module for all aspiring team and project leaders!.</p>
-
-                                                </div> <!-- /.media-body -->
-                                            </div> <!-- /.media -->
-
-                                        </div>
-                                    </div> <!-- /.each-item -->
-
-                                    <div class="each-item">
-                                        <div class="each-item-inner comments-option overflow">
-                                            
-                                            <a href="#" class="btn right-icon see-more pull-left">See more comments <i class="fa fa-angle-down"></i></a>
-                                            <p class="comments-pagination pull-right">2 of 14</p>
-                                        </div>
-                                    </div> <!-- /.each-item -->
-                                    
-                                </div>
-                            </div> <!-- /.comments -->
-
-                        </div> <!-- /.each-features -->
+                        </div> <!-- /.comments -->
+                    </div> <!-- /.each-features -->
 
                 <div class="col-xs-12 each-features" style="padding-bottom: 150px;">
 
                         <div class="single-comment col-xs-12">
                             <div class="row single-comments-inner">
                                 <div class="down-buttons-lesson">
-                                    <div class="lesson-button-organise">
+
+                                     <div class="lesson-button-organise">
                                         <div class="btn-form col-xs-4 text-center margin-t-50">
-                                            <a href="#" class="btn btn-border text-normal">STUDY</a>
-                                        </div>  
-                                    </div>   
+
+                                            <a href="#" class="btn btn-border text-normal" data-toggle="modal" data-target="#myModal3">
+                                                <h3 style="font-size: 30px; line-height: 110%;" class="title"> Study </h3> 
+                                            </a><!-- Modal -->
+
+                                            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                                              <div class="modal-dialog" role="document">
+                                                <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; width: 150%; margin-left: -25%; height: 400px;">
+                                                  <div class="modal-header " style="border: 0px; margin: 10px;">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                                                        <span aria-hidden="true" style="font-weight: bold;">
+                                                        </span>
+                                                    </button>                                                    
+                                                  </div>
+
+                                                  <div class="new-class" style=" height: 500px; margin-right: auto; margin-left: auto; text-align: center; ">
+                                                        <h2 class="section-heading">Nice!</h2>
+                                                        <br/>
+                                                        All your answers were perfect. You're up by 10XP<br/>and one step closer to finish this module!<br/><br/><br/>
+                                                        <a href="../lesson" class="btn btn-border">Next Lesson</a>                                                                      
+                                                  </div>                                                      
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                        </div>   
+                                    </div>  
+
                                     <div class="lesson-button-organise">
                                         <div class="btn-form col-xs-4 text-center margin-t-50">
                                             <a href="#" class="btn btn-border text-normal">Something here</a>
                                         </div>  
                                     </div> 
+
                                     <div class="lesson-button-organise">
                                         <div class="btn-form col-xs-4 text-center margin-t-50">
-                                            <a href="#" class="btn btn-border text-normal">Mini Quiz</a>
+
+                                            <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
+                                                <h3 style="font-size: 30px; line-height: 110%;" class="title"> Mini Quiz </h3>
+                                            </a><!-- Modal -->
+
+                                                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                                                  <div class="modal-dialog" role="document">
+
+                                                    <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; width: 150%; margin-left: -25%; height: 1300px;">
+                                                      <div class="modal-header " style="border: 0px; margin: 10px;">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true" style="font-weight: bold;"></span></button>
+                                                        
+                                                      </div>
+                                                      <div class="new-class" style=" height: 500px; margin-right: auto; margin-left: auto; text-align: center; ">  
+                                                            <h2 class="section-heading">MINIQUIZ</h2>                    
+                                                            
+                                                           
+                                                            <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
+                                                                    <br/>
+                                                                    Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
+                                                                    eflebla bla<br/><br/>
+                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                    <div class="check-box">
+                                                                    </div>  
+                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                                </div>
+                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                    <div class="check-box">
+                                                                    </div>  
+                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                                </div>
+                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                    <div class="check-box">
+                                                                    </div>  
+                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
+                                                                    <br/>
+                                                                    Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
+                                                                    eflebla bla<br/><br/>
+                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                    <div class="check-box">
+                                                                    </div>  
+                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                                </div>
+                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                    <div class="check-box">
+                                                                    </div>  
+                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                                </div>
+                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                    <div class="check-box">
+                                                                    </div>  
+                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
+                                                                    <br/>
+                                                                    Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
+                                                                    eflebla bla<br/><br/>
+                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                    <div class="check-box">
+                                                                    </div>  
+                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                                </div>
+                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                    <div class="check-box">
+                                                                    </div>  
+                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                                </div>
+                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                    <div class="check-box">
+                                                                    </div>  
+                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                                </div>
+                                                            </div>   
+
+                                                            <div class="btn-form col-xs-12 text-center margin-t-50" style="margin-top: 0px;">
+                                                                <a href="#" class="btn btn-border text-normal">Enroll</a>
+                                                            </div>                       
+                                                                              
+                                                      </div>                                                      
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+
+
                                         </div>  
-                                    </div>                               
+                                    </div>  
+
                                 </div>
                             </div>
                         </div> <!-- /.single-comment -->
@@ -284,8 +342,6 @@
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         <!-- End: Features Section 
-        =================================-->
-        
+        =================================-->        
 </xsl:template>
-
 </xsl:stylesheet>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <params>
+        <today>2017-01-12</today>
+        <current-time>13:57</current-time>
+        <this-year>2017</this-year>
+        <this-month>01</this-month>
+        <this-day>12</this-day>
+        <timezone>+01:00</timezone>
+        <website-name>JCI Learn</website-name>
+        <page-title>lesson</page-title>
+        <root>http://localhost/jcilearn</root>
+        <workspace>http://localhost/jcilearn/workspace</workspace>
+        <http-host>localhost</http-host>
+        <root-page>module</root-page>
+        <current-page>lesson</current-page>
+        <current-page-id>2</current-page-id>
+        <current-path>/module/lesson</current-path>
+        <parent-path>/module</parent-path>
+        <current-query-string><![CDATA[debug]]></current-query-string>
+        <current-url>http://localhost/jcilearn/module/lesson</current-url>
+        <upload-limit>2097152</upload-limit>
+        <symphony-version>2.6.7</symphony-version>
+        <name></name>
+        <cookie-xsrf-token>cdq3/ds563fJS1I6/ti4nJR+Pgw</cookie-xsrf-token>
+        <cookie-username>ZackZilic</cookie-username>
+        <cookie-pass>PBKDF2v1|10000|b8affe9174526244ac1e|VEjihHl8beCvGE5PVgUeEfs2hQTkCYl1QGLaiZek3ERTSJlEAl/RqQ==</cookie-pass>
+        <page-types />
+        <page-events></page-events>
+        <site-mode>live</site-mode>
+        <member-id>192</member-id>
+        <member-section-id>2</member-section-id>
+        <member-role>Public</member-role>
+        <ds-lesson.system-id>
+            <item handle="177">177</item>
+            <item handle="176">176</item>
+            <item handle="175">175</item>
+            <item handle="89">89</item>
+            <item handle="36">36</item>
+            <item handle="28">28</item>
+            <item handle="10">10</item>
+            <item handle="7">7</item>
+            <item handle="4">4</item>
+            <item handle="2">2</item>
+        </ds-lesson.system-id>
+        <ds-lesson.profile>
+            <item handle="86">86</item>
+            <item handle="86">86</item>
+            <item handle="15">15</item>
+            <item handle="16">16</item>
+            <item handle="86">86</item>
+            <item handle="16">16</item>
+            <item handle="0">0</item>
+            <item handle="0">0</item>
+            <item handle="0">0</item>
+        </ds-lesson.profile>
+        <ds-comments>
+            <item handle="86">86</item>
+        </ds-comments>
+        <ds-comments.author>
+            <item handle="86">86</item>
+        </ds-comments.author>
+    </params>
+    <events>
+        <member-login-info logged-in="yes" id="192" section-id="2" result="success" />
+    </events>
+    <lesson>
+        <pagination total-entries="10" total-pages="1" entries-per-page="10" current-page="1" />
+        <section id="21" handle="lesson">lesson</section>
+        <entry id="177">
+            <text mode="formatted" handle="story-of-my-life-3" word-count="4"><p>story of my life</p></text>
+            <title mode="formatted" handle="whatever-3" word-count="1">whatever</title>
+            <subtitle mode="formatted" handle="who-3" word-count="1">who</subtitle>
+            <profile>
+                <item id="" handle="" section-handle="" section-name="" />
+            </profile>
+            <lesson-text-box>
+                <item id="" handle="" section-handle="" section-name="" />
+            </lesson-text-box>
+            <system-date>
+                <created iso="2016-12-21T11:37:27+01:00" timestamp="1482316647" time="11:37" weekday="3" offset="+0100">2016-12-21</created>
+                <modified iso="2016-12-21T11:37:27+01:00" timestamp="1482316647" time="11:37" weekday="3" offset="+0100">2016-12-21</modified>
+            </system-date>
+        </entry>
+        <entry id="176">
+            <text mode="formatted" handle="story-of-my-life-2" word-count="4"><p>story of my life</p></text>
+            <title mode="formatted" handle="whatever-2" word-count="1">whatever</title>
+            <subtitle mode="formatted" handle="who-2" word-count="1">who</subtitle>
+            <profile>
+                <item id="" handle="" section-handle="" section-name="" />
+            </profile>
+            <lesson-text-box>
+                <item id="" handle="" section-handle="" section-name="" />
+            </lesson-text-box>
+            <system-date>
+                <created iso="2016-12-21T11:37:13+01:00" timestamp="1482316633" time="11:37" weekday="3" offset="+0100">2016-12-21</created>
+                <modified iso="2016-12-21T11:37:13+01:00" timestamp="1482316633" time="11:37" weekday="3" offset="+0100">2016-12-21</modified>
+            </system-date>
+        </entry>
+        <entry id="175">
+            <text mode="formatted" handle="story-of-my-life" word-count="4"><p>story of my life</p></text>
+            <title mode="formatted" handle="whatever" word-count="1">whatever</title>
+            <subtitle mode="formatted" handle="who" word-count="1">who</subtitle>
+            <profile>
+                <item id="" handle="" section-handle="" section-name="" />
+            </profile>
+            <lesson-text-box>
+                <item id="" handle="" section-handle="" section-name="" />
+            </lesson-text-box>
+            <system-date>
+                <created iso="2016-12-21T11:30:46+01:00" timestamp="1482316246" time="11:30" weekday="3" offset="+0100">2016-12-21</created>
+                <modified iso="2016-12-21T11:30:46+01:00" timestamp="1482316246" time="11:30" weekday="3" offset="+0100">2016-12-21</modified>
+            </system-date>
+        </entry>
+        <entry id="89">
+            <text mode="formatted" handle="interesting-huh-leaders-have-been-around-since-the-dawn-of-time-and-the-greathest-of-man-s-achivements-wouldn-t-have-been-possible-without-these-very-special-group-of-people-the-big-question-is-what-was-it-these-people-did-that-was-special-enough" word-count="96"><div class="youtube-link">
+    <iframe width="100%" height="450px" src="https://www.youtube.com/embed/iaHS1imtVUA" frameborder="0"></iframe>
+</div>
+<p>Interesting, huh?</p>
+<p>Leaders have been around since the dawn of time, and the greathest of man&#8217;s achivements wouldn&#8217;t have been possible without these very special group of people.</p>
+<p>The big question is: What was it these people did that was special enough to bring about all of these important changes? Why do we even need leaders? Couldn&#8217;t anyone have done that?</p>
+<p>No, they couldn&#8217;t have - it takes something particular to be a leader.</p>
+<p>Lots of people confuse the term &#8216;leader&#8217; with that of manager, coach or boss. In reality, each of these mean a different thing.</p></text>
+            <title mode="formatted" handle="why-do-we-need-a-leaders" word-count="6">WHY DO WE NEED A LEADERS</title>
+            <subtitle mode="formatted" handle="to-keep-us-from-anarchy" word-count="5">to keep us from anarchy</subtitle>
+            <profile>
+                <item id="16" handle="marco" section-handle="user" section-name="User">Marco</item>
+            </profile>
+            <lesson-text-box>
+                <item id="" handle="" section-handle="" section-name="" />
+            </lesson-text-box>
+            <system-date>
+                <created iso="2016-11-30T10:34:31+01:00" timestamp="1480498471" time="10:34" weekday="3" offset="+0100">2016-11-30</created>
+                <modified iso="2016-11-30T15:24:57+01:00" timestamp="1480515897" time="15:24" weekday="3" offset="+0100">2016-11-30</modified>
+            </system-date>
+        </entry>
+        <entry id="36">
+            <text mode="formatted" handle="asdf" word-count="1"><p>asdf</p></text>
+            <title mode="formatted" handle="lesson23" word-count="1">lesson23</title>
+            <subtitle mode="formatted" handle="lesson23" word-count="1">lesson23</subtitle>
+            <profile>
+                <item id="86" handle="zack" section-handle="user" section-name="User">Zack</item>
+            </profile>
+            <lesson-text-box>
+                <item id="" handle="" section-handle="" section-name="" />
+            </lesson-text-box>
+            <system-date>
+                <created iso="2016-11-29T10:12:59+01:00" timestamp="1480410779" time="10:12" weekday="2" offset="+0100">2016-11-29</created>
+                <modified iso="2016-12-06T15:07:29+01:00" timestamp="1481033249" time="15:07" weekday="2" offset="+0100">2016-12-06</modified>
+            </system-date>
+        </entry>
+        <entry id="28">
+            <text mode="formatted" handle="this-is-apparently-some-other-lesson-section" word-count="7"><p>this is apparently some other lesson section</p></text>
+            <title mode="formatted" handle="how-to-be-awesome" word-count="4">How to be awesome</title>
+            <subtitle mode="formatted" handle="i-dunno-try-it-hi-hi-hi" word-count="7">I dunno, try it! hi hi hi.</subtitle>
+            <profile>
+                <item id="16" handle="marco" section-handle="user" section-name="User">Marco</item>
+            </profile>
+            <lesson-text-box>
+                <item id="" handle="" section-handle="" section-name="" />
+            </lesson-text-box>
+            <system-date>
+                <created iso="2016-11-28T18:00:57+01:00" timestamp="1480352457" time="18:00" weekday="1" offset="+0100">2016-11-28</created>
+                <modified iso="2016-12-05T12:56:52+01:00" timestamp="1480939012" time="12:56" weekday="1" offset="+0100">2016-12-05</modified>
+            </system-date>
+        </entry>
+        <entry id="10">
+            <text mode="formatted" handle="lesson-connected-to-lessontextbox-some-text-goes-here" word-count="8"><p>Lesson connected to lessonTextBox some text goes here.</p></text>
+            <title mode="formatted" handle="be-smart-join-jci" word-count="4">Be smart. Join JCI</title>
+            <subtitle mode="formatted" handle="joining-jci-is-easy" word-count="4">Joining JCI is easy</subtitle>
+            <profile>
+                <item id="15" handle="zoran" section-handle="user" section-name="User">Zoran </item>
+            </profile>
+            <lesson-text-box>
+                <item id="" handle="" section-handle="" section-name="" />
+            </lesson-text-box>
+            <system-date>
+                <created iso="2016-11-28T17:44:15+01:00" timestamp="1480351455" time="17:44" weekday="1" offset="+0100">2016-11-28</created>
+                <modified iso="2016-12-05T12:57:34+01:00" timestamp="1480939054" time="12:57" weekday="1" offset="+0100">2016-12-05</modified>
+            </system-date>
+        </entry>
+        <entry id="7">
+            <text mode="formatted" handle="i-need-to-describe-lesson-here-banana-apple-pineapple-strawberry-names-names-names" word-count="13">I need to describe lesson here, banana, apple, pineapple, strawberry, names names names...</text>
+            <title mode="formatted" handle="title-of-the-new-lesson" word-count="5">Title of the new Lesson</title>
+            <subtitle mode="formatted" handle="subtitle-of-new-lesson" word-count="4">subtitle of new lesson</subtitle>
+            <system-date>
+                <created iso="2016-11-28T17:40:58+01:00" timestamp="1480351258" time="17:40" weekday="1" offset="+0100">2016-11-28</created>
+                <modified iso="2016-11-30T14:22:10+01:00" timestamp="1480512130" time="14:22" weekday="3" offset="+0100">2016-11-30</modified>
+            </system-date>
+        </entry>
+        <entry id="4">
+            <text mode="formatted" handle="some" word-count="1"><p>some</p></text>
+            <title mode="formatted" handle="newtext" word-count="1">NewText</title>
+            <subtitle mode="formatted" handle="subtitle-of-new-lesson-2" word-count="4">subtitle of new lesson</subtitle>
+            <profile>
+                <item id="86" handle="zack" section-handle="user" section-name="User">Zack</item>
+            </profile>
+            <lesson-text-box>
+                <item id="28" handle="how-to-be-awesome" section-handle="lesson" section-name="lesson">How to be awesome</item>
+            </lesson-text-box>
+            <system-date>
+                <created iso="2016-11-28T17:27:54+01:00" timestamp="1480350474" time="17:27" weekday="1" offset="+0100">2016-11-28</created>
+                <modified iso="2016-12-26T13:39:48+01:00" timestamp="1482755988" time="13:39" weekday="1" offset="+0100">2016-12-26</modified>
+            </system-date>
+        </entry>
+        <entry id="2">
+            <text mode="formatted" handle="some-text-some-text-some-text-some-text-some-text-some-text-some-text-some-text-some-text-some-text" word-count="20"><p>some text some text some text some text some text some text some text some text some text some text</p></text>
+            <title mode="formatted" handle="new-lesson-to-study" word-count="4">New Lesson to study</title>
+            <subtitle mode="formatted" handle="subtitle-for-new-lesson-to-study" word-count="6">subtitle for new lesson to study</subtitle>
+            <profile>
+                <item id="86" handle="zack" section-handle="user" section-name="User">Zack</item>
+            </profile>
+            <system-date>
+                <created iso="2016-11-28T17:23:31+01:00" timestamp="1480350211" time="17:23" weekday="1" offset="+0100">2016-11-28</created>
+                <modified iso="2016-12-09T10:27:32+01:00" timestamp="1481275652" time="10:27" weekday="5" offset="+0100">2016-12-09</modified>
+            </system-date>
+        </entry>
+    </lesson>
+    <comments>
+        <section id="3" handle="comment">Comment</section>
+        <entry id="121">
+            <text mode="formatted" handle="bla-bla-blaada" word-count="3">bla bla blaada</text>
+            <author>
+                <item id="86" handle="zack" section-handle="user" section-name="User">Zack</item>
+            </author>
+            <item>
+                <item id="36" handle="lesson23" section-handle="lesson" section-name="lesson">lesson23</item>
+            </item>
+            <system-date>
+                <created iso="2016-12-05T09:51:46+01:00" timestamp="1480927906" time="09:51" weekday="1" offset="+0100">2016-12-05</created>
+                <modified iso="2016-12-05T09:51:46+01:00" timestamp="1480927906" time="09:51" weekday="1" offset="+0100">2016-12-05</modified>
+            </system-date>
+        </entry>
+    </comments>
+    <users>
+        <pagination total-entries="3" total-pages="1" entries-per-page="3" current-page="1" />
+        <section id="2" handle="user">User</section>
+        <entry id="86">
+            <name handle="zack">Zack</name>
+            <surname handle="joules-enixey">Joules Enixey</surname>
+            <your-biography mode="formatted" handle="born-here-and-there-and-everywhere-short-bio-that-probably-needs-to-be-limited-to-400-words-or-something-2" word-count="18">born here and there and everywhere, short bio that probably needs to be limited to 400 words or something.</your-biography>
+            <short-text mode="formatted" handle="hello-this-is-me-2" word-count="4">hello, this is me!</short-text>
+            <system-date>
+                <created iso="2016-11-30T10:06:50+01:00" timestamp="1480496810" time="10:06" weekday="3" offset="+0100">2016-11-30</created>
+                <modified iso="2016-12-14T13:16:28+01:00" timestamp="1481717788" time="13:16" weekday="3" offset="+0100">2016-12-14</modified>
+            </system-date>
+        </entry>
+        <entry id="16">
+            <name handle="marco">Marco</name>
+            <surname handle="polo">Polo</surname>
+            <your-biography mode="formatted" handle="born-here-and-there-and-everywhere-short-bio-that-probably-needs-to-be-limited-to-400-words-or-something" word-count="18">born here and there and everywhere, short bio that probably needs to be limited to 400 words or something.</your-biography>
+            <short-text mode="formatted" handle="hello-this-is-me" word-count="4">hello, this is me!</short-text>
+            <system-date>
+                <created iso="2016-11-28T17:51:53+01:00" timestamp="1480351913" time="17:51" weekday="1" offset="+0100">2016-11-28</created>
+                <modified iso="2016-12-14T13:16:04+01:00" timestamp="1481717764" time="13:16" weekday="3" offset="+0100">2016-12-14</modified>
+            </system-date>
+        </entry>
+        <entry id="15">
+            <name handle="zoran">Zoran </name>
+            <surname handle="zilic">Zilic</surname>
+            <your-biography mode="formatted" handle="born-here-and-there-and-everywhere-short-bio-that-probably-needs-to-be-limited-to-400-words-or-something-3" word-count="18">born here and there and everywhere, short bio that probably needs to be limited to 400 words or something.</your-biography>
+            <short-text mode="formatted" handle="hello-this-is-me-3" word-count="4">hello, this is me!</short-text>
+            <system-date>
+                <created iso="2016-11-28T17:51:40+01:00" timestamp="1480351900" time="17:51" weekday="1" offset="+0100">2016-11-28</created>
+                <modified iso="2016-12-21T17:24:29+01:00" timestamp="1482337469" time="17:24" weekday="3" offset="+0100">2016-12-21</modified>
+            </system-date>
+        </entry>
+    </users>
+</data>

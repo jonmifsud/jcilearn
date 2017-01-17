@@ -22,7 +22,9 @@ class datasourceusers extends SectionDatasource
         'system:date',
         'name',
         'surname',
-        'address'
+        'address',
+        'your-biography: formatted',
+        'short-text: formatted'
     );
     
     public function __construct($env = null, $process_params = true)
@@ -39,7 +41,7 @@ class datasourceusers extends SectionDatasource
                 'website' => 'http://localhost/jcilearn',
                 'email' => 'zzftn90@gmail.com'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2016-12-05T10:36:30+00:00'
+            'release-date' => '2016-12-14T12:20:07+00:00'
         );
     }
     public function getSource()

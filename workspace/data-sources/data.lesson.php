@@ -19,16 +19,19 @@ class datasourcelesson extends SectionDatasource
     
     public $dsParamFILTERS = array(
         'system:id' => '{$ds-module.lessons}',
+        '73' => '{$name}',
     );
         
     public $dsParamINCLUDEDELEMENTS = array(
         'system:pagination',
         'system:date',
+        'text: formatted',
         'title: formatted',
         'subtitle: formatted',
-        'text: formatted',
         'profile',
-        'lesson-text-box'
+        'lesson-text-box',
+        'likes',
+        'likes: list'
     );
     
     public function __construct($env = null, $process_params = true)
@@ -45,7 +48,7 @@ class datasourcelesson extends SectionDatasource
                 'website' => 'http://localhost/jcilearn',
                 'email' => 'zzftn90@gmail.com'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2016-12-05T11:48:40+00:00'
+            'release-date' => '2017-01-17T13:56:50+00:00'
         );
     }
     public function getSource()

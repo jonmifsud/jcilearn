@@ -14,7 +14,9 @@
 <xsl:template match="/">
 <html lang="en">
     <head>     
-  
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
         <!-- TITLE OF SITE --> 
         <title>Lesson</title>
   
@@ -28,16 +30,42 @@
 
         <!-- FAV AND TOUCH ICONS   -->
         <link rel="icon" href="assets/images/favicon.ico"/>
-        <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png"/>
         <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png"/>
         <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png"/>
 
         <!-- GOOGLE FONTS and CUSTOM FONT -->
-        <link  rel="stylesheet" href="assets/fonts/stylesheet.scss"/>
 
 
-        <!--   COUSTOM CSS link  -->
-        <link rel="stylesheet" href="{/data/params/workspace}/assets/css/main.css"/>
+        <!--   COUSTOM CSS link  --> 
+
+        <!-- <link rel="stylesheet" href="{/data/params/workspace}/assets/icons/jci/styles.css"/> -->
+        <link rel="stylesheet" href="{/data/params/workspace}/assets/css/main.css"/> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- <link rel="stylesheet" href="{/data/params/workspace}/assets/css/stylesheet.css"/> -->
+
+        <script>
+            $(document).ready(function(){
+                $("#like").bind("click", incereaseLikeCounter);     
+                var like = 0;
+
+                function incereaseLikeCounter(){
+                    var sum = like+1;
+                    $("#likeOutput").html(sum);
+                    like=sum;
+                }
+
+                $("#view").bind("click", increaseViewCounter);
+                var view = 0;
+
+                function increaseViewCounter(){
+                    var sum = view+1;
+                    $("#viewOutput").html(sum);
+                    view=sum;
+                }
+                
+            });
+        </script>
 
     </head>
     <body class="home-page">
@@ -90,7 +118,6 @@
         <footer class="footer-section-1">
             <div class="container">
                 <div class="row section-separator">
-
                     
                     <div class="other-link col-sm-6 col-xs-12">
                         <div class="row">
@@ -148,8 +175,8 @@
                             <h4 class="title"></h4>
                             <a href="#" class="link">JCI.cc</a>
                             <ul class="nav social-icon">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" style="padding: 12% 12%;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#" style="padding: 12% 12%;"><i class="fa fa-twitter"></i></a></li>
                             </ul>
                         </div>
 
@@ -166,14 +193,20 @@
         
         <!-- SCRIPTS 
         ========================================-->
-        <script src="assets/js/plugin-js/jquery-3.1.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/plugin-js/plugin.js"></script>
+
+<!--MISTAKE IS HERE ZACK--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- <script src="assets/js/plugin-js/jquery-3.1.1.min.js"></script> -->
+       <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+            <script src="assets/js/plugin-js/plugin.js">       </script> -->
 
         <!-- Custom Script 
         ==========================================-->
-        <script src="assets/js/custom-scripts.js"></script>
 
+
+        <script src="{/data/params/workspace}/assets/js/main.js"></script>
+        <script src="{/data/params/workspace}/src/scripts/custom/sliderForEditPage.js"></script>
     </body>
 
 </html>

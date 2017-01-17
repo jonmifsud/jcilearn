@@ -1,0 +1,188 @@
+.collab-div-unique {
+  padding: 10px;
+  min-height: 210px;
+}
+
+.collab-div-side {
+  padding: 10px;
+  overflow: hidden;
+  max-width: 18%;
+  display: inline-block;
+  color: black;
+  padding: 2px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  min-height: 200px;
+}
+
+.collab-div-center {
+  border: 2px solid $website-color;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 60%;
+  display: inline-block;
+  color: $website-color;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  min-height: 200px;
+}
+
+.collab-div-image {
+  min-height: 80px;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 50%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 60%;
+  display: inline-block;
+  color: $website-color;
+  img {
+    height: 90px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: right;
+  }
+  .corner-flag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 35px;
+  }
+}
+
+.collab-div-center-left {
+  border-right: 2px solid $website-color;
+  background-color: $website-color;
+  padding: 10px;
+  overflow: hidden;
+  max-width: 11%;
+  display: inline-block;
+  color: $website-color;
+  padding: 2px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 202px;
+}
+
+.collab-div-center-center {
+  border-right: 2px solid $website-color;
+  padding: 10px;
+  overflow: hidden;
+  max-width: 28%;
+  display: inline-block;
+  color: $website-color;
+  padding: 2px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  min-height: 200px;
+  height: 202px;
+  img {
+    width: 80%;
+    position: relative;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    text-align: center;
+  }
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.collab-div-center-right {
+  padding: 10px;
+  overflow: hidden;
+  max-width: 58%;
+  display: inline-block;
+  color: $website-color;
+  padding: 2px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  min-height: 200px;
+}
+
+.study-timeline-progress {
+  height: 2px;
+  width: 100%;
+  margin-top: 30px;
+  content: '';
+  position: absolute;
+  left: -60px;
+  background: $website-color;
+}
+
+.study-timeline-progress-circles {
+  content: counter(section);
+  counter-increment: section;
+  position: absolute;
+  left: -81px;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  width: 40px;
+  height: 40px;
+  border: 2px solid $website-color;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: $website-color;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 24px;
+  font-family: "helveticaneuebold";
+}
+
+.drop-drag-box {
+  border: 2px solid $website-color;
+  width: 50%;
+  height: 400px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.circle-checkbox {
+  border: 5px solid $website-color;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 35%;
+  padding: 8%;
+}
+
+.modules {
+  img {
+    max-width: 100%;
+    margin: auto;
+  }
+  .title {
+    margin: 55px 0 0 0;
+  }
+}
+
+.title-projects {
+  margin: 10px 0 0 0;
+}
