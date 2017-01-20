@@ -18,8 +18,8 @@
 
     <xsl:template match="*[section/@handle='lesson']//entry" mode='list-item'>
 
-        <div class="each-item">
-            <div class="each-item-inner">
+        <div class="each-item col-md-12">
+            <div class="each-item-inner col-md-12">
                 <div class="content-left col-md-8 col-sm-7">
 
                     <div class="media">
@@ -53,7 +53,7 @@
                                     <i class="fa fa-heart-o"></i>
                                     <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
                                 </p>
-                                <span id="likeOutput" value="0" style="font-size: 27px;">0</span>
+                                <span id="likeOutput" value="0" style="font-size: 27px;">0</span><br/>
                                 
                                 <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
                                 <span id="viewOutput" value="0" style="font-size: 27px;">0</span>

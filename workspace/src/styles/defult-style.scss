@@ -7,7 +7,7 @@
 body{
     font-family:            $font-2;
     color:                  $dark-color;
-    font-size:              16px;
+    @include rem(font-size,16px);
     line-height:            24px;
     overflow-x:             hidden !important;
     text-align:             left;
@@ -39,7 +39,7 @@ a,
 p{
     font-family:        $font-2;
     color:              $dark-color;
-    font-size:          24px;
+    @include rem(font-size,24px);
     line-height:        24px;
     margin-bottom:      20px;
 
@@ -66,29 +66,29 @@ h6 {
 }
 
 h1{
-    font-size:          64px;
+    @include rem(font-size,64px);
     line-height:        70px;
 }
 h2{
-    font-size:          40px;
+    @include rem(font-size,40px);
     line-height:        50px;
 }
 h3{
-    font-size:          24px;
+    @include rem(font-size,24px);
     line-height:        35px;
     letter-spacing:     1px;
 }
 h4{
-    font-size:          21px;
+    @include rem(font-size,21px);
     line-height:        30px;
 }
 
 h5{
-    font-size:          20px;
+    @include rem(font-size,20px);
     line-height:        34px;
 }
 h6{
-    font-size:          16px;
+    @include rem(font-size,16px);
     line-height:        30px;
 }
 
@@ -226,7 +226,7 @@ h6{
     margin-bottom: 60px;
 
     .sub-heading {
-        font-size: 24px;
+        @include rem(font-size,24px);
         line-height: 25px;
         color: $main-color-1;
     }
@@ -435,7 +435,7 @@ $separator-big-height: 174px;
     font-family: $font-1;
     cursor: pointer;
     display: inline-block;
-    font-size: 24px;
+    @include rem(font-size,24px);
     font-style: normal;
     margin-right: 15px;
     overflow: hidden;
@@ -593,7 +593,7 @@ $separator-big-height: 174px;
 .email-success, 
 .email-failed,
 .email-loading {
-    font-size: 15px;
+    @include rem(font-size,15px);
     display: none;
     text-align: left !important;
     padding: 10px 0 !important;
@@ -615,7 +615,7 @@ $separator-big-height: 174px;
     color: #FF5252 !important;
 
     .fa {
-        font-size: 20px;
+        @include rem(font-size,20px);
         position: relative;
         top: 5px;
     }
@@ -631,7 +631,7 @@ $separator-big-height: 174px;
 .subscription-success, 
 .email-success {
     .fa {
-        font-size: 20px;
+        @include rem(font-size,20px);
         position: relative;
         top: 5px;    
     }
@@ -656,7 +656,7 @@ $separator-big-height: 174px;
         a {
             width: 37px;
             height: 37px;
-            font-size: 25px;
+            @include rem(font-size,25px);
             padding: 6px 0;
             text-align: center;
             margin-right: 15px;
@@ -697,7 +697,7 @@ $separator-big-height: 174px;
     .form-control {
         font-family: $font-2;
         height: 55px;
-        font-size: 24px;
+        @include rem(font-size,24px);
         line-height: 30px;
         border: 2px solid $main-color-1;
         box-shadow: 0 0 0 0 #fff;
@@ -782,7 +782,7 @@ $separator-big-height: 174px;
 
         label {
             padding-left: 35px;
-            font-size: 13px;
+            @include rem(font-size,13px);
             color: $dark-color;
             font-weight: 600;
 
@@ -822,7 +822,7 @@ $separator-big-height: 174px;
     }
 
     .form-title {
-        font-size: 24px;
+        @include rem(font-size,24px);
         color: $main-color-1;
         margin-right: 15px;
         font-family: $font-2;
@@ -1171,16 +1171,16 @@ $separator-big-height: 174px;
 
 
     h1 {
-        font-size:          37px;
+        @include rem(font-size,37px);
         line-height:        52px;
     }
 
     h2 {
-        font-size:          25px;
+        @include rem(font-size,25px);
         line-height:        40px;
     }
     h3{
-        font-size:          19px;
+        @include rem(font-size,19px);
         line-height:        31px;
         letter-spacing:     1px;
     }

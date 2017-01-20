@@ -4,12 +4,14 @@
 
     <xsl:template match="*[section/@handle='story']//entry" mode='sharestorymodule'>
         <div class=" each-item-inner col-sm-10" style="padding: 0px; width: 82%;">
-            <div class="content-right content-defult col-sm-3" style="max-width: 20%; overflow: hidden; padding: 0px;">
+           
+            <div class="content-right col-xs-12 content-defult col-sm-3" style=" overflow: hidden; padding: 0px;">
                 
                <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 100%; height: 2000px; max-height: 171px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;"/>
 
             </div>
-            <div class="content-left col-sm-9" style="width: 78%; padding-top: 50px;">
+            
+            <div class="content-left col-xs-12 col-sm-9" style=" padding-top: 50px;">
                 <div class="media">                                                        
                     <div class="media-body">
                         <h3 class="title"><xsl:value-of select="title"/></h3>

@@ -27,125 +27,126 @@
                     
 
                     <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
-
-                        <div class="guide-team">
-                            <div class="guide-team-inner">
-                                
-                                <!-- Start: Section Header -->
-                                <div class="section-header relative text-center" style="margin-bottom: 0px;">
-                                    <br/>
-                                    <h2 class="section-heading"><xsl:value-of select="/data/task/entry/title"/></h2>
-                                    <br/><br/><br/>
-                                </div>                               
+                        <div class='row'>
+                            <div class="guide-team">
+                                <div class="guide-team-inner">
+                                    
+                                    <!-- Start: Section Header -->
+                                    <div class="section-header relative text-center" style="margin-bottom: 0px;">
+                                        <br/>
+                                        <h2 class="section-heading"><xsl:value-of select="/data/task/entry/title"/></h2>
+                                        <br/><br/><br/>
+                                    </div>                               
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                        	<div class="lesson-text">
-                                 <xsl:apply-templates select="/data/task/entry/text" mode='html-child'/>
-                             </div>
-                        </div>
+                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                            	<div class="lesson-text">
+                                     <xsl:apply-templates select="/data/task/entry/text" mode='html-child'/>
+                                 </div>
+                            </div>
 
-                        <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                             <div class="lesson-text">
-                             <br/>
+                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                                 <div class="lesson-text">
+                                 <br/>
 
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                                                <h3 style="font-size: 30px; line-height: 110%;" class="title">Badge.html</h3>
-                                </button>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                        <h3 style="font-size: 30px; line-height: 110%;" class="title">Badge.html</h3>
+                                    </button>
 
-                                                <!-- Modal -->
-                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                    <!-- Modal -->
+                                        <div class="modal fade col-md-12 col-xs-9" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                          <div class="modal-dialog" role="document">
+                                            <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 30%; width: 150%; margin-left: -25%;">
+                                              <div class="modal-header " style="border: 0px; margin: 10px;">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-weight: bold;">×</span></button>
+                                                
+                                              </div>
+                                              <div class="new-class" style=" height: 500px; margin-right: auto; margin-left: auto; text-align: center; ">  
+                                                    
+                                                <h2 class="section-heading">Congratulations!</h2>
+                                                <br/>
+                                                Completing this module<br/>
+                                                has earned you your leadership badge!<br/><br/><br/>
+                                                <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="width: 15%;"/><br/><br/><br/>
+                                                <p class="blue-text">Feel like celebrating?</p>
+                                                <a href="#" class="btn btn-border">Share the news</a>
+                                                                      
+                                              </div>                                                      
+                                            </div>
+                                          </div>
+                                        </div>
+                                    <br/>
+
+
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+                                                    <h3 style="font-size: 30px; line-height: 110%;" class="title">EndActivity.html</h3>
+                                    </button>
+
+                                                    <!-- Modal -->
+                                    <div class="modal fade col-md-12 col-xs-9" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                       <div class="modal-dialog" role="document">
-                                        <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 30%; width: 150%; margin-left: -25%;">
+                                        <div class="modal-content" style="height: 1000px; border: 2px solid #3496DA; width: 100%; margin-top: 20%;">
                                           <div class="modal-header " style="border: 0px; margin: 10px;">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-weight: bold;">×</span></button>
                                             
                                           </div>
-                                          <div class="new-class" style=" height: 500px; margin-right: auto; margin-left: auto; text-align: center; ">  
-                                                
-                                            <h2 class="section-heading">Congratulations!</h2>
-                                            <br/>
-                                            Completing this module<br/>
-                                            has earned you your leadership badge!<br/><br/><br/>
-                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="width: 15%;"/><br/><br/><br/>
-                                            <p class="blue-text">Feel like celebrating?</p>
-                                            <a href="#" class="btn btn-border">Share the news</a>
-                                                                  
+                                          <div class="new-class" style=" height: 700px; margin-right: auto; margin-left: auto; text-align: center; ">  
+                                            
+                                                <h2 class="section-heading">You've done it!</h2>
+                                                <div class="box-border" style="width: 80%; max-height: 150px; border: 0px; padding: 0px;">
+                                                    <br/>
+                                                    You've made it to the end of this module on leadership. That means you've earned 50XP and gained lots of Leadership.<br/>Congratulations!<br/><br/><br/>
+                                                </div>
+                                                <div class="box-border" style="max-width: 500px; max-height: 180px; border: 0px; border-radius: 0px; padding: 0px">
+                                                    <span style="text-align: center;">
+                                                        <span style="color: #f37121;font-weight:bold; float: left; font-size: 20px">580XP</span><span style="color: #3496DA; size: 12px; font-weight: bold; float: left;">/50XP</span>
+                                                        <span style="color: #3496DA; font-size: 8px;"> this week</span><br/><br/>
+                                                    </span>
+                                                    <p class="blue-text" style="text-align: left;"><b>LEADERSHIP</b></p>
+                                                    <div class="user-definitions-line-left">
+                                                    </div>   
+
+                                                    <div class="progress-wrapper-div">
+                                                        <div class="progress-div" style="color: #3496DA;">  </div>
+                                                    </div>
+
+                                                </div>
+                                                <p style="margin-top: -20px;">Now's your chance to tell us what you think</p>
+                                                <a href="#" class="btn btn-border">Share the news</a>
+                                                 <br/><br/>
+                                                <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                                                    <div class="row comments-inner">
+                                                        <xsl:apply-templates select="/data/comments/entry" mode="comment"/>
+                                                        
+                                                    </div>
+                                                </div>
+
                                           </div>                                                      
                                         </div>
                                       </div>
                                     </div>
-                                    <br/>
 
-
-                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
-                                                <h3 style="font-size: 30px; line-height: 110%;" class="title">EndActivity.html</h3>
-                                </button>
-
-                                                <!-- Modal -->
-                                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                  <div class="modal-dialog" role="document">
-                                    <div class="modal-content" style="height: 1000px; border: 2px solid #3496DA; width: 100%; margin-top: 20%; width: 150%; margin-left: -25%;">
-                                      <div class="modal-header " style="border: 0px; margin: 10px;">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-weight: bold;">×</span></button>
-                                        
-                                      </div>
-                                      <div class="new-class" style=" height: 700px; margin-right: auto; margin-left: auto; text-align: center; ">  
-                                        
-                                            <h2 class="section-heading">You've done it!</h2>
-                                            <div class="box-border" style="width: 80%; max-height: 130px; border: 0px; padding: 0px;">
-                                                <br/>
-                                                You've made it to the end of this module on leadership. That means you've earned 50XP and gained lots of Leadership.<br/>Congratulations!<br/><br/><br/>
-                                            </div>
-                                            <div class="box-border" style="max-width: 500px; max-height: 180px; border: 0px; border-radius: 0px; padding: 0px">
-                                                <span style="text-align: center;">
-                                                    <span style="color: #f37121;font-weight:bold; float: left; font-size: 20px">580XP</span><span style="color: #3496DA; size: 12px; font-weight: bold; float: left;">/50XP</span>
-                                                    <span style="color: #3496DA; font-size: 8px;"> this week</span><br/><br/>
-                                                </span>
-                                                <p class="blue-text" style="text-align: left;"><b>LEADERSHIP</b></p>
-                                                <div class="user-definitions-line-left">
-                                                </div>   
-
-                                                <div class="progress-wrapper-div">
-                                                    <div class="progress-div" style="color: #3496DA;">  </div>
-                                                </div>
-
-                                            </div>
-                                            <p style="margin-top: -20px;">Now's your chance to tell us what you think</p>
-                                            <a href="#" class="btn btn-border">Share the news</a>
-                                             <br/><br/>
-                                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                                                <div class="row comments-inner">
-                                                    <xsl:apply-templates select="/data/comments/entry" mode="comment"/>
-                                                    
-                                                </div>
-                                            </div>
-
-                                      </div>                                                      
+                                 </div>
+                                <div class="each-features">
+                                    <h3 class="title-centre">YOUR NOTES</h3>
+                                    <div class="enter-text-field col-xs-12" style="width: 100%;">
+                                        <form>
+                                          <input type="text" id="your-note" name="fname"/>
+                                        </form>
                                     </div>
-                                  </div>
                                 </div>
-                             </div>
+                            </div>
+
                         </div>
                     </div> <!-- /.each-features -->
-
-
-                    <div class="col-xs-12 each-features">
-                        <h3 class="title-centre">YOUR NOTES</h3>
-                        <div class="enter-text-field">
-                            <form>
-                              <input type="text" id="your-note" name="fname"/>
-                            </form>
-                        </div>
-                    </div>
                     
-                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 100px;">
                        <xsl:apply-templates select="/data/comments/entry[1]" mode="likeviews"/>
                     </div>
 
-                   <div class="col-xs-12 each-features">  <!-- /.comments -->                      
+                   <div class="col-xs-12 each-features" style="margin-bottom: 20px;">  <!-- /.comments -->                      
                          <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                             <div class="row comments-inner">
                                 
@@ -159,30 +160,13 @@
                         </div> <!-- /.comments -->
                     </div> <!-- /.each-features -->
 
-                        <div class="single-comment col-xs-12">
-                            <div class="row single-comments-inner">
-                                <div class="down-buttons-lesson">
-                                    <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-4 text-center margin-t-50">
-                                            <a href="#" class="btn btn-border text-normal"> &lt; COLLAB</a>
-                                        </div>  
-                                    </div>   
-                                    <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-4 text-center margin-t-50">
-                                            <a href="#" class="btn btn-border text-normal"> . 1 . 2 . 3 .</a>
-                                        </div>  
-                                    </div> 
-                                    <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-4 text-center margin-t-50">
-                                            <a href="#" class="btn btn-border text-normal">SUBMIT &gt;</a>
-                                        </div>  
-                                    </div>                               
-                                </div>
-                            </div>
+                    <div class="col-xs-12 each-features">
+                        <div class="btn-form col-xs-12 text-center margin-t-20">
+                            <a href="#" class="btn btn-border"> EXPLORE</a>
+                            <a href="#" class="btn btn-border"> . 1 . 2 . 3 . </a>
+                            <a href="#" class="btn btn-border"> Next Lesson </a>
                         </div>
-
-                         <!-- /.comments -->
-                          <!-- /.single-comment -->
+                    </div>
 
                     </div> <!-- /.each-features -->
                     

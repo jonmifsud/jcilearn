@@ -10,7 +10,9 @@
 
 <xsl:template match="/data">
 
-
+        <xsl:if test="position() &lt;=4">
+            
+        </xsl:if>
 
 
         <!-- Start: Features Section 
@@ -22,17 +24,18 @@
                    <xsl:call-template name="learnfilesubheader"/> 
                     
                     <div class="lesson-top-picture">
-                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"/>
-                    </div>                    
+                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="margin-bottom: 20px"/>
+                    </div>            
 
                     <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
                         <div class="guide-team">
                             <div class="guide-team-inner">
-                                <div class="section-header relative text-center" >                
+                                <div class="col-mc-3 col-sm-3"></div>
+                                <div class="section-header relative text-center col-mc-6 col-sm-6 col-xs-12" >                
                                     <h2 class="section-heading" ><xsl:value-of select="/data/lesson/entry/title"/></h2>
-                                    <xsl:value-of select="/data/lesson/entry/subtitle"/>
                                 </div>
-                                <div class="lesson-definitions">
+                                <div class="lesson-definitions  col-sm-7 col-md-7
+                                    " style="margin-top: -30px;">
                                     <div class="lesson-top-picture">
                                         <div class="media">
                                             <div class="media-body-left"><b>
@@ -102,23 +105,24 @@
                 
                      <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
 
-                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-bottom: 0px;">
+                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-bottom: -30px;">
                              <div class="lesson-text">
                              <br/>
-                                <p class="lesson-text">Not quite the same thing, are they? It's not difficult to understand why, then, begin a leader takes more than just ordering people around.</p><br/><br/>
+                                <p class="lesson-text">FAKE TEXT fake text This is Fake EMBENDED text needs to be changed FAKE TEXT go to Symphony and add new field or figure out how to separate one text in 2 parts. PROBLEM WITH THIS, BUTTONS MARGIN and FLAG on profile picture. </p><br/><br/>
                              </div>
                         </div>
 
                         <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
                             <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
 
-                                <xsl:apply-templates select="/data/lesson/entry" mode="likeviews"/>
-                                <xsl:value-of select="/data/*"/>
+                                <xsl:apply-templates select="/data/lesson/entry[1]" mode="likeviews"/>
+                                
                             </div>
                         </div>
 
                          <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-bottom: 0px;">
-                            <div class="row comments-inner">
+                            <div class="col-md-1"></div>
+                            <div class="row comments-inner col-xs-12 col-md-10">
                                 <xsl:apply-templates select="/data/comments/entry" mode="comment">
                                                                         
                                 </xsl:apply-templates>
@@ -127,23 +131,21 @@
 
                     </div> <!-- /.each-features -->
 
-        
-
-                    <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
+                    <div class="col-xs-12 each-features" style="margin-bottom: 0px; margin-top: 40px;">
 
                         <div class="single-comment col-xs-12">
                             <div class="row single-comments-inner">
                                 <div class="down-buttons-lesson">
-
+                                        <div class="col-md-1 col-sm-1"></div>
                                     <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-4 text-center margin-t-50">
+                                        <div class="btn-form col-xs-12 col-md-3 col-sm-3 text-center margin-t-50" style="margin-top: 5px;">
 
                                             <a href="#" class="btn btn-border text-normal" data-toggle="modal" data-target="#myModal3">
                                                 <h3 style="font-size: 30px; line-height: 110%;" class="title"> Study </h3> 
                                             </a><!-- Modal -->
 
                                   			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-                                              <div class="modal-dialog" role="document">
+                                              <div class="modal-dialog col-xs-1" role="document">
                                                 <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; width: 150%; margin-left: -25%; height: 400px;">
                                                   <div class="modal-header " style="border: 0px; margin: 10px;">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
@@ -166,104 +168,102 @@
                                     </div>  
 
                                     <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-4 text-center margin-t-50">
+                                        <div class="btn-form col-xs-12 col-md-3 col-sm-3 text-center margin-t-50" style="margin-top: 5px;">
                                             <a href="#" class="btn btn-border text-normal">Something here</a>
                                         </div>  
                                     </div> 
 
                                     <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-4 text-center margin-t-50">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-3 text-center margin-t-50" style="margin-top: 5px;">
 
                                             <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
                                                 <h3 style="font-size: 30px; line-height: 110%;" class="title"> Mini Quiz </h3>
                                             </a><!-- Modal -->
 
-                                                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-                                                  <div class="modal-dialog" role="document">
+                                            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                                              <div class="modal-dialog" role="document">
 
-                                                    <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; width: 150%; margin-left: -25%; height: 1300px;">
-                                                      <div class="modal-header " style="border: 0px; margin: 10px;">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true" style="font-weight: bold;"></span></button>
-                                                        
-                                                      </div>
-                                                      <div class="new-class" style=" height: 500px; margin-right: auto; margin-left: auto; text-align: center; ">  
-                                                            <h2 class="section-heading">MINIQUIZ</h2>                    
-                                                            
-                                                           
-                                                            <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
-                                                                    <br/>
-                                                                    Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
-                                                                    eflebla bla<br/><br/>
-                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                    <div class="check-box">
-                                                                    </div>  
-                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                </div>
-                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                    <div class="check-box">
-                                                                    </div>  
-                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                </div>
-                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                    <div class="check-box">
-                                                                    </div>  
-                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
-                                                                    <br/>
-                                                                    Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
-                                                                    eflebla bla<br/><br/>
-                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                    <div class="check-box">
-                                                                    </div>  
-                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                </div>
-                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                    <div class="check-box">
-                                                                    </div>  
-                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                </div>
-                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                    <div class="check-box">
-                                                                    </div>  
-                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
-                                                                    <br/>
-                                                                    Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
-                                                                    eflebla bla<br/><br/>
-                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                    <div class="check-box">
-                                                                    </div>  
-                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                </div>
-                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                    <div class="check-box">
-                                                                    </div>  
-                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                </div>
-                                                                <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                    <div class="check-box">
-                                                                    </div>  
-                                                                    <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                </div>
-                                                            </div>   
-
-                                                            <div class="btn-form col-xs-12 text-center margin-t-50" style="margin-top: 0px;">
-                                                                <a href="#" class="btn btn-border text-normal">Enroll</a>
-                                                            </div>                       
-                                                                              
-                                                      </div>                                                      
-                                                    </div>
+                                                <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; width: 150%; margin-left: -25%; height: 1300px;">
+                                                  <div class="modal-header " style="border: 0px; margin: 10px;">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true" style="font-weight: bold;"></span></button>
+                                                    
                                                   </div>
+                                                  <div class="new-class" style=" height: 500px; margin-right: auto; margin-left: auto; text-align: center; ">  
+                                                        <h2 class="section-heading">MINIQUIZ</h2>                    
+                                                        
+                                                       
+                                                        <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
+                                                                <br/>
+                                                                Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
+                                                                eflebla bla<br/><br/>
+                                                            <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                <div class="check-box">
+                                                                </div>  
+                                                                <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                            </div>
+                                                            <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                <div class="check-box">
+                                                                </div>  
+                                                                <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                            </div>
+                                                            <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                <div class="check-box">
+                                                                </div>  
+                                                                <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
+                                                                <br/>
+                                                                Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
+                                                                eflebla bla<br/><br/>
+                                                            <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                <div class="check-box">
+                                                                </div>  
+                                                                <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                            </div>
+                                                            <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                <div class="check-box">
+                                                                </div>  
+                                                                <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                            </div>
+                                                            <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                <div class="check-box">
+                                                                </div>  
+                                                                <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
+                                                                <br/>
+                                                                Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
+                                                                eflebla bla<br/><br/>
+                                                            <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                <div class="check-box">
+                                                                </div>  
+                                                                <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                            </div>
+                                                            <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                <div class="check-box">
+                                                                </div>  
+                                                                <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                            </div>
+                                                            <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
+                                                                <div class="check-box">
+                                                                </div>  
+                                                                <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
+                                                            </div>
+                                                        </div>   
+
+                                                        <div class="btn-form col-xs-12 text-center margin-t-50" style="margin-top: 0px;">
+                                                            <a href="#" class="btn btn-border text-normal">Enroll</a>
+                                                        </div>                       
+                                                                          
+                                                  </div>                                                      
                                                 </div>
-
-
-
+                                              </div>
+                                            </div>
                                         </div>  
-                                    </div>                               
+                                    </div> 
+
                                 </div>
                             </div>
                         </div> <!-- /.single-comment -->

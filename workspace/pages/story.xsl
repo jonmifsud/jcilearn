@@ -51,7 +51,7 @@
                             </div> <!-- End: .each-item -->
                         </div>
 
-                        <div class="col-xs-12 each-features" >
+                        <div class="col-xs-12 each-features" style="margin-bottom: 30px;" >
                              <img src="{/data/params/workspace}/assets/img/icons/icon-7.png"/><br/><br/>
                             <div class="guide-team">
                                 <div class="guide-team-inner">
@@ -90,8 +90,8 @@
                             </div>
                         </div>                      
 
-						<div class="col-xs-12 each-features">  <!-- /.comments -->                      
-                             <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+						<div class="col-xs-12 each-features" style="margin-bottom: 30px;">  <!-- /.comments -->                     
+                             <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-md-10 col-sm-offset-1 col-xs-12">
                                 <div class="row comments-inner">
                                     
                                     <xsl:apply-templates select="/data/comments/entry" mode="comment"/>
@@ -105,28 +105,12 @@
                         </div> <!-- /.each-features -->
 
                         <div class="col-xs-12 each-features">
-	                        <div class="single-comment col-xs-12" style="margin-bottom: 0px;">
-	                            <div class="row single-comments-inner">
-	                                <div class="down-buttons-lesson">
-	                                    <div class="lesson-button-organise">
-	                                        <div class="btn-form col-xs-4 text-center margin-t-50">
-	                                            <a href="#" class="btn btn-border text-normal"> EXPLORE </a>
-	                                        </div>  
-	                                    </div>   
-	                                    <div class="lesson-button-organise">
-	                                        <div class="btn-form col-xs-4 text-center margin-t-50">
-	                                            <a href="#" class="btn btn-border text-normal"> . 1 . 2 . 3 . </a>
-	                                        </div>  
-	                                    </div> 
-	                                    <div class="lesson-button-organise">
-	                                        <div class="btn-form col-xs-4 text-center margin-t-50">
-	                                            <a href="#" class="btn btn-border text-normal"> NEXT STORY </a>
-	                                        </div>  
-	                                    </div>                               
-	                                </div>
-	                            </div>
-	                        </div> <!-- /.single-comment -->
-                    	</div> <!-- /.each-features -->
+                            <div class="btn-form col-xs-12 text-center margin-t-20">
+                                <a href="#" class="btn btn-border">EXPLORE</a>
+                                <a href="#" class="btn btn-border"> . 1 . 2 . 3 . </a>
+                                <a href="#" class="btn btn-border">NEXT STORY</a>
+                            </div>
+                        </div>
 
                     </div> <!-- /.row -->
                 </div> <!-- /.container -->

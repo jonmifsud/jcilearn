@@ -24,14 +24,13 @@
                             <div class="guide-team">
                                 <div class="guide-team-inner">
 
-                                    <xsl:apply-templates select="/data/comments/entry" mode="comment">    <!-- applying comment template -->                                                            
-                                    </xsl:apply-templates>
+                                    <h2>
+                                    <xsl:apply-templates select="/data/params/current-module-name" mode="comment"> <!-- applying comment template -->      
+                                    </xsl:apply-templates></h2>
                                     
                                     
                                     <!-- Start: Section Header -->
-                                    <div class="section-header relative text-center" >
-
-                                        <h2 class="section-heading">Introduction to leadership</h2>
+                                    <div class="section-header relative text-center" >                                      
                                         <p class="sub-heading">Your first step to becoming a true leader</p>
 
                                     </div> 

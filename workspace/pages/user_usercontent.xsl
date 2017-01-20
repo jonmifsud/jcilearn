@@ -12,6 +12,9 @@
 <xsl:import href="../sections/yournotepad.xsl"/>
 <xsl:import href="../sections/usercontentmodule.xsl"/>
 <xsl:import href="../sections/exploreprojectsmodule.xsl"/>
+<xsl:import href="../sections/projectmodule.xsl"/>
+<xsl:import href="../sections/sharestorymodule.xsl"/>
+<xsl:import href="../sections/sharestorymodulewithlikes.xsl"/>
 
                                                 
     <xsl:template match="/data"> 
@@ -23,39 +26,77 @@
 
                         <xsl:call-template name="learnfilesubheader"/>  
 
-	                    <div class="col-xs-12 each-features">                             
-	                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-	                             <div class="lesson-definitions">                                
-	                                
-	                                <div class="user-definitions-line">
-	                                    <div class="user-definitions-line-left">
-	                                        <div class="media-body" style="text-align: left;">
-                                                  <h3 style="font-size: 30px; line-height: 110%;" class="title"> <xsl:value-of select="/data/users/entry/name" /> <br/> <xsl:value-of select="/data/users/entry/surname" /> </h3>
-	                                            <span style="float: left; text-align: left;">1 lesson
-	                                            5 projects
-	                                            2 stories</span><br/><br/>
-	                                            <span style="color: #f37121;font-weight:bold; float: left; font-size: 20px">580XP</span><span style="color: #3496DA; size: 15px; font-weight: bold;">/ 50XP</span>
-	                                                <span style="color: #3496DA"> this week</span>
-	                                            <br/><br/>        
-	                                                <div class="box-border" style="height: 75px; width: 90px;">
-	                                                    <p><i class="fa fa-man-people-streamline-user"></i>+</p>   
-	                                                </div>                                            
-	                                        </div> <!-- /.media-body -->
-	                                    </div>
-	                                    <div class="user-definitions-line-right">
-                                        <img style="width: 100%; position: relative; max-height: 250px;" class="user-image" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image"/>
-                                            <img style="position: relative; top: -80px; min-width: 120px; height 80px; right: 0;" class="flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png" alt="Flag"/>
-	                                    </div>
-	                                </div>                                
-	                             </div>
-	                        </div>
-	                    </div> <!-- /.each-features -->
 
+                                            <div class="col-xs-12 each-features">
+                        <h2 class="section-heading" style="margin-bottom: 6%;">Good morning, Nathan!</h2>
+
+                        <div class="col-md-6 col-sm-6" style="border: 0px; height: 10%;">
+                            <div class="user-definitions-line-right" style=" width: 95%;">
+                                <img style="width: 100%; position: relative; width: 90%; border: 5px solid #3496DA;; border-radius: 100%; max-height: 250px; max-width: 250px;" class="user-image" src="http://localhost/jcilearn/workspace/assets/img/icons/profile-3.png" alt="Media Team Profile Image"/>
+                                <img style="position: relative; top: -80px; min-width: 120px; height 80px; right: 0;" class="flag" src="http://localhost/jcilearn/workspace/assets/img/icons/flag-1.png" alt="Flag"/>
+                              </div>
+
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="border: 0px; height: 10%;">
+                            <div class="user-definitions-line-left" style="width: 100%;">
+                                <div class="media-body">
+                                  <button type="button" class="btn  btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <h3 style="font-size: 30px; line-height: 110%;" class="title">Zack<br/>Joules Enixey</h3>
+                                  </button>
+                                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 80%; width: 150%; margin-left: -25%;">
+                                        <div class="modal-header " style="border: 0px; margin: 10px;">
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" style="font-weight: bold;"></span>
+                                          </button>
+                                          <h4 class="modal-title" id="myModalLabel">POINT SYSTEM</h4>
+                                        </div>
+                                        <div class="new-class" style=" height: 400px; ">
+                                          <div class="box-border-modal" style="text-align: left; width: 22%;"><p class="blue-text"> 50XP</p><b>Share</b><br/>
+                                            Lesson<br/><br/><br/>
+                                            New Badge
+                                        </div>
+                                          <div class="box-border-modal" style="text-align: left; width: 22%;"><p class="blue-text"> 25XP</p><b>Share</b><br/>
+                                            Project<br/>
+                                            Story<br/><br/><br/></div>
+                                          <div class="box-border-modal" style="text-align: left; width: 22%;"><p class="blue-text"> 10XP</p><b>Learn</b><br/>
+                                            Lesson<br/>
+                                            Task<br/>
+                                            End Module<br/>
+                                            End Challengge<br/><br/>
+                                            5 s on your shared content
+                                        </div>
+                                          <div class="box-border-modal" style="text-align: left; width: 22%;"><p class="blue-text"> 5XP</p><b>Learn</b><br/>
+                                                Project<br/>
+                                                Story<br/><br/>
+                                                Highlights on shared content
+                                                
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <span style="float: left; text-align: left;">1 lesson
+                                                        5 projects
+                                                        2 stories</span>
+                                  <br/>
+                                  <span style="color: #f37121;font-weight:bold; float: left; font-size: 20px">580XP</span>
+                                  <span style="color: #3496DA; size: 15px; font-weight: bold;">/ 50XP</span>
+                                  <span style="color: #3496DA"> this week</span>
+                                  <br/>
+                                  <div class="profile-meta" style="border: 2px solid #3489DA;width: 100px;height: 60px; padding: 5%; border-radius: 10%; margin-top: 20px;">
+                                    <p><i class="fa fa-man-people-streamline-user"></i> +</p>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        </div>
 
                     <div class="col-xs-12 each-features">
                     <h2 class="section-heading">LESSONS</h2><br/>
                         <div class="guide-team-content">
-                                <div class="each-item" style="margin-left: auto; margin-right: auto; text-align: center; width: 70%;">
+                                <div class="each-item" style="margin-left: auto; margin-right: auto; text-align: center; ">
                                     <xsl:apply-templates select="/data/lesson/entry[1]" mode="list-item"/>
                                 </div>  
                             </div>
@@ -82,13 +123,14 @@
                         <div class="row guide-team">
                             <div class="guide-team-inner">
                                 <div class="guide-team-content col-xs-12">
-                                    <h2 class="section-heading" style="margin-bottom: 0px;">STORIES</h2><br/>
-                                    <div class="row" style="margin-top: 10px; margin-left: 100px;">
+                                 <h3 class="title-centre" style="margin-top: 100px;">PUBLISHED STORIES</h3>
+                                    <div class="row col-md-2 col-sm-4"></div>
+                                    <div class="row col-md-10 col-sm-7" >
                                         <xsl:for-each select="/data/story/entry">
-                                            <xsl:if test="position() &lt;=2">
-                                                <xsl:apply-templates select="current()" mode="story-module-item"/>
+                                            <xsl:if  test="position() &lt;=2">    
+                                            <xsl:apply-templates select="current()" mode="sharestorymodulewithlikes"/>
                                             </xsl:if>
-                                        </xsl:for-each>
+                                        </xsl:for-each>     
                                     </div>
                                 </div>
                             </div>

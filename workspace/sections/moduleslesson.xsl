@@ -6,8 +6,8 @@
 
         <xsl:template match="*[section/@handle='lesson']//entry" mode='lesson-module-item'>
 
-         <div class="each-item col-md-6 col-sm-12" style="min-height: 250px;">
-            <div class=" each-item-inner" style="min-height: 180px;">
+         <div class="each-item col-md-6 col-sm-12 " style="min-height: 250px;">
+            <div class=" each-item-inner col-xs-12" style="min-height: 180px;">
                 <div class="content-left col-sm-9">
 
                     <div class="media">

@@ -29,7 +29,7 @@
                         </div> <!-- /.each-features -->  
 
                         <div class="guide-team-content col-xs-12">
-                            <div class="row" style="margin-left: 14%;">
+                            <div class="row" >
                                 <xsl:apply-templates select="/data/story/entry[1]" mode="sharestorymodule"/>
                             </div>
                         </div>  
@@ -45,14 +45,14 @@
 
                     <div class="guide-team-content col-xs-12">
                      <h3 class="title-centre" style="margin-top: 100px;">PUBLISHED STORIES</h3>
-                        <div class="row" style="margin-left: 14%;">
-                            <div class="each-item col-sm-10">
+                        <div class="row" >
+                          
                                 <xsl:for-each select="/data/story/entry">
                                     <xsl:if  test="position() &lt;=2">    
                                     <xsl:apply-templates select="current()" mode="sharestorymodulewithlikes"/>
                                     </xsl:if>
                                 </xsl:for-each>     
-                            </div>
+                        
                             
                         </div>
                     </div>

@@ -15,7 +15,11 @@ class datasourcemodule extends SectionDatasource
     public $dsParamSORT = 'system:id';
     public $dsParamHTMLENCODE = 'no';
     public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
-
+    
+    public $dsParamFILTERS = array(
+        '16' => '{$module-name},{$current_module_name}',
+    );
+        
     public $dsParamINCLUDEDELEMENTS = array(
         'system:date',
         'title: formatted',
@@ -38,7 +42,7 @@ class datasourcemodule extends SectionDatasource
                 'website' => 'http://localhost/jcilearn',
                 'email' => 'zzftn90@gmail.com'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2016-12-05T11:41:51+00:00'
+            'release-date' => '2017-01-17T14:45:29+00:00'
         );
     }
     public function getSource()

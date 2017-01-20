@@ -3,9 +3,9 @@
 
     <xsl:template match="*[section/@handle='lesson']//entry" mode='modules'>
         <div class="item">    
-            <div class="modules">
+            <div class="modules" >
                 <div class="modules-inner">
-                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Modules Image" class="img-responsive"/>
+                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Modules Image" class="img-responsive" />
                     <h3 class="title"><xsl:value-of select="title"/></h3>
                 </div>
                 <p class="small-text"><xsl:value-of select="subtitle"/></p>

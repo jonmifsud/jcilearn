@@ -108,7 +108,7 @@
                         
 
                         <div class="guide-team-content col-xs-12">
-                            <div class="row" style="margin-top: 100px; margin-left: 100px;">
+                            <div class="row" style="margin-top: 100px; float: center;">
                                 
                                 <xsl:for-each select="/data/lesson/entry" > 
                                 	<xsl:if test="position() &lt;=2">

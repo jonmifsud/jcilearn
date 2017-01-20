@@ -7,14 +7,14 @@
 
     <xsl:template match="*[section/@handle='story']//entry" mode='story-module-item'>
 
-        <div class="each-item col-sm-10">
+        <div class="each-item col-sm-10 col-md-12">
             <div class=" each-item-inner">
-                <div class="content-right content-defult col-sm-3" style="max-width: 20%; overflow: hidden; padding: 0px;">
+                <div class="content-right col-xs-12 content-defult col-md-2" style=" overflow: hidden; padding: 0px;">
                     
                    <img class="media-object features-image" src="{/data/params/workspace}/assets/img/helppic.png" alt="Media Team Image" style="max-width: 100%; height: 200px; max-height: 200px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;"/>
 
                 </div>
-                <div class="content-left col-sm-9" style="width: 60%; padding-top: 50px;">
+                <div class="content-left col-xs-8 col-md-7" style=" padding-top: 50px;">
 
                     <div class="media">
                         
@@ -32,7 +32,7 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-right -->
-                <div class="content-right content-defult col-sm-3" style="width: 15%;">
+                <div class="content-right content-defult col-md-3 col-xs-4">
                     
                     <div class="profile-meta">
                         <p class="blue-text-in-line" id="like"><i class="fa fa-heart-o"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>

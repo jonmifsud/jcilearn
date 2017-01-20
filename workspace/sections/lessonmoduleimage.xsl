@@ -6,10 +6,10 @@
 
     <xsl:template match="*[section/@handle='lesson']//entry" mode='lessonmoduleimage'>
 
-        <div class="box-border" style="width: 70%; height: 400px; padding: 0px; overflow: hidden;
+        <div class="box-border" style="width: 70%; height: 100%; padding: 0px; overflow: hidden;
                                     " >
         <img src="{/data/params/workspace}/assets/img/helppic.png" style="margin: 0px; width: 100%; height: 64%; border-bottom: 2px solid #3496DA;" />
-        <div class="box-poligon" style="width: 100%; height: 36%; margin: 0px;">
+        <div class="box-poligon" style="width: 100%;  margin: 0px;">
             <div class="box-poligon" style="width: 30%; margin: 0px;">
                 <img src="{/data/params/workspace}/assets/img/icons/icon-6.png"/>
             </div>

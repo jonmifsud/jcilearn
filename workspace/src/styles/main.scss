@@ -1,6 +1,10 @@
 // Css Style List
 @import "css-tree.scss";
 
+@import "breakpoint";
+@import "mixins/rems";
+@import "lib/bootstrap.min";
+
 //Style
 @import "stylesheet.scss";
 // @import ""
@@ -14,21 +18,22 @@
 @import "variable";
 
 // This File Import Some Helping Function
-@import "defult-style";
+@import "lib/base";
 
 @import "lib/plugin";
 @import "lib/style";
-@import "lib/bootstrap.min";
-@import "responsive";
-@import "stylesheet";
 @import "lib/sliderjs/owl";
 @import "lib/button/button";
-@import "lib/lessondiv/lesson";
 @import "lib/modules/module";
 @import "lib/collabhelp";
-@import "lib/base";
-@import "lib/lessondiv/lessonusertext";
 
+@import "defult-style";
+
+@import "responsive";
+@import "stylesheet";
+
+@import "lib/lessondiv/lesson";
+@import "lib/lessondiv/lessonusertext";
 
 /****************************************************************
     START MAIN CSS STYLE
@@ -126,7 +131,7 @@
                 }
 
                 .fa {
-                    font-size: 40px;
+                    @include rem(font-size,40px);
                     color: $light-color;
                     top: 5px;
                 }
@@ -140,7 +145,7 @@
                 font-family: $font-1;
                 color: $light-color;
                 font-weight: 400;
-                font-size: 15px;
+                @include rem(font-size,15px);
                 margin-top: 7px;
                 position: relative;
                 text-transform: uppercase;
@@ -229,7 +234,7 @@
                 &,
                 &:hover,
                 &:focus {
-                    font-size: 40px;
+                    @include rem(font-size,40px);
                     font-family: $font-1;
                     padding: 17px 10px;
                     display: block;
@@ -269,8 +274,8 @@
         }
 
         p {
-            font-size: 24px;
-            line-height: 30px;
+            @include rem(font-size,24px);
+            @include rem(line-height, 30px);
         }
     }
 }
@@ -339,7 +344,7 @@
             color: $main-color-1;
             text-align: center;
             padding: 8px 0;
-            font-size: 24px;
+            @include rem(font-size,24px);
             font-family: $font-1;
         }
     }
@@ -361,6 +366,10 @@
         .media-left {
             padding-right: 25px;
             position: relative;
+
+            @include breakpoint(max-width $screen-xs-max){
+                padding-right: 0;
+            }
         }
     }
 
@@ -371,13 +380,17 @@
 
     .title {
         margin: 10px 0 0 0;
-        line-height: 25px;
+        @include rem(line-height, 25px);
         text-align: left;
     }
 
     .content-left {
         padding: 29px;
         // border-right: 1px solid $main-color-1;
+
+        @include breakpoint(max-width $screen-xs-max){
+            padding: 29px 0;
+        }
 
         &:before {
             content: '';
@@ -387,6 +400,11 @@
             right: 0;
             top: 0;
             background-color: $main-color-1;
+
+
+            @include breakpoint(max-width $screen-xs-max){
+                display: none;
+            }
         }
 
         .title {
@@ -396,6 +414,11 @@
     .content-right {
         padding: 25px 21px;
 
+        @include breakpoint(max-width $screen-xs-max){
+            padding: 0;
+            padding-bottom:29px;
+        }
+
         &:before {
             content: '';
             position: absolute;
@@ -404,6 +427,11 @@
             left: -1px;
             top: 0;
             background-color: $main-color-1;
+
+
+            @include breakpoint(max-width $screen-xs-max){
+                display: none;
+            }
         }
     }
 
@@ -433,7 +461,7 @@
             font-family: $font-1;
             color: $main-color-1;
             margin-right: 10px;
-            font-size: 22px;
+            @include rem(font-size,22px);
             text-align: left;
 
             &:last-child {
@@ -460,7 +488,7 @@
                 float: none;
                 margin-bottom: 10px;
                 margin-right: 0;
-                font-size: 24px;
+                @include rem(font-size,24px);
                 text-align: center;
 
                 &:last-child {
@@ -476,7 +504,7 @@
 }
 
 .small-text {
-    font-size: 16px;
+    @include rem(font-size,16px);
 }
 
 
@@ -506,7 +534,7 @@
     .comments-option {
         .see-more {
             font-family: $font-2;
-            font-size: 16px;
+            @include rem(font-size,16px);
             color: $dark-color;
 
         }
@@ -514,7 +542,7 @@
 
     .comments-pagination {
         font-family: $font-1;
-        font-size: 16px;
+        @include rem(font-size,16px);
         color: $dark-color;
     }
 
@@ -569,11 +597,11 @@
     .form-control {
         @include placeholder-color($dark-color);
         color: $dark-color;
-        font-size: 16px
+        @include rem(font-size,16px)
     }
 
     .btn {
-        font-size: 20px;
+        @include rem(font-size,20px);
         padding: 0 16px;
         color: $main-color-1;
 
@@ -681,9 +709,9 @@
 
     .other-link {
         .title {
-            line-height: 31px;
+            @include rem(line-height, 31px);
             margin-top: 0px;
-            font-size: 15px;
+            @include rem(font-size,15px);
             color: $light-color;
         }
 
@@ -712,7 +740,7 @@
 
     .link {
         color: $light-color;
-        font-size: 15px;
+        @include rem(font-size,15px);
     }
 }
 
@@ -722,4 +750,90 @@
   margin-right: auto;
   margin-left: auto;
   text-align: right;
+}
+
+// RESPONSIVE
+
+
+
+@media all and (min-width: 1025) {
+  h3{
+      @include rem(font-size,25px);
+      @include rem(line-height, 35px);
+
+  }
+  .pera{
+    @include rem(font-size,16px);
+    @include rem(line-height, 16px);
+  }
+}
+ 
+@media all and (max-width: 1024px) and (min-width: 640px) {
+  h3{
+      @include rem(font-size,18px);
+      @include rem(line-height, 28px);
+
+  }
+  p{
+    @include rem(font-size,16px);
+    @include rem(line-height, 16px);
+  }
+
+  .modal-content{
+    width: 100% !important;
+    margin-right: auto;
+    margin-left: 15% !important;
+  }
+}
+ 
+@media all and (max-width: 639px) and (min-width: 320px) {
+  h3{
+      @include rem(font-size,16px);
+      @include rem(line-height, 20px); }
+
+  p{
+    @include rem(font-size,14px);
+    @include rem(line-height, 16px);
+    text-align: justify;
+  } 
+
+  h2{
+    @include rem(font-size,25px);
+    @include rem(line-height, 20px);
+  }
+
+  .blue-text{
+    @include rem(font-size,16px);
+    text-align: center;
+  }
+
+  .blue-text-in-line{
+    @include rem(font-size,20px);
+  }
+
+  .each-item-inner-lesson {
+    padding-left: 5px;
+  }
+
+/*  .comments{
+  margin-left: 3%;
+  }*/
+
+  .row .comments-inner{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box-border{
+    width: 100% !important;
+  }
+
+  .box-border-text-left{
+    padding-left: 10px !important;
+  }
+
+  .button-wrapper{
+    margin-left: 40%;
+  }
+
 }

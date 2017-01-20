@@ -24,14 +24,20 @@
                             <div class="guide-team">
                                 <div class="guide-team-inner">
 
-                                    <xsl:apply-templates select="/data/comments/entry" mode="comment">    <!-- applying comment template -->                                                            
+                                    <div class="col-xs-5"></div>
+                                    <div class="col-xs-7">
+                                    <xsl:apply-templates select="/data/comments/entry" mode="comment">    <!-- applying comment template -->                                                           
                                     </xsl:apply-templates>
+                                    </div>
+                                  
                                     
                                     
                                     <!-- Start: Section Header -->
-                                    <div class="section-header relative text-center" >
+                                    <div class="section-header relative text-center col-xs-12" >
 
-                                        <h2 class="section-heading">A Guide to Team Building</h2>
+                                        <h2>
+                                        <xsl:apply-templates select="/data/params/module-name" mode="comment"> <!-- applying comment template -->      
+                                        </xsl:apply-templates></h2>
                                         <p class="sub-heading">Maximising your team’s potential.</p>
 
                                     </div> 
@@ -39,8 +45,10 @@
 
                                     <div class="guide-team-content timeline col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                                         <div class="row">
-                                            <xsl:for-each select="/data/lesson/entry">       <!-- list of modules in for each look -->
-                                                <xsl:apply-templates select="current()" mode="list-item"/>
+                                            <xsl:for-each select="/data/lesson/entry"> 
+                                                <xsl:if test="position() &lt;=4">      <!-- list of modules in for each look -->
+                                                    <xsl:apply-templates select="current()" mode="list-item"/>
+                                                </xsl:if>
                                             </xsl:for-each>
                                         </div>
                                     </div>
@@ -48,9 +56,9 @@
                             </div>
                         </div> <!-- /.each-features -->
 
-                        <div class="col-xs-12 each-features">  <!-- /.comments -->                      
+                        <div class="col-xs-12 each-features">  <!-- /.comments -->
                              <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                                <div class="row comments-inner">
+                                <div class="row comments-inner col-sm-12">
                                     
                                     <xsl:apply-templates select="/data/comments/entry" mode="comment"/>
                                    
@@ -79,6 +87,7 @@
                                 </div>
                             </div> <!-- /.single-comment -->
                         </div> <!-- /.each-features -->
+                        
                     </div> <!-- /.row -->
                 </div> <!-- /.container -->
             </div>

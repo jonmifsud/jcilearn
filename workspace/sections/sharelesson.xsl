@@ -3,8 +3,8 @@
 
 
     <xsl:template match="*[section/@handle='lesson']//entry" mode='sharelesson'>
-        <div class=" each-item-inner">
-            <div class="content-left col-sm-9" style="width: 78%; padding-top: 50px;">
+        <div class=" each-item-inner col-md-12">
+            <div class="content-left col-sm-12" style="width: 78%; padding-top: 50px;">
 
                 <div class="media">
                     <div class="media-left">

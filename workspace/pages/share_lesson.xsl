@@ -27,7 +27,7 @@
                         <p class="blue-text">Publishing your stories will bring you closer to your Active Citizenship badge!</p><br/>
                         </div> <!-- /.each-features -->  
 
-                        <div class="row" style="margin-top: 100px; margin-left: 14%;">
+                        <div class="row" style="margin-top: 100px; ">
                                         
                             <div class="each-item col-sm-10">
                                 <xsl:apply-templates select="/data/lesson/entry[1]" mode="sharelesson"/>    
@@ -36,15 +36,13 @@
 
                         <div class="btn-form col-xs-12 text-center margin-t-20">
                             <p class="blue-text"></p>
-                                <a href="#" class="btn btn-border-button">Write a new story</a>
+                                <a href="#" class="btn btn-border-button">Create new lesson</a>
                         </div>
-
                     </div>
-                  
 
                     <div class="guide-team-content col-xs-12">
-                     <h3 class="title-centre" style="margin-top: 100px;">PUBLISHED APPROVAL</h3><br/>
-                        <div class="row" style="margin-left: 14%;">
+                     <h3 class="title-centre" style="margin-top: 100px;">PENDING APPROVAL</h3><br/>
+                        <div class="row" >
 
                             <div class="each-item col-sm-10">
                                  <xsl:apply-templates select="/data/lesson/entry[4]" mode="sharelesson"/>   

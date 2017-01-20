@@ -451,3 +451,62 @@ $(document).ready(function(){
         }
 
     });
+
+function landingNextStep(){
+	var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       :  5566
+};
+document.getElementById("circlechange").style.background='#3496DA';
+document.getElementById("circlechange").style.color='white';
+
+document.getElementById("circlechange2").style.background='#f37121';
+document.getElementById("circlechange2").style.color='white';
+
+}
+
+$(document).ready(function(){
+        var div = $("#landingSlideBox");
+        $("#button").click(function(){
+            $("#landingTemplateSlider").replaceWith(div);
+        });
+
+        
+        $("#counter").bind("click", counterfunc);
+        var counter = 0;
+        divNumber = $(".sliderJquery > div").length;
+
+
+        function counterfunc(){
+            if(counter<divNumber){ 
+                var sum = counter + 1;
+                $("#output").html(sum);
+                $(".study-timeline-progress > div:nth-child("+counter+")").css({"background-color": "#f37121", "color": "white"});
+                counter=sum;
+
+                $(".sliderJquery > div").hide();                
+                $(".sliderJquery div:nth-child("+counter+")").show();
+
+                $(".study-timeline-progress > div:nth-child("+counter+")").css({"background-color": "#3496DA", "color": "white"});
+
+            }else{
+                counter = 0; 
+                $(".study-timeline-progress > div").css({"background-color": "white", "color": "#3496DA"});
+                $(".sliderJquery div:nth-child(1)").show();
+            }           
+        }
+
+        $(".check-box").click(function(){
+            if($(this).css("background-color", "white")){  
+                $(this).css("background-color", "#3496DA");
+            }else if($(this).css("background-color", "#3496DA")){ 
+                $(this).css("background-color", "white");
+            }
+        });
+
+        
+    });
+
+
+

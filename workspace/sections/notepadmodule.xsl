@@ -5,8 +5,8 @@
 
     <xsl:template match="*[section/@handle='lesson']//entry" mode='notepadmodule'>
 
-        <div class="each-item col-sm-10">
-            <div class="each-item-inner">
+        <div class="each-item col-md-12">
+            <div class="each-item-inner" >
                 <div class="content-left col-md-8 col-sm-7">
 
                     <div class="media">
@@ -27,8 +27,10 @@
                 <div class="content-right content-defult col-sm-3">
                     
                     <div class="profile-meta">
-                        <p><i class="fa fa-man-people-streamline-user"></i>Hard</p>
-                        <p><i class="fa fa-like-love-streamline"></i>Coded</p>
+                        <div class="col-xs-6 col-md-12">
+                        <p><i class="fa fa-man-people-streamline-user"></i>Hard</p></div>
+                        <div class="col-xs-6 col-md-12">
+                        <p><i class="fa fa-like-love-streamline"></i>Coded</p></div>
                     </div>
 
                 </div> <!-- /.content-left -->

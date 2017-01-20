@@ -29,23 +29,25 @@
                                     </div>
                             </div>
 
-                            <div class="box-border" style=" width: 90%; padding: 20px; height: 20%; border: 0px;">
-                                <div class="box-border" style=" width: 60%; margin-bottom: 100px; padding: 20px; height: 20%; border: 0px;">
-                                    <p class="title" style="text-align: left; margin-left: 15%;">BIO</p>
-                                    <p style="text-align: left; margin-left: 15%; font-size: 15px;">short description</p>
-                                    <div class="box-border-sharp-edges" style=" width: 70%; padding: 20px; height: 80%;">
+                            <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px;">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <h3 class="title" style="text-align: left; ">BIO</h3>
+                                    <p style="text-align: left;  font-size: 15px;">short description</p>
+                                    <div class="box-border-sharp-edges" style=" width: 100%; padding: 20px; min-height: 140px; height: 80%;">
                                        <xsl:value-of select="/data/users/entry/your-biography"/>
                                     </div>
                                 </div>
-                                <div class="box-border" style=" width: 35%; padding: 20px; border: 0px;">
-                                        <img style="width: 90%; border: 3px solid #3496DA;; border-radius: 100%;" src="{/data/params/workspace}/assets/img/icons/profile-3.png" />
-                                        <div class="box-border" style=" width: 70%; padding: 3%; height: 10%; padding-bottom: 10%;"><xsl:value-of select="/data/users/entry/short-text"/>
-                                    
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <img style="width: 50%; border: 3px solid #3496DA;; border-radius: 100%;" src="{/data/params/workspace}/assets/img/icons/profile-3.png" />
+                                    <div class="box-border" style=" width: 70%; padding: 3%; height: 10%; padding-bottom: 10%;">
+                                        <xsl:value-of select="/data/users/entry/short-text"/>
                                     </div>
                                 </div>
+                                <div class="col-md-2"></div>
                             </div>
 
-                            <div class="box-border" style=" border: 0px; height: 10%;">
+                            <div class="box-border" style=" width: 85%; border: 0px; height: 10%;">
                                     <p class="title"> WEEKLY GOAL </p>
                                 
                                     <div class="progress-wrapper-div">
@@ -53,10 +55,13 @@
                                     </div>
                                     50XP
                             </div><br/><br/>
-                                <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
+
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-xs-12 col-sm-8 each-features col-md-8" style="margin-bottom: 0px;">
                                     <h3 class="title">INTERESTS</h3><br/>
-                                    <div class="box-border-text-left" style="width: 65%; overflow-y: scroll; min-height: 350px; padding-left: 5%; padding-right: 0px;">
-                                        <div class="box-poligon" style="width: 31%; ">
+                                    
+                                    <div class="box-border-text-left col-md-8" style="width: 100%; overflow-y: scroll; min-height: 350px; padding-left: 5%; padding-right: 0px;">
+                                        <div class="box-poligon" style="width: 30%; ">
                                             <div class="box-poligon" style="width: 80%; ">
                                                 <img src="{/data/params/workspace}/assets/img/icons/icon-4.png" />
                                             </div>

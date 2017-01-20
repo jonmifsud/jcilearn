@@ -119,19 +119,16 @@
                             </div><!-- /.input-group -->
                         </form>
 
-                        <div class="row guide-team">
-                            <div class="guide-team-inner">
-                                
-                                <!-- Start: Section Header -->
-                                
-                                    <br/><br/><br/>
-                                    <p class="blue-text" style="margin-bottom: -50px;">Here are the most recent sorites.</p>
-                                    
-                              
-                                <!-- End: Section Header -->
+                        <br/><br/><br/>
+                        <p class="blue-text" style="margin-bottom: 30px;">Here are the most recent sorites.</p> 
 
-                                <div class="guide-team-content col-xs-12">
-                                    <div class="row" style="margin-top: 100px; margin-left: 100px;">
+                        <div class="row guide-team">
+                            <div class="guide-team-inner">                                
+                                <!-- Start: Section Header -->                                
+                                     
+                                <!-- End: Section Header -->
+                                <div class="guide-team-content timeline col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                                        <div class="row">
                                         <xsl:for-each select="/data/story/entry">
                                             <xsl:if test="position() &lt;=2">
                                                 <xsl:apply-templates select="current()" mode="story-module-item"/>
@@ -144,6 +141,7 @@
                         </div> <!-- /.guide-team -->
 
                     </div> <!-- /.each-features -->
+
                     <div class="col-xs-12 each-features">
                          <div class="btn-form col-xs-12 text-center margin-t-20">
                             <p class="blue-text">Do you have your own story to tell?</p>
