@@ -169,7 +169,7 @@
                             <div class="box-border" style=" width: 90%; height: 20%; border: 0px; ">
                                 <div class="col-xs-1 col-sm-1 col-md-1"></div>
                                 <div class="box-border col-xs-12 col-sm-4 col-md-4" style="width: 30%; border: 0px;">
-                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="margin-top: 30%; width: 100%;"/>
+                                    <img class="resize-picture" src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="margin-top: 30%; width: 100%;"/>
                                 </div>
 
                                 <div class="box-border col-xs-12 col-sm-7 col-md-6" style="width: 50%; border: 0px; padding-right: 0px;">
@@ -188,13 +188,13 @@
                             <div class="line-separater" ></div>
                             <div class="box-border" style=" width: 100%; height: 20%; border: 0px; ">
                                 <div class="col-xs-1 col-sm-2 col-md-2"></div>
-                                <div class="box-border col-xs-12 col-sm-5 col-md-5" style="width: 50%; border: 0px; padding-right: 0px;">
+                                <div class="box-border col-xs-12 col-sm-3 col-md-5" style="width: 50%; border: 0px; padding-right: 0px;">
                                     <p class="blue-text" style="text-align: left; font-size: 35px; line-height: 35px; margin-top: 7%"><b>Learn</b> the skills, then <b>share</b> them</p>
                                     
                                     <br/>
-                                    <p style="text-align: left;">Explore Enriche <span style="color: #3489DA;">JCI</span><span style="color: orange;">Train</span>'s database of curated lessons, challenges, past projects and shared experiences contributed by JCI members themselves themselves themselves.</p>
+                                    <p style="text-align: left;">Every active citizen has something valuable to say.</p>
                                 </div>
-                                <div class="box-border col-xs-12 col-sm-5 col-md-5" style="width: 30%; border: 0px; padding: 0px;">                                    
+                                <div class="box-border col-xs-12 col-sm-7 col-md-5" style="width: 30%; border: 0px; padding: 0px;">                                    
                                     <div class="btn-form col-xs-4 text-center margin-t-50">
                                         <a href="#" class="btn btn-border text-normal">Get started</a>
                                     </div>
