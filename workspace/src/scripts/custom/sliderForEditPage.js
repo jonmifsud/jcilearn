@@ -1,49 +1,26 @@
 $(document).ready(function(){
 
-
-        $(document).on('click','#like', function(e){
-            // var sum = like+1;
-            // $("#likeOutput").html(sum);
-            // like=sum;
-
-
-            data = {
-                "field-id" : "303",
-                "entry-id" : $(this).data('entry'),
-                "action[member-claim]" : "1",
-            }
-
-            //$.post( "test.php", data, function( result ) {
-
-            $.post( "http://localhost/jcilearn/ajax/", data, function( result ) {
-              console.log( result ); // John
-              console.log("certain text to be showed"); //random testing Text
-            });
-        });
-
-        $("#view").bind("click", increaseViewCounter);
-        var view = 0;
-
-        function increaseViewCounter(){
-            var sum = view+1;
-            $("#viewOutput").html(sum);
-            view=sum;
-        }
-
-        $("#editPageButton").bind("click", editPageSlider);
+        
+        $(".counter1").bind("click", counterfunc);
         var counter = 0;
-        divNumber = $(".containerForEditPage > div").length;
+        divNumber = $(".sliderJquery > div").length;
 
-        function editPageSlider(){
-            if(counter<divNumber){
+
+        function counterfunc(){
+            if(counter<divNumber){ 
                 var sum = counter + 1;
+                $("#output").html(sum);
                 counter=sum;
 
-                $(".containerForEditPage > div").hide();                
-                $(".containerForEditPage div:nth-child("+counter+")").show();
+                $(".sliderJquery > div").hide();                
+                $(".sliderJquery div:nth-child("+counter+")").show();
 
-            }else
-                counter = 0;           
+                $(".study-timeline-progress > div:nth-child("+counter+")").css({"background-color": "#3496DA", "color": "white"});
+
+            }else{
+                counter = 0; 
+                $(".study-timeline-progress > div").css({"background-color": "white", "color": "#3496DA"});
+                $(".sliderJquery div:nth-child(1)").show();
+            }           
         }
-
     });

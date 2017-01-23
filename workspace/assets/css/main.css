@@ -11716,7 +11716,6 @@ h6 {
   margin: auto; }
 
 .enter-text-field {
-  width: 800px;
   height: 200px;
   margin-right: auto;
   margin-left: auto;
@@ -11733,7 +11732,7 @@ h6 {
   border: 2px solid #3496DA; }
 
 #your-note {
-  width: 100%;
+  width: 80%;
   height: 55px;
   min-height: 300px;
   border: 2px solid #3496DA; }
@@ -12033,14 +12032,14 @@ h6 {
   margin-top: 30px;
   content: '';
   position: absolute;
-  left: -60px;
+  /*left: -60px;*/
   background: #3496DA; }
 
 .study-timeline-progress-circles {
   content: counter(section);
   counter-increment: section;
   position: absolute;
-  left: -81px;
+  /*left: -81px;*/
   top: 50%;
   transform: translate3d(0, -50%, 0);
   width: 40px;
@@ -13012,7 +13011,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   margin-top: 30px;
   content: '';
   position: absolute;
-  left: -60px;
+  /*left: -60px;*/
   background: #3496DA; }
 
 .study-timeline-progress-circles {
@@ -14972,6 +14971,9 @@ h6 {
 .smaller-div {
   width: 100%; }
 
+
+
+
 @media (max-width: 767px) {
   .no-left-padding {
     padding-left: 0px !important; } }
@@ -14980,6 +14982,15 @@ h6 {
   bottom: 28px;
   left: 30px;
   position: relative; }
+
+@media (max-width: 767px) {
+  .no-bottom-padding {
+    padding-bottom: 0px !important; } }
+
+@media (max-width: 767px) {
+  .no-padding-right {
+    padding-right: 10px !important;
+    padding-left: 10px; } }
 
 @media all and (min-width: 1025) {
   h3 {
@@ -15055,4 +15066,13 @@ h6 {
     margin-left: 40%; }
   .smaller-div {
     width: 80%;
-    float: left; } }
+    float: left; } 
+  .study-timeline-progress{
+    width: 90%;
+  }
+
+  .max-width{
+    width: 100% !important;
+  }
+
+  }

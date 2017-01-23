@@ -20,8 +20,8 @@
         <div class="features-section">
             <div class="container">
                 <div class="row features-item section-separator">
-
-                   <xsl:call-template name="learnfilesubheader"/> 
+                                                                 
+                   <xsl:call-template name="learnfilesubheader"/>
                     
                     <div class="lesson-top-picture">
                         <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="margin-bottom: 20px"/>

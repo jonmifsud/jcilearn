@@ -40,13 +40,13 @@
                         </div>
 
                         <div class="study-timeline-progress" >
-                            <div class="study-timeline-progress-circles" style="margin-left: 35%;">
+                            <div class="study-timeline-progress-circles" style="margin-left: 28%;">
                                 1
                             </div> 
-                            <div class="study-timeline-progress-circles"  style="margin-left: 50%;">
+                            <div class="study-timeline-progress-circles"  style="margin-left: 45%;">
                                 2
                             </div>
-                            <div class="study-timeline-progress-circles"  style="margin-left: 65%;">
+                            <div class="study-timeline-progress-circles"  style="margin-left: 62%;">
                                 3
                             </div>
                             <div class="study-timeline-progress-circles"  style="margin-left: 80%;">
@@ -57,10 +57,14 @@
                         <br/><br/>
                         <div class="col-xs-12 each-features" style="margin-top: 50px;">
                         
-                            <div class="guide-team-content">        
+                            <div class="guide-team-content">  
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10">      
                             	<xsl:if test="position() &lt;=1">
 	                            	<xsl:apply-templates select="/data/lesson/entry[4]" mode="studylesson"/>
 	                            </xsl:if>
+                                </div>
+                                <div class="col-md-1"></div>
                             </div>
                         </div>
 
@@ -92,19 +96,19 @@
 
                         <div class="col-xs-12 each-features" style="margin-bottom: 70px;">
                             <div class="study-timeline-progress">
-                                <div class="study-timeline-progress-circles" style="margin-left: 35%;">
+                                <div class="study-timeline-progress-circles" style="margin-left: 28%;">
                                     1
                                 </div> 
-                                <div class="study-timeline-progress-circles"  style="margin-left: 49%;">
+                                <div class="study-timeline-progress-circles"  style="margin-left: 41%;">
                                     2
                                 </div>
-                                <div class="study-timeline-progress-circles"  style="margin-left: 63%;">
+                                <div class="study-timeline-progress-circles"  style="margin-left: 55%;">
                                     3
                                 </div>
-                                <div class="study-timeline-progress-circles"  style="margin-left: 76%;">
+                                <div class="study-timeline-progress-circles"  style="margin-left: 69%;">
                                     4
                                 </div>
-                                <div class="study-timeline-progress-circles"  style="margin-left: 90%;">
+                                <div class="study-timeline-progress-circles"  style="margin-left: 82%;">
                                     5
                                 </div>
                             </div>
@@ -112,9 +116,13 @@
 
                         <div class="col-xs-12 each-features">
                             <div class="guide-team-content">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10"> 
                                 <xsl:if test="position() &lt;=1">
 	                            	<xsl:apply-templates select="/data/lesson/entry[5]" mode="studylesson"/>
 	                            </xsl:if> 
+                                </div>
+                                <div class="col-md-1"></div>
                             </div>
                     </div>
 

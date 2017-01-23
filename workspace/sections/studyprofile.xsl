@@ -7,8 +7,8 @@
 
      <xsl:template match="*[section/@handle='lesson']//entry" mode='studylesson'>
 
-        <div class="each-item div-max-size col-xs-12" style="margin-left: auto; margin-right: auto; text-align: center; width: 70%;">
-            <div class="each-item-inner">
+        <div class="each-item div-max-size col-xs-12" style="margin-left: auto; margin-right: auto; text-align: center;">
+            <div class="each-item-inner" style="margin-left: -5px; margin-right: -5px;">
                 <div class="content-left col-md-8 col-sm-7">
 
                     <div class="media">
@@ -26,10 +26,10 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-right -->
-                <div class="content-right col-md-4 col-sm-5">
+                <div class="content-right col-md-4 col-sm-5 no-bottom-padding">
                     
                     <div class="media">
-                        <div class="media-left">
+                        <div class="media-left no-padding-right" style="padding-right: 0px;">
 
                              <xsl:apply-templates select='current()' mode='author-picture'/>
                         

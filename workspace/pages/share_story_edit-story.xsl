@@ -63,7 +63,7 @@
 
                     <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
                         <h3 class="title">CATEGORY</h3><br/>
-                        <div class="box-border-text-left" style="width: 45%; overflow-y: scroll; height: 380px; padding-left: 70px; padding-right: 0px;">
+                        <div class="box-border-text-left max-width" style="width: 45%; overflow-y: scroll; height: 380px; padding-left: 70px; padding-right: 0px;">
                             <div class="box-poligon" style="width: 45%; ">
                                 <div class="box-poligon" style="width: 80%; ">
                                     <img src="{/data/params/workspace}/assets/img/icons/icon-4.png" />
@@ -154,7 +154,7 @@
                         <h3 class="title-centre">TEXT</h3>
                         <div class="enter-text-field">
                             <form>
-                              <input type="text" id="your-note" name="fname" style="width: 60%;"/>
+                              <input type="text" id="your-note" name="fname"/>
                             </form>
                         </div>
                     </div>     
