@@ -66,7 +66,7 @@
                                 <div class="guide-team-content timeline col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-left: 25%;">
                                     <div class="row">
                                         
-                                         <div class="each-item">
+                                         <div class="each-item smaller-div">
                                             <div class="each-item-inner" style="width: 100%; padding: 20px; border: 0px;">
                                                 <h3 class="title">GENERAL</h3>
                                                 <p class="pera">wHhat is JCI Train?<br/>
@@ -75,7 +75,7 @@
                                             </div>
                                         </div> <!-- /.each-item -->
 
-                                        <div class="each-item">
+                                        <div class="each-item smaller-div">
                                             <div class="each-item-inner" style="width: 100%; padding: 20px; border: 0px;">
                                                 <h3 class="title">LEARN</h3>
                                                 <p class="pera">What are modules and lessons?<br/>
@@ -85,7 +85,7 @@
                                             </div>
                                         </div> <!-- /.each-item -->
 
-                                         <div class="each-item">
+                                         <div class="each-item smaller-div">
                                             <div class="each-item-inner" style="width: 100%; padding: 20px; border: 0px;">
                                                 <h3 class="title">SHARE</h3>
                                                 <p class="pera">How do I share my content?<br/>
@@ -94,7 +94,7 @@
                                             </div>
                                         </div> <!-- /.each-item -->
 
-                                         <div class="each-item">
+                                         <div class="each-item smaller-div">
                                             <div class="each-item-inner" style="width: 100%; padding: 20px; border: 0px;">
                                                 <h3 class="title">ACCOUNT</h3>
                                                 <p class="pera">How do I change my account picture?<br/>

@@ -26,7 +26,7 @@
 
                         <div class="col-md-6 col-sm-6" style="border: 0px; height: 10%;">
                             <div class="user-definitions-line-right" style=" width: 95%;">
-                                <img style="width: 100%; position: relative; width: 90%; border: 5px solid #3496DA;; border-radius: 100%; max-height: 250px; max-width: 250px;" class="user-image" src="http://localhost/jcilearn/workspace/assets/img/icons/profile-3.png" alt="Media Team Profile Image"/>
+                                <img style="width: 100%; position: relative; border: 5px solid #3496DA;; border-radius: 100%; max-height: 250px; max-width: 250px; height: 100%;" class="user-image" src="http://localhost/jcilearn/workspace/assets/img/icons/profile-3.png" alt="Media Team Profile Image"/>
                                 <img style="position: relative; top: -80px; min-width: 120px; height 80px; right: 0;" class="flag" src="http://localhost/jcilearn/workspace/assets/img/icons/flag-1.png" alt="Flag"/>
                               </div>
 

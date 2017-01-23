@@ -190,15 +190,15 @@
                         </div> <!-- /.comments -->
                     </div> <!-- /.each-features -->
 
-                    <div class="col-xs-12 each-features" style="padding-bottom: 150px;">
+                    <div class=" each-features" style="padding-bottom: 150px;">
 
-                        <div class="single-comment col-xs-12">
+                        <div class="single-comment ">
                             <div class="row single-comments-inner">
                                 <div class="down-buttons-lesson">
                                     <div class="col-md-1"></div>
                                     <div class="col-md-10">
-                                        <div class="lesson-button-organise col-sm-4 col-xs-12 col-md-4">
-                                            <div class="btn-form col-xs-4 text-center margin-t-50">
+                                        <div class="lesson-button-organise">
+                                            <div class="btn-form text-center col-md-4 col-sm-4 margin-t-50">
 
                                                 <a href="#" class="btn btn-border text-normal" data-toggle="modal" data-target="#myModal3">
                                                     <h3 style="font-size: 30px; line-height: 110%;" class="title"> Study </h3> 
@@ -227,14 +227,14 @@
                                             </div>   
                                         </div>  
 
-                                        <div class="lesson-button-organise col-sm-4 col-xs-12 col-md-4">
-                                            <div class="btn-form col-xs-4 text-center margin-t-50">
+                                        <div class="lesson-button-organise">
+                                            <div class="btn-form text-center col-md-4 col-sm-4 margin-t-50">
                                                 <a href="#" class="btn btn-border text-normal">Something here</a>
                                             </div>  
                                         </div> 
 
-                                        <div class="lesson-button-organise col-sm-4 col-xs-12 col-md-4">
-                                            <div class="btn-form col-xs-4 text-center margin-t-50">
+                                        <div class="lesson-button-organise">
+                                            <div class="btn-form text-center col-md-4 col-sm-4 margin-t-50">
 
                                                 <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
                                                     <h3 style="font-size: 30px; line-height: 110%;" class="title"> Mini Quiz </h3>
@@ -319,11 +319,12 @@
                                                                                   
                                                           </div>                                                      
                                                         </div>
-                                                        </div>
                                                     </div>
-                                                </div>  
-                                            </div> 
-                                        </div>                                            
+                                                </div>
+                                            </div>  
+                                        </div> 
+                                    </div>   
+
                                     <div class="col-md-1"></div>
                                 </div>
                             </div>

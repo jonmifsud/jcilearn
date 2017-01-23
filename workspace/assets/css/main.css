@@ -14965,12 +14965,21 @@ h6 {
   margin-left: auto;
   text-align: right; }
 
+.error-font {
+  font-size: 350px;
+  text-align: center; }
+
+.smaller-div {
+  width: 100%; }
+
 @media all and (min-width: 1025) {
   h3 {
     font-size: 25px;
     font-size: 2.5rem;
     line-height: 35px;
     line-height: 3.5rem; }
+  .error-font {
+    font-size: 300px; }
   .pera {
     font-size: 16px;
     font-size: 1.6rem;
@@ -14983,6 +14992,8 @@ h6 {
     font-size: 1.8rem;
     line-height: 28px;
     line-height: 2.8rem; }
+  .error-font {
+    font-size: 200px; }
   p {
     font-size: 16px;
     font-size: 1.6rem;
@@ -15025,9 +15036,14 @@ h6 {
   .row .comments-inner {
     margin-left: auto;
     margin-right: auto; }
+  .error-font {
+    font-size: 150px; }
   .box-border {
     width: 100% !important; }
   .box-border-text-left {
     padding-left: 10px !important; }
   .button-wrapper {
-    margin-left: 40%; } }
+    margin-left: 40%; }
+  .smaller-div {
+    width: 80%;
+    float: left; } }

@@ -7,7 +7,7 @@
 
      <xsl:template match="*[section/@handle='lesson']//entry" mode='studylesson'>
 
-        <div class="each-item" style="margin-left: auto; margin-right: auto; text-align: center; width: 70%;">
+        <div class="each-item div-max-size col-xs-12" style="margin-left: auto; margin-right: auto; text-align: center; width: 70%;">
             <div class="each-item-inner">
                 <div class="content-left col-md-8 col-sm-7">
 
@@ -39,7 +39,7 @@
                             <h3 class="title"><xsl:value-of select="/data/users/entry[@id = current()/profile/item/@id]/name"/></h3>
                             <div class="profile-meta">
                                <p class="blue-text-in-line" id="like"><i class="fa fa-heart-o"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
-                                <span id="likeOutput" value="0" style="font-size: 27px;">0</span>
+                                <span id="likeOutput" value="0" style="font-size: 27px;">0</span><br/>
                                 
                                 <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
                                 <span id="viewOutput" value="0" style="font-size: 27px;">0</span>

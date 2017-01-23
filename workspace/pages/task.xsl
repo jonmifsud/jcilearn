@@ -131,7 +131,7 @@
                                  </div>
                                 <div class="each-features">
                                     <h3 class="title-centre">YOUR NOTES</h3>
-                                    <div class="enter-text-field col-xs-12" style="width: 100%;">
+                                    <div class="enter-text-field col-xs-12" style="width: 100%; padding: 0px;">
                                         <form>
                                           <input type="text" id="your-note" name="fname"/>
                                         </form>

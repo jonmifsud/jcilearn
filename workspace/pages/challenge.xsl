@@ -32,8 +32,8 @@
                                 <!-- Start: Section Header -->
                                 <div class="section-header relative text-center" >
                                 
-                                    <h2 class="section-heading">Green Issues:</h2>
-                                    <p> finding a solution</p>
+                                    <h2 class="section-heading" style="text-transform: uppercase;"><xsl:value-of select="/data/challenge/entry/title"/></h2>
+                                        <p><xsl:value-of select="/data/challenge/entry/date"/></p>
                                 </div>     
                             </div>
                         </div>

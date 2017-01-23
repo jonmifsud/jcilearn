@@ -752,6 +752,14 @@
   text-align: right;
 }
 
+.error-font{
+    font-size: 350px;
+    text-align: center;
+}
+
+.smaller-div{
+    width: 100%;
+}
 // RESPONSIVE
 
 
@@ -762,6 +770,10 @@
       @include rem(line-height, 35px);
 
   }
+  .error-font{
+    font-size: 300px;
+  }
+
   .pera{
     @include rem(font-size,16px);
     @include rem(line-height, 16px);
@@ -774,6 +786,11 @@
       @include rem(line-height, 28px);
 
   }
+
+  .error-font{
+    font-size: 200px;
+  }
+
   p{
     @include rem(font-size,16px);
     @include rem(line-height, 16px);
@@ -824,6 +841,9 @@
     margin-right: auto;
   }
 
+  .error-font{
+    font-size: 150px;
+  }
   .box-border{
     width: 100% !important;
   }
@@ -836,4 +856,8 @@
     margin-left: 40%;
   }
 
+  .smaller-div{
+    width: 80%;
+    float: left;
+  }
 }
