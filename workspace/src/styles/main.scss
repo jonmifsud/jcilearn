@@ -760,6 +760,12 @@
 .smaller-div{
     width: 100%;
 }
+
+.no-left-padding{
+    @include breakpoint(max-width $screen-xs-max){
+        padding-left: 0px !important;
+    }
+}
 // RESPONSIVE
 
 

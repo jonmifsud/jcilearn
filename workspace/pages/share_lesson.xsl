@@ -10,7 +10,6 @@
 <xsl:import href="../sections/learnfilesubheader.xsl"/>
 <xsl:import href="../sections/sharelesson.xsl"/>
 
-
 <xsl:template match="/data">
             <!-- Start: Features Section 
             =================================-->
@@ -28,10 +27,11 @@
                         </div> <!-- /.each-features -->  
 
                         <div class="row" style="margin-top: 100px; ">
-                                        
-                            <div class="each-item col-sm-10">
+                            <div class="each-item col-sm-1 col-md-2"></div>           
+                            <div class="each-item col-sm-10 col-md-8">
                                 <xsl:apply-templates select="/data/lesson/entry[1]" mode="sharelesson"/>    
                             </div>
+                            <div class="each-item col-sm-1 col-md-2"></div>
                         </div>
 
                         <div class="btn-form col-xs-12 text-center margin-t-20">
@@ -44,22 +44,25 @@
                      <h3 class="title-centre" style="margin-top: 100px;">PENDING APPROVAL</h3><br/>
                         <div class="row" >
 
-                            <div class="each-item col-sm-10">
+                            <div class="each-item col-sm-1 col-md-2"></div>           
+                            <div class="each-item col-sm-10 col-md-8">
                                  <xsl:apply-templates select="/data/lesson/entry[4]" mode="sharelesson"/>   
                             </div>
+                            <div class="each-item col-sm-1 col-md-2"></div>  
 
-                                <div class="each-item col-sm-10">
-                                <h3 class="title-centre" style="margin-top: 100px;">PUBLISHED LESSON</h3><br/>
-                                     <div class="row">
-                                        <xsl:for-each select="/data/lesson/entry[4]">
-                                            <xsl:apply-templates select="current()" mode="list-item"/>
-                                        </xsl:for-each>
-                                    </div> 
-                                </div> <!-- /.each-item -->
+                            <div class="each-item col-sm-12">
+                            <h3 class="title-centre" style="margin-top: 100px;">PUBLISHED LESSON</h3><br/>
+                                 <div class="row">
+                                    <div class="each-item col-sm-1 col-md-2"></div>
+                                    <div class="each-item col-sm-10 col-md-8" style="padding: 0px;">
+                                    <xsl:for-each select="/data/lesson/entry[4]">
+                                        <xsl:apply-templates select="current()" mode="list-item"/>
+                                    </xsl:for-each>
+                                </div>
+                                </div> 
+                            </div> <!-- /.each-item -->
                         </div>
                     </div>
-
-                                
 
 	                 <div class="btn-form col-xs-12 text-center margin-t-20">
 	                 <p class="blue-text" style="margin-top: 100px;">Get inspected</p>

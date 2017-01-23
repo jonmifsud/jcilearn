@@ -14972,6 +14972,10 @@ h6 {
 .smaller-div {
   width: 100%; }
 
+@media (max-width: 767px) {
+  .no-left-padding {
+    padding-left: 0px !important; } }
+
 @media all and (min-width: 1025) {
   h3 {
     font-size: 25px;

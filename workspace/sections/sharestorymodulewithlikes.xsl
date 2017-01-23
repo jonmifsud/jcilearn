@@ -3,7 +3,7 @@
 
 
     <xsl:template match="*[section/@handle='story']//entry" mode='sharestorymodulewithlikes'>
-       <div class=" each-item-inner col-sm-10" style="padding: 0px; width: 82%; margin-bottom: 30px;">
+       <div class=" each-item-inner col-sm-10" style="padding: 0px; width: 100%; margin-bottom: 30px;">
            
             <div class="content-right col-xs-12 content-defult col-md-2" style=" overflow: hidden; padding: 0px;">
                 

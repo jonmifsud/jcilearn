@@ -67,7 +67,7 @@
                                     <div class="row">
                                         
                                          <div class="each-item smaller-div">
-                                            <div class="each-item-inner" style="width: 100%; padding: 20px; border: 0px;">
+                                            <div class="each-item-inner no-left-padding" style="width: 100%; padding: 20px; border: 0px;">
                                                 <h3 class="title">GENERAL</h3>
                                                 <p class="pera">wHhat is JCI Train?<br/>
                                                 How much does JCI Train cost?<br/>
@@ -75,8 +75,8 @@
                                             </div>
                                         </div> <!-- /.each-item -->
 
-                                        <div class="each-item smaller-div">
-                                            <div class="each-item-inner" style="width: 100%; padding: 20px; border: 0px;">
+                                        <div class="each-item smaller-div ">
+                                            <div class="each-item-inner no-left-padding" style="width: 100%; padding: 20px; border: 0px;">
                                                 <h3 class="title">LEARN</h3>
                                                 <p class="pera">What are modules and lessons?<br/>
                                                 can I drop out of a module?<br/>
@@ -86,7 +86,7 @@
                                         </div> <!-- /.each-item -->
 
                                          <div class="each-item smaller-div">
-                                            <div class="each-item-inner" style="width: 100%; padding: 20px; border: 0px;">
+                                            <div class="each-item-inner no-left-padding" style="width: 100%; padding: 20px; border: 0px;">
                                                 <h3 class="title">SHARE</h3>
                                                 <p class="pera">How do I share my content?<br/>
                                                 Why isn't my lesson automatically published?<br/>
@@ -95,7 +95,7 @@
                                         </div> <!-- /.each-item -->
 
                                          <div class="each-item smaller-div">
-                                            <div class="each-item-inner" style="width: 100%; padding: 20px; border: 0px;">
+                                            <div class="each-item-inner no-left-padding" style="width: 100%; padding: 20px; border: 0px;">
                                                 <h3 class="title">ACCOUNT</h3>
                                                 <p class="pera">How do I change my account picture?<br/>
                                                 How do I earn points and badges?<br/>

@@ -95,8 +95,8 @@
                 <div class="collapse navbar-collapse" id="js-navbar-menu">
                     <ul id="navbar-nav" class="nav navbar-nav navbar-right">
                         <li><a class="btn-big" href="#"><i class="fa fa-home-house-streamline"></i></a></li>
-                        <li class="active"><a class="btn-nav" href="/jcilearn/study/currentmodule/">Learn</a></li>
-                        <li><a class="btn-nav" href="/jcilearn/share/project/">Share</a></li>
+                        <li class="active"><a class="btn-nav" href="{/data/params/root}/study/currentmodule/">Learn</a></li>
+                        <li><a class="btn-nav" href="{/data/params/root}/share/project/">Share</a></li>
                         <li><a class="btn-big" href="#"><img class="img-responsive" src="{/data/params/workspace}/assets/img/icons/profile-4.png" alt=""/></a></li>
 
                     </ul>
@@ -126,12 +126,12 @@
 
                                 <h4 class="title">LEARN</h4>
                                 <ul class="nav link-group">
-                                    <li><a href="/jcilearn/explore/exploremodules/">Explore modules</a></li>
-                                    <li><a href="/jcilearn/explore/explorestories/">Explore stories</a></li>
-                                    <li><a href="/jcilearn/explore/exploreprojects/">Explore projects</a></li>
-                                    <li><a href="/jcilearn/collab">Collab</a></li>
-                                    <li><a href="/jcilearn/user/usercontent/">My Content</a></li>
-                                    <li><a href="/jcilearn/user">My Profile</a></li>
+                                    <li><a href="{/data/params/root}/explore/exploremodules/">Explore modules</a></li>
+                                    <li><a href="{/data/params/root}/explore/explorestories/">Explore stories</a></li>
+                                    <li><a href="{/data/params/root}/explore/exploreprojects/">Explore projects</a></li>
+                                    <li><a href="{/data/params/root}/collab">Collab</a></li>
+                                    <li><a href="{/data/params/root}/user/usercontent/">My Content</a></li>
+                                    <li><a href="{/data/params/root}/user">My Profile</a></li>
                                     <li><a href="/user/settings/">My Settings</a></li>
                                 </ul>
 
@@ -140,15 +140,15 @@
 
                                 <h4 class="title">SHARE</h4>
                                 <ul class="nav link-group">
-                                    <li><a href="/jcilearn/module/lesson/">Lesson</a></li>
-                                    <li><a href="/jcilearn/task">Task</a></li>
-                                    <li><a href="/jcilearn/module/">module</a></li>
-                                    <li><a href="/jcilearn/project/">Project</a></li>
-                                    <li><a href="/jcilearn/study/">Study</a></li>
-                                    <li><a href="/jcilearn/story/">Story</a></li>
-                                    <li><a href="/jcilearn/study/currentmodule/">study_currentmodule</a></li> 
-                                    <li><a href="/jcilearn/challenge/">Challenge</a></li>
-                                    <li><a href="/jcilearn/currentchallenge/">current challenge</a></li>                 
+                                    <li><a href="{/data/params/root}/module/lesson/">Lesson</a></li>
+                                    <li><a href="{/data/params/root}/task">Task</a></li>
+                                    <li><a href="{/data/params/root}/module/">module</a></li>
+                                    <li><a href="{/data/params/root}/project/">Project</a></li>
+                                    <li><a href="{/data/params/root}/study/">Study</a></li>
+                                    <li><a href="{/data/params/root}/story/">Story</a></li>
+                                    <li><a href="{/data/params/root}/study/currentmodule/">study_currentmodule</a></li> 
+                                    <li><a href="{/data/params/root}/challenge/">Challenge</a></li>
+                                    <li><a href="{/data/params/root}/currentchallenge/">current challenge</a></li>                 
                                 </ul>
 
                             </div> <!-- End: .each-section -->
@@ -156,14 +156,14 @@
 
                                 <h4 class="title"></h4>
                                 <ul class="nav link-group">
-                                    <li><a href="/jcilearn/dashboard/">Dashboard</a></li>
-                                    <li><a href="/jcilearn/notepad/">Notepad</a></li>
-                                    <li><a href="/jcilearn/share/lesson">share_lesson</a></li>
-                                    <li><a href="/jcilearn/share/project/">share_project</a></li>
-                                    <li><a href="/jcilearn/share/story/">share_story</a></li>
-                                    <li><a href="/jcilearn/share/lesson/edit-lesson/">share_edit_lesson</a></li>
-                                    <li><a href="/jcilearn/share/project/edit-project/">share_edit_project</a></li>
-                                    <li><a href="/jcilearn/share/story/edit-story/">share_edit_story</a></li>           
+                                    <li><a href="{/data/params/root}/dashboard/">Dashboard</a></li>
+                                    <li><a href="{/data/params/root}/notepad/">Notepad</a></li>
+                                    <li><a href="{/data/params/root}/share/lesson">share_lesson</a></li>
+                                    <li><a href="{/data/params/root}/share/project/">share_project</a></li>
+                                    <li><a href="{/data/params/root}/share/story/">share_story</a></li>
+                                    <li><a href="{/data/params/root}/share/lesson/edit-lesson/">share_edit_lesson</a></li>
+                                    <li><a href="{/data/params/root}/share/project/edit-project/">share_edit_project</a></li>
+                                    <li><a href="{/data/params/root}/share/story/edit-story/">share_edit_story</a></li>           
                                 </ul>
                                 
                             </div> <!-- End: .each-section -->
@@ -177,12 +177,12 @@
 
                                 <h4 class="title"></h4>
                                 <ul class="nav link-group">
-                                    <li><a href="/jcilearn/discussions/">Discussions</a></li>
-                                    <li><a href="/jcilearn/discussion">Discussion</a></li>
-                                    <li><a href="/jcilearn/help">help</a></li>
-                                    <li><a href="/jcilearn/landing">New Discussion</a></li>
-                                    <li><a href="/jcilearn/login">log in</a></li>
-                                    <li><a href="/jcilearn/errorpage">error page</a></li>
+                                    <li><a href="{/data/params/root}/discussions/">Discussions</a></li>
+                                    <li><a href="{/data/params/root}/discussion">Discussion</a></li>
+                                    <li><a href="{/data/params/root}/help">help</a></li>
+                                    <li><a href="{/data/params/root}/landing">New Discussion</a></li>
+                                    <li><a href="{/data/params/root}/login">log in</a></li>
+                                    <li><a href="{/data/params/root}/errorpage">error page</a></li>
                                 </ul>
                                 
                             </div> <!-- End: .each-section -->
