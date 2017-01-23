@@ -29,27 +29,36 @@
                                     </span>
                                 </div><!-- /.input-group -->
                             </form>
-                        </div> 
-                        <h2 class="section-heading">Making the best out of<br/>your weekly goal.</h2><br/><br/>
+                        </div>  
 
-                        <div class="guide-team-inner">
-                                    
-                                <div class="box-poligon" style=" width: 300px; height: 120px;">
-                                    <div class="box-poligon" style="max-width: 120px; height: 110px;">
-                                        <img src="assets/images/guide-team/profile-4.png" style="position: relative;"/>
-                                        <img src="assets/images/guide-team/flag-1.png" style="position: relative; max-width: 50px;"/>
-                                    </div>
-                                    <div class="box-poligon" style="max-width: 120px; height: 110px; text-align: left;">
-                                        <h3><xsl:value-of select="/data/discussion/entry/profile/item" /></h3>
-                                    </div>
+                        <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
+                            <div class="guide-team">
+                              <div class="guide-team-inner">
+
+                                <div class="col-mc-3 col-sm-3"></div>
+                                <div class="section-header relative text-center col-mc-6 col-sm-6 col-xs-12">
+                                  <h2 class="section-heading">Making the best out of your weekly goal.</h2>
                                 </div>
-                            <br/><xsl:value-of select="/data/discussion/entry/date/item" /><br/>
-                            <b style="color: #3496DA;">ACCOUNT</b>
-                              
-                        </div>
+
+                                <div class="lesson-definitions  col-sm-7 col-md-7" style="margin-top: -30px;">
+                                  <div class="lesson-top-picture">
+                                    <div class="media">
+                                      <div class="media-body-left">
+                                        <b>Zack</b>
+                                      </div>
+                                      <div class="media-body-left">
+                                        <img class="media-object profile-pic" src="http://localhost/jcilearn/workspace/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
+                                        <img class="flag put-flag-in-corner" src="http://localhost/jcilearn/workspace/assets/img/icons/flag-1.png" alt="Flag"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
 
                          <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-
 
                              <div class="lesson-text">
                              <br/>

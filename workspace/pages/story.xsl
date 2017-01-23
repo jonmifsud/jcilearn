@@ -60,13 +60,13 @@
                                     <div class="section-header relative text-center">
                                     
                                         <h2 class="section-heading" style="text-transform: uppercase;"><xsl:value-of select="/data/story/entry/title"/></h2>
-                                        <p><xsl:value-of select="/data/story/entry/date"/></p>
+                                        <p class="text-center"><xsl:value-of select="/data/story/entry/date"/></p>
                                     </div> 
                                     <div class="guide-team-inner">
                                         <div class="lesson-top-picture" >
                                             <div class="media">          			                             
                                                 <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px; position: apsolute;"/>
-                                                    <img class="flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>                                              
+                                                    <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>                                              
                                             </div>
                                         </div>
                                     </div>

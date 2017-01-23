@@ -59,7 +59,7 @@
                                     <div class="section-header relative text-center">
                                     
                                         <h2 class="section-heading" style="text-transform: uppercase;"><xsl:value-of select="/data/project/entry/title" /></h2>
-                                        <p class="center-text"><xsl:value-of select="/data/project/entry/date"/></p>
+                                        <p class="center-text text-center"><xsl:value-of select="/data/project/entry/date"/></p>
                                     </div> 
                                     <div class="guide-team-inner">
                                         <div class="lesson-definitions">
@@ -67,11 +67,11 @@
                                                 <div class="media">                               
                                                     <div class="media-body-left">
                                                         <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
-                                                            <img class="flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
+                                                            <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
                                                     </div>   
                                                     <div class="media-body-left">
                                                         <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
-                                                            <img class="flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
+                                                            <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
                                                     </div>
                                                 </div>      
                                             </div>

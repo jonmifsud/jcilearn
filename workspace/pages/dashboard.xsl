@@ -26,7 +26,7 @@
 		                        <h2 class="section-heading" style="margin-bottom: 6%;">Good morning, Nathan!</h2>
 
 		                        <div class="col-md-6 col-xs-12" style="border: 0px; height: 10%; margin-bottom: 30px;">
-			                       <div class="box-border-text-left" style="padding-left: 90px;">
+			                       <div class="box-border-text-left" style="padding-left: 70px;">
 			                            <h3 class="title"> YOUR NOTEPAD</h3><br/>
 			                            <p>"Leadership is not about strenght or size, unelss the strength and size in question are those of heart""</p>
 			                            <p class="pera">Some thext that I can not see clear I'll fix it.</p>
@@ -37,7 +37,7 @@
 			                        </div>
 		                        </div>
 		                        <div class="col-md-6 col-xs-12" style="border: 0px; height: 10%; margin-bottom: 30px;">
-		                           	<div class="box-border-text-left" style="overflow-y: scroll; height: 380px; padding-left: 90px;">
+		                           	<div class="box-border-text-left" style="overflow-y: scroll; height: 380px; padding-left: 70px;">
 			                            <h3 class="title">NOTIFICATIONS</h3><br/>
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
@@ -67,7 +67,7 @@
 		                        </div>
 		                        
 		                        <div class="col-md-7 col-xs-12" style="border: 0px; height: 10%; margin-bottom: 30px;">
-			                       <div class="box-border-text-left" style=" overflow-y: scroll; height: 380px; padding-left: 90px;">
+			                       <div class="box-border-text-left" style=" overflow-y: scroll; height: 380px; padding-left: 70px;">
 			                            <h3 class="title"> RECENT ACTIVITY<br/>IN YOUR NETWORK</h3><br/>
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
@@ -97,7 +97,7 @@
 			                        </div>
 		                        </div>
 		                        <div class="col-md-5 col-xs-12" style="border: 0px; height: 10%;">
-		                           	<div class="box-border-text-left" style="overflow-y: scroll; height: 380px; padding-left: 90px;">
+		                           	<div class="box-border-text-left" style="overflow-y: scroll; height: 380px; padding-left: 70px;">
 			                            <h3 class="title"> LEADERSHIP </h3><br/>
 			                            <div class="box-poligon" style="width: 100%; ">
 			                            1

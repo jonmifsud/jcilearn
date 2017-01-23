@@ -87,25 +87,18 @@
                         </div> <!-- /.comments -->
                     </div> <!-- /.each-features -->
 
-                    <div class="col-xs-12 each-features">
-                        <h3 class="title-centre">COLLABORATORS</h3>
-                        <div class="enter-text-field">
-                            <form>
-                              <input type="text" id="your-notes" name="fname"/>
-                            </form>
-
-                            <div class="col-xs-12 each-features">
-
-		                        <div class="single-comment col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-		                            <div class="row single-comments-inner">
-		                                <div class="btn-form col-xs-12 text-center margin-t-50">
-		                                    <a href="#" class="btn btn-border text-normal">Take on the challenge</a>
-		                                </div>
-		                                
-		                            </div>
-		                        </div> <!-- /.single-comment -->
-		                    </div>
-                        </div>
+                    <h3 class="text-center">COLLABORATION</h3>
+                    <div class="col-md-2"></div>
+                    <div class="enter-text-field col-md-8" style="height: 80px;">
+                        <form>
+                            <input type="text" id="your-notes" name="fname"/>
+                        </form>                       
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="row single-comments-inner">
+                        <div class="btn-form col-xs-12 text-center margin-t-50">
+                            <a href="#" class="btn btn-border text-normal">Take on the challenge</a>
+                        </div>                                  
                     </div>
                 </div> <!-- /.row -->
             </div> <!-- /.container -->

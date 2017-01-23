@@ -14976,6 +14976,11 @@ h6 {
   .no-left-padding {
     padding-left: 0px !important; } }
 
+.put-flag-in-corner {
+  bottom: 28px;
+  left: 30px;
+  position: relative; }
+
 @media all and (min-width: 1025) {
   h3 {
     font-size: 25px;
