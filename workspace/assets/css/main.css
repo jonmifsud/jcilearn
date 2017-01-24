@@ -11237,7 +11237,9 @@ h6 {
   display: inline-block;
   border: 2px solid #3496DA;
   position: relative;
-  border-radius: 20px; }
+  border-radius: 20px; 
+  /*height: 204px;*/
+}
 
 .each-item-inner-lesson {
   padding: 40px; }
@@ -15022,7 +15024,12 @@ h6 {
   .modal-content {
     width: 100% !important;
     margin-right: auto;
-    margin-left: 15% !important; } }
+    margin-left: 15% !important; } 
+  
+  .height-md-story-module{
+    height: 204px !important;
+  }
+  }
 
 @media all and (max-width: 639px) and (min-width: 320px) {
   h3 {

@@ -8,7 +8,7 @@
     <xsl:template match="*[section/@handle='story']//entry" mode='story-module-item'>
 
         <div class="each-item col-sm-10 col-md-12">
-            <div class=" each-item-inner">
+            <div class=" each-item-inner height-md-story-module">
                 <div class="content-right col-xs-12 content-defult col-md-2" style=" overflow: hidden; padding: 0px;">
                     
                    <img class="media-object features-image" src="{/data/params/workspace}/assets/img/helppic.png" alt="Media Team Image" style="max-width: 100%; height: 200px; max-height: 200px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;"/>

@@ -43,7 +43,7 @@
                                     </div> 
                                     <!-- End: Section Header -->
 
-                                    <div class="guide-team-content timeline col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                                    <div class="guide-team-content timeline col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="padding-left: 0px;">
                                         <div class="row">
                                             <xsl:for-each select="/data/lesson/entry"> 
                                                 <xsl:if test="position() &lt;=4">      <!-- list of modules in for each look -->

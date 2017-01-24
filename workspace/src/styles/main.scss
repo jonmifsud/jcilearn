@@ -897,3 +897,20 @@
     float: left;
   }
 }
+
+
+.padding-right-box{
+    @include breakpoint(max-width $screen-md-max){
+        padding-right: 60px;
+    }
+    @include breakpoint(max-width $screen-xs-max){
+        padding-right: 0px;
+    }
+    
+}
+
+.height-md-story-module{
+    @include breakpoint(max-width $screen-md-max){
+        height: 204px;
+    }
+}

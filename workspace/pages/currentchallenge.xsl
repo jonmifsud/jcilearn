@@ -73,8 +73,8 @@
                             <p class="sub-heading">Looking for more?</p>
                         </div> 
 
-                        <div class="modules-slider">
-                            <div class="modules-slider-wrapper owl-carousel">
+                        <div class="stories-slider">
+                            <div class="stories-slider-wrapper owl-carousel">
                                 <xsl:for-each  select="/data/challenge/entry">
                                     <xsl:apply-templates select="current()" mode="currentchallengemodule" />
                                 </xsl:for-each>

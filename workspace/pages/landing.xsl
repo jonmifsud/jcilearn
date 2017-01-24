@@ -186,7 +186,7 @@
                             <div class="study-timeline-progress" style="margin-top: 10px;"></div>
 
                             <div class="line-separater" ></div>
-                            <div class="box-border" style=" width: 100%; height: 20%; border: 0px; ">
+                            <div class="box-border padding-right-box" style=" width: 100%; height: 20%; border: 0px; ">
                                 <div class="col-xs-1 col-sm-2 col-md-2"></div>
                                 <div class="box-border col-xs-12 col-sm-3 col-md-5" style="width: 50%; border: 0px; padding-right: 0px;">
                                     <p class="blue-text" style="text-align: left; font-size: 35px; line-height: 35px; margin-top: 7%"><b>Learn</b> the skills, then <b>share</b> them</p>
