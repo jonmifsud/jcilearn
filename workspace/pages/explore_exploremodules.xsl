@@ -16,7 +16,7 @@
             =================================-->
             <div class="features-section">
                 <div class="container">
-                    <div class="row features-item section-separator">
+                    <div class="row features-item section-separator" style="padding-bottom: 10px;">
 
                         <xsl:call-template name="learnfileheader"/>  
 
@@ -27,7 +27,7 @@
                             <div class="form-group input-outer">
                                 <div class="select-outer">
                                     <select class="form-control contact-plan">
-                                        <option value="subject1"> disabled selected>Interest</option>
+                                        <option value="subject1">Interest</option>
                                         <option value="BusinessConsulting">Business consulting</option>
                                         <option value="TextConsulting">Text consulting</option>
                                         <option value="Advisory">Advisory</option>
@@ -38,7 +38,7 @@
                             <div class="form-group input-outer">
                                 <div class="select-outer">
                                     <select class="form-control contact-plan">
-                                        <option value="subject1"> disabled selected>Level</option>
+                                        <option value="subject1"> Level</option>
                                         <option value="BusinessConsulting">consulting</option>
                                         <option value="TextConsulting">Text</option>
                                         <option value="Advisory">Advisory</option>
@@ -50,18 +50,18 @@
 
                     </div> <!-- /.each-features -->
 
-                    <div class="col-xs-12 each-features text-center">
+                    <div class="col-xs-12 each-features text-center" style="margin-bottom: 20px;">
 
 
                         <div class="modules-slider">
-                            <div class="modules-slider-wrapper owl-carousel">
+                            <div class="modules-slider-wrapper three-slides owl-carousel">
                                 <xsl:apply-templates select="/data/lesson/entry" mode="modules"/>
                             </div> <!-- /.modules-slider-wrapper -->
                         </div> <!-- /.modules-slider -->
 
                     </div> <!-- /.each-features -->
 
-                    <div class="col-xs-12 each-features text-center">
+                    <div class="col-xs-12 each-features text-center" style="margin-bottom: 80px;">
                         
                         <form class="single-form search-form" action="" method="">
                             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">

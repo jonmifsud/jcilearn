@@ -2,12 +2,14 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../sections/user.xsl"/>
+<xsl:import href="../sections/likeviewsoutput.xsl"/>
+<xsl:import href="../sections/likeviews.xsl"/>
 
     <xsl:template match="*[section/@handle='challenge']//entry" mode='challengemodule'>
 
         <div class="each-item">
             <div class="each-item-inner">
-                <div class="content-left col-md-8 col-sm-7">
+                <div class="content-left col-md-9 col-sm-7">
 
                     <div class="media">
                         <div class="media-left">
@@ -25,10 +27,20 @@
                 </div> <!-- /.content-right -->
                 <div class="content-right content-defult col-sm-3">
                     
-                    <div class="profile-meta">
-                        <p><i class="fa fa-man-people-streamline-user"></i>Hard</p>
-                        <p><i class="fa fa-like-love-streamline"></i>Coded</p>
-                    </div>
+                    <div class="profile-meta" style="margin-top: 0px;">
+                                <p class="blue-text-in-line" id="like" data-entry='{@id}'>
+
+                                <i class="fa fa-heart-o"></i>
+                                <span id="likeOutput" value="0" style="font-size: 27px;">0</span>
+                                <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>                                    
+                                </p>
+                                
+                                
+                                <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
+                                <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
+                                </p>
+                                
+                            </div>
 
                 </div> <!-- /.content-left -->
             </div>

@@ -15,7 +15,7 @@
             =================================-->
     <div class="features-section">
         <div class="container">
-            <div class="row features-item section-separator">
+            <div class="row features-item section-separator" style="padding-bottom: 0px;">
 
                     <button class="counter1"> counter</button>
 
@@ -58,21 +58,21 @@
                                             <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
                                                 <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
                                                 <p class="blue-text"><b>LESSON</b></p>
-                                                <div class="check-box-landing">
+                                                <div class="check-box" style="margin-left: 40%;">
                                                      
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
                                                 <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
                                                 <p class="blue-text"><b>TRAINER</b></p>
-                                                <div class="check-box-landing">
+                                                <div class="check-box" style="margin-left: 40%;">
                                                      
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
                                                 <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
                                                 <p class="blue-text"><b>MEMBER</b></p>
-                                                <div class="check-box-landing">
+                                                <div class="check-box" style="margin-left: 40%;">
                                                      
                                                 </div>
                                             </div>
@@ -91,21 +91,21 @@
                                             <div class="col-md-4" style="border: 0px; height: 10%;">
                                                 <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
                                                 <p class="blue-text"><b>COMMUNITY NEEDS</b></p>
-                                                <div class="check-box-landing">
+                                                <div class="check-box" style="margin-left: 40%;">
                                                     
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
                                                 <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
                                                 <p class="blue-text"><b>GLOBAL ISSUES</b></p>
-                                                <div class="check-box-landing">
+                                                <div class="check-box" style="margin-left: 40%;">
                                                      
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
                                                 <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
                                                 <p class="blue-text"><b>CULTURAL EXCHANGE</b></p>
-                                                <div class="check-box-landing">
+                                                <div class="check-box" style="margin-left: 40%;">
                                                      
                                                 </div>
                                             </div>
@@ -114,14 +114,14 @@
                                             <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
                                                 <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="width: 100px;"/>
                                                 <p class="blue-text"><b>TRAINING</b></p>
-                                                <div class="check-box-landing">
+                                                <div class="check-box" style="margin-left: 40%;">
                                                      
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
                                                 <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
                                                 <p class="blue-text"><b>LEADERSHIP</b></p>
-                                                <div class="check-box-landing">
+                                                <div class="check-box" style="margin-left: 40%;">
                                                      
                                                 </div>
                                             </div>
@@ -153,10 +153,10 @@
     	                                    <p class="blue-text" style="margin-bottom: 0px;">Be the best <b> active citizen</b> you can be.</p><br/><br/>
                                         </div>
                                         <div class="col-xs-12 col-md-12" style="margin-bottom: 10px;">
-	                                       <a href="#" class="btn btn-fill ">Start learning</a>
+	                                       <a href="#" class="btn btn-fill text-normal">Start learning</a>
                                         </div>
                                         <div class="col-xs-12 col-md-12">
-    	                                    <a href="#landing-separator-1" class="btn btn-border">Tell me more</a>
+    	                                    <a href="#landing-separator-1" class="text-normal btn btn-border">Tell me more</a>
                                         </div>
 	                                </div>
                                 </div>
@@ -169,13 +169,13 @@
                             <div class="box-border" style=" width: 90%; height: 20%; border: 0px; ">
                                 <div class="col-xs-1 col-sm-1 col-md-1"></div>
                                 <div class="box-border col-xs-12 col-sm-4 col-md-4" style="width: 30%; border: 0px;">
-                                    <img class="resize-picture" src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="margin-top: 30%; width: 100%;"/>
+                                    <img class="resize-picture" src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="margin-top: 30%; width: 60%;"/>
                                 </div>
 
                                 <div class="box-border col-xs-12 col-sm-7 col-md-6" style="width: 50%; border: 0px; padding-right: 0px;">
                                     <p class="blue-text" style="text-align: left; font-size: 40px; line-height: 110%; margin-top: 7%"><b style="font-size: 30px; line-height: 0px;">Today's young leaders training tomorrow's.</b></p>
-                                    
-                                    <br/>
+                                    <div class="study-timeline-progress" style="margin-top: 0px; height: 4px; width: 50%;"></div>
+                                    <br/><br/>
                                     <p style="text-align: left;">Explore Enriche <span style="color: #3489DA;">JCI</span><span style="color: orange;">Train</span>'s database of curated lessons, challenges, past projects and shared experiences contributed by JCI members themselves themselves themselves.</p>
                                 </div>
                                 
@@ -186,16 +186,16 @@
                             <div class="study-timeline-progress" style="margin-top: 10px;"></div>
 
                             <div class="line-separater" ></div>
-                            <div class="box-border padding-right-box" style=" width: 100%; height: 20%; border: 0px; ">
+                            <div class="box-border padding-right-box" style=" width: 100%; border: 0px; margin-top: 70px;">
                                 <div class="col-xs-1 col-sm-2 col-md-2"></div>
-                                <div class="box-border col-xs-12 col-sm-3 col-md-5" style="width: 50%; border: 0px; padding-right: 0px;">
+                                <div class="box-border padding-right-landing col-xs-12 col-sm-3 col-md-5" style="width: 50%; border: 0px;">
                                     <p class="blue-text" style="text-align: left; font-size: 35px; line-height: 35px; margin-top: 7%"><b>Learn</b> the skills, then <b>share</b> them</p>
-                                    
-                                    <br/>
+                                    <div class="study-timeline-progress" style="margin-top: 0px; height: 5px; width: 50%;"></div>
+                                    <br/><br/>
                                     <p style="text-align: left;">Every active citizen has something valuable to say.</p>
                                 </div>
-                                <div class="box-border col-xs-12 col-sm-7 col-md-5" style="width: 30%; border: 0px; padding: 0px;">                                    
-                                    <div class="btn-form col-xs-4 text-center margin-t-50">
+                                <div class="box-border col-xs-12 col-sm-7 col-md-5" style="width: 30%; border: 0px; padding: 0px; ">                                    
+                                    <div class="btn-form col-xs-4 text-center margin-t-50 btn-down-positon">
                                         <a href="#" class="btn btn-border text-normal">Get started</a>
                                     </div>
                                 </div>                                

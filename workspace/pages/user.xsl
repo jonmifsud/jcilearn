@@ -5,6 +5,7 @@
 <xsl:import href="../utilities/master.xsl"/>
 <xsl:import href="../sections/sectionmodule.xsl"/>
 <xsl:import href="../sections/comment.xsl"/>
+<xsl:import href="../sections/modules.xsl"/>
 <xsl:import href="../sections/learnfilesubheader.xsl"/>
 <xsl:import href="../sections/modulesstory.xsl"/>
 <xsl:import href="../sections/studyprofile.xsl"/>
@@ -22,21 +23,19 @@
                         <xsl:call-template name="learnfilesubheader"/> 
 
                         <div class="col-xs-12 each-features">
-                             <h2 class="section-heading" style="margin-bottom: 6%;">Good morning, Nathan!</h2>
-
                             
                             <div class="col-md-5 col-sm-6" style="border: 0px; height: 10%;">
-                                <div class="user-definitions-line-right" style=" width: 100%;">
+                                 <div class="user-definitions-line-right" style=" width: 100%;">
                                     <img style="width: 110%; position: relative; border: 5px solid #3496DA;; border-radius: 100%; max-height: 250px; max-width: 250px;" class="user-image" src="http://localhost/jcilearn/workspace/assets/img/icons/profile-3.png" alt="Media Team Profile Image"/>
                                     <img style="position: relative; top: -80px; min-width: 120px; height 80px; right: 0;" class="flag" src="http://localhost/jcilearn/workspace/assets/img/icons/flag-1.png" alt="Flag"/>
-                                  </div>
+                                 </div>
 
                             </div>
                             <div class="col-md-5 col-sm-6" style="border: 0px; height: 10%;">
                                 <div class="user-definitions-line-left" style="width: 100%;">
                                   <div class="media-body">
                                     <button type="button" class="btn  btn-lg" data-toggle="modal" data-target="#myModal">
-                                      <h3 style="font-size: 30px; line-height: 110%;" class="title">Zack<br/>Joules Enixey</h3>
+                                      <h3 style="font-size: 30px; line-height: 110%; float: left;" class="title">Zack<br/>Joules Enixey</h3>
                                     </button>
                                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                       <div class="modal-dialog" role="document">
@@ -91,11 +90,17 @@
                         
                         <div class="col-md-5 col-sm-5" style="border: 0px; height: 10%;">
                            <div class="user-definitions-line-right" style="width: 100%;">
-                            <img style="padding: 5px; display: inline-block; text-align: center;" class="media-object features-image" src="http://localhost/jcilearn/workspace/assets/img/icons/icon-1.png" alt="Media Team Image"/>
-                            <img style="padding: 5px; display: inline-block; text-align: center;" class="media-object features-image" src="http://localhost/jcilearn/workspace/assets/img/icons/icon-2.png" alt="Media Team Image"/>
-                            <br/>
-                            <br/>
-                            <p style="line-height: 100%; text-align: right; font-size: 10px;"> andomtexttotype random text to type r random<br/>randommmmm randomrandomrandom</p>
+                              <div class="col-xs-12 col-md-12">
+                              <div class="col-md-8 col-xs-8">
+                               <img style="padding: 5px; display: inline-block; text-align: center;" class="media-object features-image" src="http://localhost/jcilearn/workspace/assets/img/icons/icon-1.png" alt="Media Team Image"/>
+                              </div>
+                              <div class="col-md-4 col-xs-4">
+                               <img style="padding: 5px; display: inline-block; text-align: center;" class="media-object features-image" src="http://localhost/jcilearn/workspace/assets/img/icons/icon-2.png" alt="Media Team Image"/>
+                              </div>
+                              </div>
+                              <div class="col-xs-12 col-md-12">
+                              <p style="line-height: 100%; text-align: right; font-size: 25px; margin-top: 30px;"> Medical student at the University of Malta, hell bent on saving the Maltese countryside.</p>
+                              </div>
                           </div>
                         </div>
                         <div class="col-md-5 col-sm-5" style="border: 0px; height: 10%;">
@@ -104,11 +109,13 @@
                             <div class="progress-wrapper-div">
                               <div class="progress-div"></div>
                             </div>
-                            <p class="colored-text"> sustainability</p>
+                            <br/>
+                            <p class="colored-text"> ACTIVE CITIZENSHIP</p>
                             <div class="progress-wrapper-div">
                               <div class="progress-div"></div>
                             </div>
-                            <p class="colored-text"> sustainability</p>
+                            <br/>
+                            <p class="colored-text"> LEADERSHIP</p>
                             <div class="progress-wrapper-div">
                               <div class="progress-div"></div>
                             </div>
@@ -119,96 +126,131 @@
 
                    <div class="col-xs-12 each-features">
                         <div class="col-md-8 col-sm-8 col-xs-12" style="border: 0px; height: 10%;">
-                            <div class="box-border-text-left" style="overflow-y: scroll; height: 380px; padding-left: 50px;">
-                                <h3 class="title">NOTIFICATIONS</h3><br/>
-                                <div class="box-poligon" style="width: 100%; ">
-                                    <div class="box-poligon" style="width: 20%; ">
-                                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
-                                    </div>
-                                    <div class="box-poligon" style="width: 60%;">
-                                        <p class="pera">James published his tory: Leading JCI in one of the smallest countries in the world.</p>
-                                    </div>
+                            <div class="box-border-text-left" style=" height: 380px; padding-left: 50px;">
+                                <h3 class="title">RECENT ACTIVITY</h3><br/>
+                                <div style="overflow-y: scroll; height: 300px; ">
+                                  <div class="box-poligon" style="width: 100%; ">
+                                      <div class="box-poligon" style="width: 20%; ">
+                                          <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+                                      </div>
+                                      <div class="box-poligon" style="width: 60%;">
+                                          <p class="pera">levelled up in 'Introduction to Leadership'.</p>
+                                      </div>
+                                  </div>
+                                   <div class="box-poligon" style="width: 100%; ">
+                                      <div class="box-poligon" style="width: 20%; ">
+                                          <img src="{/data/params/workspace}/assets/img/icons/icon-4.png" />
+                                      </div>
+                                      <div class="box-poligon" style="width: 60%;">
+                                          <p class="pera"><xsl:value-of select="/data/users/entry/name"/> obtained his Global Issues badge!</p>
+                                      </div>
+                                  </div>
+                                   <div class="box-poligon" style="width: 100%; ">
+                                      <div class="box-poligon" style="width: 20%; ">
+                                          <img src="{/data/params/workspace}/assets/img/icons/icon-2.png" />
+                                      </div>
+                                      <div class="box-poligon" style="width: 60%;">
+                                          <p class="pera">favourited a story.</p>
+                                      </div>
+                                  </div>
+                                  <div class="box-poligon" style="width: 100%; ">
+                                      <div class="box-poligon" style="width: 20%; ">
+                                          <img src="{/data/params/workspace}/assets/img/icons/icon-1.png" />
+                                      </div>
+                                      <div class="box-poligon" style="width: 60%;">
+                                          <p class="pera">favourited a story.</p>
+                                      </div>
+                                  </div>   
                                 </div>
-                                 <div class="box-poligon" style="width: 100%; ">
-                                    <div class="box-poligon" style="width: 20%; ">
-                                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
-                                    </div>
-                                    <div class="box-poligon" style="width: 60%;">
-                                        <p class="pera">James published his tory: Leading JCI in one of the smallest countries in the world.</p>
-                                    </div>
-                                </div>
-                                 <div class="box-poligon" style="width: 100%; ">
-                                    <div class="box-poligon" style="width: 20%; ">
-                                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
-                                    </div>
-                                    <div class="box-poligon" style="width: 60%;">
-                                        <p class="pera">James published his tory: Leading JCI in one of the smallest countries in the world.</p>
-                                    </div>
-                                </div>                                       
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12" style="border: 0px; height: 10%;">
-                            <div class="box-border-text-left" style="overflow-y: scroll; height: 380px; padding-left: 50px;">
-                                <h3 class="title"> LEADERSHIP </h3><br/>
-                                <div class="box-poligon" style="width: 100%; ">
-                                1
-                                    <div class="box-poligon" style="width: 20%; ">                                
-                                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+                            <div class="box-border-text-left" style="height: 380px; padding-left: 50px;">
+                                <h3 class="title"> COLLABORATION </h3><br/>
+                                <div style="overflow-y: scroll; height: 300px; ">
+                                <div class="box-poligon collaboration-user-box">                                
+                                    <div class="box-poligon" style="width: 35%; ">                                
+                                        <div class="media-body-left">
+                                            <img class="media-object profile-pic smaller-profile-picture" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
+                                                <img class="flag put-flag-in-corner-small" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  style="width: 60%;" alt="Flag"/>
+                                        </div> 
                                     </div>
-                                    <div class="box-poligon" style="width: 50%;">
-                                        <span style="color: #f37121;font-weight:bold; float: left; font-size: 20px">580XP</span>
-                                        <span style="color: #3496DA; size: 15px; font-weight: bold;"><br/>50XP</span>
-                                    </div>
-                                </div>
-                               <div class="box-poligon" style="width: 100%; ">
-                                2
-                                    <div class="box-poligon" style="width: 20%; ">                                
-                                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
-                                    </div>
-                                    <div class="box-poligon" style="width: 50%;">
-                                        <span style="color: #f37121;font-weight:bold; float: left; font-size: 20px">580XP</span>
-                                        <span style="color: #3496DA; size: 15px; font-weight: bold;"><br/>50XP</span>
+                                    <div class="box-poligon">
+                                        <div class="media-body-left" style="padding-left: 0px;">
+                                          <p class="blue-text" style="font-size: 20px; float: left;">
+                                          <b style="float: left;"><xsl:value-of select="/data/users/entry/name"/></b>
+                                          <br/>
+                                          <b><xsl:value-of select="/data/users/entry/surname"/></b>
+                                          </p>
+                                        </div> 
                                     </div>
                                 </div>
-                                <div class="box-poligon" style="width: 100%; ">
-                                3
-                                    <div class="box-poligon" style="width: 20%; ">                                
-                                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+                                <div class="box-poligon collaboration-user-box">                                
+                                    <div class="box-poligon" style="width: 35%; ">                                
+                                        <div class="media-body-left">
+                                            <img class="media-object profile-pic smaller-profile-picture" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
+                                                <img class="flag put-flag-in-corner-small" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  style="width: 60%;" alt="Flag"/>
+                                        </div> 
                                     </div>
-                                    <div class="box-poligon" style="width: 50%;">
-                                        <span style="color: #f37121;font-weight:bold; float: left; font-size: 20px">580XP</span>
-                                        <span style="color: #3496DA; size: 15px; font-weight: bold;"><br/>50XP</span>
+                                    <div class="box-poligon">
+                                        <div class="media-body-left" style="padding-left: 0px;">
+                                          <p class="blue-text" style="font-size: 20px; float: left;">
+                                          <b style="float: left;"><xsl:value-of select="/data/users/entry/name"/></b>
+                                          <br/>
+                                          <b><xsl:value-of select="/data/users/entry/surname"/></b>
+                                          </p>
+                                        </div> 
                                     </div>
                                 </div>
-                                <div class="box-poligon" style="width: 100%; ">
-                                4
-                                    <div class="box-poligon" style="width: 20%; ">                                
-                                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+                                <div class="box-poligon collaboration-user-box">                                
+                                    <div class="box-poligon" style="width: 35%; ">                                
+                                        <div class="media-body-left">
+                                            <img class="media-object profile-pic smaller-profile-picture" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
+                                                <img class="flag put-flag-in-corner-small" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  style="width: 60%;" alt="Flag"/>
+                                        </div> 
                                     </div>
-                                    <div class="box-poligon" style="width: 50%;">
-                                        <span style="color: #f37121;font-weight:bold; float: left; font-size: 20px">580XP</span>
-                                        <span style="color: #3496DA; size: 15px; font-weight: bold;"><br/>50XP</span>
+                                    <div class="box-poligon">
+                                        <div class="media-body-left" style="padding-left: 0px;">
+                                          <p class="blue-text" style="font-size: 20px; float: left;">
+                                          <b style="float: left;"><xsl:value-of select="/data/users/entry/name"/></b>
+                                          <br/>
+                                          <b><xsl:value-of select="/data/users/entry/surname"/></b>
+                                          </p>
+                                        </div> 
                                     </div>
+                                </div>
+                                <div class="box-poligon collaboration-user-box">                                
+                                    <div class="box-poligon" style="width: 35%; ">                                
+                                        <div class="media-body-left">
+                                            <img class="media-object profile-pic smaller-profile-picture" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
+                                                <img class="flag put-flag-in-corner-small" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  style="width: 60%;" alt="Flag"/>
+                                        </div> 
+                                    </div>
+                                    <div class="box-poligon">
+                                        <div class="media-body-left" style="padding-left: 0px;">
+                                          <p class="blue-text" style="font-size: 20px; float: left;">
+                                          <b style="float: left;"><xsl:value-of select="/data/users/entry/name"/></b>
+                                          <br/>
+                                          <b><xsl:value-of select="/data/users/entry/surname"/></b>
+                                          </p>
+                                        </div> 
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>                                    
                         
                     <div class="col-xs-12 each-features">
-                        <h2 class="section-heading">CURRENTLY ENROLLED IN: </h2><br/>
-                        <div class="col-md-3 col-sm-2"></div>
-                        <div class="col-md-3 col-sm-4 col-xs-6" style="border: 0px;">                            
-                            <div class="box-border" style="width: 100%; padding: 20px; height: 20%;" >
-                                <img style="padding: 5px; display: inline-block; text-align: center; width: 80%" class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-4.png" alt="Media Team Image"/>
-                                <h3 class="title"><xsl:value-of select="/data/lesson/entry/title"/></h3>
-                            </div>
+                        <h3 class="title-centre" style="padding-bottom: 20px;">CURRENTLY ENROLLED IN: </h3>
+                        <div class="col-xs-1 col-md-2"></div>
+                        <div class="col-xs-1 col-md-4">
+                           <xsl:apply-templates select="/data/lesson/entry[1]" mode="modules"/>
                         </div>
-                        <div class="col-md-3  col-sm-4 col-xs-6" style="border: 0px; ">                            
-                            <div class="box-border" style="width: 100%; padding: 20px; height: 20%;" >
-                                <img style="padding: 5px; display: inline-block; text-align: center; width: 80%" class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-2.png" alt="Media Team Image"/>
-                                <h3 class="title"><xsl:value-of select="/data/lesson/entry/title"/></h3>
-                            </div>
+                        <div class="col-xs-1 col-md-4">
+                           <xsl:apply-templates select="/data/lesson/entry[2]" mode="modules"/>
                         </div>
+                        <div class="col-xs-1 col-md-3"></div>
                     </div>                    
                 </div> <!-- /.row -->
             </div> <!-- /.container -->

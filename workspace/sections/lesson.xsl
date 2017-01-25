@@ -37,7 +37,7 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-right -->
-                <div class="content-right col-md-4 col-sm-5">
+                <div class="content-right col-md-4 col-sm-5" style="padding-left: 0px;">
                     
                     <div class="media">
                         <div class="media-left">

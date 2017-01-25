@@ -26,11 +26,8 @@
                 </div> <!-- /.content-right -->
                 <div class="content-right content-defult col-sm-3">
                     
-                    <div class="profile-meta">
-                        <div class="col-xs-6 col-md-12">
-                        <p><i class="fa fa-man-people-streamline-user"></i>Hard</p></div>
-                        <div class="col-xs-6 col-md-12">
-                        <p><i class="fa fa-like-love-streamline"></i>Coded</p></div>
+                    <div class="profile-meta" style="margin-top: 0px;">
+                        <xsl:apply-templates select="/data/lesson/entry[1]" mode="likeviews"/>
                     </div>
 
                 </div> <!-- /.content-left -->

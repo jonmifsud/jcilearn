@@ -11261,8 +11261,9 @@ h6 {
   margin-top: 8px;
   margin-bottom: 0px;
   text-transform: uppercase;
-  font-size: 10pt;
-  color: #f37121; }
+  font-size: 25px;
+  color: #f37121;
+  padding-bottom: 10px; }
 
 .progress-div {
   width: 80%;
@@ -11654,7 +11655,6 @@ h6 {
   position: absolute;
   height: 100%;
   width: 1px;
-  left: -1px;
   top: 0; }
 
 .left {
@@ -11733,8 +11733,14 @@ h6 {
   min-height: 50px;
   border: 2px solid #3496DA; }
 
-#your-note {
+#your-note-two {
   width: 80%;
+  height: 55px;
+  min-height: 300px;
+  border: 2px solid #3496DA; }
+
+#your-note-two {
+  width: 100%;
   height: 55px;
   min-height: 300px;
   border: 2px solid #3496DA; }
@@ -11815,6 +11821,19 @@ h6 {
   display: inline-block; }
 
 .box-border {
+  border: 2px solid #3496DA;
+  width: 28%;
+  height: 400px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 20px;
+  overflow: hidden; }
+
+.box-border-likes-views {
   border: 2px solid #3496DA;
   width: 28%;
   height: 400px;
@@ -12932,7 +12951,6 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   text-align: center;
   height: 50%;
   position: relative;
-  border-radius: 20px;
   overflow: hidden;
   max-width: 60%;
   display: inline-block;
@@ -13074,7 +13092,7 @@ body {
   color: #646464;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 24px;
+  line-height: 27px;
   overflow-x: hidden !important;
   text-align: left;
   position: relative;
@@ -14973,8 +14991,73 @@ h6 {
 .smaller-div {
   width: 100%; }
 
+.padding-right-landing{
+  padding-right: 16%;
+  padding-left: 5%;
+}
 
+.btn-down-positon{
+  margin-top: 0%;
+}
 
+.user-add-button{
+  border: 2px solid #3489DA;
+  width: 100px;
+  height: 60px; 
+  padding: 5%; 
+  border-radius: 10%; 
+  margin-top: 20px;
+}
+
+.collaboration-user-box{
+  width: 100%;
+  height: 90px;
+}
+
+.like-views-div{
+  display: inline-block !important; 
+  margin-top: 10px; 
+  font-size: 50px; 
+  margin-left: 10px; 
+  margin-right: 15px;
+}
+
+.orange-text{
+  color: #f37121;
+  font-weight:bold; 
+  float: left; 
+  font-size: 20px;
+}
+
+.smaller-profile-picture{
+  width: 70px !important;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+
+}
+
+.drop-down-button-on-project{
+  border: 2px solid #3496DA; 
+  border-radius: 20px;
+}
+
+#panel {
+    display: none;
+}
+
+.put-flag-in-corner-small{
+  bottom: 28px;
+  left: 14px;
+  position: relative; 
+  width: : 20px;
+  }
+
+  .put-flag-in-corner-small img{
+    width: 60%!important;
+  }
 
 @media (max-width: 767px) {
   .no-left-padding {
@@ -15029,6 +15112,8 @@ h6 {
   .height-md-story-module{
     height: 204px !important;
   }
+
+
   }
 
 @media all and (max-width: 639px) and (min-width: 320px) {
@@ -15048,6 +15133,8 @@ h6 {
     font-size: 2.5rem;
     line-height: 20px;
     line-height: 2rem; }
+
+
   .blue-text {
     font-size: 16px;
     font-size: 1.6rem;
@@ -15081,7 +15168,15 @@ h6 {
   .max-width{
     width: 100% !important;
   }
+
   
+  .padding-right-landing{
+    padding-right: 0px !important;
+  }
+  
+  .btn-down-positon{
+    margin-top: 0% !important;
+  }
 
 
   }

@@ -2,6 +2,8 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
+<xsl:import href="../sections/likeviewsoutput.xsl"/>
+<xsl:import href="../sections/likeviews.xsl"/>
 <xsl:import href="../sections/user.xsl"/>
 
         <xsl:template match="*[section/@handle='lesson']//entry" mode='lesson-module-item'>
@@ -27,10 +29,23 @@
                 </div> <!-- /.content-right -->
                 <div class="content-right content-defult col-sm-3">
                     
-                    <div class="profile-meta">
-                        <p><i class="fa fa-man-people-streamline-user"></i>83</p>
-                        <p><i class="fa fa-like-love-streamline"></i>17</p>
+                    <div class="profile-meta" style="margin-left: 0px;">
+                        <p><i class="fa fa-man-people-streamline-user"></i>19</p>
+                        <p><i class="fa fa-like-love-streamline"></i>8</p>
                     </div>
+
+                    <!-- THIS IS REAL LIKE VIEWS. 
+                    <div class="profile-meta">
+                        <p class="blue-text-in-line" id="like" data-entry='{@id}'>
+                            <i class="fa fa-heart-o"></i>
+                            <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
+                        </p>
+                        <span id="likeOutput" value="0" style="font-size: 27px;">0</span><br/>
+                        
+                        <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
+                        <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
+                    </div>
+                    -->
 
                 </div> <!-- /.content-left -->
             </div>

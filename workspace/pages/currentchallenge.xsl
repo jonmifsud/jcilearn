@@ -33,8 +33,8 @@
                                 <!-- Start: Section Header -->
                                 <div class="section-header relative text-center" >
                                 
-                                    <h2 class="section-heading">Green Issues:</h2>
-                                    <p> finding a solution</p>
+                                    <h2 class="section-heading">Making a Significant Change</h2>
+                                    <p> in your community</p>
                                 </div>     
                             </div>
                         </div>
@@ -73,8 +73,8 @@
                             <p class="sub-heading">Looking for more?</p>
                         </div> 
 
-                        <div class="stories-slider">
-                            <div class="stories-slider-wrapper owl-carousel">
+                        <div class="modules-slider">
+                            <div class="modules-slider-wrapper two-slides owl-carousel">
                                 <xsl:for-each  select="/data/challenge/entry">
                                     <xsl:apply-templates select="current()" mode="currentchallengemodule" />
                                 </xsl:for-each>

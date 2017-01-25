@@ -50,7 +50,7 @@
 
                     <div class="col-xs-12 each-features text-center">
                         <div class="modules-slider">
-                            <div class="modules-slider-wrapper owl-carousel">
+                            <div class="modules-slider-wrapper three-slides owl-carousel">
                                 <xsl:for-each select="/data/project/entry">
                                     <div class="box-border" style="width: 95%; height: 400px; padding: 0px; overflow: hidden;">
                                         <xsl:apply-templates select="current()" mode="exploreprojectsmodule"/>

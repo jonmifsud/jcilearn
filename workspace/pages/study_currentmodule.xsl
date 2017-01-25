@@ -25,7 +25,7 @@
                                 <div class="guide-team-inner">
 
                                     <h2>
-                                    <xsl:apply-templates select="/data/params/current-module-name" mode="comment"> <!-- applying comment template -->      
+                                    <xsl:apply-templates select="/data/lesson/entry[1]/lesson-text-box/item" mode="comment"> <!-- applying comment template -->      
                                     </xsl:apply-templates></h2>
                                     
                                     
@@ -56,7 +56,7 @@
                     	<p class="blue-text">Looking for more? </p>
 
                         <div class="modules-slider">
-                            <div class="modules-slider-wrapper owl-carousel">
+                            <div class="modules-slider-wrapper three-slides owl-carousel">
                                 <xsl:for-each select="/data/lesson/entry">
                                     <xsl:apply-templates select="current()" mode="currentmodule" /> 
                                 </xsl:for-each>

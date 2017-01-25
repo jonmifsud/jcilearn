@@ -38,8 +38,8 @@
                                     " style="margin-top: -30px;">
                                     <div class="lesson-top-picture">
                                         <div class="media">
-                                            <div class="media-body-left"><b>
-                                               <xsl:value-of select="/data/lesson/entry/profile/item"/></b>
+                                            <div class="media-body-left"><p class="blue-text" style="font-size: 30px; float: left;"><b>
+                                               <xsl:value-of select="/data/lesson/entry/profile/item"/></b></p>
                                             </div>                           
                                             <div class="media-body-left">
                                                 <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
@@ -56,7 +56,7 @@
 
                          <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                              <div class="lesson-text">
-                                 <xsl:apply-templates select="/data/lesson/entry[1]" mode='html-child'/>
+                                 <xsl:value-of select="/data/lesson/entry[1]/text" />
                              </div>
                         </div>
 
@@ -112,8 +112,8 @@
                              </div>
                         </div>
 
-                        <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
-                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <div class="col-xs-12 each-features" style="margin-bottom: 0px; height: 100px;">
+                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" >
 
                                 <xsl:apply-templates select="/data/lesson/entry[1]" mode="likeviews"/>
                                 
@@ -131,22 +131,23 @@
 
                     </div> <!-- /.each-features -->
 
-                    <div class="col-xs-12 each-features" style="margin-bottom: 0px; margin-top: 40px;">
+                    <div class="col-xs-12 each-features" style="margin-bottom: 0px; margin-top: 70px;">
 
                         <div class="single-comment col-xs-12">
                             <div class="row single-comments-inner">
                                 <div class="down-buttons-lesson">
-                                        <div class="col-md-1 col-sm-1"></div>
+                                    <div class="col-md-1 col-sm-1" ></div> 
+                                    <div class="col-md-10 col-sm-10">
                                     <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-12 col-md-3 col-sm-3 text-center margin-t-50" style="margin-top: 5px;">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
 
                                             <a href="#" class="btn btn-border text-normal" data-toggle="modal" data-target="#myModal3">
-                                                <h3 style="font-size: 30px; line-height: 110%;" class="title"> Study </h3> 
+                                                <h3 style="font-size: 30px; line-height: 60%; margin-top: 6%;" class="title"><i class="fa fa-chevron-left" aria-hidden="true"></i> STUDY </h3> 
                                             </a><!-- Modal -->
 
                                   			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
                                               <div class="modal-dialog col-xs-1" role="document">
-                                                <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; width: 150%; margin-left: -25%; height: 400px;">
+                                                <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; width: 150%;  height: 400px;">
                                                   <div class="modal-header " style="border: 0px; margin: 10px;">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
                                                         <span aria-hidden="true" style="font-weight: bold;">
@@ -168,16 +169,26 @@
                                     </div>  
 
                                     <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-12 col-md-3 col-sm-3 text-center margin-t-50" style="margin-top: 5px;">
-                                            <a href="#" class="btn btn-border text-normal">Something here</a>
-                                        </div>  
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center" style="margin-top: 5px;">
+                                            <div class="btn btn-border text-normal">
+                                                <a href="#" class="btn" >
+                                                    <i class="fa fa-like-love-streamline"></i>
+                                                </a>
+                                                <a href="#" class="btn" >
+                                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div> 
 
                                     <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-12 col-md-4 col-sm-3 text-center margin-t-50" style="margin-top: 5px;">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
 
                                             <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
-                                                <h3 style="font-size: 30px; line-height: 110%;" class="title"> Mini Quiz </h3>
+                                                <h3 style="font-size: 30px; margin-top: 6%; line-height: 60%;" class="title"> Mini Quiz <i class="fa fa-chevron-right" aria-hidden="true"></i> </h3>
                                             </a><!-- Modal -->
 
                                             <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
@@ -263,6 +274,8 @@
                                             </div>
                                         </div>  
                                     </div> 
+                                    </div>
+                                    <div class="col-md-1 col-sm-1" ></div>
 
                                 </div>
                             </div>

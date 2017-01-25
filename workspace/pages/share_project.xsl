@@ -58,7 +58,7 @@
                         <div class="col-xs-12 each-features text-center">
 
 	                        <div class="modules-slider">
-	                            <div class="modules-slider-wrapper owl-carousel">
+	                            <div class="modules-slider-wrapper three-slides owl-carousel">
 
 	                               <xsl:for-each select="/data/project/entry"><!-- list of modules in for each look -->
                                         <xsl:apply-templates select="current()" mode="projectmodule"/>

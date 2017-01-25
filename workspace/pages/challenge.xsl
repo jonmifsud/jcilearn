@@ -25,7 +25,7 @@
                     </div>
                     
 
-                    <div class="col-xs-12 each-features">
+                    <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
                         <div class="guide-team">
                             <div class="guide-team-inner">
                                 
@@ -33,14 +33,14 @@
                                 <div class="section-header relative text-center" >
                                 
                                     <h2 class="section-heading" style="text-transform: uppercase;"><xsl:value-of select="/data/challenge/entry/title"/></h2>
-                                        <p><xsl:value-of select="/data/challenge/entry/date"/></p>
+                                        <p><xsl:value-of select="/data/challenge/entry/subtitle"/></p>
                                 </div>     
                             </div>
                         </div>
                     </div> <!-- /.each-features -->
                     
 
-                    <div class="col-xs-12 each-features">
+                    <div class="col-xs-12 each-features" style="padding-left: 30px; padding-right: 30px;">
                         <div class="guide-team">
                             <div class="guide-team-inner">
                                 <div class="col-xs-12 each-features">
@@ -67,7 +67,7 @@
                     </div>
                     
                 
-                    <div class="col-xs-12 each-features">
+                    <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
                         <div class="lesson-definitions-line">
                             <p class="blue-text">Here's what other members have said about this challenge.</p><br/>
                         </div>
@@ -96,7 +96,7 @@
                     </div>
                     <div class="col-md-2"></div>
                     <div class="row single-comments-inner">
-                        <div class="btn-form col-xs-12 text-center margin-t-50">
+                        <div class="btn-form col-xs-12 text-center margin-t-20">
                             <a href="#" class="btn btn-border text-normal">Take on the challenge</a>
                         </div>                                  
                     </div>

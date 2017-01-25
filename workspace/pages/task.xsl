@@ -42,7 +42,9 @@
 
                             <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                             	<div class="lesson-text">
+                                    <div class="lesson-text">
                                      <xsl:apply-templates select="/data/task/entry/text" mode='html-child'/>
+                                 </div>
                                  </div>
                             </div>
 
@@ -131,9 +133,9 @@
                                  </div>
                                 <div class="each-features">
                                     <h3 class="title-centre">YOUR NOTES</h3>
-                                    <div class="enter-text-field col-xs-12" style="width: 100%; padding: 0px;">
+                                    <div class="enter-text-field col-xs-12" style="width: 100%; padding: 0px; height: 250px;">
                                         <form>
-                                          <input type="text" id="your-note" name="fname"/>
+                                          <input type="text" id="your-note-two" name="fname"/>
                                         </form>
                                     </div>
                                 </div>
@@ -142,31 +144,69 @@
                         </div>
                     </div> <!-- /.each-features -->
                     
-                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 100px;">
-                       <xsl:apply-templates select="/data/comments/entry[1]" mode="likeviews"/>
+                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 100px; ">
+                       <xsl:apply-templates select="/data/task/entry[1]" mode="likeviews"/>
                     </div>
 
-                   <div class="col-xs-12 each-features" style="margin-bottom: 20px;">  <!-- /.comments -->                      
-                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                            <div class="row comments-inner">
-                                
-                                <xsl:apply-templates select="/data/comments/entry" mode="comment"/>
-                               
-                                <div class="each-item-inner comments-option overflow" style="padding-right: 30px; padding-left: 30px;" > 
-                                    <a href="#" class="btn right-icon see-more pull-left">See more comments <i class="fa fa-angle-down"></i></a>
-                                    <p class="comments-pagination pull-right">2 of 14</p>
-                                </div>
+                   <div class="col-xs-12 each-features" style="margin-bottom: 20px; margin-top: 50px;">  <!-- /.comments -->                      
+                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-bottom: 0px;">
+                            <div class="col-md-1"></div>
+                            <div class="row comments-inner col-xs-12 col-md-10">
+                                <xsl:apply-templates select="/data/comments/entry" mode="comment">
+                                                                        
+                                </xsl:apply-templates>
                             </div>
                         </div> <!-- /.comments -->
                     </div> <!-- /.each-features -->
 
-                    <div class="col-xs-12 each-features">
-                        <div class="btn-form col-xs-12 text-center margin-t-20">
-                            <a href="#" class="btn btn-border"> EXPLORE</a>
-                            <a href="#" class="btn btn-border"> . 1 . 2 . 3 . </a>
-                            <a href="#" class="btn btn-border"> Next Lesson </a>
-                        </div>
-                    </div>
+                    <div class="col-xs-12 each-features" style="margin-bottom: 0px; margin-top: 70px;">
+
+                        <div class="single-comment col-xs-12">
+                            <div class="row single-comments-inner">
+                                <div class="down-buttons-lesson">
+                                    <div class="col-md-1 col-sm-1" ></div> 
+                                    <div class="col-md-10 col-sm-10">
+                                    <div class="lesson-button-organise">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
+
+                                            <a href="#" class="btn btn-border text-normal" data-toggle="modal" data-target="#myModal3">
+                                                <h3 style="font-size: 30px; line-height: 60%; margin-top: 6%;" class="title"><i class="fa fa-chevron-left" aria-hidden="true"></i> COLLAB </h3> 
+                                            </a><!-- Modal -->
+                                        </div>   
+                                    </div>  
+
+                                    <div class="lesson-button-organise">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center" style="margin-top: 5px;">
+                                            <div class="btn btn-border text-normal">
+                                                <a href="#" class="btn" >
+                                                    <i class="fa fa-like-love-streamline"></i>
+                                                </a>
+                                                <a href="#" class="btn" >
+                                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="lesson-button-organise">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
+
+                                            <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
+                                                <h3 style="font-size: 30px; margin-top: 6%; line-height: 60%;" class="title"> Submit <i class="fa fa-chevron-right" aria-hidden="true"></i> </h3>
+                                            </a><!-- Modal -->
+                                        </div>  
+                                    </div> 
+                                    </div>
+                                    <div class="col-md-1 col-sm-1" ></div>
+
+                                </div>
+                            </div>
+                        </div> <!-- /.single-comment -->
+
+                    </div> <!-- /.each-features -->
 
                     </div> <!-- /.each-features -->
                     

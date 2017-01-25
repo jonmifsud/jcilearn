@@ -64,6 +64,9 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
     return result;  
   };
 
+
+
+
   /**
    * -------------------------------------
    * Function for email address validation         
@@ -73,6 +76,10 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
     var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
     return pattern.test(emailAddress);
   };
+
+
+
+
 
   /**
    * -------------------------------------
@@ -92,6 +99,11 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
   };
 
 
+
+
+
+
+
   $(window).resize(function() {
 
     deviceControll();
@@ -99,9 +111,13 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
   });
 
 
+
   $(document).ready(function() {
 
     deviceControll();
+
+
+
 
     /**
      * ----------------
@@ -121,6 +137,10 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
 
     });
+
+
+
+
 
     /**
      * -----------------
@@ -142,12 +162,16 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
     });
 
+
+
+
+
     /**
      * -----------------------------
      * TESTIMONIAL SYNC WITH CLIENTS
      * -----------------------------
      */
-    var testimonialHomeSlider = $(".modules-slider .modules-slider-wrapper"); // client's message
+    var testimonialHomeSlider = $(".modules-slider .modules-slider-wrapper.three-slides"); // client's message
     testimonialHomeSlider.owlCarousel({
       items:                3, //10 items above 1000px browser width
       itemsDesktop:         [1200, 3], //5 items between 1000px and 901px
@@ -162,15 +186,17 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
       slideSpeed :          900,
       responsiveRefreshRate:100,
       navigation :          true,
-      navigationText:       ['',''],
+      navigationText:       ['',''], 
     });
+
+
 
     /**
      * -----------------------------
      * TESTIMONIAL SYNC WITH CLIENTS
      * -----------------------------
      */
-    var storySlider = $(".stories-slider .stories-slider-wrapper"); // client's message
+    var storySlider = $(".modules-slider .modules-slider-wrapper.two-slides"); // client's message
     storySlider.owlCarousel({
       items:                2, //10 items above 1000px browser width
       itemsDesktop:         [1200, 2], //5 items between 1000px and 901px
@@ -187,8 +213,15 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
       navigation :          true,
       navigationText:       ['',''],
     });
+
+    
+
+
   });
+
+
 } (jQuery) );
+
 
 
 $(document).ready(function(){
@@ -217,3 +250,9 @@ $(document).ready(function(){
             }           
         }
     });
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});

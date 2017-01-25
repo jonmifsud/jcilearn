@@ -21,23 +21,15 @@
 
                         <div class="col-xs-12 each-features">
 
-                            <div class="guide-team">
-                                <div class="guide-team-inner">
-
-                                    <div class="col-xs-5"></div>
-                                    <div class="col-xs-7">
-                                    <xsl:apply-templates select="/data/comments/entry" mode="comment">    <!-- applying comment template -->                                                           
-                                    </xsl:apply-templates>
-                                    </div>
-                                  
-                                    
+                            <div class="modules-slider">
+                                <div class=".modules-slider-wrapper three-slides">       
                                     
                                     <!-- Start: Section Header -->
                                     <div class="section-header relative text-center col-xs-12" >
 
                                         <h2>
-                                        <xsl:apply-templates select="/data/params/module-name" mode="comment"> <!-- applying comment template -->      
-                                        </xsl:apply-templates></h2>
+                                            <xsl:value-of select="/data/module/entry/title"/>
+                                        </h2>
                                         <p class="sub-heading">Maximising your team’s potential.</p>
 
                                     </div> 

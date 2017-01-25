@@ -5,7 +5,7 @@
         <xsl:param name='include-name' select='false()'/>
 
         <div class="media-left">
-            <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-2.png" alt="Media Team Profile Image"/>
+            <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-2.png" style="padding-left: 1px;" alt="Media Team Profile Image"/>
                 <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flag-1.png" alt="Flag"/>
             <xsl:if test='$include-name'>
                 <h3 class="title"><xsl:value-of select="name"/></h3>

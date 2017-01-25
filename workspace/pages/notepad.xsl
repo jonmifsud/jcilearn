@@ -109,13 +109,15 @@
 
                         <div class="guide-team-content col-xs-12">
                             <div class="row" style="margin-top: 100px; float: center;">
-                                
-                                <xsl:for-each select="/data/lesson/entry" > 
-                                	<xsl:if test="position() &lt;=2">
-                                    	<xsl:apply-templates select="current()" mode="notepadmodule"/>
-                                	</xsl:if>
-                                </xsl:for-each>
-
+                                <div class="col-sm-2 col-md-2"></div>
+                                <div class="col-xs-12 col-sm-8 col-md-8">
+                                    <xsl:for-each select="/data/lesson/entry" > 
+                                    	<xsl:if test="position() &lt;=2">
+                                        	<xsl:apply-templates select="current()" mode="notepadmodule"/>
+                                    	</xsl:if>
+                                    </xsl:for-each>
+                                </div>
+                                <div class="col-sm-2 col-md-2"></div>
                             </div>
                         </div>
 

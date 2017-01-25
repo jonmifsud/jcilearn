@@ -6,7 +6,7 @@
 
         <xsl:template match="*[section/@handle='project']//entry" mode='project-module-item'>
 
-         <div class="box-border" style="width: 95%; height: 400px; padding: 0px; overflow: hidden;">
+         <div class="box-border" style="width: 100%; height: 400px; padding: 0px; overflow: hidden;">
             <img src="{/data/params/workspace}/assets/img/helppic.png" style="margin: 0px; width: 100%; height: 64%; border-bottom: 2px solid #3496DA;"/>
             <div class="box-poligon" style="width: 100%; height: 36%; margin: 0px;">
                 <div class="box-poligon" style="width: 30%; margin: 0px;">

@@ -129,7 +129,7 @@
      * TESTIMONIAL SYNC WITH CLIENTS
      * -----------------------------
      */
-    var testimonialHomeSlider = $(".modules-slider .modules-slider-wrapper"); // client's message
+    var testimonialHomeSlider = $(".modules-slider .modules-slider-wrapper.three-slides"); // client's message
     testimonialHomeSlider.owlCarousel({
       items:                3, //10 items above 1000px browser width
       itemsDesktop:         [1200, 3], //5 items between 1000px and 901px
@@ -144,15 +144,17 @@
       slideSpeed :          900,
       responsiveRefreshRate:100,
       navigation :          true,
-      navigationText:       ['',''],
+      navigationText:       ['',''], 
     });
+
+
 
     /**
      * -----------------------------
      * TESTIMONIAL SYNC WITH CLIENTS
      * -----------------------------
      */
-    var storySlider = $(".stories-slider .stories-slider-wrapper"); // client's message
+    var storySlider = $(".modules-slider .modules-slider-wrapper.two-slides"); // client's message
     storySlider.owlCarousel({
       items:                2, //10 items above 1000px browser width
       itemsDesktop:         [1200, 2], //5 items between 1000px and 901px
@@ -170,6 +172,7 @@
       navigationText:       ['',''],
     });
 
+    
     
 
 

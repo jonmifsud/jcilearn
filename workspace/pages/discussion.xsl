@@ -8,6 +8,7 @@
 <xsl:import href="../sections/sectionmodule.xsl"/>
 <xsl:import href="../sections/comment.xsl"/>
 <xsl:import href="../sections/learnfileheader.xsl"/>
+<xsl:import href="../sections/likeviews.xsl"/>
 
     <xsl:template match="/data">
             <!-- Start: Features Section 
@@ -68,11 +69,11 @@
                              </div>
                         </div>
 
-                        <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-bottom: 50px;">
-                                <div class="center-profile-meta">
-                                    <p class="blue-text-in-line"><i class="fa fa-man-people-streamline-user"></i>Hard</p>
-                                    <p class="blue-text-in-line"><i class="fa fa-like-love-streamline"></i>Coded</p><br/>
-                                </div>                            
+                        <div class="col-xs-12 each-features" style="margin-bottom: 0px; height: 100px;">
+                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" >
+                                <xsl:apply-templates select="/data/discussion/entry[1]" mode="likeviews"/>
+                                
+                            </div>
                         </div>
 
 
@@ -91,10 +92,20 @@
                         </div> <!-- /.each-features -->
 
 
-                         <div class="btn-form col-xs-12 text-center margin-t-50" style="margin-bottom: 50px;">
-                            <a href="#" class="btn btn-border text-normal"> <i class="fa fa-like-love-streamline"></i> . <i class="fa fa-commenting-o" aria-hidden="true"></i> .  <i class="fa fa-share-square-o" aria-hidden="true"></i> </a>
+                        <div class="btn-form col-xs-12 text-center margin-t-60" style="margin-bottom: 50px;">
+                            <div class="btn btn-border text-normal">
+                                <a href="#" class="btn" >
+                                    <i class="fa fa-like-love-streamline"></i>
+                                </a>
+                                <a href="#" class="btn" >
+                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="btn">
+                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
-                        <div class="btn-form col-xs-12 text-center margin-t-50">
+                        <div class="btn-form col-xs-12 text-center margin-t-10">
                             <a href="#" class="btn btn-border text-normal">New Discussion</a>
                         </div>
 

@@ -36,7 +36,7 @@
                                       <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image"/>
                                             <img class="corner-flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png" alt="Flag"/>
                                     </div><br/>
-                                    <div class="collab-div-image">
+                                    <div class="collab-div-image" >
                                        <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image"/>
                                             <img class="corner-flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png" alt="Flag"/>
                                     </div>
@@ -240,10 +240,10 @@
 
                     </div> 
 
-                <div class="col-xs-12 each-features text-center">
+                <div class="col-xs-12 each-features text-center" style="margin-bottom: 0px;" >
 
                         <div class="modules-slider">
-                            <div class="modules-slider-wrapper owl-carousel">
+                            <div class="modules-slider-wrapper two-slides owl-carousel">
                                 <xsl:for-each  select="/data/challenge/entry">
                                     <xsl:apply-templates select="current()" mode="currentchallengemodule" />
                                 </xsl:for-each>

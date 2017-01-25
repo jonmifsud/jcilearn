@@ -12,7 +12,7 @@
             =================================-->
             <div class="features-section">
                 <div class="container">
-                    <div class="row features-item section-separator">
+                    <div class="row features-item section-separator" style="padding-bottom: 0px;">
 
                     <xsl:call-template name="learnfilesubheader"/>
 
@@ -80,56 +80,54 @@
                                 </div>
 
 			                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-			                             <div class="lesson-text">
-			                             <br/>
+
+                                        
+                                        
+			                            <div class="lesson-text">
+			                                <br/>
 			                                <h3 class="title-centre">OVERVIEW</h3>
 			                                <p class="lesson-text">			                                	
-			                                	<xsl:value-of select="/data/project/entry/text" />
+			                                	<xsl:value-of select="/data/project/entry/overview" />
 			                                </p><br/>
 			                             </div>
-			                             
+                                   
 
-			                             <form class="form-inline single-form">
-		                                    <div class="form-group input-outer" style="width: 100%;">
-		                                        <div class="select-outer" style="color: #3489DA;">
-		                                            <select class="form-control contact-plan">
-		                                                <option value="subject1" disabled="" selected="">Interest</option>
-		                                                <option value="BusinessConsulting">Business consulting</option>
-		                                                <option value="TextConsulting">Text consulting</option>
-		                                                <option value="Advisory">Advisory</option>
-		                                                <option value="Audit-$-assurance">Audit &amp; assurance</option>
-		                                            </select>
-		                                        </div>
-		                                    </div>
-			                            </form><br/><br/>
+                                        <div id="flip" class="drop-down-button-on-project blue-text">ANALYSIS</div>
+                                        <div id="panel">
+                                        <div class="lesson-text">
+                                         <br/>
+                                            <h3 class="title-centre">PROBLEM</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/partners" />
+                                            </p><br/>
+                                        </div>
+                                        
 
-			                             <form class="form-inline single-form">
-			                                    <div class="form-group input-outer" style="width: 100%;">
-			                                        <div class="select-outer">
-			                                            <select class="form-control contact-plan" style="color: #3489DA;">
-			                                                <option value="subject1" disabled="" selected="">Interest</option>
-			                                                <option value="BusinessConsulting">Business consulting</option>
-			                                                <option value="TextConsulting">Text consulting</option>
-			                                                <option value="Advisory">Advisory</option>
-			                                                <option value="Audit-$-assurance">Audit &amp; assurance</option>
-			                                            </select>
-			                                        </div>
-			                                    </div>
-			                                </form>
-			                                    <br/><br/>
-		                                <form class="form-inline single-form">
-		                                    <div class="form-group input-outer" style="width: 100%;">
-		                                        <div class="select-outer">
-		                                            <select class="form-control contact-plan" style="color: #3489DA;">
-		                                                <option value="subject1" disabled="" selected="">Interest</option>
-		                                                <option value="BusinessConsulting">Business consulting</option>
-		                                                <option value="TextConsulting">Text consulting</option>
-		                                                <option value="Advisory">Advisory</option>
-		                                                <option value="Audit-$-assurance">Audit &amp; assurance</option>
-		                                            </select>
-		                                        </div>
-		                                    </div>
-		                                </form>
+                                        <div class="lesson-text">
+                                            <br/>
+                                            <h3 class="title-centre">PROPOSED SOLUTION</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/strategy" />
+                                            </p><br/>
+                                        </div>
+                                         
+
+                                        <div class="lesson-text">
+                                            <br/>
+                                            <h3 class="title-centre">PARTNERS</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/outcome" />
+                                            </p><br/>
+                                        </div>
+                                        </div>
+                                        
+                                        <br/><br/>
+                                        <div class="drop-down-button-on-project blue-text" style="padding: 5px;">IMPLEMENTATION</div>
+
+                                        <br/><br/>
+                                        <div class="drop-down-button-on-project blue-text" style="padding: 5px;">CONCLUSION</div>
+
+
 
 			                        </div> 
                                 </div>
@@ -140,7 +138,7 @@
 
 
                         <div class="modules-slider">
-                            <div class="modules-slider-wrapper owl-carousel">
+                            <div class="modules-slider-wrapper three-slides owl-carousel">
 
                                  <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
@@ -162,7 +160,8 @@
                     </div>
 
                     <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                        <div class="row comments-inner col-md-12 col-sm-12 col-xs-12">
+                        <h3 class="title" style="text-align: center; margin-bottom: 20px;" > MARKETING MATERIAL </h3>
+                        <div class="row comments-inner col-md-12 col-sm-12 col-xs-12" style="margin-left: auto;">
                              text<br/>
                              some<br/>
                              text<br/>
@@ -172,7 +171,7 @@
                         </div>
                     </div>
                 <div class="row features-item section-separator">
-                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 0px;">
+                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 30px; margin-bottom: 30px;">
                        <xsl:apply-templates select="/data/comments/entry[1]" mode="likeviews"/>
                     </div>
 
@@ -191,146 +190,55 @@
                     </div> <!-- /.each-features -->
 
                     <div class=" each-features" style="padding-bottom: 150px;">
-
-                        <div class="single-comment ">
+                        <div class="col-xs-12 each-features" style="margin-bottom: 0px; margin-top: 40px;">
+                        <div class="single-comment col-xs-12">
                             <div class="row single-comments-inner">
                                 <div class="down-buttons-lesson">
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-10">
-                                        <div class="lesson-button-organise">
-                                            <div class="btn-form text-center col-md-4 col-sm-4 margin-t-50">
+                                    <div class="col-md-1 col-sm-1" ></div> 
+                                    <div class="col-md-10 col-sm-10">
+                                    <div class="lesson-button-organise">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
 
-                                                <a href="#" class="btn btn-border text-normal" data-toggle="modal" data-target="#myModal3">
-                                                    <h3 style="font-size: 30px; line-height: 110%;" class="title"> Study </h3> 
-                                                </a><!-- Modal -->
+                                            <a href="#" class="btn btn-border text-normal" data-toggle="modal" data-target="#myModal3">
+                                                <h3 style="font-size: 30px; line-height: 60%; margin-top: 6%;" class="title"><i class="fa fa-chevron-left" aria-hidden="true"></i> COLLAB </h3> 
+                                            </a><!-- Modal -->
+                                        </div>   
+                                    </div>  
 
-                                                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-                                                  <div class="modal-dialog" role="document">
-                                                    <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; width: 150%; margin-left: -25%; height: 400px;">
-                                                      <div class="modal-header " style="border: 0px; margin: 10px;">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
-                                                            <span aria-hidden="true" style="font-weight: bold;">
-                                                            </span>
-                                                        </button>                                                    
-                                                      </div>
+                                    <div class="lesson-button-organise">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center" style="margin-top: 5px;">
+                                            <div class="btn btn-border text-normal">
+                                                <a href="#" class="btn" >
+                                                    <i class="fa fa-like-love-streamline"></i>
+                                                </a>
+                                                <a href="#" class="btn" >
+                                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="#" class="btn">
+                                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div> 
 
-                                                      <div class="new-class" style=" height: 500px; margin-right: auto; margin-left: auto; text-align: center; ">
-                                                            <h2 class="section-heading">Nice!</h2>
-                                                            <br/>
-                                                            All your answers were perfect. You're up by 10XP<br/>and one step closer to finish this module!<br/><br/><br/>
-                                                            <a href="../lesson" class="btn btn-border">Next Lesson</a>                                                                      
-                                                      </div>                                                      
-                                                    </div>
-                                                  </div>
-                                                </div>
+                                    <div class="lesson-button-organise">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
 
-                                            </div>   
+                                            <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
+                                                <h3 style="font-size: 30px; margin-top: 6%; line-height: 60%;" class="title"> Submit <i class="fa fa-chevron-right" aria-hidden="true"></i> </h3>
+                                            </a><!-- Modal -->
                                         </div>  
+                                    </div> 
+                                    </div>
+                                    <div class="col-md-1 col-sm-1" ></div>
 
-                                        <div class="lesson-button-organise">
-                                            <div class="btn-form text-center col-md-4 col-sm-4 margin-t-50">
-                                                <a href="#" class="btn btn-border text-normal">Something here</a>
-                                            </div>  
-                                        </div> 
-
-                                        <div class="lesson-button-organise">
-                                            <div class="btn-form text-center col-md-4 col-sm-4 margin-t-50">
-
-                                                <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
-                                                    <h3 style="font-size: 30px; line-height: 110%;" class="title"> Mini Quiz </h3>
-                                                </a><!-- Modal -->
-
-                                                    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-                                                      <div class="modal-dialog" role="document">
-
-                                                        <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; width: 150%; margin-left: -25%; height: 1300px;">
-                                                          <div class="modal-header " style="border: 0px; margin: 10px;">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true" style="font-weight: bold;"></span></button>
-                                                            
-                                                          </div>
-                                                          <div class="new-class" style=" height: 500px; margin-right: auto; margin-left: auto; text-align: center; ">  
-                                                                <h2 class="section-heading">MINIQUIZ</h2>                    
-                                                                
-                                                               
-                                                                <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
-                                                                        <br/>
-                                                                        Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
-                                                                        eflebla bla<br/><br/>
-                                                                    <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                        <div class="check-box">
-                                                                        </div>  
-                                                                        <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                    </div>
-                                                                    <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                        <div class="check-box">
-                                                                        </div>  
-                                                                        <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                    </div>
-                                                                    <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                        <div class="check-box">
-                                                                        </div>  
-                                                                        <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
-                                                                        <br/>
-                                                                        Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
-                                                                        eflebla bla<br/><br/>
-                                                                    <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                        <div class="check-box">
-                                                                        </div>  
-                                                                        <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                    </div>
-                                                                    <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                        <div class="check-box">
-                                                                        </div>  
-                                                                        <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                    </div>
-                                                                    <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                        <div class="check-box">
-                                                                        </div>  
-                                                                        <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="box-border" style="width: 100%; height: 350px;  padding: 0px; border: 0px;">                                               
-                                                                        <br/>
-                                                                        Pellentesque elgestas, neque sit amet convallis pulvinar, uust nulla<br/>
-                                                                        eflebla bla<br/><br/>
-                                                                    <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                        <div class="check-box">
-                                                                        </div>  
-                                                                        <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                    </div>
-                                                                    <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                        <div class="check-box">
-                                                                        </div>  
-                                                                        <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                    </div>
-                                                                    <div class="box-border" style="width: 50%; height: 50px; padding: 0px; border: 0px;">
-                                                                        <div class="check-box">
-                                                                        </div>  
-                                                                        <p style="text-align: left; margin: 10px; color: #3496DA;"> Answer 1</p>
-                                                                    </div>
-                                                                </div>   
-
-                                                                <div class="btn-form col-xs-12 text-center margin-t-50" style="margin-top: 0px;">
-                                                                    <a href="#" class="btn btn-border text-normal">Enroll</a>
-                                                                </div>                       
-                                                                                  
-                                                          </div>                                                      
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>  
-                                        </div> 
-                                    </div>   
-
-                                    <div class="col-md-1"></div>
                                 </div>
                             </div>
                         </div> <!-- /.single-comment -->
+                        </div>
 
                     </div> <!-- /.each-features -->
+
                 </div>
                     
                 </div> <!-- /.row -->

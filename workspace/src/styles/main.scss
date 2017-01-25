@@ -762,8 +762,9 @@
 }
 
 .no-left-padding{
-    @include breakpoint(max-width $screen-xs-max){
+    @include breakpoint(max-width $screen-xs-max)
         padding-left: 0px !important;
+    }
     }
 }
 
@@ -787,12 +788,17 @@
 }
 
 .max-width{
-    @include breakpoint(max-width $screen-xs-max){
-        width: 100%;
+        @include breakpoint(max-width $screen-xs-max){
+            width: 100%;
+        }
 }
 
 
-
+.padding-right-landing{
+     @include breakpoint(max-width $screen-md-max){
+        padding-right: 20%;
+    }
+}
 
 
 
@@ -883,6 +889,7 @@
   .box-border{
     width: 100% !important;
   }
+
 
   .box-border-text-left{
     padding-left: 10px !important;

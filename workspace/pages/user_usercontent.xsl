@@ -27,7 +27,7 @@
                         <xsl:call-template name="learnfilesubheader"/>  
 
                       <div class="col-xs-12 each-features">
-                        <h2 class="section-heading" style="margin-bottom: 6%;">Good morning, Nathan!</h2>
+                        <h2 class="section-heading" style="margin-bottom: 6%;">Good morning, <xsl:value-of select="/data/users/entry/name" />!</h2>
 
                         
                         <div class="col-md-5 col-sm-6" style="border: 0px; height: 10%;">
@@ -41,7 +41,7 @@
                             <div class="user-definitions-line-left" style="width: 100%;">
                               <div class="media-body">
                                 <button type="button" class="btn  btn-lg" data-toggle="modal" data-target="#myModal">
-                                  <h3 style="font-size: 30px; line-height: 110%;" class="title">Zack<br/>Joules Enixey</h3>
+                                  <h3 style="font-size: 30px; line-height: 110%;" class="title"><xsl:value-of select="/data/users/entry/name" /><br/><xsl:value-of select="/data/users/entry/surname" /></h3>
                                 </button>
                                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                   <div class="modal-dialog" role="document">
@@ -80,12 +80,12 @@
                                 <span style="float: left; text-align: left;">1 lesson
                                                       5 projects
                                                       2 stories</span>
-                                <br/>
-                                <span style="color: #f37121;font-weight:bold; float: left; font-size: 20px">580XP</span>
+                                <br/><br/>
+                                <span class="orange-text">580XP</span>
                                 <span style="color: #3496DA; size: 15px; font-weight: bold;">/ 50XP</span>
                                 <span style="color: #3496DA"> this week</span>
                                 <br/>
-                                <div class="profile-meta" style="border: 2px solid #3489DA;width: 100px;height: 60px; padding: 5%; border-radius: 10%; margin-top: 20px;">
+                                <div class="profile-meta user-add-button">
                                   <p><i class="fa fa-man-people-streamline-user"></i> +</p>
                                 </div>
                               </div>
@@ -104,9 +104,9 @@
                         </div>
                    
                     <div class="col-xs-12 each-features text-center" style="margin-top: 50px">
-                    <h2 class="section-heading">PROJECTS</h2><br/>
+                    <h3 class="title-centre" style="padding-bottom: 20px;">PROJECTS</h3>
                         <div class="modules-slider">
-                            <div class="modules-slider-wrapper owl-carousel">
+                            <div class="modules-slider-wrapper three-slides owl-carousel">
 
                                 <xsl:for-each select="/data/project/entry">
                                     <div class="box-border" style="width: 95%; height: 400px; padding: 0px; overflow: hidden;">
@@ -124,16 +124,16 @@
                         <div class="row guide-team">
                             <div class="guide-team-inner">
                                 <div class="guide-team-content col-xs-12">
-                                 <h3 class="title-centre">PUBLISHED STORIES</h3>
+                                 <h3 class="title-centre" style="padding-bottom: 20px;">PUBLISHED STORIES</h3>
                                     <div class="row" >
-                                      <div class="each-item col-sm-1 col-md-2"></div>           
-                                          <div class="each-item col-sm-10 col-md-8">
-                                            <xsl:for-each select="/data/story/entry">
-                                              <xsl:if  test="position() &lt;=2">    
-                                              <xsl:apply-templates select="current()" mode="sharestorymodulewithlikes"/>
-                                              </xsl:if>
-                                            </xsl:for-each>   
-                                          </div>
+                                        <div class="each-item col-sm-1 col-md-2"></div>           
+                                        <div class="each-item col-sm-10 col-md-8">
+                                          <xsl:for-each select="/data/story/entry">
+                                            <xsl:if  test="position() &lt;=2">    
+                                            <xsl:apply-templates select="current()" mode="sharestorymodulewithlikes"/>
+                                            </xsl:if>
+                                          </xsl:for-each>   
+                                        </div>
                                         <div class="each-item col-sm-1 col-md-2"></div>   
                                     </div>
                                 </div>
