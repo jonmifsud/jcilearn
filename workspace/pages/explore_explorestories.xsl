@@ -12,6 +12,7 @@
 <xsl:import href="../sections/sharestorymodulewithlikes.xsl"/>
 <xsl:import href="../sections/studyprofile.xsl"/>
 <xsl:import href="../sections/modules.xsl"/>
+<xsl:import href="../sections/explorestoriestwoslidermodule.xsl"/>
 
     <xsl:template match="/data">
             <!-- Start: Features Section 
@@ -52,18 +53,21 @@
 
                     </div> <!-- /.each-features -->
 
-                    <div class="col-xs-12 each-features text-center" style="margin-bottom: 0px;" >
+                    <div class="col-xs-12 each-features text-center" style="margin-bottom: 10px;">
+                        <div class="section-header relative text-center col-xs-12" >
+                            <p class="sub-heading">Looking for more?</p>
+                        </div> 
 
                         <div class="modules-slider">
                             <div class="modules-slider-wrapper two-slides owl-carousel">
                                 <xsl:for-each  select="/data/story/entry">
-                                    <xsl:apply-templates select="current()" mode="currentchallengemodule" />
+                                    <xsl:apply-templates select="current()" mode="explorestoriestwoslidermodule" />
                                 </xsl:for-each>
 
                             </div> <!-- /.modules-slider-wrapper -->
                         </div> <!-- /.modules-slider -->
 
-                </div> <!-- /.each-features --> 
+                    </div> <!-- /.each-features -->
 
                     <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
 

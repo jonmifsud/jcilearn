@@ -11515,6 +11515,10 @@ h6 {
   float: left;
   margin: 10px; }
 
+.select-check-box{
+  cursor: pointer;
+}
+
 .media-body {
   text-align: center;
   vertical-align: middle;
@@ -11733,17 +11737,35 @@ h6 {
   min-height: 50px;
   border: 2px solid #3496DA; }
 
+.your-notes-class{
+  width: 80%;
+  height: 30%;
+  min-height: 50px;
+  border: 2px solid #3496DA;
+}
+
+input{
+  width: 50% !important;
+}
+
 #your-note-two {
   width: 80%;
   height: 55px;
   min-height: 300px;
   border: 2px solid #3496DA; }
 
-#your-note-two {
-  width: 100%;
+.your-note-box-shape{
   height: 55px;
   min-height: 300px;
-  border: 2px solid #3496DA; }
+  border: 2px solid #3496DA; 
+}
+
+.your-note-text-box-shape{
+  width: 80%;
+  height: 30%;
+  min-height: 50px;
+  border: 2px solid #3496DA;
+}
 
 #your-note-title {
   width: 60%;
@@ -13120,9 +13142,8 @@ a,
 p {
   font-family: "helveticaneuelight";
   color: #646464;
-  font-size: 24px;
-  font-size: 2.4rem;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 1.5;
   margin-bottom: 20px; }
   p:last-child {
     margin-bottom: 0px; }
@@ -14440,6 +14461,9 @@ h6 {
   padding: 40px;
   max-height: 300px; }
 
+
+.b
+
 .blue-text {
   color: #3496DA; }
 
@@ -14834,11 +14858,69 @@ h6 {
   font-size: 1.6rem;
   color: #646464; }
 
-/**
- * --------------------
- * Single Comment Style
- * --------------------
- */
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+* --------------------
+* Single Comment Style
+* --------------------
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+.toggle-class{
+  background-color: #3496DA;
+}
+
+.maze-check-box{
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: solid 2px #a2a2a2;
+  box-sizing: border-box;
+}
+
+
+textarea{
+  width: 70% !important;
+}
+
+.border-radius-shape{
+  width: 100%; 
+  height: 2000px; 
+  max-height: 171px;
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px;
+}
+
+
 .single-comment .pera {
   color: #3496DA;
   text-align: left; }
@@ -15102,7 +15184,7 @@ h6 {
   p {
     font-size: 16px;
     font-size: 1.6rem;
-    line-height: 16px;
+    line-height: 1.5 !important;
     line-height: 1.6rem; }
   .modal-content {
     width: 100% !important;
@@ -15112,6 +15194,8 @@ h6 {
   .height-md-story-module{
     height: 204px !important;
   }
+
+
 
 
   }
@@ -15178,5 +15262,18 @@ h6 {
     margin-top: 0% !important;
   }
 
+
+  .border-radius-shape{
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 20px;
+  max-height: 220px;
+  }
+
+  input{
+    width: 80% !important;
+  }
+   textarea{
+    width: 80% !important;
+  }
 
   }

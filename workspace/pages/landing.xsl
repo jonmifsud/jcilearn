@@ -14,11 +14,10 @@
             <!-- Start: Features Section 
             =================================-->
     <div class="features-section">
-        <div class="container">
+        <div class="">
             <div class="row features-item section-separator" style="padding-bottom: 0px;">
-
+                <div class="hide-div">
                     <button class="counter1"> counter</button>
-
 
                     <div class="col-xs-12 each-features">
                         <div class="study-timeline-progress" style="margin-top: 10px;">
@@ -34,112 +33,107 @@
                         </div>
                     </div>
 
-                        <div class="col-xs-12 each-features">
-                            <input name="MAX_FILE_SIZE" type="hidden" value="2097152" />
+                    <div class=" container col-xs-12 each-features">
+                        <input name="MAX_FILE_SIZE" type="hidden" value="2097152" />
 
-                            <div class="sliderJquery">
+                        <div class="sliderJquery">
 
-                                <div id="div1">
-                                    <div class="box-border" style=" width: 70%; padding: 20px; height: 20%; margin-bottom: 50px; margin-top: 10px; border: 0px;">
-                                        <div class="center">
-                                                <p class="blue-text">One final step that will allow us to<br/>learn more about you<br/> and find your future collaborators.</p>
-                                                 <a class="btn btn-block btn-social btn-twitter">
-                                        </a><a  onclick="landingNextStep()" class="button facebook"><span><i class="fa fa-facebook" style="padding-top: 10px;"></i></span><p style="padding-top: 15px;">Sign in with Facebook</p></a>
-                                        </div>
+                            <div id="div1" style="margin-bottom: 100px;" >
+                                <div class="box-border" style=" width: 70%; padding: 20px; height: 20%; margin-bottom: 50px; margin-top: 10px; border: 0px;">
+                                    <div class="center">
+                                            <p class="blue-text">One final step that will allow us to<br/>learn more about you<br/> and find your future collaborators.</p>
+                                             <a class="btn btn-block btn-social btn-twitter">
+                                    </a><a  onclick="landingNextStep()" class="button facebook"><span><i class="fa fa-facebook" style="padding-top: 10px;"></i></span><p style="padding-top: 15px;">Sign in with Facebook</p></a>
                                     </div>
                                 </div>
+                            </div>
 
-                               <div id="div2">
-                                    <div class="box-border" style=" width: 70%; padding: 20px; height: 10%; margin-bottom: 50px;  border: 0px">                    
-                                        <p class="blue-text">Tell us - what is <b>your role</b> within JCI?</p>
+                           <div id="div2">
+                                <div class="box-border" style=" width: 70%; padding: 20px; height: 10%; margin-bottom: 50px;  border: 0px">                    
+                                    <p class="blue-text">Tell us - what is <b>your role</b> within JCI?</p>
 
-                                        <div class="col-md-1"></div>
-                                        <div class="col-md-10">
-                                            <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
-                                                <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                                <p class="blue-text"><b>LESSON</b></p>
-                                                <div class="check-box" style="margin-left: 40%;">
-                                                     
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
-                                                <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                                <p class="blue-text"><b>TRAINER</b></p>
-                                                <div class="check-box" style="margin-left: 40%;">
-                                                     
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
-                                                <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                                <p class="blue-text"><b>MEMBER</b></p>
-                                                <div class="check-box" style="margin-left: 40%;">
-                                                     
-                                                </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
+                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
+                                            <p class="blue-text"><b>LESSON</b></p>
+                                            <div class="check-box" style="margin-left: 45%;">
+                                                 
                                             </div>
                                         </div>
-                                        <div class="col-md-1"></div>
-
-                                    </div>
-                                </div>
-
-                                <div id="div3">
-                                    <div class="box-border" style="width: 70%; padding: 20px; height: 10%; margin-bottom: 50px;  border: 0px">
-                                    <p class="blue-text">Pick a few of <b>your interests</b><br/>as an active citizen<br/>(don't worry - you can choise more later)</p>
-                                                    
-                                        <div class="col-md-1">.</div>
-                                        <div class="col-md-10">
-                                            <div class="col-md-4" style="border: 0px; height: 10%;">
-                                                <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                                <p class="blue-text"><b>COMMUNITY NEEDS</b></p>
-                                                <div class="check-box" style="margin-left: 40%;">
-                                                    
-                                                </div>
+                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
+                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
+                                            <p class="blue-text"><b>TRAINER</b></p>
+                                            <div class="check-box" style="margin-left: 45%;">
+                                                 
                                             </div>
-                                            <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
-                                                <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                                <p class="blue-text"><b>GLOBAL ISSUES</b></p>
-                                                <div class="check-box" style="margin-left: 40%;">
-                                                     
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
-                                                <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                                <p class="blue-text"><b>CULTURAL EXCHANGE</b></p>
-                                                <div class="check-box" style="margin-left: 40%;">
-                                                     
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-md-2"></div>
-                                            <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
-                                                <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="width: 100px;"/>
-                                                <p class="blue-text"><b>TRAINING</b></p>
-                                                <div class="check-box" style="margin-left: 40%;">
-                                                     
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-xs-6" style="border: 0px; height: 10%;">
-                                                <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                                <p class="blue-text"><b>LEADERSHIP</b></p>
-                                                <div class="check-box" style="margin-left: 40%;">
-                                                     
-                                                </div>
-                                            </div>
-                                             <div class="col-md-2"></div>
                                         </div>
-                                        <div class="col-md-1">.</div>
-                                   
+                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
+                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
+                                            <p class="blue-text"><b>MEMBER</b></p>
+                                            <div class="check-box" style="margin-left: 45%;">
+                                                 
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="col-md-1"></div>
 
-                            </div> <!-- sliderJquery -->
+                                </div>
+                            </div>
+
+                            <div id="div3">
+                                <div class="box-border" style="width: 70%; padding: 20px; height: 10%; margin-bottom: 50px;  border: 0px">
+                                <p class="blue-text">Pick a few of <b>your interests</b><br/>as an active citizen<br/>(don't worry - you can choise more later)</p>
+                                                
+                                    <div class="col-md-1">.</div>
+                                    <div class="col-md-10">
+                                        <div class="col-md-4 select-check-box" style="border: 0px; height: 10%;">
+                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
+                                            <p class="blue-text"><b>COMMUNITY NEEDS</b></p>
+                                            <div class="check-box" style="margin-left: 45%;">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
+                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
+                                            <p class="blue-text"><b>GLOBAL ISSUES</b></p>
+                                            <div class="check-box" style="margin-left: 45%;">
+                                                 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
+                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
+                                            <p class="blue-text"><b>CULTURAL EXCHANGE</b></p>
+                                            <div class="check-box" style="margin-left: 45%;">
+                                                 
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
+                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="width: 100px;"/>
+                                            <p class="blue-text"><b>TRAINING</b></p>
+                                            <div class="check-box" style="margin-left: 45%;">
+                                                 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
+                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
+                                            <p class="blue-text"><b>LEADERSHIP</b></p>
+                                            <div class="check-box" style="margin-left: 45%;">
+                                                 
+                                            </div>
+                                        </div>
+                                         <div class="col-md-2"></div>
+                                    </div>
+                                    <div class="col-md-1">.</div>
+                               
+                                </div>
+                            </div>
+
+                        </div> <!-- sliderJquery -->
                     </div> 
-
-
-
-
-
-
+                </div>
 
 
 
@@ -153,7 +147,7 @@
     	                                    <p class="blue-text" style="margin-bottom: 0px;">Be the best <b> active citizen</b> you can be.</p><br/><br/>
                                         </div>
                                         <div class="col-xs-12 col-md-12" style="margin-bottom: 10px;">
-	                                       <a href="#" class="btn btn-fill text-normal">Start learning</a>
+	                                       <a href="#" id="show-div-landing" class="btn btn-fill text-normal">Start learning</a>
                                         </div>
                                         <div class="col-xs-12 col-md-12">
     	                                    <a href="#landing-separator-1" class="text-normal btn btn-border">Tell me more</a>

@@ -16,7 +16,24 @@
 	        <div class="container">
 	            <div class="row features-item section-separator">
 
-                    <xsl:call-template name="learnfilesubheader"/> 
+                    <xsl:call-template name="learnfilesubheader"/>
+
+                    <h2 class="title-centre">NEW STORY</h2>
+                <div class="enter-text-field" style="height: 100px;">
+                    <div class="form-inline single-form" style="width: 150px;">
+                        <div class="form-group input-outer">
+                            <div class="select-outer">
+                                <select class="form-control contact-plan">
+                                    <option value="subject1" disabled="" selected="">ADD</option>
+                                    <option value="BusinessConsulting">consulting</option>
+                                    <option value="TextConsulting">Text</option>
+                                    <option value="Advisory">Advisory</option>
+                                    <option value="Audit-$-assurance">Audit</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
 
                     <button class="counter1"> counter</button>
 
@@ -137,10 +154,9 @@
                                     <label style="width: 90%;">
                                         <div class="enter-text-field" style="height: 100px;">
                                             <h3 class="title-centre">TEXT</h3>
-                                            <textarea id="your-note" name="fields[text]" type="text"></textarea>
+                                            <textarea class="your-note-text-box-shape" id="your-note" name="fields[text]" type="text"></textarea>
                                         </div>
                                     </label>
-
                                 </div>
 
                                 <div id="div3">

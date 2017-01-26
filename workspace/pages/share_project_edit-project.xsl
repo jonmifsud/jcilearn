@@ -18,13 +18,31 @@
 
                     <xsl:call-template name="learnfilesubheader"/> 
 
-
+                    <h2 class="title-centre">NEW PROJECT</h2>
+                <div class="enter-text-field" style="height: 100px;">
+                    <div class="form-inline single-form" style="width: 150px;">
+                        <div class="form-group input-outer">
+                            <div class="select-outer">
+                                <select class="form-control contact-plan">
+                                    <option value="subject1" disabled="" selected="">ADD</option>
+                                    <option value="BusinessConsulting">consulting</option>
+                                    <option value="TextConsulting">Text</option>
+                                    <option value="Advisory">Advisory</option>
+                                    <option value="Audit-$-assurance">Audit</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                     <button class="counter1"> counter</button>
 
 
                     <div class="col-xs-12 each-features">
                         <div class="study-timeline-progress" style="margin-top: 80px;">
+
+
+
                             <div class="study-timeline-progress-circles" style="margin-left: 27%; ">
                                     1
                                 </div> 
@@ -154,7 +172,7 @@
                                     <label style="width: 90%;">
                                         <div class="enter-text-field">
                                             <h3 class="title-centre">OVERVIEW</h3>
-                                            <textarea id="your-note" name="fields[overview]" type="text"></textarea>
+                                            <textarea id="your-note" class="your-note-box-shape" name="fields[overview]" type="text"></textarea>
                                         </div>
                                     </label> 
                                 </div>
@@ -197,13 +215,13 @@
                                 <div id="div4">
                                     <label style="width: 90%;">
                                         <div class="enter-text-field"><h3 class="title-centre">STRATEGY</h3>
-                                            <textarea id="your-note" name="fields[strategy]" type="text"></textarea>
+                                            <textarea class="your-note-box-shape" id="your-note" name="fields[strategy]" type="text"></textarea>
                                         </div>
                                     </label> 
 
                                     <h3 class="title-centre">EXECUTION</h3>
                                     <div class="enter-text-field">
-                                          <textarea type="text" id="your-note" name="fname"></textarea>
+                                          <textarea class="your-note-box-shape" type="text" id="your-note" name="fname"></textarea>
                                     </div>                                    
                                 </div>
 
@@ -212,13 +230,13 @@
                                 <div id="div5">
                                     <label style="width: 90%;">
                                         <div class="enter-text-field"><h3 class="title-centre">OUCOME</h3>
-                                            <textarea id="your-note" name="fields[outcome]" type="text"></textarea>
+                                            <textarea class="your-note-box-shape" id="your-note" name="fields[outcome]" type="text"></textarea>
                                         </div>
                                     </label> 
 
                                     <label style="width: 90%;">
                                         <div class="enter-text-field"><h3 class="title-centre">LESSON LEARNT</h3>
-                                            <textarea id="your-note" name="fields[lessonlearnt]" type="text"></textarea>
+                                            <textarea class="your-note-box-shape" id="your-note" name="fields[lessonlearnt]" type="text"></textarea>
                                         </div>
                                     </label>
                                 </div>
@@ -231,7 +249,7 @@
                                         <p class="title-centre">drag and drop photos from your project here</p>
                                         <div class="enter-text-field">
                                             <div>
-                                              <textarea type="text" id="your-note" name="fname"></textarea>
+                                              <textarea class="your-note-box-shape" type="text" id="your-note" name="fname"></textarea>
                                             </div>
                                         </div>
                                     </div>  
@@ -241,16 +259,16 @@
                                         <p class="title-centre">upload files</p>
                                         <div class="enter-text-field">
                                             <div>
-                                              <textarea type="text" id="your-note" name="fname"></textarea>
+                                              <textarea class="your-note-box-shape" type="text" id="your-note" name="fname"></textarea>
                                             </div>
                                         </div>
                                     </div>  
-                                     <label style="width: 90%;"><p>text</p>
-                                        <input name="fields[text]" type="text" />
+                                     <label style="width: 90%;"><p class="title-centre">text</p>
+                                        <input name="fields[text]" class="your-note-text-box-shape" type="text" />
                                     </label><br/>
                                     
-                                    <label style="width: 90%;"><p>date</p>
-                                        <input name="fields[date]" type="text" />
+                                    <label style="width: 90%;"><p class="title-centre">date</p>
+                                        <input class="your-note-text-box-shape" name="fields[date]" type="text" />
                                     </label>
                                 </div>
                                 <input name="action[projectone]" type="submit" value="Submit" />

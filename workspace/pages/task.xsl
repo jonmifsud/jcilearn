@@ -43,7 +43,7 @@
                             <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                             	<div class="lesson-text">
                                     <div class="lesson-text">
-                                     <xsl:apply-templates select="/data/task/entry/text" mode='html-child'/>
+                                     <xsl:apply-templates select="/data/task/entry[1]/text" mode='html-child'/>
                                  </div>
                                  </div>
                             </div>
@@ -133,9 +133,9 @@
                                  </div>
                                 <div class="each-features">
                                     <h3 class="title-centre">YOUR NOTES</h3>
-                                    <div class="enter-text-field col-xs-12" style="width: 100%; padding: 0px; height: 250px;">
-                                        <form>
-                                          <input type="text" id="your-note-two" name="fname"/>
+                                    <div class="enter-text-field col-xs-12" style="width: 100% !important; padding: 0px; height: 250px;">
+                                        <form style="padding-right: 5%;">
+                                          <input type="text" id="your-note-two" name="fname" style="width: 80% !important;" />
                                         </form>
                                     </div>
                                 </div>

@@ -225,8 +225,11 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
 
 $(document).ready(function(){
+		$(".sliderJquery > div").hide();                
+        $(".sliderJquery div:nth-child("+1+")").show();
+        $(".study-timeline-progress > div:nth-child("+1+")").css({"background-color": "#3496DA", "color": "white"});
 
-        
+       
         $(".counter1").bind("click", counterfunc);
         var counter = 0;
         divNumber = $(".sliderJquery > div").length;
@@ -254,5 +257,23 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#flip").click(function(){
         $("#panel").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+
+        $(".hide-div").hide();
+
+    $("#show-div-landing").click(function(){
+        $(".hide-div").show(1000);
+        $("#landingTemplateSlider").hide(1000);
+    });
+});
+
+$(document).ready(function(){
+	
+    $(".select-check-box").click(function(){
+    	//$(this).toggleClass('selected');
+        $(this).children().last().toggleClass("toggle-class");
     });
 });

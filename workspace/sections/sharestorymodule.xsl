@@ -7,11 +7,11 @@
            
             <div class="content-right col-xs-12 content-defult col-sm-3" style=" overflow: hidden; padding: 0px;">
                 
-               <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 100%; height: 2000px; max-height: 171px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;"/>
+               <img src="{/data/params/workspace}/assets/img/helppic.png" class="border-radius-shape"/>
 
             </div>
             
-            <div class="content-left col-xs-12 col-sm-9" style=" padding-top: 50px;">
+            <div class="content-left col-xs-12 col-sm-9" style=" padding-top: 20px; padding-bottom: 20px;">
                 <div class="media">                                                        
                     <div class="media-body">
                         <h3 class="title"><xsl:value-of select="title"/></h3>
