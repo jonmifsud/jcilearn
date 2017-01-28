@@ -129,7 +129,7 @@
                                 <div id="div2">
                                     <label style="width: 100%;">
                                         <div class="enter-text-field"><h3 class="title-centre">TEXT</h3>
-                                            <textarea id="your-note" name="fields[text]" class="your-notes-class"type="text"></textarea>
+                                            <textarea id="your-note" name="fields[text]" class="your-notes-class" type="text"></textarea>
                                         </div>
                                     </label>
 

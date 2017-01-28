@@ -122,7 +122,7 @@
 
                          <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-bottom: 0px;">
                             <div class="col-md-1"></div>
-                            <div class="row comments-inner col-xs-12 col-md-10">
+                            <div class="row comments-inner col-xs-12 col-md-10" >
                                 <xsl:apply-templates select="/data/comments/entry" mode="comment">
                                                                         
                                 </xsl:apply-templates>
@@ -139,7 +139,7 @@
                                     <div class="col-md-1 col-sm-1" ></div> 
                                     <div class="col-md-10 col-sm-10">
                                     <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-6 text-center margin-t-50" style="margin-top: 5px;">
 
                                             <a href="#" class="btn btn-border text-normal" data-toggle="modal" data-target="#myModal3">
                                                 <h3 style="font-size: 30px; line-height: 60%; margin-top: 6%;" class="title"><i class="fa fa-chevron-left" aria-hidden="true"></i> STUDY </h3> 
@@ -169,7 +169,7 @@
                                     </div>  
 
                                     <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center" style="margin-top: 5px;">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-6 text-center" style="margin-top: 5px;">
                                             <div class="btn btn-border text-normal">
                                                 <a href="#" class="btn" >
                                                     <i class="fa fa-like-love-streamline"></i>
@@ -185,7 +185,7 @@
                                     </div> 
 
                                     <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-12 text-center margin-t-50" style="margin-top: 5px;">
 
                                             <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
                                                 <h3 style="font-size: 30px; margin-top: 6%; line-height: 60%;" class="title"> Mini Quiz <i class="fa fa-chevron-right" aria-hidden="true"></i> </h3>

@@ -44,7 +44,8 @@
                     <div class="col-xs-12 each-features">
                         <div class="guide-team">
                             <div class="guide-team-inner">
-                                <div class="col-xs-12 each-features">
+                                <div class="col-xs-2"></div>
+                                <div class="col-xs-8 each-features">
 
 			                        <div class="guide-team">
 			                            <div class="guide-team-inner">
@@ -63,6 +64,8 @@
 			                        </div>
 
                     			</div>
+                                <div class="col-xs-2"></div>
+
                             </div>
                         </div>
                     </div>

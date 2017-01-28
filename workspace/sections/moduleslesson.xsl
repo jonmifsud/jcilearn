@@ -2,14 +2,14 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
-<xsl:import href="../sections/likeviewsoutput.xsl"/>
-<xsl:import href="../sections/likeviews.xsl"/>
-<xsl:import href="../sections/user.xsl"/>
+<xsl:import href="likeviewsoutput.xsl"/>
+<xsl:import href="likeviews.xsl"/>
+<xsl:import href="user.xsl"/>
 
         <xsl:template match="*[section/@handle='lesson']//entry" mode='lesson-module-item'>
 
-         <div class="each-item col-md-6 col-sm-12 " style="min-height: 250px;">
-            <div class=" each-item-inner col-xs-12" style="min-height: 180px;">
+         <div class="each-item col-md-6 col-sm-12 " style="min-height: 250px; ">
+            <div class=" each-item-inner col-xs-12" style="min-height: 180px; padding-right: 0px;">
                 <div class="content-left col-sm-9">
 
                     <div class="media">
@@ -27,11 +27,10 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-right -->
-                <div class="content-right content-defult col-sm-3">
+                <div class="content-right content-defult col-sm-3" style=" padding: 0px;">
                     
                     <div class="profile-meta" style="margin-left: 0px;">
-                        <p><i class="fa fa-man-people-streamline-user"></i>19</p>
-                        <p><i class="fa fa-like-love-streamline"></i>8</p>
+                       <xsl:apply-templates select="/data/lesson/entry[1]" mode="likeviews"/>
                     </div>
 
                     <!-- THIS IS REAL LIKE VIEWS. 

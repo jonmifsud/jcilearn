@@ -24,11 +24,8 @@
                         <div class="form-group input-outer">
                             <div class="select-outer">
                                 <select class="form-control contact-plan">
-                                    <option value="subject1" disabled="" selected="">ADD</option>
-                                    <option value="BusinessConsulting">consulting</option>
-                                    <option value="TextConsulting">Text</option>
-                                    <option value="Advisory">Advisory</option>
-                                    <option value="Audit-$-assurance">Audit</option>
+                                    <option value="subject1" disabled="" selected="">SAVE</option>
+                                    <option value="BusinessConsulting">PUBLISH</option>
                                 </select>
                             </div>
                         </div>
@@ -36,6 +33,8 @@
                 </div>
 
                     <button class="counter1"> counter</button>
+                    <button class="counter2"> counter</button>
+                    <p id="output"> here </p>
 
 
                     <div class="col-xs-12 each-features">

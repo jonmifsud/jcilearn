@@ -225,34 +225,75 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
 
 $(document).ready(function(){
-		$(".sliderJquery > div").hide();                
-        $(".sliderJquery div:nth-child("+1+")").show();
-        $(".study-timeline-progress > div:nth-child("+1+")").css({"background-color": "#3496DA", "color": "white"});
+	$(".sliderJquery > div").hide();                
+    $(".sliderJquery div:nth-child("+1+")").show();
+    $(".study-timeline-progress > div:nth-child("+1+")").css({"background-color": "#3496DA", "color": "white"});
 
-       
-        $(".counter1").bind("click", counterfunc);
-        var counter = 0;
-        divNumber = $(".sliderJquery > div").length;
+   													
+    $(".next").bind("click", increase);	
+    $(".before").bind("click", decrease);	
+    var counter = 1;								
+    divNumber = $(".sliderJquery > div").length;		
+    var sum;
 
+    function increase(){
+        sum = counter + 1;
+        $("#out1").html(sum);
+        if(counter<divNumber){ 
+            counter=sum;
 
-        function counterfunc(){
-            if(counter<divNumber){ 
-                var sum = counter + 1;
-                $("#output").html(sum);
-                counter=sum;
+            $(".sliderJquery > div").hide();                
+            $(".sliderJquery div:nth-child("+sum+")").show();
 
-                $(".sliderJquery > div").hide();                
-                $(".sliderJquery div:nth-child("+counter+")").show();
+            $(".study-timeline-progress > div:nth-child("+sum+")").css({"background-color": "#3496DA", "color": "white"});
 
-                $(".study-timeline-progress > div:nth-child("+counter+")").css({"background-color": "#3496DA", "color": "white"});
+        }else{
+            counter = 0; 
+            sum = 0;
+            $(".study-timeline-progress > div").css({"background-color": "white", "color": "#3496DA"});
+            $(".sliderJquery div:nth-child(1)").show();
+        }  
+        counter=sum;          
+    } 
 
-            }else{
-                counter = 0; 
-                $(".study-timeline-progress > div").css({"background-color": "white", "color": "#3496DA"});
-                $(".sliderJquery div:nth-child(1)").show();
-            }           
-        }
-    });
+     function decrease(){
+    	sum = sum-1;
+    	$("#out2").html(sum);
+    	if(counter>0){ 
+            counter=sum;
+
+            $(".sliderJquery > div").hide();                
+            $(".sliderJquery div:nth-child("+sum+")").show();
+
+            $(".study-timeline-progress > div:nth-child("+sum+")").css({"background-color": "#3496DA", "color": "white"});
+
+        }else{
+            counter = 0; 
+            sum=0;
+            $(".study-timeline-progress > div").css({"background-color": "white", "color": "#3496DA"});
+            $(".sliderJquery div:nth-child(1)").show();
+        }  
+        counter=sum;
+    }
+});
+
+$(document).ready(function(){					
+    $(".next").bind("click", increase);	
+    $(".before").bind("click", decrease);	
+    var counter = 0;										
+    var sum;
+
+    function increase(){
+        sum = counter + 1;
+       	$("#out1").html(sum);
+        counter=sum;         
+    }
+
+    function decrease(){
+    	sum = sum-1;
+    	$("#out2").html(sum);
+    }
+});
 
 $(document).ready(function(){
     $("#flip").click(function(){

@@ -9,7 +9,7 @@
             <div class="modules">
                 <div class="modules-inner">
                     <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Modules Image" class="img-responsive"/>
-                    <h3 class="title"><xsl:value-of select="title" /></h3>
+                    <h3 class="blue-text" style="text-transform: uppercase;"><xsl:value-of select="title" /></h3>
                 </div>
                 <p class="small-text"><xsl:value-of select="profile/item" /> recently enrolled form this module.</p>
             </div>

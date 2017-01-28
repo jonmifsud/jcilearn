@@ -9,7 +9,7 @@
 
         <div class="each-item div-max-size col-xs-12" style="margin-left: auto; margin-right: auto; text-align: center;">
             <div class="each-item-inner" style="margin-left: -5px; margin-right: -5px;">
-                <div class="content-left col-md-8 col-sm-7">
+                <div class="content-left col-md-8 col-sm-7" style="padding-top: 4%; padding-left: 4%;">
 
                     <div class="media">
                         <div class="media-left">
@@ -26,7 +26,7 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-right -->
-                <div class="content-right col-md-4 col-sm-5 no-bottom-padding">
+                <div class="content-right col-md-4 col-sm-5 no-bottom-padding" style="padding-left: 0px; padding-bottom: 10px;">
                     
                     <div class="media">
                         <div class="media-left no-padding-right" style="padding-right: 0px;">
@@ -37,12 +37,21 @@
                         <div class="media-body">
 
                             <h3 class="title"><xsl:value-of select="/data/users/entry[@id = current()/profile/item/@id]/name"/></h3>
-                            <div class="profile-meta">
-                               <p class="blue-text-in-line" id="like"><i class="fa fa-heart-o"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
-                                <span id="likeOutput" value="0" style="font-size: 27px;">0</span><br/>
+                            <div class="profile-meta" style="margin-top: 0px;">
+
+                                <span class="blue-text-in-line" id="like"  data-entry='{@id}'>
+                                    <i class="fa fa-heart-o"></i>
+                                    <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
+                                </span>
+
+                                <span id="likeOutput" value="0" style="font-size: 18px;">0</span>
                                 
-                                <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
-                                <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
+                                <span class="blue-text-in-line" id="view">
+                                    <i class="fa fa-man-people-streamline-user"></i>
+                                    <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
+                                </span>
+
+                                <span id="viewOutput" value="0" style="font-size: 18px;">0</span>       
                             </div>
 
                         </div> <!-- /.media-body -->

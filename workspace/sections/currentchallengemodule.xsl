@@ -4,13 +4,15 @@
     <xsl:template  match="*[section/@handle='challenge']//entry" mode='currentchallengemodule'>
         <div class="item" style="padding: 0px;">    
             <div class="modules" style="height: 100%;">
-                <div class="modules-inner" style="padding: 0px; border: 0px; margin-right: 10px;">
+                <div class="modules-inner" style="padding: 0px !important; border: 0px; margin-right: 10px;">
                             
-                    <div class="guide-team-content">
+                   
+
+                     <div class="guide-team-content">
                         <div class="each-item" style="margin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-bottom: 40px; margin-top: 30px;">
-                            <div class="each-item-inner">
-                                <div class="content-right col-md-4 col-sm-5" style="width: 20%; height: 170px; background-color: #3489DA; border-top-left-radius: 20px; border-bottom-left-radius: 20px; margin-left: -3px;">
-                                <br/>
+                            <div class="each-item-inner" style="display: flex;">
+                                <div class="content-right col-md-4 col-sm-5" style="width: 20%;  background-color: #3489DA; border-top-left-radius: 20px; border-bottom-left-radius: 20px; margin-left: -3px;">
+                               
                                 <p class="blue-text-in-line" style="color: white;"><i class="fa fa-man-people-streamline-user" style="color: white;"></i><br/><br/><b>X2</b></p>
                                     
                                 </div> <!-- /.content-left -->
@@ -37,11 +39,11 @@
                         </div>  
                     </div>
 
-                    <div class="guide-team-content">
+                     <div class="guide-team-content">
                         <div class="each-item" style="margin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-bottom: 40px; margin-top: 30px;">
-                            <div class="each-item-inner">
-                                <div class="content-right col-md-4 col-sm-5" style="width: 20%; height: 170px; background-color: #3489DA; border-top-left-radius: 20px; border-bottom-left-radius: 20px; margin-left: -3px;">
-                                <br/>
+                            <div class="each-item-inner" style="display: flex;">
+                                <div class="content-right col-md-4 col-sm-5" style="width: 20%;  background-color: #3489DA; border-top-left-radius: 20px; border-bottom-left-radius: 20px; margin-left: -3px;">
+                               
                                 <p class="blue-text-in-line" style="color: white;"><i class="fa fa-man-people-streamline-user" style="color: white;"></i><br/><br/><b>X2</b></p>
                                     
                                 </div> <!-- /.content-left -->
