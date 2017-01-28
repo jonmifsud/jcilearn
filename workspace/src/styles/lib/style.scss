@@ -1574,18 +1574,18 @@ h6 {
     color: #f37121;
 }
 
-.progress-div{
-  width: 80%; 
-  height: 100%; 
-  background-color: #f37121; 
-  border-radius: 10px;
-}
-
 .progress-wrapper-div{
   width: 100%; 
   height: 13px; 
   border: 2px solid #3496DA; 
   border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  .progress-div{
+    width: 0%; 
+    height: 100%; 
+    background-color: #f37121; 
+  }
 }
 
 .blue-text-centre{
