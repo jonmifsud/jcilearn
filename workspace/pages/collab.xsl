@@ -30,27 +30,29 @@
                         <p class="sub-heading">In your comunity..</p>                                    
                         </div>
 
-                             <div class="collab-div-unique">
+                            <div class="collab-div-unique">
                                 <div class="collab-div-side">
                                     <div class="collab-div-image">
                                       <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image"/>
                                             <img class="corner-flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png" alt="Flag"/>
-                                    </div><br/>
+                                    </div>
                                     <div class="collab-div-image" >
                                        <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image"/>
                                             <img class="corner-flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png" alt="Flag"/>
                                     </div>
+                                
                                 </div>
                                 <div class="collab-div-center" style="border: 0px;">
 
                                     <div class="guide-team-content" style="display: inline; display: inline-blcok;">
                                     <div class="each-item col-sm-10" style="width: 100%;">
-	                                        <div class=" each-item-inner">
-	                                            <div class="content-right content-defult col-sm-3" style="max-width: 18%;overflow: hidden;padding: 0px; background-color: #3489DA; width: 100%;height: 2000px;max-height: 185px; border-bottom-left-radius: 20px; border-top-left-radius: 20px; margin:-3px;"><br/><br/>
+    	                                    <div class=" each-item-inner" style="display: flex;" >
 
-	                                                <p class="blue-text-in-line" style="color: white;"><i class="fa fa-man-people-streamline-user" style="color: white;"></i><br/><br/><b>X2</b></p>
-	                                             
-	                                            </div>
+    	                                        <div class="content-right content-defult col-sm-3" style="max-width: 18%;overflow: hidden;padding: 0px; background-color: #3489DA; width: 100%;border-bottom-left-radius: 20px; border-top-left-radius: 20px; margin:-3px;"><br/><br/>
+
+    	                                                <p class="blue-text-in-line" style="color: white;"><i class="fa fa-man-people-streamline-user" style="color: white;"></i><br/><br/><b>X2</b></p>
+    	                                             
+    	                                        </div>
 	                                            <div class="content-left col-sm-9" style="width: 82%; padding-top: 50px;">
 
 	                                                <div class="media">
@@ -71,7 +73,7 @@
 	                                        </div>    
 	                                    </div>
                                     </div>
-                                    </div>
+                                </div>
                                 <div class="collab-div-side">
                                 
                                 </div>
@@ -96,8 +98,8 @@
 
                                     <div class="guide-team-content" style="display: inline; display: inline-blcok;">
                                     <div class="each-item col-sm-10" style="width: 100%;">
-                                            <div class=" each-item-inner">
-                                                <div class="content-right content-defult col-sm-3" style="max-width: 18%;overflow: hidden;padding: 0px; background-color: #3489DA; width: 100%;height: 2000px;max-height: 185px; border-bottom-left-radius: 20px; border-top-left-radius: 20px;  margin:-3px;"><br/><br/>
+                                            <div class=" each-item-inner" style="display: flex;">
+                                                <div class="content-right content-defult col-sm-3" style="max-width: 18%;overflow: hidden;padding: 0px; background-color: #3489DA; width: 100%; border-bottom-left-radius: 20px; border-top-left-radius: 20px;  margin:-3px;"><br/><br/>
 
                                                     <p class="blue-text-in-line" style="color: white;"><i class="fa fa-man-people-streamline-user" style="color: white;"></i><br/><br/><b>X2</b></p>
                                                  
@@ -146,8 +148,8 @@
 
                                     <div class="guide-team-content" style="display: inline; display: inline-blcok;">
                                     <div class="each-item col-sm-10" style="width: 100%;">
-                                            <div class=" each-item-inner">
-                                                <div class="content-right content-defult col-sm-3" style="max-width: 18%;overflow: hidden;padding: 0px; background-color: #3489DA; width: 100%;height: 2000px;max-height: 185px; border-bottom-left-radius: 20px; border-top-left-radius: 20px;  margin:-3px;"><br/><br/>
+                                            <div class=" each-item-inner" style="display: flex;">
+                                                <div class="content-right content-defult col-sm-3" style="max-width: 18%;overflow: hidden;padding: 0px; background-color: #3489DA; width: 100%; border-bottom-left-radius: 20px; border-top-left-radius: 20px;  margin:-3px;"><br/><br/>
 
                                                     <p class="blue-text-in-line" style="color: white;"><i class="fa fa-man-people-streamline-user" style="color: white;"></i><br/><br/><b>X2</b></p>
                                                  

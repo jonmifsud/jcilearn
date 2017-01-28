@@ -23,7 +23,7 @@
                 <div class="content-left col-md-8 col-sm-7">
 
                     <div class="media">
-                        <div class="media-left" >
+                        <div class="media-left" style="padding: 10px;" >
 
                             <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/>
                         
@@ -40,30 +40,28 @@
                 <div class="content-right col-md-4 col-sm-5" style="padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
                     
                     <div class="media">
-                        <div class="media-left" style="padding-left: 20px; padding-right: 0px;">
+                        
 
                             <xsl:apply-templates select='current()' mode='author-picture'/> 
 
-                        </div> <!-- /.media-left -->
                         <div class="media-body" >
 
                             <h3 class="title"><xsl:value-of select="/data/users/entry[@id = current()/profile/item/@id]/name"/></h3>
-                            <div class="profile-meta">
+                            <div class="profile-meta" style="margin-top: 0px;">
 
                                 <span class="blue-text-in-line" id="like"  data-entry='{@id}'>
                                     <i class="fa fa-heart-o"></i>
                                     <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
                                 </span>
 
-                                <span id="likeOutput" value="0" style="font-size: 27px;">0</span>
+                                <span id="likeOutput" value="0" style="font-size: 18px;">0</span>
                                 
                                 <span class="blue-text-in-line" id="view">
                                     <i class="fa fa-man-people-streamline-user"></i>
                                     <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
                                 </span>
 
-                                <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
-       
+                                <span id="viewOutput" value="0" style="font-size: 18px;">0</span>       
                             </div>
 
                         </div> <!-- /.media-body -->
@@ -76,9 +74,8 @@
     </xsl:template>
 
 
+
     <xsl:template match="*[section/@handle='lesson']//entry" mode='lesson-header'>
-
-
 
         <div class="guide-team">
             <div class="guide-team-inner">

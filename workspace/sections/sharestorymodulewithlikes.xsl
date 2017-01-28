@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:import href="../sections/likeviewsoutput.xsl"/>
-<xsl:import href="../sections/likeviews.xsl"/>
+<xsl:import href="likeviewsoutput.xsl"/>
+<xsl:import href="likeviews.xsl"/>
 
     <xsl:template match="*[section/@handle='story']//entry" mode='sharestorymodulewithlikes'>
-       <div class=" each-item-inner col-sm-10" style="padding: 0px; width: 100%; margin-bottom: 30px;">
+       <div class=" each-item-inner col-sm-10" style="padding: 0px; display: flex; width: 100%; margin-bottom: 30px; overflow: hidden;">
            
-            <div class="content-right col-xs-12 content-defult col-md-3 col-sm-3" style=" overflow: hidden; padding: 0px;">
-                
-               <img src="{/data/params/workspace}/assets/img/helppic.png" class="border-radius-shape"/>
-
+            <div class="content-right col-xs-12 content-defult col-md-3 col-sm-3" style="padding: 0px;">                
+                <img src="{/data/params/workspace}/assets/img/helppic.png" class="border-radius-shape"/> 
             </div>
             
             <div class="content -left col-xs-8 col-md-7 col-sm-7" style=" padding-top: 30px; padding-right: 0px; padding-bottom: 0px;">
@@ -25,11 +23,10 @@
                 </div> <!-- /.media -->
             </div> <!-- /.content-right -->
 
-            <div class="content-right content-defult col-md-2 col-sm-2 col-xs-4" style="padding-left: 0px;">
+            <div class="content-right content-defult col-md-2 col-sm-2 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
                 
                 <div class="profile-meta" style="margin-left: 0px;">
-                    <p><i class="fa fa-man-people-streamline-user"></i>19</p>
-                    <p><i class="fa fa-like-love-streamline"></i>8</p>
+                    <xsl:apply-templates select="/data/story/entry[1]" mode="likeviews"/>
                 </div>
 
                 <!-- THIS IS REAL LIKE VIEWS. 
@@ -44,8 +41,8 @@
                     <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
                 </div>
                 -->
-
             </div>
+            
         </div>
 
     </xsl:template>

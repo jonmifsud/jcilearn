@@ -17,7 +17,18 @@
         <div class="">
             <div class="row features-item section-separator" style="padding-bottom: 0px;">
                 <div class="hide-div">
-                    <button class="counter1"> counter</button>
+
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8" style="margin-bottom: 30px;">
+                        <div class=" before btn-form col-xs-6 text-center margin-t-50 btn-down-positon">
+                            <a href="#" class="btn btn-border text-normal">BEFORE</a>
+                        </div>
+                        
+                        <div class="next btn-form col-xs-6 text-center margin-t-50 btn-down-positon">
+                            <a href="#" class="btn btn-border text-normal">NEXT</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
 
                     <div class="col-xs-12 each-features">
                         <div class="study-timeline-progress" style="margin-top: 10px;">

@@ -44,28 +44,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <!-- <link rel="stylesheet" href="{/data/params/workspace}/assets/css/stylesheet.css"/> -->
 
-        <script>
-            $(document).ready(function(){
-                $("#like").bind("click", incereaseLikeCounter);     
-                var like = 0;
-
-                function incereaseLikeCounter(){
-                    var sum = like+1;
-                    $("#likeOutput").html(sum);
-                    like=sum;
-                }
-
-                $("#view").bind("click", increaseViewCounter);
-                var view = 0;
-
-                function increaseViewCounter(){
-                    var sum = view+1;
-                    $("#viewOutput").html(sum);
-                    view=sum;
-                }
-                
-            });
-        </script>
+    
 
     </head>
     <body class="home-page">
@@ -132,7 +111,7 @@
                                     <li><a href="{/data/params/root}/collab">Collab</a></li>
                                     <li><a href="{/data/params/root}/user/usercontent/">My Content</a></li>
                                     <li><a href="{/data/params/root}/user">My Profile</a></li>
-                                    <li><a href="/user/settings/">My Settings</a></li>
+                                    <li><a href="{/data/params/root}/user/settings/">My Settings</a></li>
                                 </ul>
 
                             </div> <!-- End: .each-section -->
@@ -144,8 +123,8 @@
                                     <li><a href="{/data/params/root}/task">Task</a></li>
                                     <li><a href="{/data/params/root}/module/">module</a></li>
                                     <li><a href="{/data/params/root}/project/">Project</a></li>
-                                    <li><a href="{/data/params/root}/study/">Study</a></li>
                                     <li><a href="{/data/params/root}/story/">Story</a></li>
+                                    <li><a href="{/data/params/root}/study/">Study</a></li>
                                     <li><a href="{/data/params/root}/study/currentmodule/">study_currentmodule</a></li> 
                                     <li><a href="{/data/params/root}/challenge/">Challenge</a></li>
                                     <li><a href="{/data/params/root}/currentchallenge/">current challenge</a></li>                 

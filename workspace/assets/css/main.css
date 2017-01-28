@@ -1107,10 +1107,10 @@ hr {
   font-size: 36px; }
 
 .h2, h2 {
-  font-size: 30px; }
+  font-size: 20px; }
 
 .h3, h3 {
-  font-size: 24px; }
+  font-size: 12px; }
 
 .h4, h4 {
   font-size: 18px; }
@@ -9784,12 +9784,12 @@ h1 {
   line-height: 70px; }
 
 h2 {
-  font-size: 40px;
-  line-height: 50px; }
+  font-size: 20px;
+  line-height: 25px; }
 
 h3 {
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 12px;
+  line-height: 15px;
   letter-spacing: 1px; }
 
 h4 {
@@ -10024,7 +10024,7 @@ h6 {
 body {
   font-family: "helveticaneuelight";
   color: #646464;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 24px;
   overflow-x: hidden !important;
   text-align: left;
@@ -10081,12 +10081,12 @@ h1 {
   line-height: 70px; }
 
 h2 {
-  font-size: 40px;
-  line-height: 50px; }
+  font-size: 20px;
+  line-height: 25px; }
 
 h3 {
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 12px;
+  line-height: 15px;
   letter-spacing: 1px; }
 
 h4 {
@@ -10095,11 +10095,11 @@ h4 {
 
 h5 {
   font-size: 20px;
-  line-height: 34px; }
+  line-height: 25px; }
 
 h6 {
   font-size: 16px;
-  line-height: 30px; }
+  line-height: 21px; }
 
 /**
  * ---------------------
@@ -10201,10 +10201,10 @@ h6 {
   margin: 0; }
 
 .section-header {
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
 
 .section-header .sub-heading {
-  font-size: 24px;
+  font-size: 12px;
   line-height: 25px;
   color: #3496DA; }
 
@@ -10964,10 +10964,10 @@ h6 {
     font-size: 37px;
     line-height: 52px; }
   h2 {
-    font-size: 25px;
-    line-height: 40px; }
+    font-size: 20px;
+    line-height: 30px; }
   h3 {
-    font-size: 19px;
+    font-size: 12px;
     line-height: 31px;
     letter-spacing: 1px; }
   /**
@@ -11036,7 +11036,7 @@ h6 {
     START MAIN CSS STYLE
 *****************************************************************/
 .features-item .each-features {
-  margin-bottom: 110px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
@@ -11131,7 +11131,7 @@ h6 {
   font-family: "helveticaneuebold";
   color: #FFFFFF;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 10px;
   margin-top: 7px;
   position: relative;
   text-transform: uppercase; }
@@ -11219,7 +11219,7 @@ h6 {
   background-color: #FFFFFF; }
 
 .tab-item .tab-content p {
-  font-size: 24px;
+  font-size: 12px;
   line-height: 30px; }
 
 /**
@@ -11242,7 +11242,7 @@ h6 {
 }
 
 .each-item-inner-lesson {
-  padding: 40px; }
+  padding: 20px; }
 
 .each-item-study {
   max-width: 70%;
@@ -11350,7 +11350,7 @@ h6 {
 
 .guide-team-content .features-image,
 .comments .features-image {
-  max-width: 83px;
+  max-width: 60px;
   height: auto; }
 
 .guide-team-content .title,
@@ -11361,7 +11361,7 @@ h6 {
 
 .guide-team-content .content-left,
 .comments .content-left {
-  padding: 29px; }
+  padding: 10px; }
 
 .guide-team-content .content-left:before,
 .comments .content-left:before {
@@ -11398,13 +11398,13 @@ h6 {
 .guide-team-content .flag,
 .comments .flag {
   position: absolute;
-  top: 40px;
-  right: 20px;
-  max-width: 43px; }
+  top: 27px;
+  left: 18px;
+  max-width: 33px; }
 
 .guide-team-content .profile-pic,
 .comments .profile-pic {
-  max-width: 64px;
+  max-width: 48px;
   border-radius: 50%; }
 
 .guide-team-content .profile-meta,
@@ -11419,7 +11419,7 @@ h6 {
   font-family: "helveticaneuebold";
   color: #3496DA;
   margin-right: 10px;
-  font-size: 22px;
+  font-size: 12px;
   text-align: left; }
 
 .guide-team-content .profile-meta p:last-child,
@@ -11447,7 +11447,7 @@ h6 {
   float: none;
   margin-bottom: 10px;
   margin-right: 0;
-  font-size: 24px;
+  font-size: 12px;
   text-align: center; }
 
 .guide-team-content .content-defult .profile-meta p:last-child,
@@ -11459,7 +11459,7 @@ h6 {
   margin-right: 5px; }
 
 .small-text {
-  font-size: 16px; }
+  font-size: 12px; }
 
 /**
  * -------------
@@ -11799,7 +11799,7 @@ input{
   color: #white; }
 
 .button p {
-  font-size: 18px;
+  font-size: 12px;
   color: white;
   line-height: 90%; }
 
@@ -11937,7 +11937,7 @@ input{
 
 .modules .modules-inner {
   border: 2px solid #3496DA;
-  padding: 80px 30px 45px 30px;
+  padding: 60px 0px !important;
   margin-bottom: 10px;
   border-radius: 20px;
   overflow: hidden; }
@@ -12117,11 +12117,7 @@ input{
 * css for Leson
 *----------------
 */
-.lesson-top-picture img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
+
 
 .lesson-text {
   text-align: justify; }
@@ -12227,7 +12223,7 @@ input{
 .footer-section-1 .other-link .title {
   line-height: 31px;
   margin-top: 0px;
-  font-size: 15px;
+  font-size: 12px;
   color: #FFFFFF; }
 
 .footer-section-1 .other-link .link-group a {
@@ -12248,7 +12244,7 @@ input{
 
 .footer-section-1 .link {
   color: #FFFFFF;
-  font-size: 15px; }
+  font-size: 12px; }
 
 .owl-carousel .owl-wrapper:after {
   content: ".";
@@ -12384,7 +12380,7 @@ input{
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.42857143;
   text-align: center;
@@ -12916,13 +12912,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   margin: 5px;
   overflow: hidden; }
 
-.modules .modules-inner {
-  border: 2px solid #3496DA;
-  padding: 80px 30px 45px 30px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  overflow: hidden;
-  min-height: 340px; }
+
 
 .projects-inner {
   border: 2px solid #3496DA;
@@ -13112,8 +13102,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 body {
   font-family: "helveticaneuelight";
   color: #646464;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 10;
   line-height: 27px;
   overflow-x: hidden !important;
   text-align: left;
@@ -13142,7 +13131,7 @@ a,
 p {
   font-family: "helveticaneuelight";
   color: #646464;
-  font-size: 20px;
+  font-size: 12px;
   line-height: 1.5;
   margin-bottom: 20px; }
   p:last-child {
@@ -13164,33 +13153,31 @@ h6 {
 
 h1 {
   font-size: 64px;
-  font-size: 6.4rem;
+
   line-height: 70px; }
 
 h2 {
-  font-size: 40px;
-  font-size: 4rem;
-  line-height: 50px; }
+  font-size: 20px
+  line-height: 25px; }
 
 h3 {
-  font-size: 24px;
-  font-size: 2.4rem;
-  line-height: 35px;
+  font-size: 12px;
+
+  line-height: 15px;
   letter-spacing: 1px; }
 
 h4 {
   font-size: 21px;
-  font-size: 2.1rem;
+
   line-height: 30px; }
 
 h5 {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 20px
   line-height: 34px; }
 
 h6 {
   font-size: 16px;
-  font-size: 1.6rem;
+
   line-height: 30px; }
 
 /**
@@ -13292,10 +13279,10 @@ h6 {
   margin: 0; }
 
 .section-header {
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
   .section-header .sub-heading {
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 12px;
+  
     line-height: 25px;
     color: #3496DA; }
   .section-header .tag-line {
@@ -13439,8 +13426,8 @@ h6 {
   font-family: "helveticaneuebold";
   cursor: pointer;
   display: inline-block;
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 12px;
+
   font-style: normal;
   margin-right: 15px;
   overflow: hidden;
@@ -13537,7 +13524,7 @@ h6 {
 .email-failed,
 .email-loading {
   font-size: 15px;
-  font-size: 1.5rem;
+
   display: none;
   text-align: left !important;
   padding: 10px 0 !important;
@@ -13556,7 +13543,7 @@ h6 {
   .subscription-failed .fa,
   .email-failed .fa {
     font-size: 20px;
-    font-size: 2rem;
+
     position: relative;
     top: 5px; }
 
@@ -13568,8 +13555,7 @@ h6 {
 .email-failed .fa,
 .subscription-success .fa,
 .email-success .fa {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 20px
   position: relative;
   top: 5px; }
 
@@ -13588,7 +13574,7 @@ h6 {
       width: 37px;
       height: 37px;
       font-size: 25px;
-      font-size: 2.5rem;
+    
       padding: 6px 0;
       text-align: center;
       margin-right: 15px;
@@ -13613,7 +13599,7 @@ h6 {
     font-family: "helveticaneuelight";
     height: 55px;
     font-size: 24px;
-    font-size: 2.4rem;
+  
     line-height: 30px;
     border: 2px solid #3496DA;
     box-shadow: 0 0 0 0 #fff;
@@ -13681,7 +13667,7 @@ h6 {
     .single-form .checkbox label {
       padding-left: 35px;
       font-size: 13px;
-      font-size: 1.3rem;
+    
       color: #646464;
       font-weight: 600; }
       .single-form .checkbox label::after, .single-form .checkbox label::before {
@@ -13710,7 +13696,7 @@ h6 {
       border-color: transparent #646464 #646464 transparent; }
   .single-form .form-title {
     font-size: 24px;
-    font-size: 2.4rem;
+  
     color: #3496DA;
     margin-right: 15px;
     font-family: "helveticaneuelight";
@@ -13970,15 +13956,15 @@ h6 {
     text-align: center; }
   h1 {
     font-size: 37px;
-    font-size: 3.7rem;
+  
     line-height: 52px; }
   h2 {
-    font-size: 25px;
-    font-size: 2.5rem;
+    font-size: 20px;
+  
     line-height: 40px; }
   h3 {
-    font-size: 19px;
-    font-size: 1.9rem;
+    font-size: 12px;
+  
     line-height: 31px;
     letter-spacing: 1px; }
   /**
@@ -14054,7 +14040,7 @@ h6 {
     padding-right: 18px; }
   .guide-team-content .content-left,
   .comments .content-left {
-    padding: 30px; }
+    padding: 10px; }
   .guide-team-content .features-image,
   .comments .features-image {
     max-width: 60px; }
@@ -14485,7 +14471,7 @@ h6 {
     START MAIN CSS STYLE
 *****************************************************************/
 .features-item .each-features {
-  margin-bottom: 110px; }
+  margin-bottom: 50px; }
   .features-item .each-features:last-child {
     margin-bottom: 0; }
 
@@ -14557,7 +14543,7 @@ h6 {
       max-width: 55px; }
     .main-navbar-top .navbar-nav li .btn-big .fa {
       font-size: 40px;
-      font-size: 4rem;
+  
       color: #FFFFFF;
       top: 5px; }
     .main-navbar-top .navbar-nav li .btn-nav,
@@ -14568,8 +14554,8 @@ h6 {
       font-family: "helveticaneuebold";
       color: #FFFFFF;
       font-weight: 400;
-      font-size: 15px;
-      font-size: 1.5rem;
+      font-size: 10px;
+    
       margin-top: 7px;
       position: relative;
       text-transform: uppercase; }
@@ -14625,7 +14611,7 @@ h6 {
     margin-bottom: -2px; }
     .tab-item .nav-tabs li a, .tab-item .nav-tabs li a:hover, .tab-item .nav-tabs li a:focus {
       font-size: 40px;
-      font-size: 4rem;
+  
       font-family: "helveticaneuebold";
       padding: 17px 10px;
       display: block;
@@ -14645,10 +14631,10 @@ h6 {
   background-color: #FFFFFF; }
 
 .tab-item .tab-content p {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 12px;
+
   line-height: 30px;
-  line-height: 3rem; }
+ }
 
 /**
  * --------------
@@ -14696,7 +14682,7 @@ h6 {
     text-align: center;
     padding: 8px 0;
     font-size: 24px;
-    font-size: 2.4rem;
+  
     font-family: "helveticaneuebold"; }
 
 /**
@@ -14717,17 +14703,17 @@ h6 {
         padding-right: 0; } }
   .guide-team-content .features-image,
   .comments .features-image {
-    max-width: 83px;
+    max-width: 60px;
     height: auto; }
   .guide-team-content .title,
   .comments .title {
     margin: 10px 0 0 0;
     line-height: 25px;
-    line-height: 2.5rem;
+    
     text-align: left; }
   .guide-team-content .content-left,
   .comments .content-left {
-    padding: 29px; }
+    padding: 10px; }
     @media (max-width: 767px) {
       .guide-team-content .content-left,
       .comments .content-left {
@@ -14775,12 +14761,12 @@ h6 {
   .guide-team-content .flag,
   .comments .flag {
     position: absolute;
-    top: 40px;
-    right: 20px;
-    max-width: 43px; }
+    top: 27px;
+    left: 25px;
+    max-width: 33px; }
   .guide-team-content .profile-pic,
   .comments .profile-pic {
-    max-width: 64px;
+    max-width: 48px;
     border-radius: 50%; }
   .guide-team-content .profile-meta,
   .comments .profile-meta {
@@ -14793,8 +14779,8 @@ h6 {
       font-family: "helveticaneuebold";
       color: #3496DA;
       margin-right: 10px;
-      font-size: 22px;
-      font-size: 2.2rem;
+      font-size: 12px;
+    
       text-align: left; }
       .guide-team-content .profile-meta p:last-child,
       .comments .profile-meta p:last-child {
@@ -14809,7 +14795,7 @@ h6 {
     padding: 25px 21px 25px 21px; }
     .guide-team-content .content-defult .profile-meta,
     .comments .content-defult .profile-meta {
-      margin-top: 22px;
+      margin-top: 12px;
       overflow: hidden; }
       .guide-team-content .content-defult .profile-meta p,
       .comments .content-defult .profile-meta p {
@@ -14817,8 +14803,8 @@ h6 {
         float: none;
         margin-bottom: 10px;
         margin-right: 0;
-        font-size: 24px;
-        font-size: 2.4rem;
+        font-size: 12px;
+      
         text-align: center; }
         .guide-team-content .content-defult .profile-meta p:last-child,
         .comments .content-defult .profile-meta p:last-child {
@@ -14827,9 +14813,6 @@ h6 {
       .comments .content-defult .profile-meta .fa {
         margin-right: 5px; }
 
-.small-text {
-  font-size: 16px;
-  font-size: 1.6rem; }
 
 /**
  * -------------
@@ -14848,14 +14831,14 @@ h6 {
 
 .comments .comments-option .see-more {
   font-family: "helveticaneuelight";
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 12px;
+
   color: #646464; }
 
 .comments .comments-pagination {
   font-family: "helveticaneuebold";
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 12px;
+
   color: #646464; }
 
 /*
@@ -14950,7 +14933,7 @@ textarea{
   .search-form .form-control {
     color: #646464;
     font-size: 16px;
-    font-size: 1.6rem; }
+   }
     .search-form .form-control::-webkit-input-placeholder {
       color: #646464; }
     .search-form .form-control:-moz-placeholder {
@@ -14961,7 +14944,7 @@ textarea{
       color: #646464; }
   .search-form .btn {
     font-size: 20px;
-    font-size: 2rem;
+
     padding: 0 16px;
     color: #3496DA; }
     .search-form .btn:hover {
@@ -15015,7 +14998,7 @@ textarea{
  */
 .modules .modules-inner {
   border: 2px solid #3496DA;
-  padding: 80px 30px 45px 30px;
+  padding: 60px 10px;
   margin-bottom: 10px;
   border-radius: 20px; }
 
@@ -15037,10 +15020,10 @@ textarea{
   overflow: hidden; }
   .footer-section-1 .other-link .title {
     line-height: 31px;
-    line-height: 3.1rem;
+    
     margin-top: 0px;
-    font-size: 15px;
-    font-size: 1.5rem;
+    font-size: 12px;
+  
     color: #FFFFFF; }
   .footer-section-1 .other-link .link-group a {
     color: #FFFFFF;
@@ -15056,8 +15039,8 @@ textarea{
       margin-right: 0px; }
   .footer-section-1 .link {
     color: #FFFFFF;
-    font-size: 15px;
-    font-size: 1.5rem; }
+    font-size: 12px;
+   }
 
 .login-field {
   width: 600px;
@@ -15099,7 +15082,7 @@ textarea{
 .like-views-div{
   display: inline-block !important; 
   margin-top: 10px; 
-  font-size: 50px; 
+  font-size: 30px; 
   margin-left: 10px; 
   margin-right: 15px;
 }
@@ -15119,6 +15102,15 @@ textarea{
     padding: 5px;
     text-align: center;
 
+}
+
+.hover-arrow{
+  font-size: 200px;
+}
+
+.hover-arrow:hover{
+  font-size: 200px;
+  color: red;
 }
 
 .drop-down-button-on-project{
@@ -15161,36 +15153,38 @@ textarea{
 
 @media all and (min-width: 1025) {
   h3 {
-    font-size: 25px;
-    font-size: 2.5rem;
-    line-height: 35px;
-    line-height: 3.5rem; }
+    font-size: 12px;
+  
+    line-height: 15px;
+     }
   .error-font {
     font-size: 300px; }
   .pera {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 12px;
+  
     line-height: 16px;
-    line-height: 1.6rem; } }
+     } }
 
 @media all and (max-width: 1024px) and (min-width: 640px) {
   h3 {
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: 12px;
+  
     line-height: 28px;
-    line-height: 2.8rem; }
+     }
   .error-font {
     font-size: 200px; }
   p {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 12px;
+  
     line-height: 1.5 !important;
-    line-height: 1.6rem; }
+     }
   .modal-content {
     width: 100% !important;
     margin-right: auto;
     margin-left: 15% !important; } 
-  
+  .pera {
+    font-size: 14px;
+
   .height-md-story-module{
     height: 204px !important;
   }
@@ -15202,30 +15196,30 @@ textarea{
 
 @media all and (max-width: 639px) and (min-width: 320px) {
   h3 {
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: 10px;
+  
     line-height: 20px;
-    line-height: 2rem; }
+   }
   p {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 12px;
+  
     line-height: 16px;
-    line-height: 1.6rem;
+    
     text-align: justify; }
   h2 {
-    font-size: 25px;
-    font-size: 2.5rem;
+    font-size: 20px;
+  
     line-height: 20px;
-    line-height: 2rem; }
+   }
 
 
   .blue-text {
     font-size: 16px;
-    font-size: 1.6rem;
+  
     text-align: center; }
   .blue-text-in-line {
     font-size: 20px;
-    font-size: 2rem; }
+ }
   .each-item-inner-lesson {
     padding-left: 5px; }
   /*  .comments{

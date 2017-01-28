@@ -18,19 +18,20 @@
 
                         <xsl:call-template name="learnfilesubheader"/>  
 
-                    <div class="col-xs-12 each-features">
+                    <div class="col-xs-12" style="margin-bottom: 80px;">
+                    <div class="col-xs-2"></div>
+                    <div class="col-xs-8 each-features" >
 
-                        <div class="guide-team-inner">
-                                
-                                <!-- Start: Section Header -->
-                                <div class="section-header relative text-center">
-                                
-                                    <h2 class="section-heading">Introduction to Leadership</h2>
-                                    <p class="blue-text-centre">Finish this module to earn your first Leadership badge!</p>
-                                </div>                                 
+                        <div class="guide-team-inner">                                
+                            <!-- Start: Section Header -->
+                            <div class="section-header relative text-center">
+                            
+                                <h2 class="section-heading">Introduction to Leadership</h2>
+                                <p class="blue-text-centre">Finish this module to earn your first Leadership badge!</p>
+                            </div>                                 
                         </div>
 
-                        <div class="box-border" style="width: 70%; height: 50px; padding: 0px;">
+                        <div class="box-border" style="width: 70%; height: 30px; padding: 0px;">
                             <div class="box-sharp-edge" style="width: 25%; background-color: orange; ">
                             </div>
                             <div class="box-sharp-edge" style="width: 25%; background-color: #3489DA;">
@@ -40,19 +41,20 @@
                         </div>
 
                         <div class="study-timeline-progress" >
-                            <div class="study-timeline-progress-circles" style="margin-left: 28%;">
+                            <div class="study-timeline-progress-circles" style="margin-left: 30%;">
                                 1
                             </div> 
-                            <div class="study-timeline-progress-circles"  style="margin-left: 45%;">
+                            <div class="study-timeline-progress-circles"  style="margin-left: 47%;">
                                 2
                             </div>
-                            <div class="study-timeline-progress-circles"  style="margin-left: 62%;">
+                            <div class="study-timeline-progress-circles"  style="margin-left: 65%;">
                                 3
                             </div>
-                            <div class="study-timeline-progress-circles"  style="margin-left: 80%;">
+                            <div class="study-timeline-progress-circles"  style="margin-left: 83%;">
                                 4
                             </div>
                         </div>
+
 
                         <br/><br/>
                         <div class="col-xs-12 each-features" style="margin-top: 50px;">
@@ -69,8 +71,13 @@
                         </div>
 
                     </div> <!-- /.each-features -->
-                    
-                    <div class="col-xs-12 each-features">
+                    <div class="col-xs-2"></div>
+                    </div>
+
+
+                    <div class="col-xs-12">
+                    <div class="col-xs-2"></div>
+                    <div class="col-xs-8 each-features">
 
                         <div class="guide-team-inner">
                                 
@@ -82,7 +89,7 @@
                                 </div>                                 
                         </div>
 
-                        <div class="box-border" style="width: 70%; height: 50px; padding: 0px;">
+                        <div class="box-border" style="width: 70%; height: 30px; padding: 0px;">
                             <div class="box-sharp-edge" style="width: 20%; background-color: #3489DA;">
                             </div>
                             <div class="box-sharp-edge" style="width: 20%;">
@@ -125,6 +132,9 @@
                                 <div class="col-md-1"></div>
                             </div>
                     </div>
+                    <div class="col-xs-2"></div>
+                    </div>
+
 
                     </div> <!-- /.each-features -->
 

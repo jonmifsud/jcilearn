@@ -19,7 +19,8 @@
 
                         <xsl:call-template name="learnfilesubheader"/> 
 
-                        <div class="col-xs-12 each-features">
+                        <div class="col-md-2"></div>
+                        <div class="col-xs-12 col-md-8 each-features">
 
                             <div class="guide-team">
                                 <div class="guide-team-inner">
@@ -28,11 +29,9 @@
                                     <xsl:apply-templates select="/data/lesson/entry[1]/lesson-text-box/item" mode="comment"> <!-- applying comment template -->      
                                     </xsl:apply-templates></h2>
                                     
-                                    
                                     <!-- Start: Section Header -->
-                                    <div class="section-header relative text-center" >                                      
-                                        <p class="sub-heading">Your first step to becoming a true leader</p>
-
+                                    <div class="section-header relative text-center" >
+                                        <p class="sub-heading"> Your first step to becoming a true leader </p>
                                     </div> 
                                     <!-- End: Section Header -->
 
@@ -50,13 +49,14 @@
                                 </div>
                             </div>
                         </div> <!-- /.each-features -->
+                        <div class="col-md-2"></div>
 
                     <div class="col-xs-12 each-features text-center">
 
                     	<p class="blue-text">Looking for more? </p>
-
+                        
                         <div class="modules-slider">
-                            <div class="modules-slider-wrapper three-slides owl-carousel">
+                            <div class="modules-slider-wrapper three-slides owl-carousel" style="display: flex;">
                                 <xsl:for-each select="/data/lesson/entry">
                                     <xsl:apply-templates select="current()" mode="currentmodule" /> 
                                 </xsl:for-each>
