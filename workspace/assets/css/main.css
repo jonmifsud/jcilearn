@@ -1110,7 +1110,7 @@ hr {
   font-size: 20px; }
 
 .h3, h3 {
-  font-size: 12px; }
+  font-size: 14px; }
 
 .h4, h4 {
   font-size: 18px; }
@@ -1119,7 +1119,7 @@ hr {
   font-size: 14px; }
 
 .h6, h6 {
-  font-size: 12px; }
+  font-size: 14px; }
 
 p {
   margin: 0 0 10px; }
@@ -2165,7 +2165,7 @@ fieldset[disabled] input[type=checkbox], fieldset[disabled] input[type=radio], i
 .input-sm {
   height: 30px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
@@ -2179,7 +2179,7 @@ select[multiple].input-sm, textarea.input-sm {
 .form-group-sm .form-control {
   height: 30px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
@@ -2194,7 +2194,7 @@ select[multiple].input-sm, textarea.input-sm {
   height: 30px;
   min-height: 32px;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5; }
 
 .input-lg {
@@ -2392,7 +2392,7 @@ select[multiple].input-lg, textarea.input-lg {
 @media (min-width: 768px) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
-    font-size: 12px; } }
+    font-size: 14px; } }
 
 .btn {
   display: inline-block;
@@ -2682,13 +2682,13 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-group-sm > .btn, .btn-sm {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
 .btn-group-xs > .btn, .btn-xs {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
@@ -2823,7 +2823,7 @@ tbody.collapse.in {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #777;
   white-space: nowrap; }
@@ -3036,7 +3036,7 @@ select[multiple].input-group-lg > .form-control, select[multiple].input-group-lg
 .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn {
   height: 30px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
@@ -3071,7 +3071,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .input-group-addon.input-sm {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 3px; }
 
 .input-group-addon.input-lg {
@@ -3782,7 +3782,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .pagination-sm > li > a, .pagination-sm > li > span {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5; }
 
 .pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span {
@@ -3888,7 +3888,7 @@ a.label:focus, a.label:hover {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1;
   color: #fff;
@@ -4074,7 +4074,7 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
   float: left;
   width: 0;
   height: 100%;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
   color: #fff;
   text-align: center;
@@ -4731,7 +4731,7 @@ button.close {
   z-index: 1070;
   display: block;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857143;
@@ -9788,7 +9788,7 @@ h2 {
   line-height: 25px; }
 
 h3 {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
   letter-spacing: 1px; }
 
@@ -9887,7 +9887,7 @@ h6 {
   zoom: 1;
   margin: 5px;
   padding: 3px 10px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 30px;
   background: #869791;
   filter: Alpha(Opacity=50);
@@ -9921,7 +9921,7 @@ h6 {
   width: auto;
   color: #FFF;
   padding: 2px 10px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 30px; }
 
 .owl-item.loading {
@@ -10085,7 +10085,7 @@ h2 {
   line-height: 25px; }
 
 h3 {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 15px;
   letter-spacing: 1px; }
 
@@ -10204,7 +10204,7 @@ h6 {
   margin-bottom: 30px; }
 
 .section-header .sub-heading {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 25px;
   color: #3496DA; }
 
@@ -10967,7 +10967,7 @@ h6 {
     font-size: 20px;
     line-height: 30px; }
   h3 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 31px;
     letter-spacing: 1px; }
   /**
@@ -11219,7 +11219,7 @@ h6 {
   background-color: #FFFFFF; }
 
 .tab-item .tab-content p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 30px; }
 
 /**
@@ -11419,7 +11419,7 @@ h6 {
   font-family: "helveticaneuebold";
   color: #3496DA;
   margin-right: 10px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: left; }
 
 .guide-team-content .profile-meta p:last-child,
@@ -11447,7 +11447,7 @@ h6 {
   float: none;
   margin-bottom: 10px;
   margin-right: 0;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center; }
 
 .guide-team-content .content-defult .profile-meta p:last-child,
@@ -11459,7 +11459,7 @@ h6 {
   margin-right: 5px; }
 
 .small-text {
-  font-size: 12px; }
+  font-size: 14px; }
 
 /**
  * -------------
@@ -11799,7 +11799,7 @@ input{
   color: #white; }
 
 .button p {
-  font-size: 12px;
+  font-size: 14px;
   color: white;
   line-height: 90%; }
 
@@ -12223,7 +12223,7 @@ input{
 .footer-section-1 .other-link .title {
   line-height: 31px;
   margin-top: 0px;
-  font-size: 12px;
+  font-size: 14px;
   color: #FFFFFF; }
 
 .footer-section-1 .other-link .link-group a {
@@ -12244,7 +12244,7 @@ input{
 
 .footer-section-1 .link {
   color: #FFFFFF;
-  font-size: 12px; }
+  font-size: 14px; }
 
 .owl-carousel .owl-wrapper:after {
   content: ".";
@@ -12301,7 +12301,7 @@ input{
   zoom: 1;
   margin: 5px;
   padding: 3px 10px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 30px;
   background: #869791;
   filter: Alpha(Opacity=50);
@@ -12335,7 +12335,7 @@ input{
   width: auto;
   color: #FFF;
   padding: 2px 10px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 30px; }
 
 .owl-item.loading {
@@ -12380,7 +12380,7 @@ input{
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.42857143;
   text-align: center;
@@ -12798,13 +12798,13 @@ fieldset[disabled] .btn-link:focus, fieldset[disabled] .btn-link:hover {
 
 .btn-group-sm > .btn, .btn-sm {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
 .btn-group-xs > .btn, .btn-xs {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
@@ -13131,7 +13131,7 @@ a,
 p {
   font-family: "helveticaneuelight";
   color: #646464;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   margin-bottom: 20px; }
   p:last-child {
@@ -13161,7 +13161,7 @@ h2 {
   line-height: 25px; }
 
 h3 {
-  font-size: 12px;
+  font-size: 14px;
 
   line-height: 15px;
   letter-spacing: 1px; }
@@ -13281,7 +13281,7 @@ h6 {
 .section-header {
   margin-bottom: 30px; }
   .section-header .sub-heading {
-    font-size: 12px;
+    font-size: 14px;
   
     line-height: 25px;
     color: #3496DA; }
@@ -13426,7 +13426,7 @@ h6 {
   font-family: "helveticaneuebold";
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
 
   font-style: normal;
   margin-right: 15px;
@@ -13963,7 +13963,7 @@ h6 {
   
     line-height: 40px; }
   h3 {
-    font-size: 12px;
+    font-size: 14px;
   
     line-height: 31px;
     letter-spacing: 1px; }
@@ -14323,7 +14323,7 @@ h6 {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.42857143;
   color: #777;
   white-space: nowrap; }
@@ -14631,7 +14631,7 @@ h6 {
   background-color: #FFFFFF; }
 
 .tab-item .tab-content p {
-  font-size: 12px;
+  font-size: 14px;
 
   line-height: 30px;
  }
@@ -14779,7 +14779,7 @@ h6 {
       font-family: "helveticaneuebold";
       color: #3496DA;
       margin-right: 10px;
-      font-size: 12px;
+      font-size: 14px;
     
       text-align: left; }
       .guide-team-content .profile-meta p:last-child,
@@ -14803,7 +14803,7 @@ h6 {
         float: none;
         margin-bottom: 10px;
         margin-right: 0;
-        font-size: 12px;
+        font-size: 14px;
       
         text-align: center; }
         .guide-team-content .content-defult .profile-meta p:last-child,
@@ -14831,13 +14831,13 @@ h6 {
 
 .comments .comments-option .see-more {
   font-family: "helveticaneuelight";
-  font-size: 12px;
+  font-size: 14px;
 
   color: #646464; }
 
 .comments .comments-pagination {
   font-family: "helveticaneuebold";
-  font-size: 12px;
+  font-size: 14px;
 
   color: #646464; }
 
@@ -15022,7 +15022,7 @@ textarea{
     line-height: 31px;
     
     margin-top: 0px;
-    font-size: 12px;
+    font-size: 14px;
   
     color: #FFFFFF; }
   .footer-section-1 .other-link .link-group a {
@@ -15039,7 +15039,7 @@ textarea{
       margin-right: 0px; }
   .footer-section-1 .link {
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 14px;
    }
 
 .login-field {
@@ -15153,28 +15153,28 @@ textarea{
 
 @media all and (min-width: 1025) {
   h3 {
-    font-size: 12px;
+    font-size: 14px;
   
     line-height: 15px;
      }
   .error-font {
     font-size: 300px; }
   .pera {
-    font-size: 12px;
+    font-size: 14px;
   
     line-height: 16px;
      } }
 
 @media all and (max-width: 1024px) and (min-width: 640px) {
   h3 {
-    font-size: 12px;
+    font-size: 14px;
   
     line-height: 28px;
      }
   .error-font {
     font-size: 200px; }
   p {
-    font-size: 12px;
+    font-size: 14px;
   
     line-height: 1.5 !important;
      }
@@ -15201,7 +15201,7 @@ textarea{
     line-height: 20px;
    }
   p {
-    font-size: 12px;
+    font-size: 14px;
   
     line-height: 16px;
     
