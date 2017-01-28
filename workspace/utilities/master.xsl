@@ -206,6 +206,18 @@
 
         <script src="{/data/params/workspace}/assets/js/main.js"></script>
         <script src="{/data/params/workspace}/src/scripts/custom/sliderForEditPage.js"></script>
+
+        <script type="text/javascript">
+        (function() {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = '//api.usersnap.com/load/'+
+                'f0bdb2e4-7a1c-4ec5-bf01-9106d26aba76.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+        })();
+        </script>
     </body>
 
 </html>
