@@ -79,3 +79,6 @@
 [submodule "extensions/entry_url_field"]
 	path = extensions/entry_url_field
 	url = git@github.com:jonmifsud/entry_url_field.git
+[submodule "extensions/oauth"]
+	path = extensions/oauth
+	url = https://github.com/mazedigital/oauth.git

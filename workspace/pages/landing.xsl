@@ -41,9 +41,15 @@
                             <div id="div1" style="margin-bottom: 100px;" >
                                 <div class="box-border" style=" width: 70%; padding: 20px; height: 20%; margin-bottom: 50px; margin-top: 10px; border: 0px;">
                                     <div class="center">
+                                            
                                             <p class="blue-text">One final step that will allow us to<br/>learn more about you<br/> and find your future collaborators.</p>
-                                             <a class="btn btn-block btn-social btn-twitter">
-                                    </a><a  onclick="landingNextStep()" class="button facebook"><span><i class="fa fa-facebook" style="padding-top: 10px;"></i></span><p style="padding-top: 15px;">Sign in with Facebook</p></a>
+                                             
+                                             <a href='{/data/events/oauth/facebook/@signup-url}' onclick="landingNextStep()" class="button facebook">
+                                                <span>
+                                                    <i class="fa fa-facebook" style="padding-top: 10px;"></i>
+                                                </span>
+                                                <p style="padding-top: 15px;">Sign in with Facebook</p>
+                                            </a>
                                     </div>
                                 </div>
                             </div>
