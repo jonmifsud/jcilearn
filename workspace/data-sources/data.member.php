@@ -34,7 +34,8 @@ class datasourcemember extends SectionDatasource
         'access: permissions',
         'address',
         'interests',
-        'role'
+        'role',
+        'photo',
     );
 
     public function __construct($env = null, $process_params = true)

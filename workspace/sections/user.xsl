@@ -8,14 +8,32 @@
         <xsl:variable name="ucletters">ABCDEFGHIJKLMNOPQRSTUVWXYZ </xsl:variable>
 
         <div class="media-left" style="padding-left: 10px; padding-right: 0px;">
-            <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-2.png" style="padding-left: 1px;" alt="Media Team Profile Image"/>
-                <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flags/83px/{translate(address/country,$ucletters,$lcletters)}.jpg" alt="Flag"/>
+            <img class="media-object profile-pic" style="padding-left: 1px;" alt="Media Team Profile Image">
+                <xsl:attribute name='src'>
+                    <xsl:apply-templates select='.' mode='photo-url'/>
+                </xsl:attribute>
+            </img>
+            <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flags/83px/{translate(address/country,$ucletters,$lcletters)}.jpg" alt="Flag"/>
             <xsl:if test='$include-name'>
                 <h3 class="title"><xsl:value-of select="name"/></h3>
             </xsl:if>
         </div> 
 
 
+    </xsl:template>
+
+    <xsl:template match="*[section/@handle='user']//entry" mode='photo-url'>
+        <xsl:param name='dimension' select='"110x110"'/>
+
+        <xsl:choose>
+            <xsl:when test="photo/supported-dimensions/image[@dimension=$dimension]">
+                <xsl:value-of select="photo/supported-dimensions/image[@dimension=$dimension]"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select='/data/params/workspace'/>
+                <xsl:text>/assets/img/icons/profile-2.png</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="*[section/@handle='user']//entry" mode='user-profile'>
@@ -29,8 +47,12 @@
             
             <div class="col-md-5 col-sm-6" style="border: 0px; height: 10%;">
                  <div class="user-definitions-line-right" style=" width: 100%;">
-                    <img style="width: 110%; position: relative; border: 5px solid #3496DA;; border-radius: 100%; max-height: 250px; max-width: 250px;" class="user-image" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image"/>
-                    <img style="position: relative; top: -80px; min-width: 120px; height 80px; right: 0;" class="flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png" alt="Flag"/>
+                    <img style="width: 110%; position: relative; border: 5px solid #3496DA;; border-radius: 100%; max-height: 250px; max-width: 250px;" class="user-image" alt="Media Team Profile Image">
+                        <xsl:attribute name='src'>
+                            <xsl:apply-templates select='.' mode='photo-url'/>
+                        </xsl:attribute>
+                    </img>
+                    <img style="position: relative; top: -80px; min-width: 120px; height 80px; right: 0;" class="flag" src="{/data/params/workspace}/assets/img/icons/flags/83px/{translate(address/country,$ucletters,$lcletters)}.jpg" alt="Flag"/>
                  </div>
 
             </div>
