@@ -1860,21 +1860,6 @@ h6 {
   vertical-align: middle;
 }
 
-.check-box{
-  width: 20px;
-  height: 20px; 
-  border-radius: 20px; 
-  border: 2px solid #3496DA; 
-  float: left; 
-  margin:10px;
-}
-
-.select-check-box.selected{
-  .check-box{
-    background:  #3496DA;
-  }
-}
-
 .media-body{
   text-align: center;
   vertical-align: middle;

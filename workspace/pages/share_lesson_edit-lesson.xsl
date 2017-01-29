@@ -76,49 +76,15 @@
                                         </label>
 
                                         <h3 class="title" style="margin-bottom: 0px;">CATEGORY</h3><br/>
-                                        <div class="box-border-text-left max-width" style="width: 45%; overflow-y: scroll; height: 380px; padding-left: 70px; padding-right: 0px;">
-                                            <div class="box-poligon" style="width: 45%; ">
-                                                <div class="box-poligon" style="width: 80%; ">
-                                                    <img src="{/data/params/workspace}/assets/img/icons/icon-4.png" />
-                                                </div>
-                                                 <div class="check-box" style="margin-left: 30%;">
-                                                </div>
-                                            </div>
-                                             <div class="box-poligon" style="width: 45%; ">
-                                                <div class="box-poligon" style="width: 80%; ">
-                                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
-                                                </div>
-                                                 <div class="check-box" style="margin-left: 30%;">
-                                                </div>
-                                            </div>
-                                             <div class="box-poligon" style="width: 45%; ">
-                                                <div class="box-poligon" style="width: 80%; ">
-                                                    <img src="{/data/params/workspace}/assets/img/icons/icon-4.png" />
-                                                </div>
-                                                 <div class="check-box" style="margin-left: 30%;">
-                                                </div>
-                                            </div>
-                                             <div class="box-poligon" style="width: 45%; ">
-                                                <div class="box-poligon" style="width: 80%; ">
-                                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
-                                                </div>
-                                                 <div class="check-box" style="margin-left: 30%;">
-                                                </div>
-                                            </div>
-                                            <div class="box-poligon" style="width: 45%; ">
-                                                <div class="box-poligon" style="width: 80%; ">
-                                                    <img src="{/data/params/workspace}/assets/img/icons/icon-4.png" />
-                                                </div>
-                                                 <div class="check-box" style="margin-left: 30%;">
-                                                </div>
-                                            </div>
-                                             <div class="box-poligon" style="width: 45%; ">
-                                                <div class="box-poligon" style="width: 80%; ">
-                                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
-                                                </div>
-                                                 <div class="check-box" style="margin-left: 30%;">
-                                                </div>
-                                            </div>                    
+                                        <div class="box-border-text-left max-width" style="width: 45%; overflow-y: scroll; height: 380px;">
+                                            
+                                            <xsl:apply-templates select='/data/interests/entry' mode='option'>
+                                                <xsl:with-param name='class'>
+                                                    <xsl:text>col-xs-6 text-center</xsl:text>
+                                                </xsl:with-param>
+                                                <xsl:with-param name='name'>category</xsl:with-param>
+                                            </xsl:apply-templates>  
+
                                         </div>
                                     </div>
     

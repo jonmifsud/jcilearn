@@ -69,31 +69,13 @@
                                 <div class="box-border" style=" width: 70%; padding: 20px; height: 10%; margin-bottom: 50px;  border: 0px">                    
                                     <p class="blue-text">Tell us - what is <b>your role</b> within JCI?</p>
 
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-10">
-                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
-                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                            <p class="blue-text"><b>LESSON</b></p>
-                                            <div class="check-box" style="margin-left: 45%;">
-                                                 
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
-                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                            <p class="blue-text"><b>TRAINER</b></p>
-                                            <div class="check-box" style="margin-left: 45%;">
-                                                 
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
-                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                            <p class="blue-text"><b>MEMBER</b></p>
-                                            <div class="check-box" style="margin-left: 45%;">
-                                                 
-                                            </div>
-                                        </div>
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <xsl:apply-templates select='/data/roles/entry' mode='option'>
+                                            <xsl:with-param name='class'>
+                                                <xsl:text>col-md-4 col-xs-6</xsl:text>
+                                            </xsl:with-param>
+                                        </xsl:apply-templates>
                                     </div>
-                                    <div class="col-md-1"></div>
 
                                 </div>
                             </div>
@@ -102,48 +84,16 @@
                                 <div class="box-border" style="width: 70%; padding: 20px; height: 10%; margin-bottom: 50px;  border: 0px">
                                 <p class="blue-text">Pick a few of <b>your interests</b><br/>as an active citizen<br/>(don't worry - you can choise more later)</p>
                                                 
-                                    <div class="col-md-1">.</div>
-                                    <div class="col-md-10">
-                                        <div class="col-md-4 select-check-box" style="border: 0px; height: 10%;">
-                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                            <p class="blue-text"><b>COMMUNITY NEEDS</b></p>
-                                            <div class="check-box" style="margin-left: 45%;">
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
-                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                            <p class="blue-text"><b>GLOBAL ISSUES</b></p>
-                                            <div class="check-box" style="margin-left: 45%;">
-                                                 
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
-                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                            <p class="blue-text"><b>CULTURAL EXCHANGE</b></p>
-                                            <div class="check-box" style="margin-left: 45%;">
-                                                 
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-2"></div>
-                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
-                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="width: 100px;"/>
-                                            <p class="blue-text"><b>TRAINING</b></p>
-                                            <div class="check-box" style="margin-left: 45%;">
-                                                 
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-xs-6 select-check-box" style="border: 0px; height: 10%;">
-                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"  style="width: 100px;"/>
-                                            <p class="blue-text"><b>LEADERSHIP</b></p>
-                                            <div class="check-box" style="margin-left: 45%;">
-                                                 
-                                            </div>
-                                        </div>
-                                         <div class="col-md-2"></div>
+                                    <div class="col-md-10 col-md-offset-1">
+
+                                        <xsl:apply-templates select='/data/interests/entry[position() &lt; 6]' mode='option'>
+                                            <xsl:with-param name='class'>
+                                                <xsl:text>col-md-4 col-xs-6</xsl:text>
+                                                <xsl:if test='position() = 4'> col-md-offset-2</xsl:if>
+                                            </xsl:with-param>
+                                        </xsl:apply-templates>
+
                                     </div>
-                                    <div class="col-md-1">.</div>
                                
                                 </div>
                             </div>

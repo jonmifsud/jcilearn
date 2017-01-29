@@ -228,7 +228,7 @@
 
                                 <div id="div5">
                                     <label style="width: 90%;">
-                                        <div class="enter-text-field"><h3 class="title-centre">OUCOME</h3>
+                                        <div class="enter-text-field"><h3 class="title-centre">OUTCOME</h3>
                                             <textarea class="your-note-box-shape" id="your-note" name="fields[outcome]" type="text"></textarea>
                                         </div>
                                     </label> 

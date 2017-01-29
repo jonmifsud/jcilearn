@@ -32,6 +32,9 @@
 @import "responsive";
 @import "stylesheet";
 
+@import "elements/checkbox";
+
+
 @import "lib/lessondiv/lesson";
 @import "lib/lessondiv/lessonusertext";
 
@@ -762,9 +765,8 @@
 }
 
 .no-left-padding{
-    @include breakpoint(max-width $screen-xs-max)
+    @include breakpoint(max-width $screen-xs-max){
         padding-left: 0px !important;
-    }
     }
 }
 

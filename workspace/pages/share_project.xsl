@@ -29,16 +29,13 @@
 
                              <div class="item"  style="margin-left: auto; margin-right: auto;text-align: center;">
 
+                                <!-- each one of the blow should come from "My Draft Projects" if 3 + should show slider -->
                                 <div class="putting-limits-guide-team-content" style="display: inline-block;">    
-                                   	<xsl:for-each select="/data/project/entry[1]"><!-- list of modules in for each look -->
-                                        <xsl:apply-templates select="current()" mode="projectmodule"/>
-                                    </xsl:for-each>
+                                    <xsl:apply-templates select="/data/project/entry[1]" mode="projectmodule"/>
                                 </div>
 
                                 <div class="putting-limits-guide-team-content" style="display: inline-block;">    
-                                   	<xsl:for-each select="/data/project/entry[2]"><!-- list of modules in for each look -->
-                                        <xsl:apply-templates select="current()" mode="projectmodule"/>
-                                    </xsl:for-each>
+                                    <xsl:apply-templates select="/data/project/entry[2]" mode="projectmodule"/>
                                 </div>
 
                             </div>
@@ -60,9 +57,9 @@
 	                        <div class="modules-slider">
 	                            <div class="modules-slider-wrapper three-slides owl-carousel">
 
-	                               <xsl:for-each select="/data/project/entry"><!-- list of modules in for each look -->
-                                        <xsl:apply-templates select="current()" mode="projectmodule"/>
-                                    </xsl:for-each>
+	                                 <!-- each one of the blow should come from "My Published Projects" if 3 + should show slider -->
+                                    <xsl:apply-templates select="/data/project/entry" mode="projectmodule"/>
+                                    
 	                                
 	                            </div> <!-- /.modules-slider-wrapper -->
 	                        </div> <!-- /.modules-slider -->
