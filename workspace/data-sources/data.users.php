@@ -24,7 +24,8 @@ class datasourceusers extends SectionDatasource
         'surname',
         'address',
         'your-biography: formatted',
-        'short-text: formatted'
+        'short-text: formatted',
+        'photo',
     );
     
     public function __construct($env = null, $process_params = true)

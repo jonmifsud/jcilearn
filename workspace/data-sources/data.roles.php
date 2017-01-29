@@ -1,40 +1,24 @@
 <?php
 
-class datasourceuser extends SectionDatasource
+class datasourceroles extends SectionDatasource
 {
-    public $dsParamROOTELEMENT = 'user';
-    public $dsParamORDER = 'desc';
-    public $dsParamPAGINATERESULTS = 'yes';
-    public $dsParamLIMIT = '1';
+    public $dsParamROOTELEMENT = 'roles';
+    public $dsParamORDER = 'asc';
+    public $dsParamPAGINATERESULTS = 'no';
+    public $dsParamLIMIT = '20';
     public $dsParamSTARTPAGE = '1';
     public $dsParamREDIRECTONEMPTY = 'no';
     public $dsParamREDIRECTONFORBIDDEN = 'no';
     public $dsParamREDIRECTONREQUIRED = 'no';
-    public $dsParamSORT = 'system:id';
+    public $dsParamSORT = 'order';
     public $dsParamHTMLENCODE = 'no';
     public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 
-    public $dsParamFILTERS = array(
-        'system:id' => '{$user-id:$member-id}',
-    );
-
     public $dsParamINCLUDEDELEMENTS = array(
-        'system:pagination',
-        'system:date',
-        'name',
-        'surname',
-        'your-biography: formatted',
-        'your-biography: unformatted',
-        'short-text: formatted',
-        'short-text: unformatted',
-        'email',
-        'password',
-        'access',
-        'access: permissions',
-        'address',
-        'interests',
-        'role',
-        'photo'
+        'name: formatted',
+        'name: unformatted',
+        'icon',
+        'order'
     );
 
     public function __construct($env = null, $process_params = true)
@@ -46,19 +30,19 @@ class datasourceuser extends SectionDatasource
     public function about()
     {
         return array(
-            'name' => 'User',
+            'name' => 'Roles',
             'author' => array(
                 'name' => 'Jonathan Mifsud',
                 'website' => 'http://jci-learn.dev',
                 'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2017-01-28T22:10:11+00:00'
+            'release-date' => '2017-01-28T23:01:50+00:00'
         );
     }
 
     public function getSource()
     {
-        return '2';
+        return '85';
     }
 
     public function allowEditorToParse()
