@@ -3,6 +3,8 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="typography.xsl"/>
+<xsl:import href="../sections/roles.xsl"/>
+<xsl:import href="../sections/interests.xsl"/>
 
 <xsl:output method="xml"
 	doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -65,7 +67,7 @@
                     </button>
 
                     <!-- TEMPLATE LOGO LIGHT -->
-                    <a class="navbar-brand light-logo" href="index.html"><img src="{/data/params/workspace}/assets/img/logo.png" alt="" class="img-responsive"/></a>
+                    <a class="navbar-brand light-logo" href="{/data/params/root}"><img src="{/data/params/workspace}/assets/img/logo.png" alt="" class="img-responsive"/></a>
                     <!-- TEMPLATE LOGO DARK -->
 
                 </div>
@@ -76,7 +78,15 @@
                         <li><a class="btn-big" href="#"><i class="fa fa-home-house-streamline"></i></a></li>
                         <li class="active"><a class="btn-nav" href="{/data/params/root}/study/currentmodule/">Learn</a></li>
                         <li><a class="btn-nav" href="{/data/params/root}/share/project/">Share</a></li>
-                        <li><a class="btn-big" href="#"><img class="img-responsive" src="{/data/params/workspace}/assets/img/icons/profile-4.png" alt=""/></a></li>
+                        <li>
+                            <a class="btn-big" href="{/data/params/root}/user/" style='border-radius:50%;position:relative;overflow:hidden;'>
+                                <img class="img-responsive" alt="">
+                                    <xsl:attribute name='src'>
+                                        <xsl:apply-templates select='/data/member/entry' mode='photo-url'/>
+                                    </xsl:attribute>
+                                </img>
+                            </a>
+                        </li>
 
                     </ul>
                 </div>
