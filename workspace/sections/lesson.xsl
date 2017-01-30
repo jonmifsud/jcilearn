@@ -16,11 +16,44 @@
 
     </xsl:template>
 
+
+    <xsl:template match="*[section/@handle='lesson']//entry" mode='link'>
+
+        <xsl:value-of select='/data/params/root'/>
+        <xsl:text>/module/lesson/</xsl:text>
+        <xsl:value-of select='title/@handle'/>
+        <xsl:text>/</xsl:text>
+
+    </xsl:template>
+
+    <xsl:template match="*[section/@handle='lesson']//entry" mode='edit-link'>
+        
+        <xsl:value-of select='/data/params/root'/>
+        <xsl:text>/share/lesson/edit-lesson/</xsl:text>
+        <xsl:value-of select='@id'/>
+        <xsl:text>/</xsl:text>
+
+    </xsl:template>
+
     <xsl:template match="*[section/@handle='lesson']//entry" mode='list-item'>
+        <xsl:param name='edit-link' select='false()'/>
+        <xsl:param name='no-link' select='false()'/>
 
         <div class="each-item col-md-12">
             <div class="each-item-inner col-md-12">
-                <div class="content-left col-md-8 col-sm-7">
+                <a class="content-left col-md-8 col-sm-7">
+                    <xsl:attribute name='href'>
+                        <xsl:choose>
+                            <xsl:when test='$no-link'>
+                            </xsl:when>
+                            <xsl:when test='$edit-link'>
+                                <xsl:apply-templates select='.' mode='edit-link'/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:apply-templates select='.' mode='link'/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:attribute>
 
                     <div class="media">
                         <div class="media-left" style="padding: 10px;" >
@@ -36,7 +69,7 @@
                         </div> <!-- /.media-body -->
                     </div> <!-- /.media -->
 
-                </div> <!-- /.content-right -->
+                </a> <!-- /.content-right -->
                 <div class="content-right col-md-4 col-sm-5" style="padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
                     
                     <div class="media">
