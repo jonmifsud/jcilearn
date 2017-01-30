@@ -4988,6 +4988,7 @@ button.close {
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
     transition: transform .6s ease-in-out;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     perspective: 1000px; }
   .carousel-inner > .item.active.right, .carousel-inner > .item.next {
@@ -5481,8 +5482,7 @@ button.close {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none; }
+  filter: none; }
 
 .fa-stack {
   position: relative;
@@ -13032,7 +13032,7 @@ p {
   color: #646464;
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 10px;
+  line-height: 20px;
   margin-bottom: 20px; }
   p:last-child {
     margin-bottom: 0px; }
@@ -15038,8 +15038,11 @@ input, textarea {
   .pera {
     font-size: 16px;
     font-size: 1.6rem;
-    line-height: 16px;
-    line-height: 1.6rem; }
+    line-height: 26px;
+    line-height: 2.6rem; }
+  .text-center {
+    line-height: 28px;
+    line-height: 2.8rem; }
   p {
     font-size: 20px;
     font-size: 2rem;
@@ -15052,8 +15055,11 @@ input, textarea {
   p {
     font-size: 16px;
     font-size: 1.6rem;
-    line-height: 16px;
-    line-height: 1.6rem; }
+    line-height: 26px;
+    line-height: 2.6rem; }
+  .text-center {
+    line-height: 28px;
+    line-height: 2.8rem; }
   .modal-content {
     width: 100% !important;
     margin-right: auto;
@@ -15068,8 +15074,8 @@ input, textarea {
   p {
     font-size: 14px;
     font-size: 1.4rem;
-    line-height: 16px;
-    line-height: 1.6rem;
+    line-height: 24px;
+    line-height: 2.4rem;
     text-align: justify; }
   h2 {
     font-size: 24px;
