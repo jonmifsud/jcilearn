@@ -32,7 +32,8 @@ class datasourcemy_lessons extends SectionDatasource
         'profile',
         'category',
         'user',
-        'quiz'
+        'quiz',
+        'status',
     );
 
     public function __construct($env = null, $process_params = true)
