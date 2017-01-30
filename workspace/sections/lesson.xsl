@@ -207,6 +207,9 @@
                                 <xsl:with-param name='index'>template</xsl:with-param>
                             </xsl:call-template>
                         </div>
+                        <div class="form-inline single-form text-center">
+                            <div class='form-control add-question'>Add Question</div>
+                        </div>
                     </div>
                     <input type="submit" value="Submit" />
                 </div>
