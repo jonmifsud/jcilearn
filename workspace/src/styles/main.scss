@@ -390,11 +390,11 @@
     }
 
     .content-left {
-        padding: 29px;
+        padding: 10px;
         // border-right: 1px solid $main-color-1;
 
         @include breakpoint(max-width $screen-xs-max){
-            padding: 29px 0;
+            padding: 10px 0;
         }
 
         &:before {
@@ -446,9 +446,9 @@
 
     .flag {
         position: absolute;
-        top: 40px;
-        right: 20px;
-        max-width: 43px;
+        top: 30px;
+        right: 10px;
+        max-width: 28px;
     }
 
     .profile-pic {
@@ -804,6 +804,43 @@
     }
 }
 
+.margin-b-thirty{
+    margin-bottom: 30px;
+}
+
+.margin-b-fifty{
+    margin-bottom: 50px;
+}
+
+.study-profile-padding{
+    padding-left: 0px; 
+    padding-bottom: 20px; 
+    padding-right: 0px;
+}
+
+.progress-box{
+    width: 70%;
+     height: 30px;
+      padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // RESPONSIVE
@@ -811,11 +848,11 @@
 
 
 @media all and (min-width: 1025) {
-  h3{
-      @include rem(font-size,25px);
-      @include rem(line-height, 35px);
+  // h3{
+  //     @include rem(font-size,25px);
+  //     @include rem(line-height, 35px);
 
-  }
+  // }
   .error-font{
     font-size: 300px;
   }
@@ -832,11 +869,11 @@
 }
  
 @media all and (max-width: 1024px) and (min-width: 640px) {
-  h3{
-      @include rem(font-size,18px);
-      @include rem(line-height, 28px);
+  // h3{
+  //     @include rem(font-size,18px);
+  //     @include rem(line-height, 28px);
 
-  }
+  // }
 
   .error-font{
     font-size: 200px;
@@ -866,7 +903,7 @@
   } 
 
   h2{
-    @include rem(font-size,25px);
+    @include rem(font-size, $font-size-h2);
     @include rem(line-height, 20px);
   }
 
@@ -912,6 +949,10 @@
     width: 80%;
     float: left;
   }
+}
+
+.content-left-no-padding{
+    padding: 0px;
 }
 
 

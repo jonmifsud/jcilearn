@@ -3,7 +3,7 @@
 
     <xsl:template  name='learnfilesubheader'>
 
-        <div class="col-xs-12 each-features">
+        <div class="col-xs-12 each-features" style="margin-bottom: 80px;">
             <div class="btn-form col-xs-12 text-center margin-t-20">
                 <a href="#" class="btn btn-border">Study</a>
                 <a href="#" class="btn btn-fill">Explore</a>

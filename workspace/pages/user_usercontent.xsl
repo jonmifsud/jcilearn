@@ -60,6 +60,7 @@
                           </div>
                         </xsl:if>
 
+<<<<<<< HEAD
 
                         <xsl:if test='/data/my-stories/entry'>
                           <div class='row'>
@@ -80,6 +81,20 @@
                                                 </div>
                                                 <div class="each-item col-sm-1 col-md-2"></div>   
                                             </div>
+=======
+                        <div class="row guide-team">
+                            <div class="guide-team-inner">
+                                <div class="guide-team-content col-xs-12">
+                                 <h3 class="title-centre text-center" style="padding-bottom: 20px;">PUBLISHED STORIES</h3>
+                                    <div class="row" >
+                                        <div class="each-item col-sm-1 col-md-2"></div>           
+                                        <div class="each-item col-sm-10 col-md-8">
+                                          <xsl:for-each select="/data/story/entry">
+                                            <xsl:if  test="position() &lt;=2">    
+                                            <xsl:apply-templates select="current()" mode="sharestorymodulewithlikes"/>
+                                            </xsl:if>
+                                          </xsl:for-each>   
+>>>>>>> 8f77390e38beb0d0ed1e6db36b7d5050f722275f
                                         </div>
                                     </div>
 

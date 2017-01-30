@@ -58,7 +58,7 @@
                     <div class="media">
                         <div class="media-left" style="padding: 10px;" >
 
-                            <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/>
+                            <img class="media-object features-image" style="width: 50px;" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/>
                         
                         </div> <!-- /.media-left -->
                         <div class="media-body">
@@ -70,14 +70,14 @@
                     </div> <!-- /.media -->
 
                 </a> <!-- /.content-right -->
-                <div class="content-right col-md-4 col-sm-5" style="padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
+                <div class="content-right col-md-4 col-sm-5 study-profile-padding" style="padding: 0px; padding-left: 20px; padding-top: 10px;">
                     
                     <div class="media">
                         
 
                             <xsl:apply-templates select='current()' mode='author-picture'/> 
 
-                        <div class="media-body" >
+                        <div class="media-body" style="padding-right: 0px;">
 
                             <h3 class="title"><xsl:value-of select="/data/users/entry[@id = current()/profile/item/@id]/name"/></h3>
                             <div class="profile-meta" style="margin-top: 0px;">
