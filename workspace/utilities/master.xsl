@@ -5,6 +5,16 @@
 <xsl:import href="typography.xsl"/>
 <xsl:import href="../sections/roles.xsl"/>
 <xsl:import href="../sections/interests.xsl"/>
+<xsl:import href="../sections/lesson.xsl"/>
+<xsl:import href="../sections/comment.xsl"/>
+<xsl:import href="../sections/project.xsl"/>
+<xsl:import href="../sections/user.xsl"/>
+<xsl:import href="../sections/story.xsl"/>
+
+
+<!-- needs to be moved -->
+<xsl:import href="../sections/learnfileheader.xsl"/>
+
 
 <xsl:output method="xml"
 	doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"

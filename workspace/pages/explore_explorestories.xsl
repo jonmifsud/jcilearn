@@ -3,16 +3,7 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/master.xsl"/>
-<xsl:import href="../sections/sectionmodule.xsl"/>
-<xsl:import href="../sections/comment.xsl"/>
 <xsl:import href="../sections/learnfileheader.xsl"/>
-<xsl:import href="../sections/modulesstory.xsl"/>
-<xsl:import href="../sections/explorestoriesmodule.xsl"/>
-<xsl:import href="../sections/sharestorymodule.xsl"/>
-<xsl:import href="../sections/sharestorymodulewithlikes.xsl"/>
-<xsl:import href="../sections/studyprofile.xsl"/>
-<xsl:import href="../sections/modules.xsl"/>
-<xsl:import href="../sections/explorestoriestwoslidermodule.xsl"/>
 
     <xsl:template match="/data">
             <!-- Start: Features Section 
@@ -60,10 +51,7 @@
 
                         <div class="modules-slider">
                             <div class="modules-slider-wrapper two-slides owl-carousel">
-                                <xsl:for-each  select="/data/story/entry">
-                                    <xsl:apply-templates select="current()" mode="explorestoriestwoslidermodule" />
-                                </xsl:for-each>
-
+                                <xsl:apply-templates select="/data/story/entry" mode="explorestoriestwoslidermodule" />
                             </div> <!-- /.modules-slider-wrapper -->
                         </div> <!-- /.modules-slider -->
 
@@ -90,11 +78,7 @@
                                         <div class="row" >
                                             <div class="each-item col-sm-1 col-md-2"></div>           
                                             <div class="each-item col-sm-10 col-md-8">
-                                              <xsl:for-each select="/data/story/entry">
-                                                <xsl:if  test="position() &lt;=2">    
-                                                <xsl:apply-templates select="current()" mode="sharestorymodulewithlikes"/>
-                                                </xsl:if>
-                                              </xsl:for-each>   
+                                                <xsl:apply-templates select="/data/story/entry[position() &lt;=2]" mode="sharestorymodulewithlikes"/>
                                             </div>
                                             <div class="each-item col-sm-1 col-md-2"></div>   
                                         </div>

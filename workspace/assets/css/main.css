@@ -14215,6 +14215,16 @@ input[type="radio"], input[type="checkbox"] {
     transition-delay: 0s, 0.2s, 0s;
     border-color: #3496DA; }
 
+.quiz-form-template {
+  display: none; }
+
+.add-question {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  margin-bottom: 2rem; }
+
 input, textarea {
   width: 100%;
   border: 2px solid #3496DA;

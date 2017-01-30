@@ -3,11 +3,6 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/master.xsl"/>
-<xsl:import href="../sections/sectionmodule.xsl"/>
-<xsl:import href="../sections/comment.xsl"/>
-<xsl:import href="../sections/learnfilesubheader.xsl"/>
-<xsl:import href="../sections/modulesstory.xsl"/>
-<xsl:import href="../sections/studyprofile.xsl"/>
 <xsl:import href="../sections/notepadmodule.xsl"/>
 <xsl:import href="../sections/yournotepad.xsl"/>
 

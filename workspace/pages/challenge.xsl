@@ -3,13 +3,6 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/master.xsl"/>
-<xsl:import href="../sections/lesson.xsl"/>
-<xsl:import href="../sections/user.xsl"/>
-<xsl:import href="../sections/sectionmodule.xsl"/>
-<xsl:import href="../sections/comment.xsl"/>
-<xsl:import href="../utilities/typography.xsl"/>
-<xsl:import href="../sections/learnfileheader.xsl"/>
-<xsl:import href="../sections/challengemodule.xsl"/>
 
     <xsl:template match="/data">
             <!-- Start: Features Section 

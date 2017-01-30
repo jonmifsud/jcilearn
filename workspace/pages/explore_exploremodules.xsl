@@ -3,13 +3,6 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/master.xsl"/>
-<xsl:import href="../sections/lesson.xsl"/>
-<xsl:import href="../sections/user.xsl"/>
-<xsl:import href="../sections/sectionmodule.xsl"/>
-<xsl:import href="../sections/comment.xsl"/>
-<xsl:import href="../sections/learnfileheader.xsl"/>
-<xsl:import href="../sections/moduleslesson.xsl"/>
-<xsl:import href="../sections/modules.xsl"/>
 
     <xsl:template match="/data">
             <!-- Start: Features Section 
@@ -165,11 +158,7 @@
                                 <div class="guide-team-content col-xs-12">
                                     <div class="row">
                                         
-                                       <xsl:for-each select="/data/lesson/entry"> 
-                                       		<xsl:if test="position() &lt;=4">
-                                            	<xsl:apply-templates select="current()" mode="lesson-module-item"/>
-                                        	</xsl:if>
-                                        </xsl:for-each>
+                                        <xsl:apply-templates select="/data/lesson/entry[position() &lt;=4]" mode="lesson-module-item"/>
 
                                     </div>
                                 </div>
