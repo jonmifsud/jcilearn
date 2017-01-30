@@ -7,8 +7,8 @@
         <xsl:variable name="lcletters">abcdefghijklmnopqrstuvwxyz-</xsl:variable>
         <xsl:variable name="ucletters">ABCDEFGHIJKLMNOPQRSTUVWXYZ </xsl:variable>
 
-        <div class="media-left" style="padding-left: 10px; padding-right: 0px;">
-            <img class="media-object profile-pic" style="padding-left: 1px;" alt="Media Team Profile Image">
+        <div class="media-left" style="padding-left: 10px; padding: 0px;">
+            <img class="media-object profile-pic" style="padding-left: 1px; width: 50px;" alt="Media Team Profile Image">
                 <xsl:attribute name='src'>
                     <xsl:apply-templates select='.' mode='photo-url'/>
                 </xsl:attribute>

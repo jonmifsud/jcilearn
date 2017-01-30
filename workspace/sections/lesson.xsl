@@ -37,14 +37,14 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-right -->
-                <div class="content-right col-md-4 col-sm-5 study-profile-padding">
+                <div class="content-right col-md-4 col-sm-5 study-profile-padding" style="padding: 0px; padding-left: 20px; padding-top: 10px;">
                     
                     <div class="media">
                         
 
                             <xsl:apply-templates select='current()' mode='author-picture'/> 
 
-                        <div class="media-body" >
+                        <div class="media-body" style="padding-right: 0px;">
 
                             <h3 class="title"><xsl:value-of select="/data/users/entry[@id = current()/profile/item/@id]/name"/></h3>
                             <div class="profile-meta" style="margin-top: 0px;">

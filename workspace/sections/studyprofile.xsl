@@ -26,7 +26,7 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-right -->
-                <div class="content-right col-md-4 col-sm-5 no-bottom-padding" style="padding-left: 0px; padding-bottom: 20px; padding-right: 0px;">
+                <div class="content-right col-md-4 col-sm-5 no-bottom-padding" style="padding-left: 10px; padding-bottom: 20px; padding-right: 0px;">
                     
                     <div class="media">
                         <div class="media-left no-padding-right" style="padding-right: 0px;">

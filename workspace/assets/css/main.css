@@ -14740,9 +14740,9 @@ input, textarea {
   .guide-team-content .flag,
   .comments .flag {
     position: absolute;
-    top: 40px;
-    right: 20px;
-    max-width: 43px; }
+    top: 30px;
+    right: 10px;
+    max-width: 28px; }
   .guide-team-content .profile-pic,
   .comments .profile-pic {
     max-width: 64px;

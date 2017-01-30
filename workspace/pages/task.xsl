@@ -43,8 +43,8 @@
                             <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                             	<div class="lesson-text">
                                     <div class="lesson-text">
-                                     <xsl:apply-templates select="/data/task/entry[1]/text" mode='html-child'/>
-                                 </div>
+                                     <xsl:apply-templates select="/data/task/entry[1]/text" />
+                                    </div>
                                  </div>
                             </div>
 
@@ -131,33 +131,35 @@
                                     </div>
 
                                  </div>
-                                <div class="each-features">
+                                <div class="each-features text-center">
                                     <h3 class="title-centre">YOUR NOTES</h3>
-                                    <div class="enter-text-field col-xs-12" style="width: 100% !important; padding: 0px; height: 250px;">
-                                        <form style="padding-right: 5%;">
+                                    <div class="enter-text-field col-xs-12" style="width: 100% !important; padding: 0px; height: 100%;">
+                                        <form>
                                           <input type="text" id="your-note-two" name="fname" style="width: 80% !important;" />
                                         </form>
                                     </div>
                                 </div>
                             </div>
 
-                        </div>
-                    </div> <!-- /.each-features -->
-                    
-                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 100px; ">
+                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 30px; ">
                        <xsl:apply-templates select="/data/task/entry[1]" mode="likeviews"/>
                     </div>
 
-                   <div class="col-xs-12 each-features" style="margin-bottom: 20px; margin-top: 50px;">  <!-- /.comments -->                      
-                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-bottom: 0px;">
-                            <div class="col-md-1"></div>
-                            <div class="row comments-inner col-xs-12 col-md-10">
-                                <xsl:apply-templates select="/data/comments/entry" mode="comment">
-                                                                        
-                                </xsl:apply-templates>
-                            </div>
-                        </div> <!-- /.comments -->
+                                        
+                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-bottom: 0px;">
+                        <div class="col-md-1"></div>
+                        <div class="row comments-inner col-xs-12 col-md-10">
+                            <xsl:apply-templates select="/data/comments/entry" mode="comment">
+                                                                    
+                            </xsl:apply-templates>
+                        </div>
+                    </div> <!-- /.comments -->
+
+                        </div>
                     </div> <!-- /.each-features -->
+                    
+                    
+                  
 
                     <div class="col-xs-12 each-features" style="margin-bottom: 0px; margin-top: 70px;">
 
