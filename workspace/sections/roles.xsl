@@ -7,7 +7,7 @@
         <xsl:param name='type' select='"checkbox"'/>
         <xsl:param name='checked' select='false()'/>
 
-        <input type="{$type}" id="{$name}-{@id}" name="{$name}[]">
+        <input type="{$type}" id="{$name}-{@id}" name="{$name}[]" value='{@id}'>
             <xsl:if test='$checked'>
                 <xsl:attribute name='checked'>checked</xsl:attribute>
             </xsl:if>

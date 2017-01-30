@@ -104,29 +104,115 @@
 
     </xsl:template>
 
-<xsl:template match="*[section/@handle='comment']//entry" mode='com'>
+    <xsl:template match="*[section/@handle='comment']//entry" mode='com'>
 
-    <xsl:value-of select="text"/>
+        <xsl:value-of select="text"/>
 
 
     </xsl:template>
 
 
-<xsl:template match="*[section/@handle='lesson']//entry" mode='lesson-header-two'>
-    <div class="media-body">
-        <h3 class="title">
-            <xsl:value-of select="title"/>
-        </h3>
-        <p class="pera">
-            <xsl:value-of select="subtitle"/>
-        </p>
-    </div>
-</xsl:template>
+    <xsl:template match="*[section/@handle='lesson']//entry" mode='lesson-header-two'>
+        <div class="media-body">
+            <h3 class="title">
+                <xsl:value-of select="title"/>
+            </h3>
+            <p class="pera">
+                <xsl:value-of select="subtitle"/>
+            </p>
+        </div>
+    </xsl:template>
 
-<xsl:template match="*[section/@handle='lesson']//entry" mode='lesson-header-three'>
-   <xsl:value-of select="profile"/>
-</xsl:template>
+    <xsl:template match="*[section/@handle='lesson']//entry" mode='lesson-header-three'>
+       <xsl:value-of select="profile"/>
+    </xsl:template>
 
+
+    <xsl:template match="*[section/@handle='lesson']//entry" mode='lesson-form' name='lesson-form'>
+        <form method="post" action="{$current-url}/" class='lesson-form auto-save' data-action="save-lesson">
+            <xsl:if test='../section/@handle="lesson"'>
+                <xsl:attribute name='data-id'>
+                    <xsl:value-of select='@id'/>
+                </xsl:attribute>
+            </xsl:if>
+
+
+            <div class="sliderJquery">
+
+                <div id="div1">
+                    <label style="width: 100%;">
+                        <h3 class="text-center">TITLE</h3>
+                        <div class="input-wrapper">
+                            <input name="title" type="text" class="your-notes-class" value='{title[@mode="unformatted"]}' />
+                        </div>
+                    </label>
+
+                    <label style="width: 100%;">
+                        <div class="input-wrapper">
+                            <h3 class="title-centre">SUBTITLE</h3>
+                            <input name="subtitle" type="text" value='{subtitle[@mode="unformatted"]}'/>
+                        </div>
+                    </label>
+
+                    <h3 class="text-center" style="margin-bottom: 0px;">CATEGORY</h3><br/>
+                    <div class="box-border-text-left col-md-6 col-md-offset-3" style="overflow-y: scroll; height: 380px;">
+                        
+                        <xsl:apply-templates select='/data/interests/entry' mode='option'>
+                            <xsl:with-param name='class'>
+                                <xsl:text>col-xs-6 text-center</xsl:text>
+                            </xsl:with-param>
+                            <xsl:with-param name='name'>category</xsl:with-param>
+                            <xsl:with-param name='selected' select='current()/category/item'/>
+                        </xsl:apply-templates>  
+
+                    </div>
+                </div>
+
+                <div id="div2">
+                    <label style="width: 100%;">
+                        <div class="input-wrapper"><h3 class="title-centre">TEXT</h3>
+                            <textarea id="your-note" name="text" class="your-notes-class" type="text">
+                                <xsl:value-of select='text[@mode="unformatted"]'/>
+                            </textarea>
+                        </div>
+                    </label>
+
+                    <div class="col-xs-12 each-features text-center" style="margin-bottom: 40px; margin-top: 100px;">
+                        <div class="form-inline single-form">
+                            <div class="form-group input-outer">
+                                <div class="select-outer">
+                                    <select class="form-control contact-plan">
+                                        <option value="subject1" disabled="" selected="">ADD</option>
+                                        <option value="BusinessConsulting">consulting</option>
+                                        <option value="TextConsulting">Text</option>
+                                        <option value="Advisory">Advisory</option>
+                                        <option value="Audit-$-assurance">Audit</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="div3">
+                    <input name="profile" type="hidden" value="{/data/params/member-id}" />
+                    <input name="user" type="hidden" value="{/data/params/member-id}" />
+
+                    <xsl:variable name='index' select='""'/>
+                    <div class='quiz-questions'>
+                        <xsl:apply-templates select='/data/questions/entry' mode='question-form'/>
+                        <div class='quiz-form-template'>
+                            <xsl:call-template name='question-form'>
+                                <xsl:with-param name='index'>template</xsl:with-param>
+                            </xsl:call-template>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" />
+                </div>
+            </div> <!-- sliderJquery -->
+        </form>
+    </xsl:template>
 
 </xsl:stylesheet>
 

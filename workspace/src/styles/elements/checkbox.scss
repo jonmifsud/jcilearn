@@ -1,8 +1,13 @@
 
+.input-wrapper{
+	position: relative;
+}
+
 input[type="radio"],input[type="checkbox"] {
 	display:none;
 	+ .select-check-box{
 		.check-box{
+			cursor: pointer;
 			width: 20px;
 			height: 20px; 
 			border-radius: 20px; 
@@ -34,6 +39,47 @@ input[type="radio"],input[type="checkbox"] {
 				transition-delay: 0s, 0.2s, 0s;
 				border-color: #3496DA;
 			}
+		}
+	}
+
+	// checkbox to appear inside wrapper for quiz
+	+ .input-checkbox{
+		content: '';
+		width: 20px;
+		height: 20px; 
+		border-radius: 20px; 
+		border: 2px solid #3496DA; 
+		margin:auto;
+		position: absolute;
+	    top: 50%;
+	    left: 15px;
+	    transform:translateY(-50%);
+	    cursor: pointer;
+		&::before{
+			content: '';
+			bottom: 7px;
+			left: 2px;
+			position: absolute;
+			display: inline-block;
+			width: 0;
+			height: 0;
+			transition: width 0.2s ease-in-out, height 0.2s ease-in-out,border-color 0s ease-in-out;
+			transition-delay: 0.2s, 0s, 0.4s;
+			transform: rotate(45deg);
+			transform-origin: 0% 100%;
+			border-right: solid 2px transparent;
+			border-bottom: solid 2px transparent;
+		}
+		+ input[type="text"]{
+			padding-left: 45px;
+		}
+	}
+	&:checked + .input-checkbox{
+		&::before{
+			width: 5px;
+			height: 10px;
+			transition-delay: 0s, 0.2s, 0s;
+			border-color: #3496DA;
 		}
 	}
 }

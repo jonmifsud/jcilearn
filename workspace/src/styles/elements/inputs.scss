@@ -1,0 +1,16 @@
+
+input,textarea{
+  width: 100%;
+  border: 2px solid #3496DA; 
+  padding: 15px;
+  .sliderJquery &input{
+    width: 80%;
+  }
+}
+
+#your-note-title{
+  width: 60%;
+  height: 55px;
+  min-height: 40px;
+  border: 2px solid #3496DA; 
+}

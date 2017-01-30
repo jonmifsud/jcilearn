@@ -5,9 +5,10 @@
         <xsl:param name='class'/>
         <xsl:param name='name' select='"interest"'/>
         <xsl:param name='type' select='"checkbox"'/>
-        <xsl:param name='checked' select='false()'/>
+        <xsl:param name='selected' select='false()'/>
+        <xsl:param name='checked' select='$selected and @id=$selected/@id'/>
 
-        <input type="{$type}" id="{$name}-{@id}" name="{$name}[]">
+        <input type="{$type}" id="{$name}-{@id}" name="{$name}[]" value='{@id}'>
             <xsl:if test='$checked'>
                 <xsl:attribute name='checked'>checked</xsl:attribute>
             </xsl:if>
