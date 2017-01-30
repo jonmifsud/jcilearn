@@ -10,6 +10,7 @@
 <xsl:import href="../sections/project.xsl"/>
 <xsl:import href="../sections/user.xsl"/>
 <xsl:import href="../sections/story.xsl"/>
+<xsl:import href="../sections/question.xsl"/>
 
 
 <!-- needs to be moved -->
