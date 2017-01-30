@@ -8,10 +8,10 @@
        <div class=" each-item-inner col-sm-10" style="padding: 0px; display: flex; width: 100%; margin-bottom: 30px; overflow: hidden;">
            
             <div class="content-right col-xs-12 content-defult col-md-3 col-sm-3" style="padding: 0px;">                
-                <img src="{/data/params/workspace}/assets/img/helppic.png" class="border-radius-shape"/> 
+                <img src="{/data/params/workspace}/assets/img/helppic.png" style="height: 180px; width: 100%;" class="border-radius-shape"/> 
             </div>
             
-            <div class="content -left col-xs-8 col-md-7 col-sm-7" style=" padding-top: 30px; padding-right: 0px; padding-bottom: 0px;">
+            <div class="content-left  content-left-no-padding col-xs-8 col-md-7 col-sm-7" style=" padding-top: 10px !important; padding-right: 0px; padding-bottom: 10px !important;">
                 <div class="media">                                                        
                     <div class="media-body">
                         <h3 class="title"><xsl:value-of select="title"/></h3>

@@ -4988,6 +4988,7 @@ button.close {
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
     transition: transform .6s ease-in-out;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     perspective: 1000px; }
   .carousel-inner > .item.active.right, .carousel-inner > .item.next {
@@ -5481,8 +5482,7 @@ button.close {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none; }
+  filter: none; }
 
 .fa-stack {
   position: relative;
@@ -13030,9 +13030,9 @@ a,
 p {
   font-family: "helveticaneuelight";
   color: #646464;
-  font-size: 24px;
-  font-size: 2.4rem;
-  line-height: 24px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 10px;
   margin-bottom: 20px; }
   p:last-child {
     margin-bottom: 0px; }
@@ -13057,14 +13057,14 @@ h1 {
   line-height: 70px; }
 
 h2 {
-  font-size: 40px;
-  font-size: 4rem;
-  line-height: 50px; }
-
-h3 {
   font-size: 24px;
   font-size: 2.4rem;
-  line-height: 35px;
+  line-height: 1.2rem; }
+
+h3 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.1rem;
   letter-spacing: 1px; }
 
 h4 {
@@ -13181,10 +13181,10 @@ h6 {
   margin: 0; }
 
 .section-header {
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
   .section-header .sub-heading {
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 25px;
     color: #3496DA; }
   .section-header .tag-line {
@@ -14692,11 +14692,11 @@ input, textarea {
     text-align: left; }
   .guide-team-content .content-left,
   .comments .content-left {
-    padding: 29px; }
+    padding: 10px; }
     @media (max-width: 767px) {
       .guide-team-content .content-left,
       .comments .content-left {
-        padding: 29px 0; } }
+        padding: 10px 0; } }
     .guide-team-content .content-left:before,
     .comments .content-left:before {
       content: '';
@@ -15006,12 +15006,23 @@ input, textarea {
   .padding-right-landing {
     padding-right: 20%; } }
 
+.margin-b-thirty {
+  margin-bottom: 30px; }
+
+.margin-b-fifty {
+  margin-bottom: 50px; }
+
+.study-profile-padding {
+  padding-left: 0px;
+  padding-bottom: 20px;
+  padding-right: 0px; }
+
+.progress-box {
+  width: 70%;
+  height: 30px;
+  padding: 0px; }
+
 @media all and (min-width: 1025) {
-  h3 {
-    font-size: 25px;
-    font-size: 2.5rem;
-    line-height: 35px;
-    line-height: 3.5rem; }
   .error-font {
     font-size: 300px; }
   .pera {
@@ -15026,11 +15037,6 @@ input, textarea {
     line-height: 1.6rem; } }
 
 @media all and (max-width: 1024px) and (min-width: 640px) {
-  h3 {
-    font-size: 18px;
-    font-size: 1.8rem;
-    line-height: 28px;
-    line-height: 2.8rem; }
   .error-font {
     font-size: 200px; }
   p {
@@ -15056,8 +15062,8 @@ input, textarea {
     line-height: 1.6rem;
     text-align: justify; }
   h2 {
-    font-size: 25px;
-    font-size: 2.5rem;
+    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 20px;
     line-height: 2rem; }
   .blue-text {
@@ -15086,6 +15092,9 @@ input, textarea {
   .smaller-div {
     width: 80%;
     float: left; } }
+
+.content-left-no-padding {
+  padding: 0px; }
 
 @media (max-width: 1199px) {
   .padding-right-box {

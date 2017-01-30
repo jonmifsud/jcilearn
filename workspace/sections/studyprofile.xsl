@@ -12,9 +12,9 @@
                 <div class="content-left col-md-8 col-sm-7" style="padding-top: 4%; padding-left: 4%;">
 
                     <div class="media">
-                        <div class="media-left">
+                        <div class="media-left" style="padding-right: 0px; ">
 
-                            <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/>    
+                            <img class="media-object features-image" style="width: 50px; padding-top: 10px;" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/>    
                                                 
                         </div> <!-- /.media-left -->
                         <div class="media-body">
@@ -26,7 +26,7 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-right -->
-                <div class="content-right col-md-4 col-sm-5 no-bottom-padding" style="padding-left: 0px; padding-bottom: 10px;">
+                <div class="content-right col-md-4 col-sm-5 no-bottom-padding" style="padding-left: 0px; padding-bottom: 20px; padding-right: 0px;">
                     
                     <div class="media">
                         <div class="media-left no-padding-right" style="padding-right: 0px;">

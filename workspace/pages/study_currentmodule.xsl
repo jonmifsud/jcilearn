@@ -23,14 +23,14 @@
                         <div class="col-xs-12 col-md-8 each-features">
 
                             <div class="guide-team">
-                                <div class="guide-team-inner">
+                                <div class="guide-team-inner text-center">
 
                                     <h2>
                                     <xsl:apply-templates select="/data/lesson/entry[1]/lesson-text-box/item" mode="comment"> <!-- applying comment template -->      
                                     </xsl:apply-templates></h2>
                                     
                                     <!-- Start: Section Header -->
-                                    <div class="section-header relative text-center" >
+                                    <div class="section-header relative text-center" study="margin-bottom: 30px !important;">
                                         <p class="sub-heading"> Your first step to becoming a true leader </p>
                                     </div> 
                                     <!-- End: Section Header -->

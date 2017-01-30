@@ -27,7 +27,7 @@
                         <xsl:call-template name="learnfilesubheader"/>  
 
                       <div class="col-xs-12 each-features">
-                        <h2 class="section-heading" style="margin-bottom: 6%;">Good morning, <xsl:value-of select="/data/users/entry/name" />!</h2>
+                        <h2 class="section-heading text-center" style="margin-bottom: 6%;">Good morning, <xsl:value-of select="/data/users/entry/name" />!</h2>
 
                         
                         <div class="col-md-5 col-sm-6" style="border: 0px; height: 10%;">
@@ -124,7 +124,7 @@
                         <div class="row guide-team">
                             <div class="guide-team-inner">
                                 <div class="guide-team-content col-xs-12">
-                                 <h3 class="title-centre" style="padding-bottom: 20px;">PUBLISHED STORIES</h3>
+                                 <h3 class="title-centre text-center" style="padding-bottom: 20px;">PUBLISHED STORIES</h3>
                                     <div class="row" >
                                         <div class="each-item col-sm-1 col-md-2"></div>           
                                         <div class="each-item col-sm-10 col-md-8">
