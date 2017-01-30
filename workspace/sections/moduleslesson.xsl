@@ -8,9 +8,9 @@
 
         <xsl:template match="*[section/@handle='lesson']//entry" mode='lesson-module-item'>
 
-         <div class="each-item col-md-6 col-sm-12 " style="min-height: 250px; ">
-            <div class=" each-item-inner col-xs-12" style="min-height: 180px; padding-right: 0px;">
-                <div class="content-left col-sm-9">
+         <div class="each-item col-md-6 col-sm-12 " style=" ">
+            <div class=" each-item-inner col-xs-12" style="display: flex; padding-left: 0px; padding-right: 0px; ">
+                <div class="content-left col-sm-9" style="padding-top: 20px; padding-bottom: 10px;">
 
                     <div class="media">
                         <div class="media-left">
@@ -27,10 +27,23 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-right -->
-                <div class="content-right content-defult col-sm-3" style=" padding: 0px;">
+                <div class="content-right content-defult col-sm-3" style="padding: 0px; padding: 10px;">
                     
-                    <div class="profile-meta" style="margin-left: 0px;">
-                       <xsl:apply-templates select="/data/lesson/entry[1]" mode="likeviews"/>
+                    <div class="profile-meta" style="margin-top: 0px;">
+
+                        <span class="blue-text-in-line" id="like"  data-entry='{@id}'>
+                            <i class="fa fa-heart-o"></i>
+                            <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
+                        </span>
+
+                        <span id="likeOutput" value="0" style="font-size: 18px;">0</span>
+                        <br/>
+                        <span class="blue-text-in-line" id="view">
+                            <i class="fa fa-man-people-streamline-user"></i>
+                            <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
+                        </span>
+
+                        <span id="viewOutput" value="0" style="font-size: 18px;">0</span>       
                     </div>
 
                     <!-- THIS IS REAL LIKE VIEWS. 

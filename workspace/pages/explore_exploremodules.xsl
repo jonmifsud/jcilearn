@@ -68,7 +68,7 @@
                                                 
                                 <h3 style="font-size: 30px; line-height: 110%;" class="title">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" style="margin-top: -20px;" placeholder="Search for..."/>
+                                        <input type="text" class="form-control" style="margin-top: -20px; padding: 0px;" placeholder="Search for..."/>
                                         <span class="input-group-btn">
                                             <button class="btn" type="button"><i class="fa fa-search"></i></button>
                                         </span>
