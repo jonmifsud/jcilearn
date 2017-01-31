@@ -119,7 +119,7 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:attribute>               
-                <img src="{/data/params/workspace}/assets/img/helppic.png" class="border-radius-shape"/> 
+                <img src="{/data/params/workspace}/assets/img/helppic.png" class=" square-picture border-radius-shape"/> 
             </a>
             
             <a class="content -left col-xs-8 col-md-7 col-sm-7" style=" padding-top: 30px; padding-right: 0px; padding-bottom: 0px;">
