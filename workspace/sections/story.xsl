@@ -146,32 +146,34 @@
                 </div> <!-- /.media -->
             </a> <!-- /.content-right -->
 
-            <div class="content-right content-defult col-md-2 col-sm-2 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
-                
-                <div class="profile-meta" style="margin-left: 0px;">
-                    <xsl:apply-templates select="/data/story/entry[1]" mode="likeviews"/>
-                </div>
-
-                <!-- THIS IS REAL LIKE VIEWS. 
-                <div class="profile-meta">
-                    <p class="blue-text-in-line" id="like" data-entry='{@id}'>
-                        <i class="fa fa-heart-o"></i>
-                        <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
-                    </p>
-                    <span id="likeOutput" value="0" style="font-size: 27px;">0</span><br/>
+           <xsl:if test='not($edit-link)'>
+                <div class="content-right content-defult col-md-2 col-sm-2 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
                     
-                    <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
-                    <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
+                    <div class="profile-meta" style="margin-left: 0px;">
+                        <xsl:apply-templates select="/data/story/entry[1]" mode="likeviews"/>
+                    </div>
+
+                    <!-- THIS IS REAL LIKE VIEWS. 
+                    <div class="profile-meta">
+                        <p class="blue-text-in-line" id="like" data-entry='{@id}'>
+                            <i class="fa fa-heart-o"></i>
+                            <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
+                        </p>
+                        <span id="likeOutput" value="0" style="font-size: 27px;">0</span><br/>
+                        
+                        <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
+                        <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
+                    </div>
+                    -->
                 </div>
-                -->
-            </div>
+            </xsl:if>
             
         </div>
 
     </xsl:template>
 
     <xsl:template match="*[section/@handle='story']//entry" mode='sharestorymodule'>
-        <div class=" each-item-inner col-sm-10" style="width: 100% !important; padding: 0px;">
+        <div class=" each-item-inner col-sm-10 share-story-module-style">
            
             <div class="content-right col-xs-12 content-defult col-sm-3" style=" overflow: hidden; padding: 0px;">
                 

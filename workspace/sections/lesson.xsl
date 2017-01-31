@@ -70,6 +70,8 @@
                     </div> <!-- /.media -->
 
                 </a> <!-- /.content-right -->
+
+                <xsl:if test='not($edit-link)'>
                 <div class="content-right col-md-4 col-sm-5 study-profile-padding" style="padding: 0px; padding-left: 20px; padding-top: 10px;">
                     
                     <div class="media">
@@ -101,6 +103,8 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-left -->
+                </xsl:if>
+
             </div>
         </div> <!-- /.each-item -->
 

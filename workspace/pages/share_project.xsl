@@ -25,13 +25,8 @@
 
                                 <!-- each one of the blow should come from "My Draft Projects" if 3 + should show slider -->
                                 <div class="putting-limits-guide-team-content" style="display: inline-block;">    
-                                    <xsl:apply-templates select="/data/project/entry[1]" mode="projectmodule"/>
+                                    <xsl:apply-templates select="/data/my-projects/entry[status/item/@handle='draft']" mode="projectmodule"/>
                                 </div>
-
-                                <div class="putting-limits-guide-team-content" style="display: inline-block;">    
-                                    <xsl:apply-templates select="/data/project/entry[2]" mode="projectmodule"/>
-                                </div>
-
                             </div>
 
                         </div>
@@ -52,7 +47,7 @@
 	                            <div class="modules-slider-wrapper three-slides owl-carousel">
 
 	                                 <!-- each one of the blow should come from "My Published Projects" if 3 + should show slider -->
-                                    <xsl:apply-templates select="/data/project/entry" mode="projectmodule"/>
+                                    <xsl:apply-templates select="/data/my-projects/entry[status/item/@handle='published']" mode="projectmodule"/>
                                     
 	                                
 	                            </div> <!-- /.modules-slider-wrapper -->

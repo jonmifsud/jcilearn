@@ -21,13 +21,13 @@
                         </div> <!-- /.each-features -->  
 
                         <div class="row" style="margin-top: 100px; ">
-                            <div class="each-item col-sm-1 col-md-2"></div>           
-                            <div class="each-item col-sm-10 col-md-8">
+                            <div class="each-item col-sm-2 col-md-2"></div>           
+                            <div class="each-item col-sm-8 col-md-8">
                                 <xsl:apply-templates select="/data/my-lessons/entry[status/item/@handle='draft']" mode="list-item">
                                     <xsl:with-param name='edit-link' select='true()'/>
                                 </xsl:apply-templates>
                             </div>
-                            <div class="each-item col-sm-1 col-md-2"></div>
+                            <div class="each-item col-sm-2 col-md-2"></div>
                         </div>
 
                         <div class="btn-form col-xs-12 text-center margin-t-20">
@@ -49,7 +49,7 @@
                         </div>
                     </xsl:if>
 
-                    <xsl:if test="/data/my-lessons/entry[status/item/@handle='review']">
+                    <xsl:if test="/data/my-lessons/entry[status/item/@handle='published']">
                         <div class="guide-team-content col-xs-12">
                             <h3 class="title-centre" style="margin-top: 100px;">PUBLISHED LESSON</h3>
                             <div class="row" >
