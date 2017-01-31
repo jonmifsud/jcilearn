@@ -918,7 +918,7 @@
 
   h2{
     @include rem(font-size, $font-size-h2);
-    @include rem(line-height, 20px);
+    @include rem(line-height, 25px);
   }
 
   .blue-text{

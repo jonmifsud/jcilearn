@@ -10198,7 +10198,8 @@ h6 {
 .section-heading {
   color: #3496DA;
   display: block;
-  margin: 0; }
+  margin: 0;
+  line-height: 28px; }
 
 .section-header {
   margin-bottom: 60px; }
@@ -13059,7 +13060,7 @@ h1 {
 h2 {
   font-size: 24px;
   font-size: 2.4rem;
-  line-height: 1.2rem; }
+  line-height: 1.5rem; }
 
 h3 {
   font-size: 14px;
@@ -15090,8 +15091,8 @@ input, textarea {
   h2 {
     font-size: 24px;
     font-size: 2.4rem;
-    line-height: 20px;
-    line-height: 2rem; }
+    line-height: 25px;
+    line-height: 2.5rem; }
   .blue-text {
     font-size: 16px;
     font-size: 1.6rem;

@@ -77,7 +77,7 @@
                         </div>
 
 
-                        <div class="col-xs-12 each-features" style="margin-bottom: 0px;">  <!-- /.comments -->
+                        <div class="col-xs-12 each-features margin-t-50" style="margin-bottom: 0px;">  <!-- /.comments -->
                              <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                                 <div class="row comments-inner">
                                     

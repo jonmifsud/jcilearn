@@ -17,8 +17,8 @@
                         <div class=" before btn-form col-xs-6 text-center margin-t-50 btn-down-positon">
                             <a href="#" class="btn btn-border text-normal">BEFORE</a>
                         </div>
-                        
-                        <div class="next btn-form col-xs-6 text-center margin-t-50 btn-down-positon">
+
+                        <div id="counter" class="next btn-form col-xs-6 text-center margin-t-50 btn-down-positon">
                             <a href="#" class="btn btn-border text-normal">NEXT</a>
                         </div>
                     </div>
