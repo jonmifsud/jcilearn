@@ -16,7 +16,7 @@
 
                         <div class="col-xs-12 each-features">
 
-                            <div class="modules-slider">
+                            <div class="modules-slider col-sm-offset-1 col-sm-10">
                                 <div class=".modules-slider-wrapper three-slides">       
                                     
                                     <!-- Start: Section Header -->
@@ -30,7 +30,7 @@
                                     </div> 
                                     <!-- End: Section Header -->
 
-                                    <div class="guide-team-content timeline col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="padding-left: 0px;">
+                                    <div class="guide-team-content timeline col-lg-8 col-lg-offset-2 col-sm-10 col-md-offset-2 col-xs-12 " style="padding-left: 0px;">
                                         <div class="row">
                                             <xsl:for-each select="/data/lesson/entry"> 
                                                 <xsl:if test="position() &lt;=4">      <!-- list of modules in for each look -->
@@ -39,6 +39,7 @@
                                             </xsl:for-each>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div> <!-- /.each-features -->

@@ -6,7 +6,6 @@
 <xsl:import href="../sections/sectionmodule.xsl"/>
 <xsl:import href="../sections/comment.xsl"/>
 <xsl:import href="../sections/learnfilesubheader.xsl"/>
-<xsl:import href="../sections/modulesstory.xsl"/>
 <xsl:import href="../sections/studyprofile.xsl"/>
 
     <xsl:template match="/data">

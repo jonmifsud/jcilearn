@@ -87,8 +87,8 @@
 			                                </p><br/>
 			                             </div>
                                    
+                                        <button id="toggle-project"> ANALYSIS </button>
 
-                                        <div id="flip" class="drop-down-button-on-project blue-text">ANALYSIS</div>
                                         <div id="panel">
                                         <div class="lesson-text">
                                          <br/>

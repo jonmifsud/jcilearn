@@ -859,9 +859,11 @@
 
   .pera{
     @include rem(font-size,16px);
-    @include rem(line-height, 16px);
+    @include rem(line-height, 26px);
   }
-
+  .text-center{
+    @include rem(line-height, 28px);
+  }
   p{
     @include rem(font-size,20px);
     @include rem(line-height, 16px);
@@ -881,7 +883,11 @@
 
   p{
     @include rem(font-size,16px);
-    @include rem(line-height, 16px);
+    @include rem(line-height, 26px);
+  }
+
+  .text-center{
+    @include rem(line-height, 28px);
   }
 
   .modal-content{
@@ -898,7 +904,7 @@
 
   p{
     @include rem(font-size,14px);
-    @include rem(line-height, 16px);
+    @include rem(line-height, 24px);
     text-align: justify;
   } 
 
