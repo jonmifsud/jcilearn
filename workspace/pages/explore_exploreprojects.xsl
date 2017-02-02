@@ -44,7 +44,7 @@
                         <div class="modules-slider">
                             <div class="modules-slider-wrapper three-slides owl-carousel">
                                 <xsl:for-each select="/data/project/entry">
-                                    <div  style="width: 95%; height: 400px; padding: 0px; overflow: hidden;">
+                                    <div  style="width: 95%; padding: 0px; overflow: hidden;">
                                         <xsl:apply-templates select="current()" mode="exploreprojectsmodule"/>
                                     </div>
                                 </xsl:for-each>
