@@ -53,7 +53,7 @@
                   
 
                     <div class="guide-team-content col-xs-12">
-                     <h3 class="title-centre margin-b-20" >PUBLISHED STORIES</h3>
+                     <h3 class="title-centre margin-b-20 margin-t-50" >PUBLISHED STORIES</h3>
                         <div class="row" >
                             <div class="each-item col-sm-1 col-md-2"></div>
                                 <div class="each-item col-sm-10 col-md-8" >
@@ -68,7 +68,7 @@
                     </div>
 
                      <div class="btn-form col-xs-12 text-center">
-                         <p class="blue-text" >Read your collaboral story!</p>
+                         <p class="blue-text margin-t-40" >Read your collaboral story!</p>
                             <p class="blue-text"></p>
                             <a href="#" class="btn btn-border-button">Explore</a>
                     </div>
