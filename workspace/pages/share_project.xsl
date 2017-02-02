@@ -24,9 +24,13 @@
                              <div class="item"  style="margin-left: auto; margin-right: auto;text-align: center;">
 
                                 <!-- each one of the blow should come from "My Draft Projects" if 3 + should show slider -->
-                                <div  style="display: inline-block;">    
-                                    <xsl:apply-templates select="/data/my-projects/entry[status/item/@handle='draft']" mode="projectmodule"/>
+                                <div class="modules-slider">
+                                <div class="modules-slider-wrapper three-slides owl-carousel">  
+                                    <xsl:apply-templates select="/data/my-projects/entry[status/item/@handle='draft']" mode="projectmodule">
+                                        <xsl:with-param name='edit-link' select='true()'/>
+                                    </xsl:apply-templates>
                                 </div>
+                            </div>
                             </div>
 
                         </div>
@@ -47,7 +51,9 @@
 	                            <div class="modules-slider-wrapper three-slides owl-carousel">
 
 	                                 <!-- each one of the blow should come from "My Published Projects" if 3 + should show slider -->
+                                
                                     <xsl:apply-templates select="/data/my-projects/entry[status/item/@handle='published']" mode="projectmodule"/>
+                               
                                     
 	                                
 	                            </div> <!-- /.modules-slider-wrapper -->
