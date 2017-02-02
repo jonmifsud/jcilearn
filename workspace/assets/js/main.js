@@ -1747,6 +1747,11 @@ function isNumber(n) {
 } (jQuery) );
 
 
+;(function($){
+	$(document).ready(function(){
+		$('textarea').autogrow();
+	});
+})(jQuery);
  $(document).ready(function(){
 
         $(".sliderJquery div:nth-child("+1+")").show();

@@ -14155,28 +14155,30 @@ h6 {
 
 input[type="radio"], input[type="checkbox"] {
   display: none; }
-  input[type="radio"] + .select-check-box .check-box, input[type="checkbox"] + .select-check-box .check-box {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    border: 2px solid #3496DA;
-    margin: auto;
-    position: relative; }
-    input[type="radio"] + .select-check-box .check-box::before, input[type="checkbox"] + .select-check-box .check-box::before {
-      bottom: 7px;
-      left: 2px;
-      position: absolute;
-      content: '';
-      display: inline-block;
-      width: 0;
-      height: 0;
-      transition: width 0.2s ease-in-out, height 0.2s ease-in-out,border-color 0s ease-in-out;
-      transition-delay: 0.2s, 0s, 0.4s;
-      transform: rotate(45deg);
-      transform-origin: 0% 100%;
-      border-right: solid 2px transparent;
-      border-bottom: solid 2px transparent; }
+  input[type="radio"] + .select-check-box, input[type="checkbox"] + .select-check-box {
+    height: 220px; }
+    input[type="radio"] + .select-check-box .check-box, input[type="checkbox"] + .select-check-box .check-box {
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      border: 2px solid #3496DA;
+      margin: auto;
+      position: relative; }
+      input[type="radio"] + .select-check-box .check-box::before, input[type="checkbox"] + .select-check-box .check-box::before {
+        bottom: 7px;
+        left: 2px;
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 0;
+        transition: width 0.2s ease-in-out, height 0.2s ease-in-out,border-color 0s ease-in-out;
+        transition-delay: 0.2s, 0s, 0.4s;
+        transform: rotate(45deg);
+        transform-origin: 0% 100%;
+        border-right: solid 2px transparent;
+        border-bottom: solid 2px transparent; }
   input[type="radio"]:checked + .select-check-box .check-box::before, input[type="checkbox"]:checked + .select-check-box .check-box::before {
     width: 5px;
     height: 10px;

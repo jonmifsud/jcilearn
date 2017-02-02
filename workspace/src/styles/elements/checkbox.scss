@@ -6,6 +6,7 @@
 input[type="radio"],input[type="checkbox"] {
 	display:none;
 	+ .select-check-box{
+		height: 220px;
 		.check-box{
 			cursor: pointer;
 			width: 20px;

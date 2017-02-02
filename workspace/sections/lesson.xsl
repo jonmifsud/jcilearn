@@ -178,8 +178,9 @@
 
                 <div id="div1">
                     <label style="width: 100%;">
-                        <h3 class="text-center">TITLE</h3>
+                        
                         <div class="input-wrapper">
+                            <h3 class="text-center">TITLE</h3>
                             <input name="title" type="text" class="your-notes-class" value='{title[@mode="unformatted"]}' />
                         </div>
                     </label>
@@ -229,6 +230,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
 
 

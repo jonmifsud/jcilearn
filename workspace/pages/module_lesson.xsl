@@ -100,14 +100,8 @@
                 
                      <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
 
-                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-bottom: -30px;">
-                             <div class="lesson-text">
-                             <br/>
-                                <p class="lesson-text">FAKE TEXT fake text This is Fake EMBENDED text needs to be changed FAKE TEXT go to Symphony and add new field or figure out how to separate one text in 2 parts. PROBLEM WITH THIS, BUTTONS MARGIN and FLAG on profile picture. </p><br/><br/>
-                             </div>
-                        </div>
 
-                        <div class="col-xs-12 each-features" style="margin-bottom: 0px; height: 100px;">
+                        <div class="col-xs-12 each-features margin-b-20" style="margin-bottom: 0px; height: 100px;">
                             <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" >
 
                                 <xsl:apply-templates select="/data/lesson/entry[1]" mode="likeviews"/>

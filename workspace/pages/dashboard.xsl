@@ -33,7 +33,7 @@
 		                         <div class="col-md-6 col-xs-12" style="border: 0px; height: 10%; margin-bottom: 30px;">
 		                           	<div class="box-border-text-left" style="height: 380px; padding-left: 70px;">
 			                            <h3 class="title">NOTIFICATIONS</h3><br/>
-			                        <div style="overflow-y: scroll; height: 300px;">
+			                        <div style="overflow-y: scroll; height: 350px;">
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
 			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
@@ -65,7 +65,7 @@
 		                        <div class="col-md-7 col-xs-12" style="border: 0px; height: 10%; margin-bottom: 30px;">
 			                       <div class="box-border-text-left" style="height: 380px; padding-left: 70px;">
 			                            <h3 class="title"> RECENT ACTIVITY<br/>IN YOUR NETWORK</h3>
-			                        <div style="overflow-y: scroll; height: 280px;">
+			                        <div style="overflow-y: scroll; height: 350px;">
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
 			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
@@ -112,7 +112,7 @@
 		                        <div class="col-md-5 col-xs-12" style="border: 0px; height: 10%;">
 		                           	<div class="box-border-text-left" style="height: 380px; padding-left: 70px;">
 			                            <h3 class="title"> LEADERSHIP </h3><br/>
-			                        <div style="overflow-y: scroll; height: 300px;">
+			                        <div style="overflow-y: scroll; height: 350px;">
 			                            <div class="box-poligon" style="width: 100%; ">
 			                            1
 			                                <div class="box-poligon" style="width: 20%; ">                                

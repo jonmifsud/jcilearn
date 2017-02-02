@@ -46,7 +46,7 @@
 
                         <div class="btn-form col-xs-12 text-center margin-b-20">
                             <p class="blue-text"></p>
-                            <a href="{/data/params/root}/share/project/edit-project/" class="btn btn-border-button margin-b-30">Write a new story</a>
+                            <a href="{/data/params/root}/share/story/edit-story/" class="btn btn-border-button margin-b-30">Write a new story</a>
                         </div>
 
                     </div>

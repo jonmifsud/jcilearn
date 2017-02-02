@@ -46,7 +46,6 @@
                                 <textarea id="your-note" name="fields[text]" type="text"></textarea>
                             </div>
 								<input name="fields[profile]" type="hidden" value="…" />
-								<br/><br/><br/><br/><br/><br/><br/>
 								<label><p>date</p>
 									<input name="fields[date]" type="text" />
 								</label>
