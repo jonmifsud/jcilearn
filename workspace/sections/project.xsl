@@ -5,7 +5,7 @@
 
         <xsl:value-of select='/data/params/root'/>
         <xsl:text>/project/</xsl:text>
-        <xsl:value-of select='@handle'/>
+        <xsl:value-of select='title/@handle'/>
         <xsl:text>/</xsl:text>
 
     </xsl:template>
