@@ -836,11 +836,9 @@
     overflow: hidden;
 }
 
-
-
-
-
-
+.margin-b-0{
+    margin-bottom: 0px !important;
+}
 
 
 
@@ -856,11 +854,12 @@
 
 
 @media all and (min-width: 1025) {
-  // h3{
-  //     @include rem(font-size,25px);
-  //     @include rem(line-height, 35px);
+  h3{
+      @include rem(font-size,25px);
+      @include rem(line-height, 35px);
+      line-height: 30px;
 
-  // }
+  }
   .error-font{
     font-size: 300px;
   }
@@ -879,11 +878,12 @@
 }
  
 @media all and (max-width: 1024px) and (min-width: 640px) {
-  // h3{
-  //     @include rem(font-size,18px);
-  //     @include rem(line-height, 28px);
+  h3{
+      @include rem(font-size,18px);
+      @include rem(line-height, 28px);
+      line-height: 24px !important;
 
-  // }
+  }
 
   .error-font{
     font-size: 200px;
@@ -923,6 +923,7 @@
 
   .blue-text{
     @include rem(font-size,16px);
+    line-height: 24px !important;
     text-align: center;
   }
 

@@ -15043,7 +15043,16 @@ input, textarea {
   height: 150px;
   overflow: hidden; }
 
+.margin-b-0 {
+  margin-bottom: 0px !important; }
+
 @media all and (min-width: 1025) {
+  h3 {
+    font-size: 25px;
+    font-size: 2.5rem;
+    line-height: 35px;
+    line-height: 3.5rem;
+    line-height: 30px; }
   .error-font {
     font-size: 300px; }
   .pera {
@@ -15061,6 +15070,12 @@ input, textarea {
     line-height: 1.6rem; } }
 
 @media all and (max-width: 1024px) and (min-width: 640px) {
+  h3 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 28px;
+    line-height: 2.8rem;
+    line-height: 24px !important; }
   .error-font {
     font-size: 200px; }
   p {
@@ -15096,6 +15111,7 @@ input, textarea {
   .blue-text {
     font-size: 16px;
     font-size: 1.6rem;
+    line-height: 24px !important;
     text-align: center; }
   .blue-text-in-line {
     font-size: 20px;

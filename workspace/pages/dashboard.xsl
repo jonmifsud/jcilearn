@@ -3,6 +3,7 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/master.xsl"/>
+<xsl:import href="../sections/modules.xsl"/>
 
     <xsl:template match="/data">
             <!-- Start: Features Section 
@@ -186,9 +187,10 @@
 		                                <h3> LEARN </h3>
 		                                <p class="blue-text"> Continue progressing in your current</p><br/>
 		                            </div>
-		                            <div class="col-md-1"></div>
-		                            <div class="col-md-10">
-		                            <xsl:apply-templates select="/data/lesson/entry[1]" mode="modules"/>
+		                            <div class="col-md-1 col-md-3"></div>
+		                            <div class="col-md-10 col-sm-6">
+		                            	
+		                            <xsl:apply-templates select="/data/my-lessons/entry[status/item/@handle='published']" mode="modules"/>
 		                        	</div>
                                 </div>
                                 <div class="col-md-5" style="border: 0px; height: 10%;">

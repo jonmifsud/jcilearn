@@ -33,7 +33,7 @@
 
                         <div class="btn-form col-xs-12 text-center margin-t-20">
                             <p class="blue-text"></p>
-                            <a href="#" class="btn btn-border-button">Start a new project</a>
+                            <a href="{/data/params/root}/share/project/edit-project/" class="btn btn-border-button">Start a new project</a>
                         </div>
 
                     </div>

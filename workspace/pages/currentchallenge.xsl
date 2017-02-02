@@ -3,6 +3,8 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/master.xsl"/>
+<xsl:import href="../sections/challengemodule.xsl"/>
+<xsl:import href="../sections/challenge.xsl"/>
 
     <xsl:template match="/data">
             <!-- Start: Features Section 

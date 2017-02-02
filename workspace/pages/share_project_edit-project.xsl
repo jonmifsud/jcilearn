@@ -33,7 +33,6 @@
                 </div>
 
                     <button class="counter1"> counter</button>
-                    <button class="counter2"> counter</button>
                     <p id="output"> here </p>
 
 
@@ -42,19 +41,19 @@
 
 
 
-                            <div class="study-timeline-progress-circles" style="margin-left: 27%; ">
+                            <div class="study-timeline-progress-circles" style="margin-left: 17%; ">
                                     1
                                 </div> 
-                                <div class="study-timeline-progress-circles" style="margin-left: 38%; ">
+                                <div class="study-timeline-progress-circles" style="margin-left: 30%; ">
                                     2
                                 </div>
-                                <div class="study-timeline-progress-circles" style="margin-left: 50%; ">
+                                <div class="study-timeline-progress-circles" style="margin-left: 43%; ">
                                     3
                                 </div>
-                                <div class="study-timeline-progress-circles" style="margin-left: 61%; ">
+                                <div class="study-timeline-progress-circles" style="margin-left: 56%; ">
                                     4
                                 </div> 
-                                <div class="study-timeline-progress-circles" style="margin-left: 72%; ">
+                                <div class="study-timeline-progress-circles" style="margin-left: 69%; ">
                                     5
                                 </div>
                                 <div class="study-timeline-progress-circles" style="margin-left: 83%; ">

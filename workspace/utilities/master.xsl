@@ -28,7 +28,7 @@
 <html lang="en">
     <head>     
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 
         <!-- TITLE OF SITE --> 
         <title>Lesson</title>
@@ -180,7 +180,7 @@
                                     <li><a href="{/data/params/root}/discussions/">Discussions</a></li>
                                     <li><a href="{/data/params/root}/discussion">Discussion</a></li>
                                     <li><a href="{/data/params/root}/help">help</a></li>
-                                    <li><a href="{/data/params/root}/landing">New Discussion</a></li>
+                                    <li><a href="{/data/params/root}/newdiscussion">New Discussion</a></li>
                                     <li><a href="{/data/params/root}/login">log in</a></li>
                                     <li><a href="{/data/params/root}/errorpage">error page</a></li>
                                 </ul>
