@@ -8,6 +8,7 @@
 <xsl:import href="../sections/studyprofile.xsl"/>
 <xsl:import href="../sections/notepadmodule.xsl"/>
 <xsl:import href="../sections/yournotepad.xsl"/>
+<xsl:import href="../sections/story.xsl"/>
                                                 
     <xsl:template match="/data"> 
             <!-- Start: Features Section 

@@ -48,7 +48,7 @@
 
                         <div class="modules-slider">
                             <div class="modules-slider-wrapper three-slides owl-carousel">
-                                <xsl:apply-templates select="/data/lesson/entry" mode="modules"/>
+                                <xsl:apply-templates select="/data/my-lessons/entry[status/item/@handle='published']" mode="modules"/>
                             </div> <!-- /.modules-slider-wrapper -->
                         </div> <!-- /.modules-slider -->
 
@@ -102,7 +102,7 @@
                                                 <div class="box-border" style="width: 100%; height: 350px; border:0px; padding: 0px;">
                                                     <div class="box-border" style="width: 50%; height: 150px; padding: 0px;">
                                                         <div class="box-border" style="width: 70%; border: 0px;">
-                                                            <img src="assets/images/guide-team/icon-9.png" style="width: 20%; height: 20%; float: left;"/>
+                                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="width: 20%; height: 20%; float: left;"/>
                                                             <p class="title"> some text </p> regular text
                                                         </div>
                                                         <div class="box-border" style="width: 20%; padding: 0px; padding-top: 00px; border: 0px;">
@@ -118,7 +118,7 @@
                                                     </div>
                                                     <div class="box-border" style="width: 50%; height: 150px; padding: 0px;">
                                                         <div class="box-border" style="width: 70%; border: 0px;">
-                                                            <img src="assets/images/guide-team/icon-9.png" style="width: 20%; height: 20%; float: left;"/>
+                                                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" style="width: 20%; height: 20%; float: left;"/>
                                                             <p class="title"> some text </p> regular text
                                                         </div>
                                                         <div class="box-border" style="width: 20%; padding: 0px; padding-top: 00px; border: 0px;">

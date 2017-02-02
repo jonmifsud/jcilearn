@@ -6,11 +6,10 @@
 <xsl:import href="../sections/sectionmodule.xsl"/>
 <xsl:import href="../sections/comment.xsl"/>
 <xsl:import href="../sections/learnfilesubheader.xsl"/>
-<xsl:import href="../sections/modulesstory.xsl"/>
+
 <xsl:import href="../sections/studyprofile.xsl"/>
 <xsl:import href="../sections/notepadmodule.xsl"/>
 <xsl:import href="../sections/yournotepad.xsl"/>
-<xsl:import href="../sections/usercontentmodule.xsl"/>
 
     <xsl:template match="/data">
             <!-- Start: Features Section 
@@ -115,11 +114,10 @@
                             </div>
                             <div class="col-md-2 col-sm-2" ></div>
                             <br/>
-                            </div>
-                                                            
+                            </div>                                                            
                         </div>
 
-                         <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
+                        <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
                         <p style="padding-top: 80px; text-align: center;">Send me daily reminders</p>
                         <div class="check-box" style="margin-left: 49%;"/>
                     </div>

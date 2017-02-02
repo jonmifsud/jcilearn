@@ -19,31 +19,31 @@
                     <xsl:call-template name="learnfilesubheader"/>
 
                     <h2 class="title-centre">NEW STORY</h2>
-                <div class="enter-text-field" style="height: 100px;">
-                    <div class="form-inline single-form" style="width: 150px;">
-                        <div class="form-group input-outer">
-                            <div class="select-outer">
-                                <select class="form-control contact-plan">
-                                    <option value="subject1" disabled="" selected="">ADD</option>
-                                    <option value="BusinessConsulting">consulting</option>
-                                    <option value="TextConsulting">Text</option>
-                                    <option value="Advisory">Advisory</option>
-                                    <option value="Audit-$-assurance">Audit</option>
-                                </select>
+                    <div class="enter-text-field" style="height: 100px;">
+                        <div class="form-inline single-form" style="width: 150px;">
+                            <div class="form-group input-outer">
+                                <div class="select-outer">
+                                    <select class="form-control contact-plan">
+                                        <option value="draft" disabled="" selected="">SAVE</option>
+                                        <option value="review">PUBLISH</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div> 
-                </div>
+                    </div>
 
                     <button class="counter1"> counter</button>
 
                     <div class="col-xs-12 each-features">
                         <div class="study-timeline-progress" style="margin-top: 80px;">
-                            <div id="LessonEditStep1" class="study-timeline-progress-circles" style="margin-left: 33%;">
+                            <div id="LessonEditStep1" class="study-timeline-progress-circles" style="margin-left: 25%;">
                                 1
                             </div> 
-                            <div id="LessonEditStep2" class="study-timeline-progress-circles" style="margin-left: 66%;">
+                            <div id="LessonEditStep2" class="study-timeline-progress-circles" style="margin-left: 50%;">
                                 2
+                            </div>
+                            <div id="LessonEditStep3" class="study-timeline-progress-circles" style="margin-left: 75%;">
+                                3
                             </div>
                         </div>
                     </div>
@@ -81,14 +81,14 @@
                                         </div>
                                     </div>
 
-                                    <!-- <div class="col-xs-12 each-features text-center" style="margin-bottom: 40px;">
+                                 <div class="col-xs-12 each-features text-center" style="margin-bottom: 40px;">
                                         <div class="box-border" style="border: 0px; height: 150px;">
                                             <h3 class="title">START</h3>
                                             <div class="form-inline single-form">
                                                 <div class="form-group input-outer">
                                                     <div class="select-outer">
                                                         <select class="form-control contact-plan">
-                                                            <option value="subject1" disabled="" selected="">ADD</option>
+                                                            <option value="subject1" disabled="" selected="">START</option>
                                                             <option value="BusinessConsulting">consulting</option>
                                                             <option value="TextConsulting">Text</option>
                                                             <option value="Advisory">Advisory</option>
@@ -105,7 +105,7 @@
                                                 <div class="form-group input-outer">
                                                     <div class="select-outer">
                                                         <select class="form-control contact-plan">
-                                                            <option value="subject1" disabled="" selected="">ADD</option>
+                                                            <option value="subject1" disabled="" selected="">END</option>
                                                             <option value="BusinessConsulting">consulting</option>
                                                             <option value="TextConsulting">Text</option>
                                                             <option value="Advisory">Advisory</option>
@@ -115,13 +115,23 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div> 
                                 </div>
 
                                 <div id="div2">
                                     <label style="width: 90%;">
                                         <div class="enter-text-field" style="height: 100px;">
                                             <h3 class="title-centre">TEXT</h3>
+                                            <textarea class="your-note-text-box-shape" id="your-note" name="fields[text]" type="text" rows='15'></textarea>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div id="div3">
+                                    <label style="width: 90%;">
+                                        <div class="enter-text-field" style="height: 100px;">
+                                            <h3 class="title-centre">PHOTOS</h3>
+                                            <spam class="blue-text margin-b-20">drag and drop photos related to your story here</spam><br/>
                                             <textarea class="your-note-text-box-shape" id="your-note" name="fields[text]" type="text" rows='15'></textarea>
                                         </div>
                                     </label>

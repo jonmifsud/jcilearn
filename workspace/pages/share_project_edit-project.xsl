@@ -19,21 +19,20 @@
                     <xsl:call-template name="learnfilesubheader"/> 
 
                     <h2 class="title-centre">NEW PROJECT</h2>
-                <div class="enter-text-field" style="height: 100px;">
-                    <div class="form-inline single-form" style="width: 150px;">
-                        <div class="form-group input-outer">
-                            <div class="select-outer">
-                                <select class="form-control contact-plan">
-                                    <option value="subject1" disabled="" selected="">SAVE</option>
-                                    <option value="BusinessConsulting">PUBLISH</option>
-                                </select>
+                    <div class="enter-text-field" style="height: 100px;">
+                        <div class="form-inline single-form" style="width: 150px;">
+                            <div class="form-group input-outer">
+                                <div class="select-outer">
+                                    <select class="form-control contact-plan">
+                                        <option value="draft" disabled="" selected="">SAVE</option>
+                                        <option value="review">PUBLISH</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
                     <button class="counter1"> counter</button>
-                    <button class="counter2"> counter</button>
                     <p id="output"> here </p>
 
 
@@ -42,19 +41,19 @@
 
 
 
-                            <div class="study-timeline-progress-circles" style="margin-left: 27%; ">
+                            <div class="study-timeline-progress-circles" style="margin-left: 17%; ">
                                     1
                                 </div> 
-                                <div class="study-timeline-progress-circles" style="margin-left: 38%; ">
+                                <div class="study-timeline-progress-circles" style="margin-left: 30%; ">
                                     2
                                 </div>
-                                <div class="study-timeline-progress-circles" style="margin-left: 50%; ">
+                                <div class="study-timeline-progress-circles" style="margin-left: 43%; ">
                                     3
                                 </div>
-                                <div class="study-timeline-progress-circles" style="margin-left: 61%; ">
+                                <div class="study-timeline-progress-circles" style="margin-left: 56%; ">
                                     4
                                 </div> 
-                                <div class="study-timeline-progress-circles" style="margin-left: 72%; ">
+                                <div class="study-timeline-progress-circles" style="margin-left: 69%; ">
                                     5
                                 </div>
                                 <div class="study-timeline-progress-circles" style="margin-left: 83%; ">
@@ -218,10 +217,12 @@
                                         </div>
                                     </label> 
 
-                                    <h3 class="title-centre">EXECUTION</h3>
-                                    <div class="enter-text-field">
-                                          <textarea class="your-note-box-shape" type="text" id="your-note" name="fname"></textarea>
-                                    </div>                                    
+                                    <label style="width: 90%;">
+                                        <div class="enter-text-field">
+                                            <h3 class="title-centre">EXECUTION</h3>
+                                            <textarea class="your-note-box-shape" type="text" name="fname"></textarea>
+                                        </div>
+                                    </label>                                               
                                 </div>
 
 

@@ -1,8 +1,14 @@
 $(document).ready(function(){
 
+
+        // $(".study-timeline-progress > div:nth-child("+1+")").css({"background-color": "#3496DA", "color": "white"});    
+        // $(".sliderJquery > div").hide();
+
+        // $(".sliderJquery > div:nth-child("+1+")").show();
+
         
         $(".counter1").bind("click", counterfunc);
-        var counter = 0;
+        var counter = 1;
         divNumber = $(".sliderJquery > div").length;
 
 
@@ -13,14 +19,14 @@ $(document).ready(function(){
                 counter=sum;
 
                 $(".sliderJquery > div").hide();                
-                $(".sliderJquery div:nth-child("+counter+")").show();
+                $(".sliderJquery > div:nth-child("+counter+")").show();
 
                 $(".study-timeline-progress > div:nth-child("+counter+")").css({"background-color": "#3496DA", "color": "white"});
 
             }else{
                 counter = 0; 
                 $(".study-timeline-progress > div").css({"background-color": "white", "color": "#3496DA"});
-                $(".sliderJquery div:nth-child(1)").show();
+                $(".sliderJquery > div:nth-child(1)").show();
             }           
         }
     });

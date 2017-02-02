@@ -3,6 +3,7 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/master.xsl"/>
+<xsl:import href="../sections/modules.xsl"/>
 
     <xsl:template match="/data">
             <!-- Start: Features Section 
@@ -32,7 +33,7 @@
 		                         <div class="col-md-6 col-xs-12" style="border: 0px; height: 10%; margin-bottom: 30px;">
 		                           	<div class="box-border-text-left" style="height: 380px; padding-left: 70px;">
 			                            <h3 class="title">NOTIFICATIONS</h3><br/>
-			                        <div style="overflow-y: scroll; height: 300px;">
+			                        <div style="overflow-y: scroll; height: 350px;">
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
 			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
@@ -64,7 +65,7 @@
 		                        <div class="col-md-7 col-xs-12" style="border: 0px; height: 10%; margin-bottom: 30px;">
 			                       <div class="box-border-text-left" style="height: 380px; padding-left: 70px;">
 			                            <h3 class="title"> RECENT ACTIVITY<br/>IN YOUR NETWORK</h3>
-			                        <div style="overflow-y: scroll; height: 280px;">
+			                        <div style="overflow-y: scroll; height: 350px;">
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
 			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
@@ -111,7 +112,7 @@
 		                        <div class="col-md-5 col-xs-12" style="border: 0px; height: 10%;">
 		                           	<div class="box-border-text-left" style="height: 380px; padding-left: 70px;">
 			                            <h3 class="title"> LEADERSHIP </h3><br/>
-			                        <div style="overflow-y: scroll; height: 300px;">
+			                        <div style="overflow-y: scroll; height: 350px;">
 			                            <div class="box-poligon" style="width: 100%; ">
 			                            1
 			                                <div class="box-poligon" style="width: 20%; ">                                
@@ -186,9 +187,10 @@
 		                                <h3> LEARN </h3>
 		                                <p class="blue-text"> Continue progressing in your current</p><br/>
 		                            </div>
-		                            <div class="col-md-1"></div>
-		                            <div class="col-md-10">
-		                            <xsl:apply-templates select="/data/lesson/entry[1]" mode="modules"/>
+		                            <div class="col-md-1 col-md-3"></div>
+		                            <div class="col-md-10 col-sm-6">
+		                            	
+		                            <xsl:apply-templates select="/data/my-lessons/entry[status/item/@handle='published']" mode="modules"/>
 		                        	</div>
                                 </div>
                                 <div class="col-md-5" style="border: 0px; height: 10%;">

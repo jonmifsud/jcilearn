@@ -70,6 +70,8 @@
                     </div> <!-- /.media -->
 
                 </a> <!-- /.content-right -->
+
+                <xsl:if test='not($edit-link)'>
                 <div class="content-right col-md-4 col-sm-5 study-profile-padding" style="padding: 0px; padding-left: 20px; padding-top: 10px;">
                     
                     <div class="media">
@@ -101,6 +103,8 @@
                     </div> <!-- /.media -->
 
                 </div> <!-- /.content-left -->
+                </xsl:if>
+
             </div>
         </div> <!-- /.each-item -->
 
@@ -174,8 +178,9 @@
 
                 <div id="div1">
                     <label style="width: 100%;">
-                        <h3 class="text-center">TITLE</h3>
+                        
                         <div class="input-wrapper">
+                            <h3 class="text-center">TITLE</h3>
                             <input name="title" type="text" class="your-notes-class" value='{title[@mode="unformatted"]}' />
                         </div>
                     </label>
@@ -225,6 +230,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
 
 
