@@ -23,7 +23,7 @@
         <xsl:param name='edit-link' select='false()'/>
         <xsl:param name='no-link' select='false()'/>
 
-        <a class="box-border" style="width: 95%; height: 400px; padding: 0px; overflow: hidden;">
+        <a class="box-border" style="width: 320px; height: 400px; padding: 0px; overflow: hidden;">
             <xsl:attribute name='href'>
                 <xsl:choose>
                     <xsl:when test='$no-link'>

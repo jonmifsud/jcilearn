@@ -131,11 +131,11 @@
      */
    var threeSlider = $(".modules-slider .modules-slider-wrapper.three-slides"); // client's message
    threeSlider.owlCarousel({
-      items:                2, //10 items above 1000px browser width
-      itemsDesktop:         [1200, 2], //5 items between 1000px and 901px
-      itemsDesktopSmall:    [992,2], // 3 items betweem 992px and 769px
+      items:                3, //10 items above 1000px browser width
+      itemsDesktop:         [1200, 3], //5 items between 1000px and 901px
+      itemsDesktopSmall:    [992,3], // 3 items betweem 992px and 769px
       itemsTablet:          [768,2], // 3 items between 768 and 601
-      itemsTabletSmall:     [480,1], // 2 items in widen mobile device
+      itemsTabletSmall:     [480,2], // 2 items in widen mobile device
       itemsMobile:          [320,1], // 1 items in any small mobile device
       // autoPlay :           3000,
       stopOnHover :         true,
