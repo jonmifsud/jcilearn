@@ -270,8 +270,13 @@
                         </div> <!-- /.single-comment -->
 
                     </div> <!-- /.each-features -->
-                    
+                        
+
                 </div> <!-- /.row -->
+                <div class="col-md-1 col-sm-1" ></div>
+
+                            <xsl:call-template name="write-comment"/> 
+                            
             </div> <!-- /.container -->
         </div>
         <!-- End: Features Section 

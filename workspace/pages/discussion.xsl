@@ -81,7 +81,7 @@
 
                         <div class="lesson-button-organise text-center">
                             <div class="btn-form col-xs-12 col-md-4 col-sm-4 col-md-offset-4 text-center margin-t-10">
-                                <div class="wraper-like-comment-share">
+                                <div class="wraper-like-comment-share" style="margin-left: 15%;">
                                     <div class="btn hovere-change" >
                                         <i class="fa fa-like-love-streamline hovere-color-change"></i>
                                     </div>
@@ -103,6 +103,10 @@
                     </div>
                     
                 </div> <!-- /.row -->
+                <div class="col-md-1 col-sm-1" ></div>
+
+                    <xsl:call-template name="write-comment"/> 
+
             </div> <!-- /.container -->
         </div>
         <!-- End: Features Section 

@@ -28,6 +28,30 @@
         
     </xsl:template>
 
+
+    <xsl:template name='write-comment'>        
+        <div id="text-toggle" class="col-md-8 col-md-offset-1 margin-b-50 comment-box-toggle">
+            <div class="col-md-2 left-comment-box">
+                <a class="btn-big" href="http://localhost/jcilearn/user/" style="border-radius:50%;position:relative;overflow:hidden;">
+                    <img class="img-responsive" alt="" src="http://localhost/jcilearn/workspace/assets/img/icons/profile-2.png"/>
+                </a>
+            </div>
+            <div class="col-md-10" >
+                <form method="post" action="{$current-url}/" data-action="save-comment" >
+                    <label class="comment-text-box">
+                        <textarea  name="text" type="text" class="input-height" />
+                    </label>
+
+                    <input name="author" type="hidden" value="{/data/params/member-id}"/>
+                    <input name="item" type="hidden" value="{/data/project/entry/@id}"/>
+                    <input type="submit" value="Send" class="button-comment-send" />
+
+                </form>
+            </div>
+        </div>
+    </xsl:template>
+
+
     <xsl:template match="*[section/@handle='comment']//entry" mode='comment'>
         <xsl:if test="position() &lt;=2">
         <div class="each-item" style="max-height: 450px; overflow: hidden;">

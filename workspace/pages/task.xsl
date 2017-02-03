@@ -211,8 +211,13 @@
 
                     </div> <!-- /.each-features -->
 
+
+
                     </div> <!-- /.each-features -->
                     
+                    <div class="col-md-1 col-sm-1" ></div>
+
+                            <xsl:call-template name="write-comment"/> 
                 </div>
         </div>
         <!-- End: Features Section 
