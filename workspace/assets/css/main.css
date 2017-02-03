@@ -15048,6 +15048,9 @@ input, textarea {
 .margin-b-0 {
   margin-bottom: 0px !important; }
 
+.padding-l-50 {
+  padding-left: 50px; }
+
 @media all and (min-width: 1025) {
   h3 {
     font-size: 25px;

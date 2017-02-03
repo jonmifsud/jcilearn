@@ -202,13 +202,14 @@
                                     </div>  
 
                                     <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center" style="margin-top: 5px;">
+                                        <div class=" col-xs-12 col-md-4 col-sm-4 text-center" style="margin-top: 5px;">
                                             <div class="btn btn-border text-normal">
                                                 <a href="#" class="btn" >
                                                     <i class="fa fa-like-love-streamline"></i>
                                                 </a>
                                                 <a href="#" class="btn" >
                                                     <i class="fa fa-commenting-o" aria-hidden="true"></i>
+
                                                 </a>
                                                 <a href="#" class="btn">
                                                     <i class="fa fa-share-square-o" aria-hidden="true"></i>
@@ -223,7 +224,76 @@
                                             <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
                                                 <h3 style="font-size: 30px; margin-top: 6%; line-height: 60%;" class="title"> Submit <i class="fa fa-chevron-right" aria-hidden="true"></i> </h3>
                                             </a><!-- Modal -->
-                                        </div>  
+                                        </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-12 text-center margin-t-50" style="margin-top: 5px;">
+
+                                            <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
+                                                <h3 style="font-size: 30px; margin-top: 6%; line-height: 60%;" class="title"> write a comment</h3>
+                                            </a><!-- Modal -->
+
+
+
+                                            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                                              <div class="modal-dialog" role="document">
+
+                                                <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; height: 500px;">
+                                                  <div class="modal-header " style="border: 0px; margin: 10px;">
+                                                    
+
+                                                     <div class="modal-header " style="border: 0px; margin: 10px;">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-weight: bold;">×</span></button>
+                                            
+                                            </div>
+                                                <div class="new-class" style=" height: 700px; margin-right: auto; margin-left: auto; text-align: center; ">                                 
+                                                    <h2 class="section-heading">Write your comment!</h2>
+                                                    <p>Now's your chance to tell us what you think</p>
+
+                                                    <div class="col-md-12">
+                                                        <img class="media-object profile-pic text-center" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
+                                                            <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
+                                                    </div>   
+                                                  
+                                                    <div class="row comments-inner col-md-12">
+                                                        <form method="post" action="{$current-url}/" enctype="multipart/form-data">
+                                                            <input name="MAX_FILE_SIZE" type="hidden" value="2097152" />
+                                                            <label>
+                                                                <input style="width: 500px" name="fields[answer]" type="text" />
+                                                            </label>
+                                                            <input style="width: 80px; height: 40px;" name="action[comments]" type="submit" value="Submit" />
+                                                        </form>                  
+                                                    </div>
+                                                    
+                                                </div> 
+
+                                                    
+                                              </div>
+                                                                                                 
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div> 
+
+
+
+                                        
+
+
+
+
+
+
                                     </div> 
                                     </div>
                                     <div class="col-md-1 col-sm-1" ></div>

@@ -13,7 +13,7 @@
                     <div class="media-body">
 
                         <h3 class="title"><xsl:value-of select="profile/item"/></h3>
-                        <p class="pera"><xsl:value-of select="text"/></p>
+                        <p class="pera padding-l-50"><xsl:value-of select="text"/></p>
 
                     </div> <!-- /.media-body -->
                 </div> <!-- /.media -->
