@@ -46,15 +46,9 @@
 
                         <div class="col-xs-12 each-features">  <!-- /.comments -->
                              <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                                <div class="row comments-inner col-sm-12">
-                                    
-                                    <xsl:apply-templates select="/data/comments/entry" mode="comment"/>
-                                   
-                                    <div class="each-item-inner comments-option overflow" style="padding-right: 30px; padding-left: 30px;" > 
-                                        <a href="#" class="btn right-icon see-more pull-left">See more comments <i class="fa fa-angle-down"></i></a>
-                                        <p class="comments-pagination pull-right">2 of 14</p>
-                                    </div>
-                                </div>
+                                
+                                <xsl:call-template name="show-comments"/> 
+                                
                             </div> <!-- /.comments -->
                         </div> <!-- /.each-features -->
 

@@ -1,8 +1,8 @@
 <?php
 
-class eventcomments extends SectionEvent
+class eventsave_comment extends SectionEvent
 {
-    public $ROOTELEMENT = 'comments';
+    public $ROOTELEMENT = 'save-comment';
 
     public $eParamFILTERS = array(
         
@@ -11,20 +11,20 @@ class eventcomments extends SectionEvent
     public static function about()
     {
         return array(
-            'name' => 'comments',
+            'name' => 'Save Comment',
             'author' => array(
                 'name' => 'Zack Zili',
                 'website' => 'http://localhost/jcilearn',
                 'email' => 'zzftn90@gmail.com'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2017-02-02T17:35:02+00:00',
-            'trigger-condition' => 'action[comments]'
+            'release-date' => '2017-02-03T10:54:30+00:00',
+            'trigger-condition' => 'action[save-comment]'
         );
     }
 
     public static function getSource()
     {
-        return '87';
+        return '3';
     }
 
     public static function allowEditorToParse()
@@ -37,22 +37,24 @@ class eventcomments extends SectionEvent
         return '
                 <h3>Success and Failure XML Examples</h3>
                 <p>When saved successfully, the following XML will be returned:</p>
-                <pre class="XML"><code>&lt;comments result="success" type="create | edit">
+                <pre class="XML"><code>&lt;save-comment result="success" type="create | edit">
     &lt;message>Entry [created | edited] successfully.&lt;/message>
-&lt;/comments></code></pre>
+&lt;/save-comment></code></pre>
                 <p>When an error occurs during saving, due to either missing or invalid fields, the following XML will be returned.</p>
-                <pre class="XML"><code>&lt;comments result="error">
+                <pre class="XML"><code>&lt;save-comment result="error">
     &lt;message>Entry encountered errors when saving.&lt;/message>
     &lt;field-name type="invalid | missing" />
-...&lt;/comments></code></pre>
+...&lt;/save-comment></code></pre>
                 <h3>Example Front-end Form Markup</h3>
                 <p>This is an example of the form markup you can use on your frontend:</p>
                 <pre class="XML"><code>&lt;form method="post" action="{$current-url}/" enctype="multipart/form-data">
     &lt;input name="MAX_FILE_SIZE" type="hidden" value="2097152" />
-    &lt;label>Answer
-        &lt;input name="fields[answer]" type="text" />
+    &lt;label>text
+        &lt;input name="fields[text]" type="text" />
     &lt;/label>
-    &lt;input name="action[comments]" type="submit" value="Submit" />
+    &lt;input name="fields[author]" type="hidden" value="…" />
+    &lt;input name="fields[item]" type="hidden" value="…" />
+    &lt;input name="action[save-comment]" type="submit" value="Submit" />
 &lt;/form></code></pre>
                 <p>To edit an existing entry, include the entry ID value of the entry in the form. This is best as a hidden field like so:</p>
                 <pre class="XML"><code>&lt;input name="id" type="hidden" value="23" /></code></pre>
@@ -62,7 +64,7 @@ class eventcomments extends SectionEvent
 
     public function load()
     {
-        if (isset($_POST['action']['comments'])) {
+        if (isset($_POST['action']['save-comment'])) {
             return $this->__trigger();
         }
     }

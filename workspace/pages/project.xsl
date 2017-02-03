@@ -45,7 +45,7 @@
                         </div> <!-- End: .each-item -->
                     </div>        
                     
-                        <div class="col-xs-12 each-features">
+                                                <div class="col-xs-12 each-features">
 
                             <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" class="image-centre"/>
                             <div class="guide-team">
@@ -75,19 +75,19 @@
                                     </div>                     
                                 </div>
 
-			                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                                     <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
 
                                         
                                         
-			                            <div class="lesson-text">
-			                                <br/>
-			                                <h3 class="title-centre">OVERVIEW</h3>
-			                                <p class="lesson-text">			                                	
-			                                	<xsl:value-of select="/data/project/entry/overview" />
-			                                </p><br/>
-			                             </div>
+                                        <div class="lesson-text">
+                                            <br/>
+                                            <h3 class="title-centre">OVERVIEW</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/overview" />
+                                            </p><br/>
+                                         </div>
                                    
-                                        <button id="toggle-project"> ANALYSIS </button>
+                                        <div class="blue-text text-center" id="toggle-project"> ANALYSIS </div>
 
                                         <div id="panel">
                                         <div class="lesson-text">
@@ -125,7 +125,7 @@
 
 
 
-			                        </div> 
+                                    </div> 
                                 </div>
                             </div>
                         </div>
@@ -166,146 +166,92 @@
                              some<br/>
                         </div>
                     </div>
-                <div class="row features-item section-separator">
-                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 30px; margin-bottom: 30px;">
-                       <xsl:apply-templates select="/data/comments/entry[1]" mode="likeviews"/>
-                    </div>
-
-                   <div class="col-xs-12 each-features" style="margin-bottom: 20px;">  <!-- /.comments -->                      
-                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                            <div class="row comments-inner">
-                                
-                                <xsl:apply-templates select="/data/comments/entry" mode="comment"/>
-                               
-                                <div class="each-item-inner comments-option overflow" style="padding-right: 30px; padding-left: 30px;" > 
-                                    <a href="#" class="btn right-icon see-more pull-left">See more comments <i class="fa fa-angle-down"></i></a>
-                                    <p class="comments-pagination pull-right">2 of 14</p>
-                                </div>
+                    
+                        <div class="row features-item section-separator">
+                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 30px; margin-bottom: 30px;">
+                               <xsl:apply-templates select="/data/comments/entry[1]" mode="likeviews"/>
                             </div>
-                        </div> <!-- /.comments -->
-                    </div> <!-- /.each-features -->
 
-                    <div class=" each-features" style="padding-bottom: 150px;">
-                        <div class="col-xs-12 each-features" style="margin-bottom: 0px; margin-top: 40px;">
-                        <div class="single-comment col-xs-12">
-                            <div class="row single-comments-inner">
-                                <div class="down-buttons-lesson">
-                                    <div class="col-md-1 col-sm-1" ></div> 
-                                    <div class="col-md-10 col-sm-10">
-                                    <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
+                            <xsl:call-template name="show-comments"/> 
 
-                                            <a href="#" class="btn btn-border text-normal" data-toggle="modal" data-target="#myModal3">
-                                                <h3 style="font-size: 30px; line-height: 60%; margin-top: 6%;" class="title"><i class="fa fa-chevron-left" aria-hidden="true"></i> COLLAB </h3> 
-                                            </a><!-- Modal -->
-                                        </div>   
-                                    </div>  
-
-                                    <div class="lesson-button-organise">
-                                        <div class=" col-xs-12 col-md-4 col-sm-4 text-center" style="margin-top: 5px;">
-                                            <div class="btn btn-border text-normal">
-                                                <a href="#" class="btn" >
-                                                    <i class="fa fa-like-love-streamline"></i>
-                                                </a>
-                                                <a href="#" class="btn" >
-                                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
-
-                                                </a>
-                                                <a href="#" class="btn">
-                                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div> 
-
-                                    <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
-
-                                            <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
-                                                <h3 style="font-size: 30px; margin-top: 6%; line-height: 60%;" class="title"> Submit <i class="fa fa-chevron-right" aria-hidden="true"></i> </h3>
-                                            </a><!-- Modal -->
-                                        </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-                                        <div class="btn-form col-xs-12 col-md-4 col-sm-12 text-center margin-t-50" style="margin-top: 5px;">
-
-                                            <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
-                                                <h3 style="font-size: 30px; margin-top: 6%; line-height: 60%;" class="title"> write a comment</h3>
-                                            </a><!-- Modal -->
-
-
-
-                                            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-                                              <div class="modal-dialog" role="document">
-
-                                                <div class="modal-content" style=" border: 2px solid #3496DA; width: 100%; margin-top: 20%; height: 500px;">
-                                                  <div class="modal-header " style="border: 0px; margin: 10px;">
-                                                    
-
-                                                     <div class="modal-header " style="border: 0px; margin: 10px;">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-weight: bold;">×</span></button>
-                                            
-                                            </div>
-                                                <div class="new-class" style=" height: 700px; margin-right: auto; margin-left: auto; text-align: center; ">                                 
-                                                    <h2 class="section-heading">Write your comment!</h2>
-                                                    <p>Now's your chance to tell us what you think</p>
-
-                                                    <div class="col-md-12">
-                                                        <img class="media-object profile-pic text-center" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
-                                                            <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
-                                                    </div>   
-                                                  
-                                                    <div class="row comments-inner col-md-12">
-                                                        <form method="post" action="{$current-url}/" enctype="multipart/form-data">
-                                                            <input name="MAX_FILE_SIZE" type="hidden" value="2097152" />
-                                                            <label>
-                                                                <input style="width: 500px" name="fields[answer]" type="text" />
-                                                            </label>
-                                                            <input style="width: 80px; height: 40px;" name="action[comments]" type="submit" value="Submit" />
-                                                        </form>                  
-                                                    </div>
+                            <div class=" each-features" style="padding-bottom: 150px;">
+                                <div class="col-xs-12 each-features" style="margin-bottom: 0px; margin-top: 40px;">
+                                    <div class="single-comment col-xs-12">
+                                        <div class="row single-comments-inner">
+                                            <div class="down-buttons-lesson">
+                                                <div class="col-md-1 col-sm-1" >
                                                     
                                                 </div> 
+                                                <div class="col-md-10 col-sm-10">
+                                                    <div class="lesson-button-organise">
+                                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
 
-                                                    
-                                              </div>
-                                                                                                 
+                                                            <a href="#" class="btn btn-border text-normal" data-toggle="modal" data-target="#myModal3">
+                                                                <h3 style="font-size: 30px; line-height: 60%; margin-top: 6%;" class="title hovere-color-change"><i class="fa fa-chevron-left" aria-hidden="true"></i> Collab </h3> 
+                                                            </a><!-- Modal -->
+                                                        </div>   
+                                                    </div>  
+
+                                                    <div class="lesson-button-organise">
+                                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-10">
+                                                            <div class="wraper-like-comment-share">
+                                                                <div class="btn hovere-change" >
+                                                                    <i class="fa fa-like-love-streamline hovere-color-change"></i>
+                                                                </div>
+                                                                <div id="comment-toggle" class="btn hovere-change" >
+                                                                    <i class="fa fa-commenting-o hovere-color-change" aria-hidden="true"></i>
+
+                                                                </div>
+                                                                <div  class="btn hovere-change">
+                                                                    <i class="fa fa-share-square-o hovere-color-change" aria-hidden="true"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="lesson-button-organise">
+                                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50 " style="margin-top: 5px;">
+
+                                                            <a href="#" data-target="#myModal4"  data-toggle="modal" class="btn btn-border text-normal">                                           
+                                                                <h3 style="font-size: 30px; margin-top: 6%; line-height: 60%;" class="title hovere-color-change"> Submit <i class="fa fa-chevron-right" aria-hidden="true"></i> </h3>
+                                                            </a><!-- Modal -->
+                                                        </div> 
+
+                                                    </div> 
+
+                                                </div> 
                                             </div>
-                                          </div>
+
                                         </div>
-                                    </div> 
-
-
-
-                                        
-
-
-
-
-
-
-                                    </div> 
                                     </div>
-                                    <div class="col-md-1 col-sm-1" ></div>
 
+                                    </div> <!-- /.single-comment -->
                                 </div>
+
+                            </div> <!-- /.each-features -->
+                            <div class="col-md-1 col-sm-1" ></div>
+
+                            <div id="text-toggle" class="col-md-8 col-md-offset-1 margin-b-50 comment-box-toggle">
+                                <div class="col-md-2 left-comment-box">
+                                    <a class="btn-big" href="http://localhost/jcilearn/user/" style="border-radius:50%;position:relative;overflow:hidden;">
+                                        <img class="img-responsive" alt="" src="http://localhost/jcilearn/workspace/assets/img/icons/profile-2.png"/>
+                                    </a>
+                                </div>
+                                <div class="col-md-10" >
+                                    <form method="post" action="{$current-url}/" data-action="save-comment" >
+                                        <label class="comment-text-box">
+                                            <textarea  name="text" type="text" class="input-height" />
+                                        </label>
+
+                                        <input name="author" type="hidden" value="{/data/params/member-id}"/>
+                                        <input name="item" type="hidden" value="{/data/project/entry/@id}"/>
+                                        <input type="submit" value="Send" class="button-comment-send" />
+
+                                    </form>
+                                </div>
+
                             </div>
-                        </div> <!-- /.single-comment -->
-                        </div>
 
-                    </div> <!-- /.each-features -->
-
-                </div>
                     
                 </div> <!-- /.row -->
             </div> <!-- /.container -->

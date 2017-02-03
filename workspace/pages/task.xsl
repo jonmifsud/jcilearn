@@ -177,21 +177,22 @@
                                         </div>   
                                     </div>  
 
-                                    <div class="lesson-button-organise">
-                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center" style="margin-top: 5px;">
-                                            <div class="btn btn-border text-normal">
-                                                <a href="#" class="btn" >
-                                                    <i class="fa fa-like-love-streamline"></i>
-                                                </a>
-                                                <a href="#" class="btn" >
-                                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                                </a>
-                                                <a href="#" class="btn">
-                                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                                </a>
+                                   <div class="lesson-button-organise">
+                                        <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-10">
+                                            <div class="wraper-like-comment-share">
+                                                <div class="btn hovere-change" >
+                                                    <i class="fa fa-like-love-streamline hovere-color-change"></i>
+                                                </div>
+                                                <div id="comment-toggle" class="btn hovere-change" >
+                                                    <i class="fa fa-commenting-o hovere-color-change" aria-hidden="true"></i>
+
+                                                </div>
+                                                <div  class="btn hovere-change">
+                                                    <i class="fa fa-share-square-o hovere-color-change" aria-hidden="true"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
 
                                     <div class="lesson-button-organise">
                                         <div class="btn-form col-xs-12 col-md-4 col-sm-4 text-center margin-t-50" style="margin-top: 5px;">
