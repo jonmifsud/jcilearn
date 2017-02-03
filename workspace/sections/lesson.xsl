@@ -173,86 +173,119 @@
                 </xsl:attribute>
             </xsl:if>
 
-
-            <div class="sliderJquery">
-
-                <div id="div1">
-                    <label style="width: 100%;">
-                        
-                        <div class="input-wrapper">
-                            <h3 class="text-center">TITLE</h3>
-                            <input name="title" type="text" class="your-notes-class" value='{title[@mode="unformatted"]}' />
+            <h2 class="text-center">NEW LESSON</h2>
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <div class="form-inline single-form" style="width: 150px;">
+                    <div class="form-group input-outer">
+                        <div class="select-outer">
+                            <select class="form-control contact-plan" name='status'>
+                                <option value="draft" selected="selected">Save</option>
+                                <option value="review">Publish</option>
+                            </select>
                         </div>
-                    </label>
+                    </div>
+                </div> 
+            </div>
+            
+            <button class="counter1"> counter</button>
 
-                    <label style="width: 100%;">
-                        <div class="input-wrapper">
-                            <h3 class="title-centre">SUBTITLE</h3>
-                            <input name="subtitle" type="text" value='{subtitle[@mode="unformatted"]}'/>
-                        </div>
-                    </label>
 
-                    <h3 class="text-center" style="margin-bottom: 0px;">CATEGORY</h3><br/>
-                    <div class="box-border-text-left col-md-6 col-md-offset-3" style="overflow-y: scroll; height: 380px;">
-                        
-                        <xsl:apply-templates select='/data/interests/entry' mode='option'>
-                            <xsl:with-param name='class'>
-                                <xsl:text>col-xs-6 text-center</xsl:text>
-                            </xsl:with-param>
-                            <xsl:with-param name='name'>category</xsl:with-param>
-                            <xsl:with-param name='selected' select='current()/category/item'/>
-                        </xsl:apply-templates>  
-
+            <div class="col-xs-12">
+                <div class="study-timeline-progress" style="margin-top: 80px;">
+                    <div id="LessonEditStep1" class="study-timeline-progress-circles" style="margin-left: 25%;">
+                        1
+                    </div> 
+                    <div id="LessonEditStep2" class="study-timeline-progress-circles" style="margin-left: 50%;">
+                        2
+                    </div>
+                    <div id="LessonEditStep3" class="study-timeline-progress-circles" style="margin-left: 75%;">
+                        3
                     </div>
                 </div>
+            </div>
 
-                <div id="div2">
-                    <label style="width: 100%;">
-                        <div class="input-wrapper"><h3 class="title-centre">TEXT</h3>
-                            <textarea id="your-note" name="text" class="your-notes-class" type="text">
-                                <xsl:value-of select='text[@mode="unformatted"]'/>
-                            </textarea>
+            <div class="col-xs-12 col-md-8 col-md-offset-2" style="margin-top: 100px;">
+
+                <div class="sliderJquery">
+
+                    <div id="div1">
+                        <label style="width: 100%;">
+                            
+                            <div class="input-wrapper">
+                                <h3 class="text-center">TITLE</h3>
+                                <input name="title" type="text" class="your-notes-class" value='{title[@mode="unformatted"]}' />
+                            </div>
+                        </label>
+
+                        <label style="width: 100%;">
+                            <div class="input-wrapper">
+                                <h3 class="title-centre">SUBTITLE</h3>
+                                <input name="subtitle" type="text" value='{subtitle[@mode="unformatted"]}'/>
+                            </div>
+                        </label>
+
+                        <h3 class="text-center" style="margin-bottom: 0px;">CATEGORY</h3><br/>
+                        <div class="box-border-text-left col-md-6 col-md-offset-3" style="overflow-y: scroll; height: 380px;">
+                            
+                            <xsl:apply-templates select='/data/interests/entry' mode='option'>
+                                <xsl:with-param name='class'>
+                                    <xsl:text>col-xs-6 text-center</xsl:text>
+                                </xsl:with-param>
+                                <xsl:with-param name='name'>category</xsl:with-param>
+                                <xsl:with-param name='selected' select='current()/category/item'/>
+                            </xsl:apply-templates>  
+
                         </div>
-                    </label>
+                    </div>
 
-                    <div class="col-xs-12 each-features text-center" style="margin-bottom: 40px; margin-top: 100px;">
-                        <div class="form-inline single-form">
-                            <div class="form-group input-outer">
-                                <div class="select-outer">
-                                    <select class="form-control contact-plan">
-                                        <option value="subject1" disabled="" selected="">ADD</option>
-                                        <option value="BusinessConsulting">consulting</option>
-                                        <option value="TextConsulting">Text</option>
-                                        <option value="Advisory">Advisory</option>
-                                        <option value="Audit-$-assurance">Audit</option>
-                                    </select>
+                    <div id="div2">
+                        <label style="width: 100%;">
+                            <div class="input-wrapper"><h3 class="title-centre">TEXT</h3>
+                                <textarea id="your-note" name="text" class="your-notes-class" type="text">
+                                    <xsl:value-of select='text[@mode="unformatted"]'/>
+                                </textarea>
+                            </div>
+                        </label>
+
+                        <div class="col-xs-12 each-features text-center" style="margin-bottom: 40px; margin-top: 100px;">
+                            <div class="form-inline single-form">
+                                <div class="form-group input-outer">
+                                    <div class="select-outer">
+                                        <select class="form-control contact-plan">
+                                            <option value="subject1" disabled="" selected="">ADD</option>
+                                            <option value="BusinessConsulting">consulting</option>
+                                            <option value="TextConsulting">Text</option>
+                                            <option value="Advisory">Advisory</option>
+                                            <option value="Audit-$-assurance">Audit</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
-                    
-                </div>
 
 
-                <div id="div3">
-                    <input name="profile" type="hidden" value="{/data/params/member-id}" />
-                    <input name="user" type="hidden" value="{/data/params/member-id}" />
+                    <div id="div3">
+                        <input name="profile" type="hidden" value="{/data/params/member-id}" />
+                        <input name="user" type="hidden" value="{/data/params/member-id}" />
 
-                    <xsl:variable name='index' select='""'/>
-                    <div class='quiz-questions'>
-                        <xsl:apply-templates select='/data/questions/entry' mode='question-form'/>
-                        <div class='quiz-form-template'>
-                            <xsl:call-template name='question-form'>
-                                <xsl:with-param name='index'>template</xsl:with-param>
-                            </xsl:call-template>
+                        <xsl:variable name='index' select='""'/>
+                        <div class='quiz-questions'>
+                            <xsl:apply-templates select='/data/questions/entry' mode='question-form'/>
+                            <div class='quiz-form-template'>
+                                <xsl:call-template name='question-form'>
+                                    <xsl:with-param name='index'>template</xsl:with-param>
+                                </xsl:call-template>
+                            </div>
+                            <div class="form-inline single-form text-center">
+                                <div class='form-control add-question'>Add Question</div>
+                            </div>
                         </div>
-                        <div class="form-inline single-form text-center">
-                            <div class='form-control add-question'>Add Question</div>
-                        </div>
+                        <input type="submit" value="Submit" />
                     </div>
-                    <input type="submit" value="Submit" />
-                </div>
-            </div> <!-- sliderJquery -->
+                </div> <!-- sliderJquery -->
+            </div>
         </form>
     </xsl:template>
 
