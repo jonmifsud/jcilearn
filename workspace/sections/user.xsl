@@ -136,4 +136,37 @@
     </xsl:template>
 
 
+    <xsl:template name='recent-activity'>
+        <div class="box-poligon" style="width: 100%; ">
+            <div class="box-poligon" style="width: 20%; ">
+                <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+            </div>
+            <div class="box-poligon" style="width: 60%;">
+                <p class="pera">levelled up in 'Introduction to Leadership'.</p>
+            </div>
+        </div>
+    </xsl:template>
+
+
+    <xsl:template name='collaboration'>
+        <div class="box-poligon collaboration-user-box">                                
+              <div class="box-poligon" style="width: 35%; ">                                
+                  <div class="media-body-left">
+                      <img class="media-object profile-pic smaller-profile-picture" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 50px;"/>
+                          <img class="flag put-flag-in-corner-small" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  style="width: 60%;" alt="Flag"/>
+                  </div> 
+              </div>
+              <div class="box-poligon">
+                  <div class="media-body-left" style="padding-left: 0px;">
+                    <p class="blue-text" style="font-size: 14px; float: left;">
+                    <b style="float: left;"><xsl:value-of select="/data/users/entry/name"/></b>
+                    <br/>
+                    <b><xsl:value-of select="/data/users/entry/surname"/></b>
+                    </p>
+                  </div> 
+              </div>
+          </div>
+    </xsl:template>
+
+
 </xsl:stylesheet>
