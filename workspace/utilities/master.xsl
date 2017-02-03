@@ -87,8 +87,18 @@
                 <div class="collapse navbar-collapse" id="js-navbar-menu">
                     <ul id="navbar-nav" class="nav navbar-nav navbar-right">
                         <li><a class="btn-big" href="#"><i class="fa fa-home-house-streamline"></i></a></li>
-                        <li class="active"><a class="btn-nav" href="{/data/params/root}/study/currentmodule/">Learn</a></li>
-                        <li><a class="btn-nav" href="{/data/params/root}/share/project/">Share</a></li>
+                        <li>
+                            <xsl:if test='/data/params/root-page = "study" or /data/params/root-page = "explore" or /data/params/root-page = "collab"'>
+                                <xsl:attribute name='class'>active</xsl:attribute>
+                            </xsl:if>
+                            <a class="btn-nav" href="{/data/params/root}/study/">Learn</a>
+                        </li>
+                        <li>
+                            <xsl:if test='/data/params/root-page = "share"'>
+                                <xsl:attribute name='class'>active</xsl:attribute>
+                            </xsl:if>
+                            <a class="btn-nav" href="{/data/params/root}/share/project/">Share</a>
+                        </li>
                         <li>
                             <a class="btn-big" href="{/data/params/root}/user/" style='border-radius:50%;position:relative;overflow:hidden;'>
                                 <img class="img-responsive" alt="">
