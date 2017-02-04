@@ -10,42 +10,9 @@
                 <div class="container">
                     <div class="row features-item section-separator" style="padding-bottom: 0px;">
 
-                    <xsl:call-template name="learnfilesubheader"/>
+                        <xsl:call-template name='learn-subheader'/>
 
-                    <div class="col-xs-12 each-features">
-                        
-                        <div class="tab-item">
-                            <div class="tab-inner">
-                                
-                                <div role="tabpanel">
-
-                                    <!-- Nav tabs -->
-                                    <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active"><a href="#modules" data-toggle="tab">Modules</a></li>
-                                        <li role="presentation"><a href="#projects" data-toggle="tab">Projects</a></li>
-                                        <li role="presentation"><a href="#stories" data-toggle="tab">Stories</a></li>
-                                    </ul>
-
-                                    <!-- Tab panes -->
-                                    <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane active" id="modules">
-                                            
-                                        </div> <!-- End: .tab-pane -->
-                                        <div role="tabpanel" class="tab-pane" id="projects">
-                                            
-                                        </div> <!-- End: .tab-pane -->
-                                        <div role="tabpanel" class="tab-pane" id="stories">
-                                            
-                                        </div> <!-- End: .tab-pane -->
-                                    </div> <!-- End: .tab-content -->
-
-                                </div>
-
-                            </div>
-                        </div> <!-- End: .each-item -->
-                    </div>        
-                    
-                                                <div class="col-xs-12 each-features">
+                        <div class="col-xs-12 each-features">
 
                             <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" class="image-centre"/>
                             <div class="guide-team">

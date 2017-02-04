@@ -10,7 +10,7 @@
 	indent="yes" />
 
 <xsl:template match="/">
-	<h1><xsl:value-of select="/data/params/page-title"/></h1>
+	<script> window.location.href = "<xsl:value-of select='/data/params/current-url'/>/lesson/";</script>
 </xsl:template>
 
 </xsl:stylesheet>

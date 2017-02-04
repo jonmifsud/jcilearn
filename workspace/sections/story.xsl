@@ -4,7 +4,7 @@
     <xsl:template match="*[section/@handle='story']//entry" mode='link'>
 
         <xsl:value-of select='/data/params/root'/>
-        <xsl:text>/story/</xsl:text>
+        <xsl:text>/explore/story/</xsl:text>
         <xsl:value-of select='title/@handle'/>
         <xsl:text>/</xsl:text>
 
@@ -13,7 +13,7 @@
     <xsl:template match="*[section/@handle='story']//entry" mode='edit-link'>
         
         <xsl:value-of select='/data/params/root'/>
-        <xsl:text>/share/story/edit-story/</xsl:text>
+        <xsl:text>/share/story/</xsl:text>
         <xsl:value-of select='@id'/>
         <xsl:text>/</xsl:text>
 
@@ -103,7 +103,7 @@
         <xsl:param name='edit-link' select='false()'/>
         <xsl:param name='no-link' select='false()'/>
 
-       <div class=" each-item-inner col-sm-10" style="padding: 0px; display: flex; width: 100%; margin-bottom: 30px; overflow: hidden;">
+        <div class=" each-item-inner col-sm-10" style="padding: 0px; display: flex; width: 100%; margin-bottom: 30px; overflow: hidden;">
            
 
             <a class="content-right col-xs-12 content-defult col-md-3 col-sm-3" style="padding: 0px;"> 

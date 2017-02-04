@@ -29,7 +29,7 @@
     <xsl:template match="*[section/@handle='lesson']//entry" mode='edit-link'>
         
         <xsl:value-of select='/data/params/root'/>
-        <xsl:text>/share/lesson/edit-lesson/</xsl:text>
+        <xsl:text>/share/lesson/</xsl:text>
         <xsl:value-of select='@id'/>
         <xsl:text>/</xsl:text>
 

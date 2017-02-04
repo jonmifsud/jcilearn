@@ -15,7 +15,7 @@
 
 
 <!-- needs to be moved -->
-<xsl:import href="../sections/learnfileheader.xsl"/>
+<xsl:import href="../sections/learnfilesubheader.xsl"/>
 
 
 <xsl:output method="xml"

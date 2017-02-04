@@ -4,7 +4,7 @@
     <xsl:template match="*[section/@handle='project']//entry" mode='link'>
 
         <xsl:value-of select='/data/params/root'/>
-        <xsl:text>/project/</xsl:text>
+        <xsl:text>/explore/project/</xsl:text>
         <xsl:value-of select='title/@handle'/>
         <xsl:text>/</xsl:text>
 
@@ -13,7 +13,7 @@
     <xsl:template match="*[section/@handle='project']//entry" mode='edit-link'>
         
         <xsl:value-of select='/data/params/root'/>
-        <xsl:text>/share/project/edit-project/</xsl:text>
+        <xsl:text>/share/project/</xsl:text>
         <xsl:value-of select='@id'/>
         <xsl:text>/</xsl:text>
 

@@ -15,41 +15,8 @@
             <div class="features-section">
                 <div class="container">
                     <div class="row features-item section-separator">
-                        <div class="col-xs-12 each-features">
-                            <div class="btn-form col-xs-12 text-center margin-t-20">
-                                <a href="#" class="btn btn-border">Study</a>
-                                <a href="#" class="btn btn-fill">Explore</a>
-                                <a href="#" class="btn btn-border">Collab</a>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 each-features"> 
-                            <div class="tab-item">
-                                <div class="tab-inner">    
-                                    <div role="tabpanel">
-
-                                        <!-- Nav tabs -->
-                                        <ul class="nav nav-tabs" role="tablist">
-                                            <li role="presentation" class="active"><a href="#modules" data-toggle="tab">Modules</a></li>
-                                            <li role="presentation"><a href="#projects" data-toggle="tab">Projects</a></li>
-                                            <li role="presentation"><a href="#stories" data-toggle="tab">Stories</a></li>
-                                        </ul>
-                                        <!-- Tab panes -->
-                                        <div class="tab-content">
-                                            <div role="tabpanel" class="tab-pane active" id="modules">
-                                                
-                                            </div> <!-- End: .tab-pane -->
-                                            <div role="tabpanel" class="tab-pane" id="projects">
-                                                
-                                            </div> <!-- End: .tab-pane -->
-                                            <div role="tabpanel" class="tab-pane" id="stories">
-
-                                            </div> <!-- End: .tab-pane -->
-                                        </div> <!-- End: .tab-content -->
-                                    </div>
-                                </div>
-                            </div> <!-- End: .each-item -->
-                        </div>
+                        
+                        <xsl:call-template name='learn-subheader'/>
 
                         <div class="col-xs-12 each-features" style="margin-bottom: 30px;" >
                              <img src="{/data/params/workspace}/assets/img/icons/icon-7.png"/><br/><br/>
