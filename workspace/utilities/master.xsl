@@ -137,9 +137,7 @@
 
                                 <h4 class="title">LEARN</h4>
                                 <ul class="nav link-group">
-                                    <li><a href="{/data/params/root}/explore/exploremodules/">Explore modules</a></li>
-                                    <li><a href="{/data/params/root}/explore/explorestories/">Explore stories</a></li>
-                                    <li><a href="{/data/params/root}/explore/exploreprojects/">Explore projects</a></li>
+                                    <li><a href="{/data/params/root}/explore/explore/">Explore</a></li>
                                     <li><a href="{/data/params/root}/collab">Collab</a></li>
                                     <li><a href="{/data/params/root}/user/usercontent/">My Content</a></li>
                                     <li><a href="{/data/params/root}/user">My Profile</a></li>
@@ -154,8 +152,6 @@
                                     <li><a href="{/data/params/root}/module/lesson/">Lesson</a></li>
                                     <li><a href="{/data/params/root}/task">Task</a></li>
                                     <li><a href="{/data/params/root}/module/">module</a></li>
-                                    <li><a href="{/data/params/root}/project/">Project</a></li>
-                                    <li><a href="{/data/params/root}/story/">Story</a></li>
                                     <li><a href="{/data/params/root}/study/">Study</a></li>
                                     <li><a href="{/data/params/root}/study/currentmodule/">study_currentmodule</a></li> 
                                     <li><a href="{/data/params/root}/challenge/">Challenge</a></li>
@@ -168,13 +164,7 @@
                                 <h4 class="title"></h4>
                                 <ul class="nav link-group">
                                     <li><a href="{/data/params/root}/dashboard/">Dashboard</a></li>
-                                    <li><a href="{/data/params/root}/notepad/">Notepad</a></li>
-                                    <li><a href="{/data/params/root}/share/lesson">share_lesson</a></li>
-                                    <li><a href="{/data/params/root}/share/project/">share_project</a></li>
-                                    <li><a href="{/data/params/root}/share/story/">share_story</a></li>
-                                    <li><a href="{/data/params/root}/share/lesson/edit-lesson/">share_edit_lesson</a></li>
-                                    <li><a href="{/data/params/root}/share/project/edit-project/">share_edit_project</a></li>
-                                    <li><a href="{/data/params/root}/share/story/edit-story/">share_edit_story</a></li>           
+                                    <li><a href="{/data/params/root}/notepad/">Notepad</a></li>           
                                 </ul>
                                 
                             </div> <!-- End: .each-section -->

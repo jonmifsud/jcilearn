@@ -76,7 +76,7 @@
                             <div class="btn-form col-xs-12 text-center">
                             <p class="blue-text" style="margin-top: 100px;"> Find more projects</p>
                                 <p class="blue-text"></p>
-                                <a href="#" class="btn btn-border-button">Explore</a>
+                                <a href="{/data/params/root}/explore/#projects" class="btn btn-border-button">Explore</a>
                             </div>
                         </xsl:otherwise>
                     </xsl:choose>

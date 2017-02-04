@@ -78,7 +78,7 @@
                             </div>
 
                              <div class="btn-form col-xs-12 text-center">
-                                 <p class="blue-text margin-t-40" >Read your collaboral story!</p>
+                                 <p class="blue-text margin-t-40" >Read stories from other JCI members.</p>
                                     <p class="blue-text"></p>
                                     <a href="{/data/params/root}/explore/#stories" class="btn btn-border-button">Explore</a>
                             </div>

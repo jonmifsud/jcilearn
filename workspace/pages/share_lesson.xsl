@@ -72,9 +72,9 @@
                             </xsl:if>
 
                              <div class="btn-form col-xs-12 text-center">
-                             <p class="blue-text" style="margin-top: 100px;">Get inspected</p>
+                             <p class="blue-text" style="margin-top: 100px;">Get inspired</p>
                                 <p class="blue-text"></p>
-                                <a href="#" class="btn btn-border-button">Explore</a>
+                                <a href="{/data/params/root}/explore/#modules" class="btn btn-border-button">Explore</a>
                             </div>
 
                         </xsl:otherwise>
