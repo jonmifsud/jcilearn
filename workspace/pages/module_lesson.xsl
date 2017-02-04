@@ -55,7 +55,7 @@
                              </div>
                         </div>
 
-                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                         <!-- <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                              <div class="lesson-definitions">
                                 <div class="lesson-definitions-line">
                                     <p class="blue-text">Place the definition in the right order.</p><br/>
@@ -93,7 +93,7 @@
                                     </div>
                                 </div>
                              </div>
-                        </div>
+                        </div> -->
 
                     </div> <!-- /.each-features -->
                     

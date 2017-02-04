@@ -4,7 +4,7 @@
 
 <xsl:import href="../utilities/master.xsl"/>
 <xsl:import href="../sections/sectionmodule.xsl"/>
-<xsl:import href="../sections/learnfilesubheader.xsl"/>
+<xsl:import href="../sections/learn-subheader.xsl"/>
 <xsl:import href="../sections/studyprofile.xsl"/>
 <xsl:import href="../sections/notepadmodule.xsl"/>
 <xsl:import href="../sections/yournotepad.xsl"/>

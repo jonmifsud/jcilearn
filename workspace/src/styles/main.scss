@@ -312,6 +312,7 @@
         border: 2px solid $main-color-1;
         position: relative;
         @include border-radius( $border-radius );
+        z-index: 1;
     }
 }
 
