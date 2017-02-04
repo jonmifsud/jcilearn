@@ -48,7 +48,7 @@
 
                         <div class="modules-slider">
                             <div class="modules-slider-wrapper three-slides owl-carousel">
-                                <xsl:apply-templates select="/data/my-lessons/entry[status/item/@handle='published']" mode="modules"/>
+                                <xsl:apply-templates select="/data/module/entry" mode="modules"/>
                             </div> <!-- /.modules-slider-wrapper -->
                         </div> <!-- /.modules-slider -->
 
@@ -87,7 +87,7 @@
                                                         </div><!-- /.input-group -->
                                                     </form>
                                                 </div>
-                                                <br/><br/>
+                                                
                                                 <p class="blue-text"><b>SEARCH RESULTS</b></p>
                                                 <div class="box-border" style="width: 100%; height: 280px; padding: 0px; border: 0px;">
                                                     <div class="box-border" style="width: 30%;  height: 250px; ">

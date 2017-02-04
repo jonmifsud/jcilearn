@@ -35,6 +35,7 @@
 @import "elements/checkbox";
 @import "elements/quiz";
 @import "elements/inputs";
+@import "elements/square";
 
 
 @import "lib/lessondiv/lesson";
@@ -683,20 +684,27 @@
  * -------------------------------
  */
 .modules {
+    display: block;
     .modules-inner {
         border: 2px solid $main-color-1;
-        padding: 80px 30px 45px 30px;
+        padding: 40px 15px 22px 15px;
         margin-bottom: 10px;
         @include border-radius( $border-radius );
+        overflow: hidden;
+        // min-height: 340px;
+        .square-center{
+            min-width: 80%;
+        }
     }
 
     img {
         max-width: 171px;
         margin: auto;
+        width: 60%;
     }
 
     .title {
-        margin: 55px 0 0 0;
+        margin: 10% 0 0 0;
     }
 }
 

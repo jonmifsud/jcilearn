@@ -6,6 +6,7 @@
 <xsl:import href="../sections/roles.xsl"/>
 <xsl:import href="../sections/interests.xsl"/>
 <xsl:import href="../sections/lesson.xsl"/>
+<xsl:import href="../sections/modules.xsl"/>
 <xsl:import href="../sections/comment.xsl"/>
 <xsl:import href="../sections/project.xsl"/>
 <xsl:import href="../sections/user.xsl"/>

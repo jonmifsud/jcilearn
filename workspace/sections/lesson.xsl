@@ -515,7 +515,8 @@
                 </div> <!-- /.content-left -->
             </div>
 
-            <p class="small-text text-center">You're one lesson away from obtaining your Trainer badge!</p>
+            <!-- TODO what is going on per lesson -->
+            <!-- <p class="small-text text-center">You're one lesson away from obtaining your Trainer badge!</p> -->
         </div> <!-- /.each-item -->
 
     </xsl:template>
