@@ -76,42 +76,37 @@
                             </div>
                         </div>
 
+                        <xsl:call-template name="show-comments"/> 
 
-                        <div class="col-xs-12 each-features margin-t-50" style="margin-bottom: 0px;">  <!-- /.comments -->
-                             <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                                <div class="row comments-inner">
-                                    
-                                    <xsl:apply-templates select="/data/comments/entry" mode="comment"/>
-                                   
-                                    <div class="each-item-inner comments-option overflow" style="padding-right: 30px; padding-left: 30px;" > 
-                                        <a href="#" class="btn right-icon see-more pull-left">See more comments <i class="fa fa-angle-down"></i></a>
-                                        <p class="comments-pagination pull-right">2 of 14</p>
+
+                        <div class="lesson-button-organise text-center">
+                            <div class="btn-form col-xs-12 col-md-4 col-sm-4 col-md-offset-4 text-center margin-t-10">
+                                <div class="wraper-like-comment-share" style="margin-left: 15%;">
+                                    <div class="btn hovere-change" >
+                                        <i class="fa fa-like-love-streamline hovere-color-change"></i>
+                                    </div>
+                                    <div id="comment-toggle" class="btn hovere-change" >
+                                        <i class="fa fa-commenting-o hovere-color-change" aria-hidden="true"></i>
+
+                                    </div>
+                                    <div  class="btn hovere-change">
+                                        <i class="fa fa-share-square-o hovere-color-change" aria-hidden="true"></i>
                                     </div>
                                 </div>
-                            </div> <!-- /.comments -->
-                        </div> <!-- /.each-features -->
-
-
-                        <div class="btn-form col-xs-12 text-center margin-t-60" style="margin-bottom: 50px;">
-                            <div class="btn btn-border text-normal">
-                                <a href="#" class="btn" >
-                                    <i class="fa fa-like-love-streamline"></i>
-                                </a>
-                                <a href="#" class="btn" >
-                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="btn">
-                                    <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                                </a>
                             </div>
                         </div>
-                        <div class="btn-form col-xs-12 text-center margin-t-10">
+
+                        <div class="btn-form col-xs-12 text-center margin-t-50">
                             <a href="#" class="btn btn-border text-normal">New Discussion</a>
                         </div>
 
                     </div>
                     
                 </div> <!-- /.row -->
+                <div class="col-md-1 col-sm-1" ></div>
+
+                    <xsl:call-template name="write-comment"/> 
+
             </div> <!-- /.container -->
         </div>
         <!-- End: Features Section 

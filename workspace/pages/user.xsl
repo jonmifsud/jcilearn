@@ -18,116 +18,42 @@
 
                    <div class="col-xs-12 each-features">
                         <div class="col-md-8 col-sm-8 col-xs-12" style="border: 0px; height: 10%;">
-                            <div class="box-border-text-left" style=" height: 380px; padding-left: 50px;">
+                            <div class="box-border-text-left" style=" height: 380px; padding-left: 50px; padding-right: 0px;">
                                 <h3 class="title">RECENT ACTIVITY</h3><br/>
-                                <div style="overflow-y: scroll; height: 300px; ">
-                                  <div class="box-poligon" style="width: 100%; ">
-                                      <div class="box-poligon" style="width: 20%; ">
-                                          <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
-                                      </div>
-                                      <div class="box-poligon" style="width: 60%;">
-                                          <p class="pera">levelled up in 'Introduction to Leadership'.</p>
-                                      </div>
-                                  </div>
-                                   <div class="box-poligon" style="width: 100%; ">
-                                      <div class="box-poligon" style="width: 20%; ">
-                                          <img src="{/data/params/workspace}/assets/img/icons/icon-4.png" />
-                                      </div>
-                                      <div class="box-poligon" style="width: 60%;">
-                                          <p class="pera"><xsl:value-of select="/data/users/entry/name"/> obtained his Global Issues badge!</p>
-                                      </div>
-                                  </div>
-                                   <div class="box-poligon" style="width: 100%; ">
-                                      <div class="box-poligon" style="width: 20%; ">
-                                          <img src="{/data/params/workspace}/assets/img/icons/icon-2.png" />
-                                      </div>
-                                      <div class="box-poligon" style="width: 60%;">
-                                          <p class="pera">favourited a story.</p>
-                                      </div>
-                                  </div>
-                                  <div class="box-poligon" style="width: 100%; ">
-                                      <div class="box-poligon" style="width: 20%; ">
-                                          <img src="{/data/params/workspace}/assets/img/icons/icon-1.png" />
-                                      </div>
-                                      <div class="box-poligon" style="width: 60%;">
-                                          <p class="pera">favourited a story.</p>
-                                      </div>
-                                  </div>   
+                                <div style="overflow-y: scroll; height: 310px; ">
+
+                                    <xsl:call-template name="recent-activity"/>
+                                    <xsl:call-template name="recent-activity"/>
+                                    <xsl:call-template name="recent-activity"/>
+                                    <xsl:call-template name="recent-activity"/>
+                                    <xsl:call-template name="recent-activity"/>
+                                    <xsl:call-template name="recent-activity"/>
+                                    <xsl:call-template name="recent-activity"/>
+                                    <xsl:call-template name="recent-activity"/> 
+
+
+                                    
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12" style="border: 0px; height: 10%;">
-                            <div class="box-border-text-left" style="height: 380px; padding-left: 50px;">
+                            <div class="box-border-text-left" style="height: 380px; padding-left: 50px; padding-right: 0px;">
+
                                 <h3 class="title"> COLLABORATION </h3><br/>
                                 <div style="overflow-y: scroll; height: 300px; ">
-                                <div class="box-poligon collaboration-user-box">                                
-                                    <div class="box-poligon" style="width: 35%; ">                                
-                                        <div class="media-body-left">
-                                            <img class="media-object profile-pic smaller-profile-picture" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
-                                                <img class="flag put-flag-in-corner-small" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  style="width: 60%;" alt="Flag"/>
-                                        </div> 
-                                    </div>
-                                    <div class="box-poligon">
-                                        <div class="media-body-left" style="padding-left: 0px;">
-                                          <p class="blue-text" style="font-size: 20px; float: left;">
-                                          <b style="float: left;"><xsl:value-of select="/data/users/entry/name"/></b>
-                                          <br/>
-                                          <b><xsl:value-of select="/data/users/entry/surname"/></b>
-                                          </p>
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="box-poligon collaboration-user-box">                                
-                                    <div class="box-poligon" style="width: 35%; ">                                
-                                        <div class="media-body-left">
-                                            <img class="media-object profile-pic smaller-profile-picture" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
-                                                <img class="flag put-flag-in-corner-small" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  style="width: 60%;" alt="Flag"/>
-                                        </div> 
-                                    </div>
-                                    <div class="box-poligon">
-                                        <div class="media-body-left" style="padding-left: 0px;">
-                                          <p class="blue-text" style="font-size: 20px; float: left;">
-                                          <b style="float: left;"><xsl:value-of select="/data/users/entry/name"/></b>
-                                          <br/>
-                                          <b><xsl:value-of select="/data/users/entry/surname"/></b>
-                                          </p>
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="box-poligon collaboration-user-box">                                
-                                    <div class="box-poligon" style="width: 35%; ">                                
-                                        <div class="media-body-left">
-                                            <img class="media-object profile-pic smaller-profile-picture" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
-                                                <img class="flag put-flag-in-corner-small" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  style="width: 60%;" alt="Flag"/>
-                                        </div> 
-                                    </div>
-                                    <div class="box-poligon">
-                                        <div class="media-body-left" style="padding-left: 0px;">
-                                          <p class="blue-text" style="font-size: 20px; float: left;">
-                                          <b style="float: left;"><xsl:value-of select="/data/users/entry/name"/></b>
-                                          <br/>
-                                          <b><xsl:value-of select="/data/users/entry/surname"/></b>
-                                          </p>
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="box-poligon collaboration-user-box">                                
-                                    <div class="box-poligon" style="width: 35%; ">                                
-                                        <div class="media-body-left">
-                                            <img class="media-object profile-pic smaller-profile-picture" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
-                                                <img class="flag put-flag-in-corner-small" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  style="width: 60%;" alt="Flag"/>
-                                        </div> 
-                                    </div>
-                                    <div class="box-poligon">
-                                        <div class="media-body-left" style="padding-left: 0px;">
-                                          <p class="blue-text" style="font-size: 20px; float: left;">
-                                          <b style="float: left;"><xsl:value-of select="/data/users/entry/name"/></b>
-                                          <br/>
-                                          <b><xsl:value-of select="/data/users/entry/surname"/></b>
-                                          </p>
-                                        </div> 
-                                    </div>
-                                </div>
+
+
+                                  <xsl:call-template name="collaboration"/>
+                                  <xsl:call-template name="collaboration"/>
+                                  <xsl:call-template name="collaboration"/>
+                                  <xsl:call-template name="collaboration"/>
+                                  <xsl:call-template name="collaboration"/>
+                                  <xsl:call-template name="collaboration"/>
+                                  <xsl:call-template name="collaboration"/> 
+
+                                  
+
                                 </div>
                             </div>
                         </div>
