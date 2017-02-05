@@ -115,7 +115,7 @@ function isNumber(n) {
 
 					// var loader = submitBtn.siblings('.loader').show('fast')
 					
-					$.post('/jcilearn/ajax/', data, function(response) {
+					$.post('/ajax/', data, function(response) {
 
 						$response = $(response)
 

@@ -7,3 +7,36 @@
     @include rem(margin-top,20px);
     @include rem(margin-bottom,20px);
 }
+
+#quiz-modal{
+	counter-reset: question;
+	.question-wrapper{
+		margin-top:30px;
+		padding-top:15px;
+		&::before{
+			counter-increment: question;
+			content: counter(question);
+			position: absolute;
+			top: 0;
+			transform: translate3d(-50%, -50%, 0);
+			width: 20px;
+			height: 20px;
+			border: 2px solid #3496DA;
+			border-radius: 50%;
+			background-color: #FFFFFF;
+			color: #3496DA;
+			text-align: center;
+			padding: 0;
+			font-size: 12px;
+			line-height: 18px;
+			font-family: "helveticaneuebold";
+			z-index: 2;
+		}
+	}
+}
+
+.answer-wrapper{
+	p{
+		color: #3496DA;
+	}
+}

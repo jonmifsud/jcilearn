@@ -1,8 +1,8 @@
 <?php
 
-class datasourcemodule extends SectionDatasource
+class datasourceenroled_modules extends SectionDatasource
 {
-    public $dsParamROOTELEMENT = 'module';
+    public $dsParamROOTELEMENT = 'enroled-modules';
     public $dsParamORDER = 'desc';
     public $dsParamPAGINATERESULTS = 'no';
     public $dsParamLIMIT = '20';
@@ -18,19 +18,17 @@ class datasourcemodule extends SectionDatasource
     public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 
     public $dsParamFILTERS = array(
-        '16' => '{$module-name},{$current_module_name}',
+        '321' => '{$member-id}',
+        '18' => '{$module-name}',
     );
 
     public $dsParamINCLUDEDELEMENTS = array(
-        'system:date',
         'title: formatted',
         'subtext: formatted',
         'text: formatted',
         'lessons',
         'like',
-        'like: list',
-        'enroled',
-        'enroled: list'
+        'enroled'
     );
 
     public function __construct($env = null, $process_params = true)
@@ -42,13 +40,13 @@ class datasourcemodule extends SectionDatasource
     public function about()
     {
         return array(
-            'name' => 'module',
+            'name' => 'Enroled Modules',
             'author' => array(
                 'name' => 'Jonathan Mifsud',
                 'website' => 'http://jci-learn.dev',
                 'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2017-02-04T16:20:40+00:00'
+            'release-date' => '2017-02-04T16:38:58+00:00'
         );
     }
 

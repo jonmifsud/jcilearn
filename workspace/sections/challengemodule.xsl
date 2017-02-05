@@ -27,22 +27,7 @@
                 </div> <!-- /.content-right -->
                 <div class="content-right content-defult col-sm-3">
                     
-                    <div class="profile-meta" style="margin-top: 0px;">
-
-                        <span class="blue-text-in-line" id="like"  data-entry='{@id}'>
-                            <i class="fa fa-heart-o"></i>
-                            <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
-                        </span>
-
-                        <span id="likeOutput" value="0" style="font-size: 18px;">0</span>
-                        <br/>
-                        <span class="blue-text-in-line" id="view">
-                            <i class="fa fa-man-people-streamline-user"></i>
-                            <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
-                        </span>
-
-                        <span id="viewOutput" value="0" style="font-size: 18px;">0</span>       
-                    </div>
+                    <xsl:apply-templates select='.' mode='likeviews'/>
 
                 </div> <!-- /.content-left -->
             </div>

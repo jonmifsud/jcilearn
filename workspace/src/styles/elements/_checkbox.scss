@@ -6,7 +6,10 @@
 input[type="radio"],input[type="checkbox"] {
 	display:none;
 	+ .select-check-box{
-		height: 220px;
+		// height: 220px;
+		#quiz-modal &{
+			width: 100%;
+		}
 		.check-box{
 			cursor: pointer;
 			width: 20px;
@@ -29,6 +32,10 @@ input[type="radio"],input[type="checkbox"] {
 				transform-origin: 0% 100%;
 				border-right: solid 2px transparent;
 				border-bottom: solid 2px transparent;
+			}
+			&.inline{
+				float:left;
+				margin-right: 20px;
 			}
 		}
 	}
@@ -81,6 +88,27 @@ input[type="radio"],input[type="checkbox"] {
 			height: 10px;
 			transition-delay: 0s, 0.2s, 0s;
 			border-color: #3496DA;
+		}
+	}
+
+	&.correct{
+		+ .select-check-box{
+			.check-box{
+					border-color:green;
+				&::before{
+					border-color:green;
+				}
+			}
+		}
+	}
+	&.incorrect{
+		+ .select-check-box{
+			.check-box{
+					border-color:red;
+				&::before{
+					border-color:red;
+				}
+			}
 		}
 	}
 }

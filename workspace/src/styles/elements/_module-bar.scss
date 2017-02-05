@@ -1,0 +1,73 @@
+
+
+.box-sharp-edge{
+   height: 50px; border: 0px;
+   border-right: 3px solid #3489DA; 
+   display: inline-block; 
+   float: left;
+   &:first-child, .completed-lesson + &{
+   		background-color: #3489DA;
+   }
+   &.completed-lesson{
+   		background-color: #f08724;
+   		border-color: #f08724;
+   }
+}
+
+
+
+.study-timeline-progress{
+    height: 2px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background: #3496DA;
+}
+
+.study-timeline-progress-circles{
+	content: counter(section);
+	counter-increment: section;
+	position: absolute;
+	// left: -81px;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: 40px;
+	height: 40px;
+	border: 2px solid #3496DA;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	color: #3496DA;
+	text-align: center;
+	padding: 8px 0;
+	font-size: 24px;
+	font-family: "helveticaneuebold";
+	z-index: 2;
+	.completed-lesson{
+		background-color: #f08724;
+		border-color: #f08724;
+		color: #fff;
+	}
+	&:first-child, .completed-lesson + &{
+		background-color: #3496DA;
+		border-color: #3496DA;
+		color: #fff;
+		&:not(.completed-lesson){
+		  	&::before,&::after{
+		  		content:'';
+			  	position: absolute;
+			  	top:50px;
+			  	width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 7.5px 10px 7.5px;
+				border-color: transparent transparent #3496DA transparent;
+			    left: 50%;
+			    transform: translateX(-50%);
+			}
+			&::after{
+				border-color: transparent transparent #FFF transparent;
+				top:53px;
+			}
+		}
+	}
+}

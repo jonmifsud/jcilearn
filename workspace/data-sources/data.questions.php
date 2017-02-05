@@ -57,7 +57,7 @@ class datasourcequestions extends SectionDatasource
                 'website' => 'http://jci-learn.dev',
                 'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2017-01-30T06:40:05+00:00'
+            'release-date' => '2017-02-05T08:39:48+00:00'
         );
     }
 

@@ -3,7 +3,6 @@
 
 
 <xsl:import href="../sections/user.xsl"/>
-<xsl:import href="../sections/likeviewsoutput.xsl"/>
 <xsl:import href="../sections/likeviews.xsl"/>
 
     <xsl:template match="*[section/@handle='lesson']//entry" mode='author-picture'>
@@ -18,9 +17,10 @@
 
 
     <xsl:template match="*[section/@handle='lesson']//entry" mode='link'>
+        <xsl:param name='module'/>
 
         <xsl:value-of select='/data/params/root'/>
-        <xsl:text>/module/lesson/</xsl:text>
+        <xsl:text>/explore/module/lesson/</xsl:text>
         <xsl:value-of select='title/@handle'/>
         <xsl:text>/</xsl:text>
 
@@ -38,22 +38,24 @@
     <xsl:template match="*[section/@handle='lesson']//entry" mode='list-item'>
         <xsl:param name='edit-link' select='false()'/>
         <xsl:param name='no-link' select='false()'/>
+        <xsl:param name='class' select='"each-item"'/>
+        <xsl:param name='module'/>
 
-        <div class="each-item col-md-12">
+        <div class="{$class}">
             <div class="each-item-inner col-md-12">
                 <a class="content-left col-md-8 col-sm-7">
-                    <xsl:attribute name='href'>
-                        <xsl:choose>
-                            <xsl:when test='$no-link'>
-                            </xsl:when>
-                            <xsl:when test='$edit-link'>
-                                <xsl:apply-templates select='.' mode='edit-link'/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:apply-templates select='.' mode='link'/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:attribute>
+                    <xsl:if test='not($no-link)'>
+                        <xsl:attribute name='href'>
+                            <xsl:choose>
+                                <xsl:when test='$edit-link'>
+                                    <xsl:apply-templates select='.' mode='edit-link'/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:apply-templates select='.' mode='link'/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:attribute>
+                    </xsl:if>
 
                     <div class="media">
                         <div class="media-left" style="padding: 10px;" >
@@ -82,23 +84,7 @@
                         <div class="media-body" style="padding-right: 0px;">
 
                             <h3 class="title"><xsl:value-of select="/data/users/entry[@id = current()/profile/item/@id]/name"/></h3>
-                            <div class="profile-meta" style="margin-top: 0px;">
-
-                                <span class="blue-text-in-line" id="like"  data-entry='{@id}'>
-                                    <i class="fa fa-heart-o"></i>
-                                    <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
-                                </span>
-
-                                <span id="likeOutput" value="0" style="font-size: 18px;">0</span>
-                                
-                                <span class="blue-text-in-line" id="view">
-                                    <i class="fa fa-man-people-streamline-user"></i>
-                                    <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
-                                </span>
-
-                                <span id="viewOutput" value="0" style="font-size: 18px;">0</span>       
-                            </div>
-
+                            <xsl:apply-templates select='.' mode='likeviews'/>
                         </div> <!-- /.media-body -->
                     </div> <!-- /.media -->
 
@@ -422,18 +408,18 @@
 
 
                     <a>
-                        <xsl:attribute name='href'>
-                            <xsl:choose>
-                                <xsl:when test='$no-link'>
-                                </xsl:when>
-                                <xsl:when test='$edit-link'>
-                                    <xsl:apply-templates select='.' mode='edit-link'/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:apply-templates select='.' mode='link'/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:attribute>
+                        <xsl:if test='not($no-link)'>
+                            <xsl:attribute name='href'>
+                                <xsl:choose>
+                                    <xsl:when test='$edit-link'>
+                                        <xsl:apply-templates select='.' mode='edit-link'/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:apply-templates select='.' mode='link'/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:attribute>
+                        </xsl:if>
 
                         <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Modules Image" class="img-responsive"/>
                         <h3 class="blue-text" style="text-transform: uppercase;"><xsl:value-of select="title" /></h3>
@@ -452,18 +438,18 @@
          <div class="each-item col-md-6 col-sm-12 " style=" ">
             <div class=" each-item-inner col-xs-12" style="display: flex; padding-left: 0px; padding-right: 0px; ">
                 <a class="content-left col-sm-9" style="padding-top: 20px; padding-bottom: 10px;">
-                    <xsl:attribute name='href'>
-                        <xsl:choose>
-                            <xsl:when test='$no-link'>
-                            </xsl:when>
-                            <xsl:when test='$edit-link'>
-                                <xsl:apply-templates select='.' mode='edit-link'/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:apply-templates select='.' mode='link'/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:attribute>
+                    <xsl:if test='not($no-link)'>
+                        <xsl:attribute name='href'>
+                            <xsl:choose>
+                                <xsl:when test='$edit-link'>
+                                    <xsl:apply-templates select='.' mode='edit-link'/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:apply-templates select='.' mode='link'/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:attribute>
+                    </xsl:if>
 
                     <div class="media">
                         <div class="media-left">
@@ -482,35 +468,7 @@
                 </a> <!-- /.content-right -->
                 <div class="content-right content-defult col-sm-3" style="padding: 0px; padding: 10px;">
                     
-                    <div class="profile-meta" style="margin-top: 0px;">
-
-                        <span class="blue-text-in-line" id="like"  data-entry='{@id}'>
-                            <i class="fa fa-heart-o"></i>
-                            <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
-                        </span>
-
-                        <span id="likeOutput" value="0" style="font-size: 18px;">0</span>
-                        <br/>
-                        <span class="blue-text-in-line" id="view">
-                            <i class="fa fa-man-people-streamline-user"></i>
-                            <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
-                        </span>
-
-                        <span id="viewOutput" value="0" style="font-size: 18px;">0</span>       
-                    </div>
-
-                    <!-- THIS IS REAL LIKE VIEWS. 
-                    <div class="profile-meta">
-                        <p class="blue-text-in-line" id="like" data-entry='{@id}'>
-                            <i class="fa fa-heart-o"></i>
-                            <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
-                        </p>
-                        <span id="likeOutput" value="0" style="font-size: 27px;">0</span><br/>
-                        
-                        <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
-                        <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
-                    </div>
-                    -->
+                    <xsl:apply-templates select='.' mode='likeviews'/>
 
                 </div> <!-- /.content-left -->
             </div>

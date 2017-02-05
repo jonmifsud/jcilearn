@@ -150,21 +150,9 @@
                 <div class="content-right content-defult col-md-2 col-sm-2 col-xs-4" style="padding-left: 0px; padding-right: 0px;">
                     
                     <div class="profile-meta" style="margin-left: 0px;">
-                        <xsl:apply-templates select="/data/story/entry[1]" mode="likeviews"/>
+                        <xsl:apply-templates select="." mode="likeviews"/>
                     </div>
 
-                    <!-- THIS IS REAL LIKE VIEWS. 
-                    <div class="profile-meta">
-                        <p class="blue-text-in-line" id="like" data-entry='{@id}'>
-                            <i class="fa fa-heart-o"></i>
-                            <xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/>
-                        </p>
-                        <span id="likeOutput" value="0" style="font-size: 27px;">0</span><br/>
-                        
-                        <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
-                        <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
-                    </div>
-                    -->
                 </div>
             </xsl:if>
             
@@ -224,13 +212,7 @@
                 </div> <!-- /.content-right -->
                 <div class="content-right content-defult col-md-3 col-xs-4">
                     
-                    <div class="profile-meta">
-                        <p class="blue-text-in-line" id="like"><i class="fa fa-heart-o"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
-                        <span id="likeOutput" value="0" style="font-size: 27px;">0</span>
-                        
-                        <p class="blue-text-in-line" id="view"><i class="fa fa-man-people-streamline-user"></i><xsl:value-of select="/data/commentboxtolearn/entry/item/item/like-views"/></p>
-                        <span id="viewOutput" value="0" style="font-size: 27px;">0</span>
-                    </div>
+                    <xsl:apply-templates select='.' mode='likeviews'/>
 
                 </div> <!-- /.content-left -->
             </div>    

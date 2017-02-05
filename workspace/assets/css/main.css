@@ -11768,13 +11768,6 @@ h6 {
   height: 50px;
   border-radius: 10px; }
 
-.box-sharp-edge {
-  height: 50px;
-  border: 0px;
-  border-right: 3px solid #3489DA;
-  display: inline-block;
-  float: left; }
-
 /**
  * -------------------------------
  * Modules Item Style
@@ -11988,31 +11981,6 @@ h6 {
   margin-right: auto;
   text-align: center;
   min-height: 200px; }
-
-.study-timeline-progress {
-  height: 2px;
-  width: 100%;
-  margin-top: 30px;
-  content: '';
-  position: absolute;
-  background: #3496DA; }
-
-.study-timeline-progress-circles {
-  content: counter(section);
-  counter-increment: section;
-  position: absolute;
-  top: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  width: 40px;
-  height: 40px;
-  border: 2px solid #3496DA;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  color: #3496DA;
-  text-align: center;
-  padding: 8px 0;
-  font-size: 24px;
-  font-family: "helveticaneuebold"; }
 
 .circle-checkbox {
   border: 5px solid #3496DA;
@@ -14147,30 +14115,33 @@ h6 {
 
 input[type="radio"], input[type="checkbox"] {
   display: none; }
-  input[type="radio"] + .select-check-box, input[type="checkbox"] + .select-check-box {
-    height: 220px; }
-    input[type="radio"] + .select-check-box .check-box, input[type="checkbox"] + .select-check-box .check-box {
-      cursor: pointer;
-      width: 20px;
-      height: 20px;
-      border-radius: 20px;
-      border: 2px solid #3496DA;
-      margin: auto;
-      position: relative; }
-      input[type="radio"] + .select-check-box .check-box::before, input[type="checkbox"] + .select-check-box .check-box::before {
-        bottom: 7px;
-        left: 2px;
-        position: absolute;
-        content: '';
-        display: inline-block;
-        width: 0;
-        height: 0;
-        transition: width 0.2s ease-in-out, height 0.2s ease-in-out,border-color 0s ease-in-out;
-        transition-delay: 0.2s, 0s, 0.4s;
-        transform: rotate(45deg);
-        transform-origin: 0% 100%;
-        border-right: solid 2px transparent;
-        border-bottom: solid 2px transparent; }
+  #quiz-modal input[type="radio"] + .select-check-box, #quiz-modal input[type="checkbox"] + .select-check-box {
+    width: 100%; }
+  input[type="radio"] + .select-check-box .check-box, input[type="checkbox"] + .select-check-box .check-box {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid #3496DA;
+    margin: auto;
+    position: relative; }
+    input[type="radio"] + .select-check-box .check-box::before, input[type="checkbox"] + .select-check-box .check-box::before {
+      bottom: 7px;
+      left: 2px;
+      position: absolute;
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      transition: width 0.2s ease-in-out, height 0.2s ease-in-out,border-color 0s ease-in-out;
+      transition-delay: 0.2s, 0s, 0.4s;
+      transform: rotate(45deg);
+      transform-origin: 0% 100%;
+      border-right: solid 2px transparent;
+      border-bottom: solid 2px transparent; }
+    input[type="radio"] + .select-check-box .check-box.inline, input[type="checkbox"] + .select-check-box .check-box.inline {
+      float: left;
+      margin-right: 20px; }
   input[type="radio"]:checked + .select-check-box .check-box::before, input[type="checkbox"]:checked + .select-check-box .check-box::before {
     width: 5px;
     height: 10px;
@@ -14209,6 +14180,14 @@ input[type="radio"], input[type="checkbox"] {
     height: 10px;
     transition-delay: 0s, 0.2s, 0s;
     border-color: #3496DA; }
+  input[type="radio"].correct + .select-check-box .check-box, input[type="checkbox"].correct + .select-check-box .check-box {
+    border-color: green; }
+    input[type="radio"].correct + .select-check-box .check-box::before, input[type="checkbox"].correct + .select-check-box .check-box::before {
+      border-color: green; }
+  input[type="radio"].incorrect + .select-check-box .check-box, input[type="checkbox"].incorrect + .select-check-box .check-box {
+    border-color: red; }
+    input[type="radio"].incorrect + .select-check-box .check-box::before, input[type="checkbox"].incorrect + .select-check-box .check-box::before {
+      border-color: red; }
 
 .quiz-form-template {
   display: none; }
@@ -14219,6 +14198,33 @@ input[type="radio"], input[type="checkbox"] {
   margin-top: 2rem;
   margin-bottom: 20px;
   margin-bottom: 2rem; }
+
+#quiz-modal {
+  counter-reset: question; }
+  #quiz-modal .question-wrapper {
+    margin-top: 30px;
+    padding-top: 15px; }
+    #quiz-modal .question-wrapper::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 0;
+      transform: translate3d(-50%, -50%, 0);
+      width: 20px;
+      height: 20px;
+      border: 2px solid #3496DA;
+      border-radius: 50%;
+      background-color: #FFFFFF;
+      color: #3496DA;
+      text-align: center;
+      padding: 0;
+      font-size: 12px;
+      line-height: 18px;
+      font-family: "helveticaneuebold";
+      z-index: 2; }
+
+.answer-wrapper p {
+  color: #3496DA; }
 
 input, textarea {
   width: 100%;
@@ -14249,6 +14255,65 @@ input, textarea {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+
+.box-sharp-edge {
+  height: 50px;
+  border: 0px;
+  border-right: 3px solid #3489DA;
+  display: inline-block;
+  float: left; }
+  .box-sharp-edge:first-child, .completed-lesson + .box-sharp-edge {
+    background-color: #3489DA; }
+  .box-sharp-edge.completed-lesson {
+    background-color: #f08724;
+    border-color: #f08724; }
+
+.study-timeline-progress {
+  height: 2px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background: #3496DA; }
+
+.study-timeline-progress-circles {
+  content: counter(section);
+  counter-increment: section;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 40px;
+  height: 40px;
+  border: 2px solid #3496DA;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #3496DA;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 24px;
+  font-family: "helveticaneuebold";
+  z-index: 2; }
+  .study-timeline-progress-circles .completed-lesson {
+    background-color: #f08724;
+    border-color: #f08724;
+    color: #fff; }
+  .study-timeline-progress-circles:first-child, .completed-lesson + .study-timeline-progress-circles {
+    background-color: #3496DA;
+    border-color: #3496DA;
+    color: #fff; }
+    .study-timeline-progress-circles:first-child:not(.completed-lesson)::before, .study-timeline-progress-circles:first-child:not(.completed-lesson)::after, .completed-lesson + .study-timeline-progress-circles:not(.completed-lesson)::before, .completed-lesson + .study-timeline-progress-circles:not(.completed-lesson)::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 7.5px 10px 7.5px;
+      border-color: transparent transparent #3496DA transparent;
+      left: 50%;
+      transform: translateX(-50%); }
+    .study-timeline-progress-circles:first-child:not(.completed-lesson)::after, .completed-lesson + .study-timeline-progress-circles:not(.completed-lesson)::after {
+      border-color: transparent transparent #FFF transparent;
+      top: 53px; }
 
 .dropdown-menu {
   position: absolute;
@@ -15045,7 +15110,7 @@ input, textarea {
   padding-right: 0px; }
 
 .progress-box {
-  width: 70%;
+  width: 100%;
   height: 30px;
   padding: 0px; }
 

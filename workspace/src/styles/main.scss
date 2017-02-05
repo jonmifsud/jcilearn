@@ -36,6 +36,7 @@
 @import "elements/quiz";
 @import "elements/inputs";
 @import "elements/square";
+@import "elements/module-bar";
 
 
 @import "lib/lessondiv/lesson";
@@ -828,7 +829,7 @@
 }
 
 .progress-box{
-    width: 70%;
+    width: 100%;
     height: 30px;
     padding: 0px;
 }
