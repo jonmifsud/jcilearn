@@ -55,18 +55,18 @@
                         </div>                                 
                     </div>
 
-                    <div class="box-border progress-box">
+                    <div class="progress-box">
 
                         <xsl:variable name='width' select='100 div count(lessons/item)'/>
 
                         <xsl:for-each select='lessons/item'>
                             <div style='width:{$width}%;'>
                                 <xsl:attribute name='class'>
-                                    <xsl:if test='position() != last()'>
+                                    <!-- <xsl:if test='position() != last()'> -->
                                         <xsl:text>box-sharp-edge</xsl:text>
-                                    </xsl:if>
+                                    <!-- </xsl:if> -->
                                     <xsl:if test='/data/lesson/entry[@id = current()/@id]/completed/@current-member="Yes"'>
-                                        <xsl:text>completed-lesson</xsl:text>
+                                        <xsl:text> completed-lesson</xsl:text>
                                     </xsl:if>
                                 </xsl:attribute>
                             </div> 
@@ -90,7 +90,13 @@
                             <xsl:variable name='centering-adjustment' select='$each-offset div 2'/>
 
                             <xsl:for-each select='lessons/item'>
-                                <div class="study-timeline-progress-circles">
+                                <div>
+                                    <xsl:attribute name='class'>
+                                        <xsl:text>study-timeline-progress-circles</xsl:text>
+                                        <xsl:if test='/data/lesson/entry[@id = current()/@id]/completed/@current-member="Yes"'>
+                                            <xsl:text> completed-lesson</xsl:text>
+                                        </xsl:if>
+                                    </xsl:attribute>
                                     <xsl:attribute name='style'>
                                         <xsl:text>margin-left:</xsl:text>
                                         <xsl:value-of select='$each-offset * position() - $centering-adjustment'/>

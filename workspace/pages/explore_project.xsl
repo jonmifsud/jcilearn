@@ -42,60 +42,60 @@
                                     </div>                     
                                 </div>
 
-                                     <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                                <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
 
-                                        
-                                        
-                                        <div class="lesson-text">
-                                            <br/>
-                                            <h3 class="title-centre">OVERVIEW</h3>
-                                            <p class="lesson-text">                                             
-                                                <xsl:value-of select="/data/project/entry/overview" />
-                                            </p><br/>
-                                         </div>
-                                   
-                                        <div class="blue-text text-center" id="toggle-project"> ANALYSIS </div>
+                                    
+                                    
+                                    <div class="lesson-text">
+                                        <br/>
+                                        <h3 class="title-centre">OVERVIEW</h3>
+                                        <p class="lesson-text">                                             
+                                            <xsl:value-of select="/data/project/entry/overview" />
+                                        </p><br/>
+                                     </div>
+                               
+                                    <div class="blue-text text-center" id="toggle-project"> ANALYSIS </div>
 
-                                        <div id="panel">
-                                        <div class="lesson-text">
-                                         <br/>
-                                            <h3 class="title-centre">PROBLEM</h3>
-                                            <p class="lesson-text">                                             
-                                                <xsl:value-of select="/data/project/entry/partners" />
-                                            </p><br/>
-                                        </div>
-                                        
+                                    <div id="panel">
+                                    <div class="lesson-text">
+                                     <br/>
+                                        <h3 class="title-centre">PROBLEM</h3>
+                                        <p class="lesson-text">                                             
+                                            <xsl:value-of select="/data/project/entry/partners" />
+                                        </p><br/>
+                                    </div>
+                                    
 
-                                        <div class="lesson-text">
-                                            <br/>
-                                            <h3 class="title-centre">PROPOSED SOLUTION</h3>
-                                            <p class="lesson-text">                                             
-                                                <xsl:value-of select="/data/project/entry/strategy" />
-                                            </p><br/>
-                                        </div>
-                                         
+                                    <div class="lesson-text">
+                                        <br/>
+                                        <h3 class="title-centre">PROPOSED SOLUTION</h3>
+                                        <p class="lesson-text">                                             
+                                            <xsl:value-of select="/data/project/entry/strategy" />
+                                        </p><br/>
+                                    </div>
+                                     
 
-                                        <div class="lesson-text">
-                                            <br/>
-                                            <h3 class="title-centre">PARTNERS</h3>
-                                            <p class="lesson-text">                                             
-                                                <xsl:value-of select="/data/project/entry/outcome" />
-                                            </p><br/>
-                                        </div>
-                                        </div>
-                                        
-                                        <br/><br/>
-                                        <div class="drop-down-button-on-project blue-text" style="padding: 5px;">IMPLEMENTATION</div>
+                                    <div class="lesson-text">
+                                        <br/>
+                                        <h3 class="title-centre">PARTNERS</h3>
+                                        <p class="lesson-text">                                             
+                                            <xsl:value-of select="/data/project/entry/outcome" />
+                                        </p><br/>
+                                    </div>
+                                    </div>
+                                    
+                                    <br/><br/>
+                                    <div class="drop-down-button-on-project blue-text" style="padding: 5px;">IMPLEMENTATION</div>
 
-                                        <br/><br/>
-                                        <div class="drop-down-button-on-project blue-text" style="padding: 5px;">CONCLUSION</div>
+                                    <br/><br/>
+                                    <div class="drop-down-button-on-project blue-text" style="padding: 5px;">CONCLUSION</div>
 
 
 
-                                    </div> 
-                                </div>
+                                </div> 
                             </div>
                         </div>
+                    </div>
 
                     <div class="col-xs-12 each-features text-center">
 

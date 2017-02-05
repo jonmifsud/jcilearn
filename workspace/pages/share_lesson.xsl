@@ -13,16 +13,21 @@
 
                     <xsl:call-template name="share-subheader"/> 
 
-                    <xsl:choose>
-                        <xsl:when test='/data/params/lesson-id != ""'>
-                            <!-- form here -->
-                            <xsl:apply-templates select='/data/my-lessons/entry' mode='lesson-form'>
-                            </xsl:apply-templates>
-                            <xsl:if test='not(/data/my-lessons/entry)'>
-                                <xsl:call-template name='lesson-form'/>
-                            </xsl:if>
-                        </xsl:when>
-                        <xsl:otherwise>
+                </div>
+            </div>
+            <xsl:choose>
+                <xsl:when test='/data/params/lesson-id != ""'>
+                    <!-- form here -->
+                    <xsl:apply-templates select='/data/my-lessons/entry' mode='lesson-form'>
+                    </xsl:apply-templates>
+                    <xsl:if test='not(/data/my-lessons/entry)'>
+                        <xsl:call-template name='lesson-form'/>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+                    <div class="container">
+                        <div class="row">
+
                             <div class="guide-team-content col-xs-12">
                                 <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
                                                        
@@ -76,12 +81,12 @@
                                 <p class="blue-text"></p>
                                 <a href="{/data/params/root}/explore/#modules" class="btn btn-border-button">Explore</a>
                             </div>
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
 
-                        </xsl:otherwise>
-                    </xsl:choose>
+                </xsl:otherwise>
+            </xsl:choose>
 
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
         </div>
         <!-- End: Features Section 
         =================================-->

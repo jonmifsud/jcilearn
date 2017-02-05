@@ -1,0 +1,72 @@
+
+/**
+ * ------------------------
+ * Guide Item Left TimeLine
+ * ------------------------
+ */
+.timeline {
+    counter-reset: section;
+    
+    &:before {
+        width: 2px;
+        height: 100%;
+        content: '';
+        position: absolute;
+        left: -44px;
+        background: $main-color-1;
+    }
+
+    .each-item-inner {
+        margin: 10px 0;
+        &::before {
+            content: counter(section);
+            counter-increment: section;
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: 20px;
+            height: 20px;
+            border: 2px solid $main-color-1;
+            border-radius: 50%;
+            background-color: $background-1;
+            color: $main-color-1;
+            text-align: center;
+            padding: 0;
+            @include rem(font-size,12px);
+            @include rem(line-height,18px);
+            font-family: $font-1;
+        }
+    }
+    &:first-child{
+        .each-item-inner{
+            margin-top:0;
+        }
+    }
+    &:last-child{
+        .each-item-inner{
+            margin-bottom:0;
+        }
+    }
+}
+
+// first timeline element circle
+.timeline .each-item:first-child, .timeline .each-item.completed-lesson + .each-item{
+    .each-item-inner{
+        &::before {
+            color: #fff;
+            background-color: #3489DA;
+        }
+    }
+}
+
+// completed timeline element circles
+.timeline .each-item.completed-lesson{
+    .each-item-inner{
+        &::before {
+            color: #fff;
+            background-color: #f08724;
+            border-color: #f08724;
+        }
+    }
+}

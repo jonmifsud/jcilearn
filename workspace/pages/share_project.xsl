@@ -13,21 +13,26 @@
 
                     <xsl:call-template name="share-subheader"/> 
 
+                </div>
+            </div>
 
-                     <xsl:choose>
-                        <xsl:when test='/data/params/project-id != ""'>
-                            <!-- form here -->
-                            <xsl:apply-templates select='/data/my-projects/entry' mode='project-form'>
-                            </xsl:apply-templates>
-                            <xsl:if test='not(/data/my-projects/entry)'>
-                                <xsl:call-template name='project-form'/>
-                            </xsl:if>
-                        </xsl:when>
-                        <xsl:otherwise>
+            <xsl:choose>
+                <xsl:when test='/data/params/project-id != ""'>
+                    <!-- form here -->
+                    <xsl:apply-templates select='/data/my-projects/entry' mode='project-form'>
+                    </xsl:apply-templates>
+                    <xsl:if test='not(/data/my-projects/entry)'>
+                        <xsl:call-template name='project-form'/>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+
+                    <div class="container">
+                        <div class="row">
                             <div class="guide-team-content col-xs-12">
                                 <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
         	                        <h3 class="title-centre">YOUR DRAFTS</h3>
-        	                        <p class="blue-text">Completethese projects and earn your active Citizenship badge!</p><br/>
+        	                        <p class="blue-text">Complete these projects and earn your active Citizenship badge!</p><br/>
                                 </div> <!-- /.each-features -->  
 
                                 <div class="row">
@@ -78,11 +83,11 @@
                                 <p class="blue-text"></p>
                                 <a href="{/data/params/root}/explore/#projects" class="btn btn-border-button">Explore</a>
                             </div>
-                        </xsl:otherwise>
-                    </xsl:choose>
+                        </div>
+                    </div>
+                </xsl:otherwise>
+            </xsl:choose>
 
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
         </div>
         <!-- End: Features Section 
         =================================-->

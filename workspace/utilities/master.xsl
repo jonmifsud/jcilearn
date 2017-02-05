@@ -227,7 +227,6 @@
 
 
         <script src="{/data/params/workspace}/assets/js/main.js"></script>
-        <script src="{/data/params/workspace}/src/scripts/custom/sliderForEditPage.js"></script>
 
         <script type="text/javascript">
         (function() {

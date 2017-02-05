@@ -11,22 +11,30 @@ $(document).ready(function(){
         var counter = 1;
         divNumber = $(".sliderJquery > div").length;
 
+        $(".sliderJquery > div:nth-child(1)").show();
+
 
         function counterfunc(){
-            if(counter<divNumber){ 
-                var sum = counter + 1;
-                $("#output").html(sum);
-                counter=sum;
 
-                $(".sliderJquery > div").hide();                
+            if(counter < divNumber){ 
+                counter++;
+                $("#output").html(counter);
+
+                $(".sliderJquery > div").hide();
                 $(".sliderJquery > div:nth-child("+counter+")").show();
 
-                $(".study-timeline-progress > div:nth-child("+counter+")").css({"background-color": "#3496DA", "color": "white"});
+
+                $(".study-timeline-progress-circles:nth-child("+(counter-1)+")").addClass('completed-lesson'); 
+
+                // $(".study-timeline-progress > div:nth-child("+counter+")").css({"background-color": "#3496DA", "color": "white"});
 
             }else{
-                counter = 0; 
-                $(".study-timeline-progress > div").css({"background-color": "white", "color": "#3496DA"});
+                counter = 1; 
+                // $(".study-timeline-progress > div").css({"background-color": "white", "color": "#3496DA"});
+
+                $(".sliderJquery > div").hide();
                 $(".sliderJquery > div:nth-child(1)").show();
+                $(".study-timeline-progress-circles").removeClass('completed-lesson');
             }           
         }
     });

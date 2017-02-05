@@ -37,6 +37,8 @@
 @import "elements/inputs";
 @import "elements/square";
 @import "elements/module-bar";
+@import "elements/timeline";
+@import "elements/uploads";
 
 
 @import "lib/lessondiv/lesson";
@@ -316,63 +318,6 @@
         z-index: 1;
     }
 }
-
-
-
-/**
- * ------------------------
- * Guide Item Left TimeLine
- * ------------------------
- */
-.timeline {
-    counter-reset: section;
-    
-    &:before {
-        width: 2px;
-        height: 100%;
-        content: '';
-        position: absolute;
-        left: -44px;
-        background: $main-color-1;
-    }
-
-    .each-item{
-        &:first-child{
-            .each-item-inner{
-                margin-top:0;
-            }
-        }
-        &:last-child{
-            .each-item-inner{
-                margin-bottom:0;
-            }
-        }
-    }
-    
-    .each-item-inner {
-        margin: 10px 0;
-        &::before {
-            content: counter(section);
-            counter-increment: section;
-            position: absolute;
-            left: -30px;
-            top: 50%;
-            transform: translate3d(-50%, -50%, 0);
-            width: 20px;
-            height: 20px;
-            border: 2px solid $main-color-1;
-            border-radius: 50%;
-            background-color: $background-1;
-            color: $main-color-1;
-            text-align: center;
-            padding: 0;
-            @include rem(font-size,12px);
-            @include rem(line-height,18px);
-            font-family: $font-1;
-        }
-    }
-}
-
 
 
 
@@ -843,15 +788,9 @@
     padding-right: 0px;
 }
 
-.progress-box{
-    width: 100%;
-    height: 30px;
-    padding: 0px;
-}
-
 .square-picture{
     width: 100%;
-    height: 180%;
+    // height: 180%;
 }
 
 .share-story-module-style{ 

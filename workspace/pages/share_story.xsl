@@ -15,19 +15,23 @@
 	    <div class="features-section">
 	        <div class="container">
 	            <div class="row features-item section-separator">
-
                     <xsl:call-template name="share-subheader"/>
+                </div>
+            </div>
 
-                    <xsl:choose>
-                        <xsl:when test='/data/params/story-id != ""'>
-                            <!-- form here -->
-                            <xsl:apply-templates select='/data/my-stories/entry' mode='story-form'>
-                            </xsl:apply-templates>
-                            <xsl:if test='not(/data/my-stories/entry)'>
-                                <xsl:call-template name='story-form'/>
-                            </xsl:if>
-                        </xsl:when>
-                        <xsl:otherwise>
+            <xsl:choose>
+                <xsl:when test='/data/params/story-id != ""'>
+                    <!-- form here -->
+                    <xsl:apply-templates select='/data/my-stories/entry' mode='story-form'>
+                    </xsl:apply-templates>
+                    <xsl:if test='not(/data/my-stories/entry)'>
+                        <xsl:call-template name='story-form'/>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+
+                    <div class="container">
+                        <div class="row features-item section-separator">
 
                             <div class="guide-team-content col-xs-12">
                                 <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
@@ -82,11 +86,11 @@
                                     <p class="blue-text"></p>
                                     <a href="{/data/params/root}/explore/#stories" class="btn btn-border-button">Explore</a>
                             </div>
-                        </xsl:otherwise>
-                    </xsl:choose>
+                        </div> <!-- /.row -->
+                    </div> <!-- /.container -->
+                </xsl:otherwise>
+            </xsl:choose>
 
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
         </div>
         <!-- End: Features Section 
         =================================-->

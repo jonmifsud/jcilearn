@@ -47,6 +47,8 @@ class datasourcemy_projects extends SectionDatasource
         'lessonlearnt: formatted',
         'lessonlearnt: unformatted',
         'status',
+        'marketing-materials',
+        'images',
     );
 
     public function __construct($env = null, $process_params = true)

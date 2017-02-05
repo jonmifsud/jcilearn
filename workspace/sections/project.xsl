@@ -118,247 +118,293 @@
             </xsl:if>
 
 
-            <h2 class="title-centre">NEW PROJECT</h2>
-            <div class="enter-text-field" style="height: 100px;">
-                <div class="form-inline single-form" style="width: 150px;">
-                    <div class="form-group input-outer">
-                        <div class="select-outer">
-                            <select class="form-control contact-plan" name='status'>
-                                <option value="draft" selected="selected">SAVE</option>
-                                <option value="review">PUBLISH</option>
-                            </select>
+
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-centre">NEW PROJECT</h2>
+                    <div class="enter-text-field" style="height: 100px;">
+                        <div class="form-inline single-form" style="width: 150px;">
+                            <div class="form-group input-outer">
+                                <div class="select-outer">
+                                    <select class="form-control contact-plan" name='status'>
+                                        <option value="draft" selected="selected">SAVE</option>
+                                        <option value="review">PUBLISH</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <button class="counter1"> counter</button>
+                    <p id="output"> here </p>
+
                 </div>
             </div>
 
-            <button class="counter1"> counter</button>
-            <p id="output"> here </p>
 
+            <div class="study-timeline-progress">
 
-            <div class="col-xs-12 each-features">
-                <div class="study-timeline-progress" style="margin-top: 80px;">
-
-
-
-                    <div class="study-timeline-progress-circles" style="margin-left: 17%; ">
-                            1
-                        </div> 
-                        <div class="study-timeline-progress-circles" style="margin-left: 30%; ">
-                            2
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center" >
+                            <div class="study-timeline-progress-circles" style="margin-left: 8.33%; ">
+                                1
+                            </div> 
+                            <div class="study-timeline-progress-circles" style="margin-left: 25%; ">
+                                2
+                            </div>
+                            <div class="study-timeline-progress-circles" style="margin-left: 41.67%; ">
+                                3
+                            </div>
+                            <div class="study-timeline-progress-circles" style="margin-left: 58.33%; ">
+                                4
+                            </div> 
+                            <div class="study-timeline-progress-circles" style="margin-left: 75%; ">
+                                5
+                            </div>
+                            <div class="study-timeline-progress-circles" style="margin-left: 91.67%; ">
+                                6
+                            </div>
                         </div>
-                        <div class="study-timeline-progress-circles" style="margin-left: 43%; ">
-                            3
-                        </div>
-                        <div class="study-timeline-progress-circles" style="margin-left: 56%; ">
-                            4
-                        </div> 
-                        <div class="study-timeline-progress-circles" style="margin-left: 69%; ">
-                            5
-                        </div>
-                        <div class="study-timeline-progress-circles" style="margin-left: 83%; ">
-                            6
-                        </div>
+                    </div>
                 </div>
-            </div>                    
-
-            <div class="col-xs-12 each-features">
+            </div>      
 
 
-                <div class="sliderJquery">
+            <div class="container">
+                <div class="row">       
 
-                        
-                    <div id="div1">
-                        <label style="width: 100%;" >
-                            <div class="enter-text-field" style="height: 100px;">
-                                <h3 class="title-centre">TITLE</h3>
-                                <input name="fields[title]" type="text" value='{title[@mode="unformatted"]}'/>
-                            </div>
-                        </label>
-
-                        <label style="width: 100%;">
-                            <div class="enter-text-field" style="height: 100px;">
-                                <h3 class="title-centre">SUBTITLE</h3>
-                                <input name="fields[subtitle]" type="text" value='{subtitle[@mode="unformatted"]}'/>
-                            </div>
-                        </label>  
-
-                        <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
-                            <h3 class="title col-md-12">CATEGORY</h3><br/>
-                            <div class="col-md-3"></div>
-                            <div class="box-border-text-left max-width col-md-8" style="width: 45%; overflow-y: scroll; height: 380px;">
-                                <xsl:apply-templates select='/data/interests/entry' mode='option'>
-                                    <xsl:with-param name='class'>
-                                        <xsl:text>col-xs-6 text-center</xsl:text>
-                                    </xsl:with-param>
-                                    <xsl:with-param name='name'>category</xsl:with-param>
-                                    <xsl:with-param name='selected' select='current()/category/item'/>
-                                </xsl:apply-templates>         
-                            </div>
-                        </div>
-
-                    </div>
+                    <div class="col-xs-12 each-features">
 
 
-                    <div id="div2">                                    
-                        <div class="box-border" style="border: 0px; height: 150px;">
-                            <h3 class="title">START</h3>
-                            <div class="form-inline single-form">
-                                <div class="form-group input-outer">
-                                    <div class="select-outer">
-                                        <select class="form-control contact-plan">
-                                            <option value="subject1" disabled="" selected="">ADD</option>
-                                            <option value="BusinessConsulting">consulting</option>
-                                            <option value="TextConsulting">Text</option>
-                                            <option value="Advisory">Advisory</option>
-                                            <option value="Audit-$-assurance">Audit</option>
-                                        </select>
+                        <div class="sliderJquery">
+
+                                
+                            <div id="div1">
+                                <label style="width: 100%;" >
+                                    <div class="enter-text-field" style="height: 100px;">
+                                        <h3 class="title-centre">TITLE</h3>
+                                        <input name="fields[title]" type="text" value='{title[@mode="unformatted"]}'/>
+                                    </div>
+                                </label>
+
+                                <label style="width: 100%;">
+                                    <div class="enter-text-field" style="height: 100px;">
+                                        <h3 class="title-centre">SUBTITLE</h3>
+                                        <input name="fields[subtitle]" type="text" value='{subtitle[@mode="unformatted"]}'/>
+                                    </div>
+                                </label>  
+
+                                <div class="col-xs-12 each-features text-center" style="margin-bottom: 0px;">
+                                    <h3 class="title col-md-12">CATEGORY</h3><br/>
+                                    <div class="col-md-3"></div>
+                                    <div class="box-border-text-left max-width col-md-8" style="width: 45%; overflow-y: scroll; height: 380px;">
+                                        <xsl:apply-templates select='/data/interests/entry' mode='option'>
+                                            <xsl:with-param name='class'>
+                                                <xsl:text>col-xs-6 text-center</xsl:text>
+                                            </xsl:with-param>
+                                            <xsl:with-param name='name'>category</xsl:with-param>
+                                            <xsl:with-param name='selected' select='current()/category/item'/>
+                                        </xsl:apply-templates>         
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="box-border" style="border: 0px; height: 150px;">
-                            <h3 class="title">END</h3>
-                            <div class="form-inline single-form">
-                                <div class="form-group input-outer">
-                                    <div class="select-outer">
-                                        <select class="form-control contact-plan">
-                                            <option value="subject1" disabled="" selected="">ADD</option>
-                                            <option value="BusinessConsulting">consulting</option>
-                                            <option value="TextConsulting">Text</option>
-                                            <option value="Advisory">Advisory</option>
-                                            <option value="Audit-$-assurance">Audit</option>
-                                        </select>
+                            </div>
+
+
+                            <div id="div2">                                    
+                                <div class="box-border" style="border: 0px; height: 150px;">
+                                    <h3 class="title">START</h3>
+                                    <div class="form-inline single-form">
+                                        <div class="form-group input-outer">
+                                            <div class="select-outer">
+                                                <select class="form-control contact-plan">
+                                                    <option value="subject1" disabled="" selected="">ADD</option>
+                                                    <option value="BusinessConsulting">consulting</option>
+                                                    <option value="TextConsulting">Text</option>
+                                                    <option value="Advisory">Advisory</option>
+                                                    <option value="Audit-$-assurance">Audit</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <label style="width: 90%;">
-                            <div class="enter-text-field">
-                                <h3 class="title-centre">OVERVIEW</h3>
-                                <textarea id="your-note" class="your-note-box-shape" name="fields[overview]" type="text"></textarea>
-                            </div>
-                        </label> 
-                    </div>
-
-                    <div id="div3">
-                        <label style="width: 90%;">
-                            <div class="enter-text-field" style="height: 100px;">
-                                <h3 class="title-centre">PROBLEM</h3>
-                                <textarea name="problem" class="your-notes-class" type="text">
-                                    <xsl:value-of select='problem[@mode="unformatted"]'/>
-                                </textarea>
-                            </div>
-                        </label>
-
-                        <label style="width: 90%;">
-                            <div class="enter-text-field" style="height: 100px;">
-                                <h3 class="title-centre">PROPOSED SOLUTION</h3>
-                                <textarea name="proposedsolution" class="your-notes-class" type="text">
-                                    <xsl:value-of select='proposedsolution[@mode="unformatted"]'/>
-                                </textarea>
-                            </div>
-                        </label>
-
-                        <label style="width: 90%;">
-                            <div class="enter-text-field" style="height: 100px;">
-                                <h3 class="title-centre">STAKEHOLDERS</h3>
-                                <textarea name="stakeholders" class="your-notes-class" type="text">
-                                    <xsl:value-of select='stakeholders[@mode="unformatted"]'/>
-                                </textarea>
-                            </div>
-                        </label>
-                       
-                        <label style="width: 90%;">
-                            <div class="enter-text-field" style="height: 100px;">
-                                <h3 class="title-centre">PARTNERS</h3>
-                                <textarea name="partners" class="your-notes-class" type="text">
-                                    <xsl:value-of select='partners[@mode="unformatted"]'/>
-                                </textarea>
-                            </div>
-                        </label>
-                    </div>
-
-                    <div id="div4">
-                        <label style="width: 90%;">
-                            <div class="enter-text-field"><h3 class="title-centre">STRATEGY</h3>
-                                <textarea name="strategy" class="your-notes-class" type="text">
-                                    <xsl:value-of select='strategy[@mode="unformatted"]'/>
-                                </textarea>
-                            </div>
-                        </label> 
-
-                        <label style="width: 90%;">
-                            <div class="enter-text-field">
-                                <h3 class="title-centre">EXECUTION</h3>
-                                <textarea name="execution" class="your-notes-class" type="text">
-                                    <xsl:value-of select='execution[@mode="unformatted"]'/>
-                                </textarea>
-                            </div>
-                        </label>                                               
-                    </div>
-
-                    <div id="div5">
-                        <label style="width: 90%;">
-                            <div class="enter-text-field"><h3 class="title-centre">OUTCOME</h3>
-                                <textarea name="outcome" class="your-notes-class" type="text">
-                                    <xsl:value-of select='outcome[@mode="unformatted"]'/>
-                                </textarea>
-                            </div>
-                        </label> 
-
-                        <label style="width: 90%;">
-                            <div class="enter-text-field"><h3 class="title-centre">LESSON LEARNT</h3>
-                                <textarea name="lessonlearnt" class="your-notes-class" type="text">
-                                    <xsl:value-of select='lessonlearnt[@mode="unformatted"]'/>
-                                </textarea>
-                            </div>
-                        </label>
-                    </div>
-
-                    <div id="div6">
-                        <div class="col-xs-12 each-features">
-                            <h3 class="title-centre">PHOTOS</h3>
-                            <p class="title-centre">drag and drop photos from your project here</p>
-                            <div class="enter-text-field">
-                                <div>
-                                  <textarea class="your-note-box-shape" type="text" id="your-note" name="fname"></textarea>
+                                <div class="box-border" style="border: 0px; height: 150px;">
+                                    <h3 class="title">END</h3>
+                                    <div class="form-inline single-form">
+                                        <div class="form-group input-outer">
+                                            <div class="select-outer">
+                                                <select class="form-control contact-plan">
+                                                    <option value="subject1" disabled="" selected="">ADD</option>
+                                                    <option value="BusinessConsulting">consulting</option>
+                                                    <option value="TextConsulting">Text</option>
+                                                    <option value="Advisory">Advisory</option>
+                                                    <option value="Audit-$-assurance">Audit</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>  
 
-                        <div class="col-xs-12 each-features">
-                            <h3 class="title-centre">MARKETING MATERIAL</h3>
-                            <p class="title-centre">upload files</p>
-                            <div class="enter-text-field">
-                                <div>
-                                  <textarea class="your-note-box-shape" type="text" id="your-note" name="fname"></textarea>
-                                </div>
+                                <label style="width: 90%;">
+                                    <div class="enter-text-field">
+                                        <h3 class="title-centre">OVERVIEW</h3>
+                                        <textarea id="your-note" class="your-note-box-shape" name="fields[overview]" type="text"></textarea>
+                                    </div>
+                                </label> 
                             </div>
-                        </div>  
-                         <label style="width: 90%;"><p class="title-centre">text</p>
-                            <input name="fields[text]" class="your-note-text-box-shape" type="text" />
-                        </label>
+
+                            <div id="div3">
+                                <label style="width: 90%;">
+                                    <div class="enter-text-field" style="height: 100px;">
+                                        <h3 class="title-centre">PROBLEM</h3>
+                                        <textarea name="problem" class="your-notes-class" type="text">
+                                            <xsl:value-of select='problem[@mode="unformatted"]'/>
+                                        </textarea>
+                                    </div>
+                                </label>
+
+                                <label style="width: 90%;">
+                                    <div class="enter-text-field" style="height: 100px;">
+                                        <h3 class="title-centre">PROPOSED SOLUTION</h3>
+                                        <textarea name="proposedsolution" class="your-notes-class" type="text">
+                                            <xsl:value-of select='proposedsolution[@mode="unformatted"]'/>
+                                        </textarea>
+                                    </div>
+                                </label>
+
+                                <label style="width: 90%;">
+                                    <div class="enter-text-field" style="height: 100px;">
+                                        <h3 class="title-centre">STAKEHOLDERS</h3>
+                                        <textarea name="stakeholders" class="your-notes-class" type="text">
+                                            <xsl:value-of select='stakeholders[@mode="unformatted"]'/>
+                                        </textarea>
+                                    </div>
+                                </label>
+                               
+                                <label style="width: 90%;">
+                                    <div class="enter-text-field" style="height: 100px;">
+                                        <h3 class="title-centre">PARTNERS</h3>
+                                        <textarea name="partners" class="your-notes-class" type="text">
+                                            <xsl:value-of select='partners[@mode="unformatted"]'/>
+                                        </textarea>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div id="div4">
+                                <label style="width: 90%;">
+                                    <div class="enter-text-field"><h3 class="title-centre">STRATEGY</h3>
+                                        <textarea name="strategy" class="your-notes-class" type="text">
+                                            <xsl:value-of select='strategy[@mode="unformatted"]'/>
+                                        </textarea>
+                                    </div>
+                                </label> 
+
+                                <label style="width: 90%;">
+                                    <div class="enter-text-field">
+                                        <h3 class="title-centre">EXECUTION</h3>
+                                        <textarea name="execution" class="your-notes-class" type="text">
+                                            <xsl:value-of select='execution[@mode="unformatted"]'/>
+                                        </textarea>
+                                    </div>
+                                </label>                                               
+                            </div>
+
+                            <div id="div5">
+                                <label style="width: 90%;">
+                                    <div class="enter-text-field"><h3 class="title-centre">OUTCOME</h3>
+                                        <textarea name="outcome" class="your-notes-class" type="text">
+                                            <xsl:value-of select='outcome[@mode="unformatted"]'/>
+                                        </textarea>
+                                    </div>
+                                </label> 
+
+                                <label style="width: 90%;">
+                                    <div class="enter-text-field"><h3 class="title-centre">LESSON LEARNT</h3>
+                                        <textarea name="lessonlearnt" class="your-notes-class" type="text">
+                                            <xsl:value-of select='lessonlearnt[@mode="unformatted"]'/>
+                                        </textarea>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div id="div6">
+                                <div class="col-xs-12 each-features">
+                                    <h3 class="title-centre">PHOTOS</h3>
+                                    <p class="title-centre">drag and drop photos from your project here</p>
+                                    <div class="enter-text-field">
+                                        <div>
+                                          <textarea class="your-note-box-shape" type="text" id="your-note" name="fname"></textarea>
+                                        </div>
+                                    </div>
+                                </div>  
+
+                                <div class="col-xs-12 each-features">
+                                    <h3 class="title-centre">MARKETING MATERIAL</h3>
+
+                                    <div class='marketing-uploads'>
+                                        <div class='instructions'>
+                                            <div class='instructions-text'>Drop files here to upload - Maximum File Size : 10MB</div>
+                                            <xsl:apply-templates select='marketing-materials/file' mode='uploads'/>
+                                        </div>
+                                    </div>
+                                </div>  
+                                 <label style="width: 90%;"><p class="title-centre">text</p>
+                                    <input name="fields[text]" class="your-note-text-box-shape" type="text" />
+                                </label>
+                                
+                                <label style="width: 90%;"><p class="title-centre">date</p>
+                                    <input class="your-note-text-box-shape" name="fields[date]" type="text" />
+                                </label>
+                            </div>
+
+                        </div> <!-- sliderJquery -->
+
+                    </div>
+
+
+                    <input name="user" type="hidden" value="{/data/params/member-id}" />
+
                         
-                        <label style="width: 90%;"><p class="title-centre">date</p>
-                            <input class="your-note-text-box-shape" name="fields[date]" type="text" />
-                        </label>
-                    </div>
-
-                </div> <!-- sliderJquery -->
-
+                        
+                    <input name="" type="submit" value="Submit" />
+                </div>
             </div>
-
-
-            <input name="user" type="hidden" value="{/data/params/member-id}" />
-
-                
-                
-            <input name="" type="submit" value="Submit" />
             
         </form>
+    </xsl:template>
+
+
+    <xsl:template match="*[section/@handle='project']/entry/marketing-materials/file" mode="uploads">
+        <div class="dz-preview uploading dz-processing dz-image-preview dz-complete">
+            <div class="dz-details">
+                <img data-dz-thumbnail="" style="width: 120px; height: 120px;">
+                    <xsl:attribute name='src'>
+                        <xsl:choose>
+                            <xsl:when test='contains(@filepath,"image")'>
+                                <xsl:value-of select='@filepath'/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <!-- filler icon ?? -->
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:attribute>
+                </img>
+                <div class="dz-text-details">
+                    <div class="dz-filename">
+                        <span data-dz-name=""><xsl:value-of select="@name"/></span>
+                    </div>
+                </div>
+            </div>
+
+            <input name='marketing-materials[filename][{position()}]' type='hidden' value='{@name}'/>
+            <input name='marketing-materials[filepath][{position()}]' type='hidden' value='{@filepath}'/>
+            <input name='marketing-materials[mimetype][{position()}]' type='hidden' value='{@mimetype}'/>
+
+        </div>
+
     </xsl:template>
 
 

@@ -76,9 +76,9 @@
                     
                 </div>
                 <!-- TODO determine who recently enrolled -->
-                <p class="small-text">
+                <!-- <p class="small-text">
                     <xsl:value-of select="user/item" /> recently enrolled form this module.
-                </p>
+                </p> -->
             </div>  
         </div>
     </xsl:template>
@@ -230,130 +230,147 @@
                 </xsl:attribute>
             </xsl:if>
 
-            <h2 class="title-centre">NEW STORY</h2>
-            <div class="enter-text-field" style="height: 100px;">
-                <div class="form-inline single-form" style="width: 150px;">
-                    <div class="form-group input-outer">
-                        <div class="select-outer">
-                            <select class="form-control contact-plan" name='status'>
-                                <option value="draft" selected="selected">SAVE</option>
-                                <option value="review">PUBLISH</option>
-                            </select>
+
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-centre">NEW STORY</h2>
+                    <div>
+                        <div class="form-inline single-form" style="width: 150px;display:block;margin:auto;">
+                            <div class="form-group input-outer">
+                                <div class="select-outer">
+                                    <select class="form-control contact-plan" name='status'>
+                                        <option value="draft" selected="selected">SAVE</option>
+                                        <option value="review">PUBLISH</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="counter1"> counter</button>
+                    <!-- <p id="output"> here </p> -->
+
+                </div>
+            </div>
+
+
+            <div class="study-timeline-progress">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center" >
+                            <div class="study-timeline-progress-circles" style="margin-left: 16.66%; ">
+                                1
+                            </div> 
+                            <div class="study-timeline-progress-circles" style="margin-left: 50%; ">
+                                2
+                            </div>
+                            <div class="study-timeline-progress-circles" style="margin-left: 83.335%; ">
+                                3
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button class="counter1"> counter</button>
 
-            <div class="col-xs-12 each-features">
-                <div class="study-timeline-progress" style="margin-top: 80px;">
-                    <div id="LessonEditStep1" class="study-timeline-progress-circles" style="margin-left: 25%;">
-                        1
-                    </div> 
-                    <div id="LessonEditStep2" class="study-timeline-progress-circles" style="margin-left: 50%;">
-                        2
-                    </div>
-                    <div id="LessonEditStep3" class="study-timeline-progress-circles" style="margin-left: 75%;">
-                        3
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+
+                        <div class="sliderJquery">
+                            <div id="div1">
+                                <label style="width: 100%;" >
+                                    <div>
+                                        <h3 class="title-centre">TITLE</h3>
+                                        <input name="title" type="text" value='{title[@mode="unformatted"]}'/>
+                                    </div>
+                                </label>
+
+                                <label style="width: 100%;">
+                                    <div>
+                                        <h3 class="title-centre">SUBTITLE</h3>
+                                        <input name="subtitle" type="text" value='{subtitle[@mode="unformatted"]}'/>
+                                    </div>
+                                </label>  
+
+                                <div class="col-xs-12 each-features text-center" style="margin-bottom: 0px;">
+                                    <h3 class="title col-md-12">CATEGORY</h3><br/>
+                                    <div class="col-md-3"></div>
+                                    <div class="box-border-text-left max-width col-md-8" style="width: 45%; overflow-y: scroll; height: 380px;">
+                                        <xsl:apply-templates select='/data/interests/entry' mode='option'>
+                                            <xsl:with-param name='class'>
+                                                <xsl:text>col-xs-6 text-center</xsl:text>
+                                            </xsl:with-param>
+                                            <xsl:with-param name='name'>category</xsl:with-param>
+                                            <xsl:with-param name='selected' select='current()/category/item'/>
+                                        </xsl:apply-templates>         
+                                    </div>
+                                </div>
+
+                             <div class="col-xs-12 each-features text-center" style="margin-bottom: 40px;">
+                                    <div class="box-border" style="border: 0px; height: 150px;">
+                                        <h3 class="title">START</h3>
+                                        <div class="form-inline single-form">
+                                            <div class="form-group input-outer">
+                                                <div class="select-outer">
+                                                    <select class="form-control contact-plan">
+                                                        <option value="subject1" disabled="" selected="">START</option>
+                                                        <option value="BusinessConsulting">consulting</option>
+                                                        <option value="TextConsulting">Text</option>
+                                                        <option value="Advisory">Advisory</option>
+                                                        <option value="Audit-$-assurance">Audit</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-border" style="border: 0px; height: 150px;">
+                                        <h3 class="title">START</h3>
+                                        <div class="form-inline single-form">
+                                            <div class="form-group input-outer">
+                                                <div class="select-outer">
+                                                    <select class="form-control contact-plan">
+                                                        <option value="subject1" disabled="" selected="">END</option>
+                                                        <option value="BusinessConsulting">consulting</option>
+                                                        <option value="TextConsulting">Text</option>
+                                                        <option value="Advisory">Advisory</option>
+                                                        <option value="Audit-$-assurance">Audit</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div id="div2">
+                                <label style="width: 100%;">
+                                    <div class="input-wrapper">
+                                        <h3 class="title-centre">TEXT</h3>
+                                        <textarea name="text" class="your-notes-class" type="text">
+                                            <xsl:value-of select='text[@mode="unformatted"]'/>
+                                        </textarea>
+                                    </div>
+                                </label>
+
+                            </div>
+
+                            <div id="div3">
+                                <input name="user" type="hidden" value="{/data/params/member-id}" />
+                                <label style="width: 100%;">
+                                    <div>
+                                        <h3 class="title-centre">PHOTOS</h3>
+                                        <span class="blue-text margin-b-20">drag and drop photos related to your story here</span>
+
+                                        <!-- <textarea class="your-note-text-box-shape" id="your-note" name="text" type="text" rows='15'></textarea> -->
+                                    </div>
+                                </label>
+                            </div>
+                        </div> <!-- sliderJquery -->
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-xs-12 each-features" style="margin-top: 0px;">
-
-
-                <div class="sliderJquery">
-                    <div id="div1">
-                        <label style="width: 100%;" >
-                            <div class="enter-text-field" style="height: 100px;">
-                                <h3 class="title-centre">TITLE</h3>
-                                <input name="title" type="text" value='{title[@mode="unformatted"]}'/>
-                            </div>
-                        </label>
-
-                        <label style="width: 100%;">
-                            <div class="enter-text-field" style="height: 100px;">
-                                <h3 class="title-centre">SUBTITLE</h3>
-                                <input name="subtitle" type="text" value='{subtitle[@mode="unformatted"]}'/>
-                            </div>
-                        </label>  
-
-                        <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
-                            <h3 class="title col-md-12">CATEGORY</h3><br/>
-                            <div class="col-md-3"></div>
-                            <div class="box-border-text-left max-width col-md-8" style="width: 45%; overflow-y: scroll; height: 380px;">
-                                <xsl:apply-templates select='/data/interests/entry' mode='option'>
-                                    <xsl:with-param name='class'>
-                                        <xsl:text>col-xs-6 text-center</xsl:text>
-                                    </xsl:with-param>
-                                    <xsl:with-param name='name'>category</xsl:with-param>
-                                    <xsl:with-param name='selected' select='current()/category/item'/>
-                                </xsl:apply-templates>         
-                            </div>
-                        </div>
-
-                     <div class="col-xs-12 each-features text-center" style="margin-bottom: 40px;">
-                            <div class="box-border" style="border: 0px; height: 150px;">
-                                <h3 class="title">START</h3>
-                                <div class="form-inline single-form">
-                                    <div class="form-group input-outer">
-                                        <div class="select-outer">
-                                            <select class="form-control contact-plan">
-                                                <option value="subject1" disabled="" selected="">START</option>
-                                                <option value="BusinessConsulting">consulting</option>
-                                                <option value="TextConsulting">Text</option>
-                                                <option value="Advisory">Advisory</option>
-                                                <option value="Audit-$-assurance">Audit</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="box-border" style="border: 0px; height: 150px;">
-                                <h3 class="title">START</h3>
-                                <div class="form-inline single-form">
-                                    <div class="form-group input-outer">
-                                        <div class="select-outer">
-                                            <select class="form-control contact-plan">
-                                                <option value="subject1" disabled="" selected="">END</option>
-                                                <option value="BusinessConsulting">consulting</option>
-                                                <option value="TextConsulting">Text</option>
-                                                <option value="Advisory">Advisory</option>
-                                                <option value="Audit-$-assurance">Audit</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div id="div2">
-                        <label style="width: 100%;">
-                            <div class="input-wrapper">
-                                <h3 class="title-centre">TEXT</h3>
-                                <textarea name="text" class="your-notes-class" type="text">
-                                    <xsl:value-of select='text[@mode="unformatted"]'/>
-                                </textarea>
-                            </div>
-                        </label>
-
-                    </div>
-
-                    <div id="div3">
-                        <input name="user" type="hidden" value="{/data/params/member-id}" />
-                        <label style="width: 100%;">
-                            <div class="enter-text-field" style="height: 100px;">
-                                <h3 class="title-centre">PHOTOS</h3>
-                                <span class="blue-text margin-b-20">drag and drop photos related to your story here</span>
-
-                                <!-- <textarea class="your-note-text-box-shape" id="your-note" name="text" type="text" rows='15'></textarea> -->
-                            </div>
-                        </label>
-                    </div>
-                </div> <!-- sliderJquery -->
 
             </div>
 

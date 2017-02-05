@@ -1,8 +1,18 @@
 
 
+
+.progress-box{
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    overflow: hidden;
+    // border-radius: 20px;
+}
+
 .box-sharp-edge{
-   height: 50px; border: 0px;
-   border-right: 3px solid #3489DA; 
+   height: 100%; 
+   border: 0px;
+   border: 2px solid #3489DA; 
    display: inline-block; 
    float: left;
    &:first-child, .completed-lesson + &{
@@ -11,6 +21,14 @@
    &.completed-lesson{
    		background-color: #f08724;
    		border-color: #f08724;
+   }
+   &:first-child{
+		border-bottom-left-radius: 20px;
+		border-top-left-radius: 20px;
+   }
+   &:last-child{
+		border-bottom-right-radius: 20px;
+		border-top-right-radius: 20px;
    }
 }
 
@@ -42,11 +60,6 @@
 	font-size: 24px;
 	font-family: "helveticaneuebold";
 	z-index: 2;
-	.completed-lesson{
-		background-color: #f08724;
-		border-color: #f08724;
-		color: #fff;
-	}
 	&:first-child, .completed-lesson + &{
 		background-color: #3496DA;
 		border-color: #3496DA;
@@ -69,5 +82,10 @@
 				top:53px;
 			}
 		}
+	}
+	&.completed-lesson{
+		background-color: #f08724;
+		border-color: #f08724;
+		color: #fff;
 	}
 }

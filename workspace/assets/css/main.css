@@ -14222,10 +14222,16 @@ input, textarea {
       left: 50%;
       transform: translate(-50%, -50%); }
 
+.progress-box {
+  width: 100%;
+  height: 30px;
+  padding: 0px;
+  overflow: hidden; }
+
 .box-sharp-edge {
-  height: 50px;
+  height: 100%;
   border: 0px;
-  border-right: 3px solid #3489DA;
+  border: 2px solid #3489DA;
   display: inline-block;
   float: left; }
   .box-sharp-edge:first-child, .completed-lesson + .box-sharp-edge {
@@ -14233,6 +14239,12 @@ input, textarea {
   .box-sharp-edge.completed-lesson {
     background-color: #f08724;
     border-color: #f08724; }
+  .box-sharp-edge:first-child {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px; }
+  .box-sharp-edge:last-child {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px; }
 
 .study-timeline-progress {
   height: 2px;
@@ -14258,10 +14270,6 @@ input, textarea {
   font-size: 24px;
   font-family: "helveticaneuebold";
   z-index: 2; }
-  .study-timeline-progress-circles .completed-lesson {
-    background-color: #f08724;
-    border-color: #f08724;
-    color: #fff; }
   .study-timeline-progress-circles:first-child, .completed-lesson + .study-timeline-progress-circles {
     background-color: #3496DA;
     border-color: #3496DA;
@@ -14280,6 +14288,66 @@ input, textarea {
     .study-timeline-progress-circles:first-child:not(.completed-lesson)::after, .completed-lesson + .study-timeline-progress-circles:not(.completed-lesson)::after {
       border-color: transparent transparent #FFF transparent;
       top: 53px; }
+  .study-timeline-progress-circles.completed-lesson {
+    background-color: #f08724;
+    border-color: #f08724;
+    color: #fff; }
+
+/**
+ * ------------------------
+ * Guide Item Left TimeLine
+ * ------------------------
+ */
+.timeline {
+  counter-reset: section; }
+  .timeline:before {
+    width: 2px;
+    height: 100%;
+    content: '';
+    position: absolute;
+    left: -44px;
+    background: #3496DA; }
+  .timeline .each-item-inner {
+    margin: 10px 0; }
+    .timeline .each-item-inner::before {
+      content: counter(section);
+      counter-increment: section;
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      width: 20px;
+      height: 20px;
+      border: 2px solid #3496DA;
+      border-radius: 50%;
+      background-color: #FFFFFF;
+      color: #3496DA;
+      text-align: center;
+      padding: 0;
+      font-size: 12px;
+      font-size: 1.2rem;
+      line-height: 18px;
+      line-height: 1.8rem;
+      font-family: "helveticaneuebold"; }
+  .timeline:first-child .each-item-inner {
+    margin-top: 0; }
+  .timeline:last-child .each-item-inner {
+    margin-bottom: 0; }
+
+.timeline .each-item:first-child .each-item-inner::before, .timeline .each-item.completed-lesson + .each-item .each-item-inner::before {
+  color: #fff;
+  background-color: #3489DA; }
+
+.timeline .each-item.completed-lesson .each-item-inner::before {
+  color: #fff;
+  background-color: #f08724;
+  border-color: #f08724; }
+
+.marketing-uploads, .photo-uploads {
+  min-height: 250px;
+  width: 100%;
+  border: 2px solid #3496DA;
+  padding: 15px; }
 
 .dropdown-menu {
   position: absolute;
@@ -14686,47 +14754,6 @@ input, textarea {
   z-index: 1; }
 
 /**
- * ------------------------
- * Guide Item Left TimeLine
- * ------------------------
- */
-.timeline {
-  counter-reset: section; }
-  .timeline:before {
-    width: 2px;
-    height: 100%;
-    content: '';
-    position: absolute;
-    left: -44px;
-    background: #3496DA; }
-  .timeline .each-item:first-child .each-item-inner {
-    margin-top: 0; }
-  .timeline .each-item:last-child .each-item-inner {
-    margin-bottom: 0; }
-  .timeline .each-item-inner {
-    margin: 10px 0; }
-    .timeline .each-item-inner::before {
-      content: counter(section);
-      counter-increment: section;
-      position: absolute;
-      left: -30px;
-      top: 50%;
-      transform: translate3d(-50%, -50%, 0);
-      width: 20px;
-      height: 20px;
-      border: 2px solid #3496DA;
-      border-radius: 50%;
-      background-color: #FFFFFF;
-      color: #3496DA;
-      text-align: center;
-      padding: 0;
-      font-size: 12px;
-      font-size: 1.2rem;
-      line-height: 18px;
-      line-height: 1.8rem;
-      font-family: "helveticaneuebold"; }
-
-/**
  * ---------------------------------
  * Guide Item and Comment Item Style
  * ---------------------------------
@@ -15083,14 +15110,8 @@ input, textarea {
   padding-bottom: 20px;
   padding-right: 0px; }
 
-.progress-box {
-  width: 100%;
-  height: 30px;
-  padding: 0px; }
-
 .square-picture {
-  width: 100%;
-  height: 180%; }
+  width: 100%; }
 
 .share-story-module-style {
   width: 100% !important;

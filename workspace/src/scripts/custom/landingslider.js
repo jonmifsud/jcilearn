@@ -1,9 +1,7 @@
  $(document).ready(function(){
 
-        $(".sliderJquery div:nth-child("+1+")").show();
-        $(".study-timeline-progress > div:nth-child("+1+")").css({"background-color": "#3496DA", "color": "white"});
-        $(".sliderJquery div:nth-child("+2+")").hide();
-        $(".sliderJquery div:nth-child("+3+")").hide();
+        $(".sliderJquery > div").hide();
+        // $(".study-timeline-progress > div:nth-child("+1+")").css({"background-color": "#3496DA", "color": "white"});
         
         $("#counter").bind("click", counterfunc);
         var counter = 1;
