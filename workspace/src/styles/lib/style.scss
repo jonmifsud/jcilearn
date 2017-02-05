@@ -1596,43 +1596,6 @@ h6 {
   text-align: center;
 }
 /**
- * ------------------------
- * Guide Item Left TimeLine
- * ------------------------
- */
-.timeline {
-  counter-reset: section;
-}
-
-.timeline:before {
-  width: 2px;
-  height: 100%;
-  content: '';
-  position: absolute;
-  left: -60px;
-  background: #3496DA;
-}
-
-.timeline .each-item-inner::before {
-  content: counter(section);
-  counter-increment: section;
-  position: absolute;
-  left: -81px;
-  top: 50%;
-  transform: translate3d(0, -50%, 0);
-  width: 40px;
-  height: 40px;
-  border: 2px solid #3496DA;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  color: #3496DA;
-  text-align: center;
-  padding: 8px 0;
-  font-size: 24px;
-  font-family: "helveticaneuebold";
-}
-
-/**
  * ---------------------------------
  * Stories css
  * ---------------------------------

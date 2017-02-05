@@ -332,27 +332,42 @@
         height: 100%;
         content: '';
         position: absolute;
-        left: -60px;
+        left: -44px;
         background: $main-color-1;
+    }
+
+    .each-item{
+        &:first-child{
+            .each-item-inner{
+                margin-top:0;
+            }
+        }
+        &:last-child{
+            .each-item-inner{
+                margin-bottom:0;
+            }
+        }
     }
     
     .each-item-inner {
+        margin: 10px 0;
         &::before {
             content: counter(section);
             counter-increment: section;
             position: absolute;
-            left: -81px;
+            left: -30px;
             top: 50%;
-            transform: translate3d(0, -50%, 0);
-            width: 40px;
-            height: 40px;
+            transform: translate3d(-50%, -50%, 0);
+            width: 20px;
+            height: 20px;
             border: 2px solid $main-color-1;
             border-radius: 50%;
             background-color: $background-1;
             color: $main-color-1;
             text-align: center;
-            padding: 8px 0;
-            @include rem(font-size,24px);
+            padding: 0;
+            @include rem(font-size,12px);
+            @include rem(line-height,18px);
             font-family: $font-1;
         }
     }
