@@ -8,58 +8,34 @@
             <!-- Start: Features Section 
             =================================-->
     <div class="features-section">
+
         <div class="">
             <div class="row features-item section-separator" style="padding-bottom: 0px;">
                 <div class="hide-div">
 
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8" style="margin-bottom: 30px;">
-                        <div class=" before btn-form col-xs-6 text-center margin-t-50 btn-down-positon">
-                            <a href="#" class="btn btn-border text-normal">BEFORE</a>
-                        </div>
-
-                        <div id="counter" class="next btn-form col-xs-6 text-center margin-t-50 btn-down-positon">
-                            <a href="#" class="btn btn-border text-normal">NEXT</a>
-                        </div>
-                    </div>
-                    <div class="col-md-2"></div>
-
-                    <div class="col-xs-12 each-features">
-                        <div class="study-timeline-progress" style="margin-top: 10px;">
-                            <div id="LessonEditStep1" class="study-timeline-progress-circles" style="margin-left: 30%;">
-                                1
-                            </div> 
-                            <div id="LessonEditStep2" class="study-timeline-progress-circles" style="margin-left: 55%;">
-                                2
-                            </div>
-                            <div id="LessonEditStep3" class="study-timeline-progress-circles" style="margin-left: 80%;">
-                                3
+                    <div class="study-timeline-progress">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 col-lg-6 col-lg-offset-3 text-center" >
+                                    <div class="study-timeline-progress-circles" style="margin-left: 16.66%; ">
+                                        1
+                                    </div> 
+                                    <div class="study-timeline-progress-circles" style="margin-left: 50%; ">
+                                        2
+                                    </div>
+                                    <div class="study-timeline-progress-circles" style="margin-left: 83.335%; ">
+                                        3
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class=" container col-xs-12 each-features">
-                        <input name="MAX_FILE_SIZE" type="hidden" value="2097152" />
 
                         <div class="sliderJquery">
 
-                            <div id="div1" style="margin-bottom: 100px;" >
-                                <div class="box-border" style=" width: 70%; padding: 20px; height: 20%; margin-bottom: 50px; margin-top: 10px; border: 0px;">
-                                    <div class="center">
-                                            
-                                            <p class="blue-text">One final step that will allow us to<br/>learn more about you<br/> and find your future collaborators.</p>
-                                             
-                                             <a href='{/data/events/oauth/facebook/@signup-url}' onclick="landingNextStep()" class="button facebook">
-                                                <span>
-                                                    <i class="fa fa-facebook" style="padding-top: 10px;"></i>
-                                                </span>
-                                                <p style="padding-top: 15px;">Sign in with Facebook</p>
-                                            </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                           <div id="div2">
+                           <div id="div1">
                                 <div class="box-border" style=" width: 70%; padding: 20px; height: 10%; margin-bottom: 50px;  border: 0px">                    
                                     <p class="blue-text">Tell us - what is<strong>your role</strong> within JCI?</p>
 
@@ -74,9 +50,9 @@
                                 </div>
                             </div>
 
-                            <div id="div3">
-                                <div class="box-border" style="width: 70%; padding: 20px; height: 10%; margin-bottom: 50px;  border: 0px">
-                                <p class="blue-text">Pick a few of<strong>your interests</strong><br/>as an active citizen<br/>(don't worry - you can choise more later)</p>
+                            <div id="div2">
+                                <div class="box-border" style="width: 70%; padding: 20px; height: 10%; margin-bottom: 20px;  border: 0px">
+                                <p class="blue-text">Pick a few of <b>your interests</b><br/>as an active citizen<br/>(don't worry - you can choose more later)</p>
                                                 
                                     <div class="col-md-10 col-md-offset-1">
 
@@ -92,8 +68,35 @@
                                 </div>
                             </div>
 
+                            <div id="div3" style="margin-bottom: 100px;" >
+                                <div class="box-border" style=" width: 70%; padding: 20px; height: 20%; margin-bottom: 50px; margin-top: 10px; border: 0px;">
+                                    <div class="center">
+                                            
+                                            <p class="blue-text">One final step that will allow us to<br/>learn more about you<br/> and find your future collaborators.</p>
+                                             
+                                             <a href='{/data/events/oauth/facebook/@signup-url}' onclick="landingNextStep()" class="button facebook">
+                                                <span>
+                                                    <i class="fa fa-facebook" style="padding-top: 10px;"></i>
+                                                </span>
+                                                <p style="padding-top: 15px;">Sign in with Facebook</p>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div> <!-- sliderJquery -->
                     </div> 
+
+                    <div class="col-md-8 col-md-offset-2" style="margin-bottom: 30px;">
+                        <div class=" before btn-form col-xs-6 text-center margin-t-50 btn-down-positon">
+                            <a href="#" class="btn btn-border text-normal">PREVIOUS</a>
+                        </div>
+
+                        <div id="counter1" class="next btn-form col-xs-6 text-center margin-t-50 btn-down-positon counter1">
+                            <a href="#" class="btn btn-border text-normal">NEXT</a>
+                        </div>
+                    </div>
                 </div>
 
 
