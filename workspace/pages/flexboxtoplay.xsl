@@ -7,7 +7,7 @@
 <xsl:import href="../sections/user.xsl"/>
 <xsl:import href="../sections/sectionmodule.xsl"/>
 <xsl:import href="../sections/comment.xsl"/>
-<xsl:import href="../sections/learnfilesubheader.xsl"/>
+<xsl:import href="../sections/learn-subheader.xsl"/>
 
 <xsl:template match="/data">
             <!-- Start: Features Section 
@@ -16,7 +16,7 @@
 	        <div class="container">
 	            <div class="row features-item section-separator">
 
-                        <xsl:call-template name="learnfilesubheader"/> 
+                        <xsl:call-template name="learn-subheader"/> 
 
                     <div class="guide-team-content col-xs-12">
                         <div class="section-header relative text-center">

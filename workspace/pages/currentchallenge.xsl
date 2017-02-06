@@ -13,7 +13,7 @@
                 <div class="container">
                     <div class="row features-item section-separator">
 
-                        <xsl:call-template name="learnfilesubheader"/> 
+                        <xsl:call-template name="learn-subheader"/> 
 
                     <div class="lesson-top-picture">
                             <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/><br/>

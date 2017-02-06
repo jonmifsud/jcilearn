@@ -12,7 +12,7 @@
                 <div class="container">
                     <div class="row features-item section-separator">
 
-                        <xsl:call-template name="learnfilesubheader"/>  
+                        <xsl:call-template name="learn-subheader"/>  
                     
 
                     <div class="col-xs-12 each-features" style="margin-bottom: 20px;">
