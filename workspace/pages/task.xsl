@@ -3,13 +3,6 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/master.xsl"/>
-<xsl:import href="../sections/lesson.xsl"/>
-<xsl:import href="../sections/user.xsl"/>
-<xsl:import href="../sections/sectionmodule.xsl"/>
-<xsl:import href="../sections/comment.xsl"/>
-<xsl:import href="../sections/likeviews.xsl"/>
-<xsl:import href="../utilities/typography.xsl"/>
-<xsl:import href="../sections/learnfileheader.xsl"/>
 
     <xsl:template match="/data">
             <!-- Start: Features Section 
@@ -18,7 +11,7 @@
                 <div class="container">
                     <div class="row features-item section-separator">
 
-                        <xsl:call-template name="learnfilesubheader"/> 
+                        <xsl:call-template name="learn-subheader"/> 
 
                     
                     <div class="lesson-top-picture">
