@@ -1,63 +1,53 @@
 <?php
 
-class datasourceproject extends SectionDatasource
+class datasourceimages extends SectionDatasource
 {
-    public $dsParamROOTELEMENT = 'project';
+    public $dsParamROOTELEMENT = 'images';
     public $dsParamORDER = 'desc';
-    public $dsParamPAGINATERESULTS = 'yes';
+    public $dsParamPAGINATERESULTS = 'no';
     public $dsParamLIMIT = '20';
     public $dsParamSTARTPAGE = '1';
     public $dsParamREDIRECTONEMPTY = 'no';
     public $dsParamREDIRECTONFORBIDDEN = 'no';
     public $dsParamREDIRECTONREQUIRED = 'no';
-    public $dsParamPARAMOUTPUT = array(
-        'system:id',
-        'images'
-        );
     public $dsParamSORT = 'system:id';
     public $dsParamHTMLENCODE = 'no';
     public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 
+    public $dsParamFILTERS = array(
+        'system:id' => '{$ds-my-projects.images},{$ds-project.images}',
+    );
+
     public $dsParamINCLUDEDELEMENTS = array(
-        'title: formatted',
-        'subtitle: formatted',
-        'text: formatted',
-        'date',
-        'user',
-        'overview: formatted',
-        'problem: formatted',
-        'proposedsolution: formatted',
-        'stakeholders: formatted',
-        'partners: formatted',
-        'strategy: formatted',
-        'outcome: formatted',
-        'lessonlearnt: formatted',
-        'images',
-        'marketing-materials'
+        'system:pagination',
+        'system:date',
+        'description: formatted',
+        'description: unformatted',
+        'image'
     );
 
     public function __construct($env = null, $process_params = true)
     {
         parent::__construct($env, $process_params);
-        $this->_dependencies = array();
+        $this->_dependencies = array('$ds-my-projects.images', '$ds-project.images');
     }
 
     public function about()
     {
         return array(
-            'name' => 'project',
+            'name' => 'Images',
             'author' => array(
                 'name' => 'Jonathan Mifsud',
                 'website' => 'http://jci-learn.dev',
                 'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2017-02-06T07:27:31+00:00'
+            'release-date' => '2017-02-06T07:29:25+00:00'
         );
     }
 
     public function getSource()
     {
-        return '78';
+        return '7';
     }
 
     public function allowEditorToParse()

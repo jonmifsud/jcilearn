@@ -14343,7 +14343,7 @@ input, textarea {
   background-color: #f08724;
   border-color: #f08724; }
 
-.marketing-uploads, .photo-uploads {
+.marketing-uploads, .photo-uploads, .image-uploads {
   min-height: 250px;
   width: 100%;
   border: 2px solid #3496DA;

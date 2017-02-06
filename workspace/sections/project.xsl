@@ -136,7 +136,6 @@
                     </div>
 
                     <button class="counter1"> counter</button>
-                    <p id="output"> here </p>
 
                 </div>
             </div>
@@ -168,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-            </div>      
+            </div>
 
 
             <div class="container">
@@ -333,22 +332,21 @@
                             <div id="div6">
                                 <div class="col-xs-12 each-features">
                                     <h3 class="title-centre">PHOTOS</h3>
-                                    <p class="title-centre">drag and drop photos from your project here</p>
-                                    <div class="enter-text-field">
-                                        <div>
-                                          <textarea class="your-note-box-shape" type="text" id="your-note" name="fname"></textarea>
-                                        </div>
+                                    <div class='image-upload-instructions text-center'>Click here or Drop files below to upload - Maximum File Size : 10MB</div>
+                                    
+                                    <div class='image-uploads' data-imagenumber='{count(images/item)}'>
+                                        <xsl:for-each select='images/item'>
+                                            <xsl:apply-templates select='/data/images/entry[@id = current()/@id]' mode='uploads'/>
+                                        </xsl:for-each>
                                     </div>
                                 </div>  
 
                                 <div class="col-xs-12 each-features">
                                     <h3 class="title-centre">MARKETING MATERIAL</h3>
+                                    <div class='marketing-upload-instructions text-center'>Click here or Drop files below to upload - Maximum File Size : 10MB</div>
 
-                                    <div class='marketing-uploads'>
-                                        <div class='instructions'>
-                                            <div class='instructions-text'>Drop files here to upload - Maximum File Size : 10MB</div>
-                                            <xsl:apply-templates select='marketing-materials/file' mode='uploads'/>
-                                        </div>
+                                    <div class='marketing-uploads' data-filenumber='{count(marketing-materials/file)}'>
+                                        <xsl:apply-templates select='marketing-materials/file' mode='uploads'/>
                                     </div>
                                 </div>  
                                  <label style="width: 90%;"><p class="title-centre">text</p>

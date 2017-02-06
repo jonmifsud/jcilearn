@@ -10,13 +10,16 @@ class datasourcemy_projects extends SectionDatasource
     public $dsParamREDIRECTONEMPTY = 'no';
     public $dsParamREDIRECTONFORBIDDEN = 'no';
     public $dsParamREDIRECTONREQUIRED = 'no';
+    public $dsParamPARAMOUTPUT = array(
+        'images'
+        );
     public $dsParamSORT = 'system:id';
     public $dsParamHTMLENCODE = 'no';
     public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 
     public $dsParamFILTERS = array(
-        '267' => '{$member-id}',
         'system:id' => '{$project-id}',
+        '267' => '{$member-id}',
     );
 
     public $dsParamINCLUDEDELEMENTS = array(
@@ -24,14 +27,15 @@ class datasourcemy_projects extends SectionDatasource
         'system:date',
         'title: formatted',
         'title: unformatted',
+        'subtitle: formatted',
+        'subtitle: unformatted',
         'text: formatted',
         'text: unformatted',
         'date',
         'user',
+        'status',
         'overview: formatted',
         'overview: unformatted',
-        'subtitle: formatted',
-        'subtitle: unformatted',
         'problem: formatted',
         'problem: unformatted',
         'proposedsolution: formatted',
@@ -46,9 +50,8 @@ class datasourcemy_projects extends SectionDatasource
         'outcome: unformatted',
         'lessonlearnt: formatted',
         'lessonlearnt: unformatted',
-        'status',
-        'marketing-materials',
         'images',
+        'marketing-materials'
     );
 
     public function __construct($env = null, $process_params = true)
@@ -66,7 +69,7 @@ class datasourcemy_projects extends SectionDatasource
                 'website' => 'http://jci-learn.dev',
                 'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2017-01-30T15:00:55+00:00'
+            'release-date' => '2017-02-06T07:27:47+00:00'
         );
     }
 

@@ -7,7 +7,7 @@
 		autoProcessQueue: true,
 		maxfiles: 5,
 		parallelUploads: 2,
-		clickable: '.instructions-text',
+		clickable: '.marketing-upload-instructions',
 		dictDefaultMessage: "Drop files here to upload - Maximum Size : 10MB",
 		previewTemplate: '<div class="dz-preview dz-file-preview">'+
 							'<div class="dz-details">'+
@@ -84,12 +84,142 @@
 				value: file.type,
 			});
 
-			$(".marketing-uploads").after($filename);
-			$(".marketing-uploads").after($filepath);
-			$(".marketing-uploads").after($mimetype);
+			$(file.previewElement).after($filename);
+			$(file.previewElement).after($filepath);
+			$(file.previewElement).after($mimetype);
 
 		}			
 	});
+
+	$(".image-uploads").dropzone({ 
+		url: '/ajax/',
+		acceptedFiles: 'image/*',
+		maxFilesize: "10",
+		method: "post",
+		paramName: "fields[image][image]",
+		autoProcessQueue: true,
+		maxfiles: 5,
+		parallelUploads: 2,
+		clickable: '.image-upload-instructions',
+		dictDefaultMessage: "Drop files here to upload - Maximum Size : 10MB",
+		previewTemplate: '<div class="dz-preview dz-file-preview">'+
+							'<div class="dz-details">'+
+								'<img data-dz-thumbnail />'+
+								'<div class="dz-text-details">'+
+									'<div class="dz-filename"><span data-dz-name></span></div>'+
+									'<div class="dz-size" data-dz-size></div>'+
+								'</div>'+
+							'</div>'+
+							'<div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>'+
+							'<div class="dz-success-mark"><span>✔</span></div>'+
+							'<div class="dz-error-mark"><span>✘</span></div>'+
+							'<div class="dz-error-message"><span data-dz-errormessage></span></div>'+
+						'</div>',
+		accept: function(file, done){
+			// use this is we want to validate/accept the image
+			done();
+		},
+		sending: function(file, xhr, formData){
+			formData.append("action[save-image]", 'submit');
+			formData.append("fields[description]", file.name);
+			formData.append("fields[image][imagename]", file.name);
+			formData.append("fields[image][crop_position]", 'crop-center crop-middle');
+			formData.append("fields[image][height]", '100');
+			formData.append("fields[image][width]", '100');
+			formData.append("fields[image][top]", '0');
+			formData.append("fields[image][left]", '0');
+		},
+		success: function(file, response){
+			
+			var $response = $(response);
+
+			if ($response.find('save-image[result]').attr('result') == 'success') {
+
+				var imagenumber = $(".image-uploads").data('imagenumber') ? $(".image-uploads").data('imagenumber') : 0;
+				imagenumber++;
+				$(".image-uploads").data('imagenumber',imagenumber);
+
+				var $imageInput = $('<input/>',{
+					name: 'images['+imagenumber+']',
+					type: 'hidden',
+					value: $response.find('save-image').attr('id')
+				});
+
+				$(file.previewElement).append($filename);
+
+				$(file.previewElement).trigger('ajaxSaved', [$response,true]);
+
+			} else {
+
+				$(file.previewElement).trigger('ajaxSaved', [$response,false]);
+			}
+
+		}			
+	});
+
+/*
+	var myDropzone = Dropzone.forElement(".image-uploads");
+
+	myDropzone.on("thumbnail", function(file) {
+
+		console.log('thumbnail generated');
+		console.log(file);
+
+		// var height = $('.image-wrap img').height();
+		// var width = $('.image-wrap img').width();
+		// $('.grid').height(height);
+		// $('.grid').width(width);
+
+        var fieldPrefix = 'image';
+        $('input[name="'+fieldPrefix+'[image]"]').val($('#source-img').attr('src'));
+        $('input[name="'+fieldPrefix+'[imagename]"]').val(file.name);
+
+        //center crop by default
+        var selected = 'crop-center crop-middle';
+		$('.image-preview-container img').removeClass().addClass(selected)
+		$('input[name="'+fieldPrefix+'[crop_position]"]').val(selected);
+
+		var data = {"action[save-image]": 'submit', "fields[description]": file.name};
+
+		data["fields[image][image]"] = file.upload;
+		data["fields[image][imagename]"] = file.name;
+		data["fields[image][crop_position]"] = 'crop-center crop-middle';
+		data["fields[image][height]"] = '100';
+		data["fields[image][width]"] = '100';
+		data["fields[image][top]"] = '0';
+		data["fields[image][left]"] = '0';
+
+		$.ajax({
+			url: '/ajax/',
+			data: data,
+			type: 'POST',
+			contentType: false,
+			dataType: 'xml',
+			success: function(response)
+			{
+				file.custom_status = 'ready';
+				file.postData = response;
+				$(file.previewTemplate).addClass('uploading');
+				done();
+			},
+			error: function(response)
+			{
+				file.custom_status = 'rejected';
+
+				if (response.responseText) {
+					jQuery.parseJSON(response.responseText);
+				}
+				if (response.message) {
+					done(response.message);
+				} else {
+					done('error uploading your photo');
+				}
+			}
+		});
+
+
+	});*/
+
 
 } (jQuery) );
 

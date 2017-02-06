@@ -12,6 +12,7 @@
 <xsl:import href="../sections/user.xsl"/>
 <xsl:import href="../sections/story.xsl"/>
 <xsl:import href="../sections/question.xsl"/>
+<xsl:import href="../sections/image.xsl"/>
 
 
 <!-- needs to be moved -->
