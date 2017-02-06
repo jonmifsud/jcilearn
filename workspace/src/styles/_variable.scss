@@ -3,7 +3,7 @@
 //
 
 // Tamplate Main Color Variables
-$main-color-1: #3496DA;             // Mostly Used Gradient Background Color
+$main-color-1: #0097d7;             // Mostly Used Gradient Background Color
 
 // Text Color
 $light-color:       #FFFFFF;            // Light Color
@@ -38,4 +38,4 @@ $font-size-p: 1.4rem;
 @import "function.scss";
 
 //colors
-$website-color: #3496DA;
+$website-color: $main-color-1;
