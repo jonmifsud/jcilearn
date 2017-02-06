@@ -173,17 +173,13 @@
                             <div class="form-group input-outer">
                                 <div class="select-outer">
                                     <select class="form-control contact-plan" name='status'>
-                                        <option value="draft" selected="selected">Save</option>
-                                        <option value="review">Publish</option>
+                                        <option value="215" selected="selected">Save</option>
+                                        <option value="216">Publish</option>
                                     </select>
                                 </div>
                             </div>
                         </div> 
                     </div>
-
-                    <button class="counter1"> counter</button>
-                    <!-- <p id="output"> here </p> -->
-
                 </div>
             </div>
 
@@ -291,6 +287,17 @@
                                 <input type="submit" value="Submit" />
                             </div>
                         </div> <!-- sliderJquery -->
+                    </div>
+
+                    
+                    <div class="col-md-8 col-md-offset-2" style="margin-bottom: 30px;">
+                        <div class=" before btn-form col-xs-6 text-center margin-t-50 btn-down-positon">
+                            <!-- <a href="#" class="btn btn-border text-normal">PREVIOUS</a> -->
+                        </div>
+
+                        <div id="counter1" class="next btn-form col-xs-6 text-center margin-t-50 btn-down-positon counter1">
+                            <a href="#" class="btn btn-border text-normal">NEXT</a>
+                        </div>
                     </div>
                 </div>
             </div>
