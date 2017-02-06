@@ -127,8 +127,8 @@
                             <div class="form-group input-outer">
                                 <div class="select-outer">
                                     <select class="form-control contact-plan" name='status'>
-                                        <option value="draft" selected="selected">SAVE</option>
-                                        <option value="review">PUBLISH</option>
+                                        <option value="215" selected="selected">SAVE</option>
+                                        <option value="216">PUBLISH</option>
                                     </select>
                                 </div>
                             </div>
