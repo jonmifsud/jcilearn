@@ -67,15 +67,6 @@
 [submodule "extensions/memberclaims"]
 	path = extensions/memberclaims
 	url = https://github.com/mazedigital/memberclaims.git
-[submodule "workspace/extensions/page_lhandles"]
-	path = workspace/extensions/page_lhandles
-	url = https://github.com/DeuxHuitHuit/page_lhandles.git
-[submodule "workspace/extensions/entry_url_field"]
-	path = workspace/extensions/entry_url_field
-	url = https://github.com/symphonists/entry_url_field.git
-[submodule "workspace/extensions/members"]
-	path = workspace/extensions/members
-	url = https://github.com/symphonycms/members.git
 [submodule "extensions/entry_url_field"]
 	path = extensions/entry_url_field
 	url = git@github.com:jonmifsud/entry_url_field.git
