@@ -50,6 +50,7 @@ class datasourcemy_projects extends SectionDatasource
         'outcome: unformatted',
         'lessonlearnt: formatted',
         'lessonlearnt: unformatted',
+        'category',
         'images',
         'marketing-materials'
     );

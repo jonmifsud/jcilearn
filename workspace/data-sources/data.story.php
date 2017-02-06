@@ -18,6 +18,7 @@ class datasourcestory extends SectionDatasource
         'subtitle: formatted',
         'text: formatted',
         'date',
+        'category',
         'user'
     );
     

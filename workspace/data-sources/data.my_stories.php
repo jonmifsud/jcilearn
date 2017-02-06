@@ -33,6 +33,7 @@ class datasourcemy_stories extends SectionDatasource
         'like',
         'like: list',
         'status',
+        'category',
     );
 
     public function __construct($env = null, $process_params = true)
