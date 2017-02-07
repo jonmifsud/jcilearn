@@ -32,6 +32,7 @@ class datasourceproject extends SectionDatasource
         'strategy: formatted',
         'outcome: formatted',
         'lessonlearnt: formatted',
+        'category',
         'images',
         'marketing-materials'
     );
