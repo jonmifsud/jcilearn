@@ -146,20 +146,13 @@
                                         <div class='col-xs-12 col-sm-8 col-sm-offset-2'>
                                             <p class="headline"><strong>Learn</strong> the skills, then <strong>share</strong> them.</p>
                                             <div class="headline-underline"></div>
+                                            <p>Every active citizen has something valuable to say.</p>
+                                            <a href="#" class="btn btn-border">Get started</a>
                                         </div>
                                     </div>
-                                    <div class="padding-right-landing col-xs-12 col-sm-3 col-md-5 col-sm-offset-2 margin-t-20">
-                                        <p>Every active citizen has something valuable to say.</p>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-7 col-md-5">                                    
-                                        <div class="btn-form col-xs-4 text-center btn-down-positon">
-                                            <a href="#" class="btn btn-border text-normal">Get started</a>
-                                        </div>
-                                    </div>       
-                                    
-                                </div>
-                                                         
+                                </div>                     
                             </div>
+
                         </div>
                     </div> 
 

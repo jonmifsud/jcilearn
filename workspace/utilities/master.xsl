@@ -79,9 +79,9 @@
                         <span class="icon-bar icon-bar-bottom"></span>
                     </button>
 
-                    <!-- TEMPLATE LOGO LIGHT -->
-                    <a class="navbar-brand light-logo" href="{/data/params/root}"><img src="{/data/params/workspace}/assets/img/logo.png" alt="" class="img-responsive"/></a>
-                    <!-- TEMPLATE LOGO DARK -->
+                    <!-- LOGOS -->
+                    <a class="navbar-brand light-logo" href="https://jciedc.jimdo.com/"><img src="{/data/params/workspace}/assets/img/jci-edc-logo.png" alt=""/></a>
+                    <a class="navbar-title light-logo" href="{/data/params/root}"><img src="{/data/params/workspace}/assets/img/jci-edc-grow-logo.png" alt=""/></a>
 
                 </div>
                 

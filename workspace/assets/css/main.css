@@ -13259,10 +13259,8 @@ h6 {
   font-size: 24px;
   font-size: 2.4rem;
   font-style: normal;
-  margin-right: 15px;
   overflow: hidden;
   outline: 0;
-  padding: 0 0;
   position: relative;
   z-index: 2;
   letter-spacing: 1px;
@@ -14630,11 +14628,19 @@ input, textarea {
     .main-navbar-top .navbar-toggle span {
       background-color: #FFFFFF; }
   .main-navbar-top .navbar-header .navbar-brand {
-    display: block;
-    height: 90px;
-    padding: 30px; }
+    display: inline-block;
+    height: 80px;
+    padding: 27px 25px 20px 25px; }
     .main-navbar-top .navbar-header .navbar-brand img {
       display: block;
+      height: 100%;
+      max-width: initial; }
+  .main-navbar-top .navbar-header .navbar-title {
+    display: inline-block;
+    height: 90px;
+    padding: 0 30px 0 30px; }
+    .main-navbar-top .navbar-header .navbar-title img {
+      display: inline-block;
       height: 100%;
       max-width: initial; }
   .main-navbar-top .navbar-nav {
