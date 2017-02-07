@@ -7,21 +7,42 @@
                 <div class="row comments-inner">
                     
                     <div id="hide-more-comments"> 
-                        <xsl:apply-templates select="/data/comments/entry" mode="comment"/>
+                        <xsl:apply-templates select="/data/comments/entry[position() &lt;= 2]" mode="comment"/>
                     </div>
                     <div id="show-more-comments"> 
-                        <xsl:apply-templates select="/data/comments/entry" mode="comment-more"/>
+                        <xsl:apply-templates select="/data/comments/entry[position() &gt; 2]" mode="comment"/>
                     </div>
                    
                     <div id="show-more" class="each-item-inner comments-option overflow bottom-of-comment" > 
-                        <a class="btn right-icon see-more pull-left"><div class="more-comments"><b>See more comments</b> <i class="fa fa-angle-down"></i> </div> </a>
-                        <p class="comments-pagination pull-right"> 2 of <xsl:value-of select="count(/data/comments/entry)"/></p>
+
+                        <xsl:if test='/data/comments/pagination/@total-entries &gt; 2'>
+                            <a class="btn right-icon see-more pull-left">
+                                <div class="more-comments">
+                                    <b>See more comments</b> 
+                                    <i class="fa fa-angle-down"></i> 
+                                </div> 
+                            </a>
+                        </xsl:if>
+                        <p class="comments-pagination pull-right">
+                            <xsl:choose>
+                                <xsl:when test='/data/comments/pagination/@total-entries &lt; 2'>
+                                    <xsl:value-of select='/data/comments/pagination/@total-entries'/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:text>2</xsl:text>
+                                </xsl:otherwise>
+                            </xsl:choose> 
+                            <xsl:text> of </xsl:text>
+                            <xsl:value-of select="count(/data/comments/entry)"/>
+                        </p>
                     </div>
 
-                    <div id="show-less" class="each-item-inner comments-option overflow bottom-of-comment" style=" position: fixed; bottom: 0px; background: white; width: 80%; " > 
-                        <a class="btn right-icon see-more pull-left"><div class="more-comments"><b>See less comments</b><i class="fa fa-angle-up"></i> </div> </a>
-                        <p class="comments-pagination pull-right"> <xsl:value-of select="count(/data/comments/entry)"/> comments </p>
-                    </div>
+                    <xsl:if test='/data/comments/pagination/@total-entries &gt; 2'>
+                        <div id="show-less" class="each-item-inner comments-option overflow bottom-of-comment" style=" position: fixed; bottom: 0px; background: white; width: 80%; " > 
+                            <a class="btn right-icon see-more pull-left"><div class="more-comments"><b>See less comments</b><i class="fa fa-angle-up"></i> </div> </a>
+                            <p class="comments-pagination pull-right"> <xsl:value-of select="count(/data/comments/entry)"/> comments </p>
+                        </div>
+                    </xsl:if>
                 </div>
             </div> <!-- /.comments -->
         </div>
@@ -53,7 +74,6 @@
 
 
     <xsl:template match="*[section/@handle='comment']//entry" mode='comment'>
-        <xsl:if test="position() &lt;=2">
         <div class="each-item" style="max-height: 450px; overflow: hidden;">
             <div class="each-item-inner-lesson">                
                 <div class="media">
@@ -71,31 +91,7 @@
             </div>
         </div> <!-- /.each-item -->
 
-    </xsl:if>
     </xsl:template>
-
-    <xsl:template match="*[section/@handle='comment']//entry" mode='comment-more'>
-
-        <div class="each-item" style="max-height: 450px; overflow: hidden;">
-            <div class="each-item-inner-lesson">                
-                <div class="media">
-                        <!--this one gives picture+coutnry to comment -->
-                        <xsl:apply-templates select='/data/users/entry[@id = current()/author/item/@id]' mode='user-picture-country'>
-                        </xsl:apply-templates>
-
-                    <div class="media-body">
-
-                        <h3 class="title padding-l-50"><xsl:value-of select="author/item"/></h3>
-                        <p class="pera padding-l-50"><xsl:value-of select="text"/></p>
-
-                    </div> <!-- /.media-body -->
-                </div> <!-- /.media -->
-            </div>
-        </div> <!-- /.each-item -->
-        
-
-    </xsl:template>
-
 
     <xsl:template match="*[section/@handle='lesson']//entry" mode='commenttwo'>
         <div class="each-item">

@@ -1,4 +1,5 @@
 <?php
+
 class datasourcediscussion extends SectionDatasource
 {
     public $dsParamROOTELEMENT = 'discussion';
@@ -9,45 +10,56 @@ class datasourcediscussion extends SectionDatasource
     public $dsParamREDIRECTONEMPTY = 'no';
     public $dsParamREDIRECTONFORBIDDEN = 'no';
     public $dsParamREDIRECTONREQUIRED = 'no';
+    public $dsParamPARAMOUTPUT = array(
+        'system:id'
+        );
     public $dsParamSORT = 'system:id';
     public $dsParamHTMLENCODE = 'no';
     public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 
+    public $dsParamFILTERS = array(
+        'system:id' => '{$discussion-id}',
+    );
+
     public $dsParamINCLUDEDELEMENTS = array(
         'title: formatted',
         'text: formatted',
-        'profile',
         'date'
     );
-    
+
     public function __construct($env = null, $process_params = true)
     {
         parent::__construct($env, $process_params);
         $this->_dependencies = array();
     }
+
     public function about()
     {
         return array(
             'name' => 'discussion',
             'author' => array(
-                'name' => 'Zack Zili',
-                'website' => 'http://localhost/jcilearn',
-                'email' => 'zzftn90@gmail.com'),
+                'name' => 'Jonathan Mifsud',
+                'website' => 'http://jci-learn.dev',
+                'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2016-12-12T08:32:45+00:00'
+            'release-date' => '2017-02-07T17:05:13+00:00'
         );
     }
+
     public function getSource()
     {
         return '82';
     }
+
     public function allowEditorToParse()
     {
         return true;
     }
+
     public function execute(array &$param_pool = null)
     {
         $result = new XMLElement($this->dsParamROOTELEMENT);
+
         try{
             $result = parent::execute($param_pool);
         } catch (FrontendPageNotFoundException $e) {
@@ -58,12 +70,15 @@ class datasourcediscussion extends SectionDatasource
             $result->appendChild(new XMLElement('error', $e->getMessage() . ' on ' . $e->getLine() . ' of file ' . $e->getFile()));
             return $result;
         }
+
         if ($this->_force_empty_result) {
             $result = $this->emptyXMLSet();
         }
+
         if ($this->_negate_result) {
             $result = $this->negateXMLSet();
         }
+
         return $result;
     }
 }

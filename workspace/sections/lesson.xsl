@@ -8,7 +8,7 @@
     <xsl:template match="*[section/@handle='lesson']//entry" mode='author-picture'>
         <xsl:param name='include-name' select='false()'/>
 
-        <xsl:apply-templates select='/data/users/entry[@id = current()/profile/item/@id]' mode='user-picture-country'>
+        <xsl:apply-templates select='/data/users/entry[@id = current()/user/item/@id]' mode='user-picture-country'>
             <xsl:with-param name='include-name' select='$include-name'/>
         </xsl:apply-templates>
     
@@ -84,12 +84,13 @@
                     
                     <div class="media">
                         
-
-                            <xsl:apply-templates select='current()' mode='author-picture'/> 
+                        <xsl:apply-templates select='current()' mode='author-picture'/> 
 
                         <div class="media-body" style="padding-right: 0px;">
 
-                            <h3 class="title"><xsl:value-of select="/data/users/entry[@id = current()/profile/item/@id]/name"/></h3>
+                            <h3 class="title">
+                                <xsl:value-of select="/data/users/entry[@id = current()/user/item/@id]/name"/>
+                            </h3>
                             <xsl:apply-templates select='.' mode='likeviews'/>
                         </div> <!-- /.media-body -->
                     </div> <!-- /.media -->
@@ -119,7 +120,7 @@
                     <div class="lesson-top-picture">
                         <div class="media">    
 
-                            <xsl:apply-templates select='/data/users/entry[@id = current()/profile/item/@id]' mode='user-picture-country'>
+                            <xsl:apply-templates select='/data/users/entry[@id = current()/user/item/@id]' mode='user-picture-country'>
                                 <xsl:with-param name='include-name' select='true()'/>
                             </xsl:apply-templates>
 
@@ -350,13 +351,13 @@
                 <div class="content-right col-md-4 col-sm-5">
 
                     <div class="media">
-                         <xsl:apply-templates select="current()/profile" mode="commentwo">
+                         <xsl:apply-templates select="current()/user" mode="commentwo">
                         </xsl:apply-templates>
 
                         <div class="media-body">
                             <h3 class="title">
 
-                                <xsl:apply-templates select='/data/users/entry[@id = current()/profile/item/@id]' mode='user-picture-country'>
+                                <xsl:apply-templates select='/data/users/entry[@id = current()/user/item/@id]' mode='user-picture-country'>
                                     <xsl:with-param name='include-name' select='true()'/>
                                 </xsl:apply-templates>
                             </h3>

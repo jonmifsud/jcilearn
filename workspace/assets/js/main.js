@@ -3720,6 +3720,11 @@ function isNumber(n) {
 
 
 ;(function($){
+	$(document).on('click','.faq-item .question',function(e){
+		$(this).next().slideToggle();
+	});
+})(jQuery);
+;(function($){
 	$(document).ready(function(){
 		$('textarea').autogrow();
 	});
