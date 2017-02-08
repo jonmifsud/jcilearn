@@ -54,41 +54,79 @@
                                         </p><br/>
                                      </div>
                                
-                                    <div class="blue-text text-center" id="toggle-project"> ANALYSIS </div>
+                                    <div class="blue-text text-center" id="toggle-project">ANALYSIS</div>
 
                                     <div id="panel">
-                                    <div class="lesson-text">
-                                     <br/>
-                                        <h3 class="title-centre">PROBLEM</h3>
-                                        <p class="lesson-text">                                             
-                                            <xsl:value-of select="/data/project/entry/partners" />
-                                        </p><br/>
-                                    </div>
-                                    
+                                        <div class="lesson-text">
+                                         <br/>
+                                            <h3 class="title-centre">PROBLEM</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/problem" />
+                                            </p><br/>
+                                        </div>
+                                        
 
-                                    <div class="lesson-text">
-                                        <br/>
-                                        <h3 class="title-centre">PROPOSED SOLUTION</h3>
-                                        <p class="lesson-text">                                             
-                                            <xsl:value-of select="/data/project/entry/strategy" />
-                                        </p><br/>
-                                    </div>
-                                     
+                                        <div class="lesson-text">
+                                            <br/>
+                                            <h3 class="title-centre">PROPOSED SOLUTION</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/strategy" />
+                                            </p><br/>
+                                        </div>
+                                         
 
-                                    <div class="lesson-text">
-                                        <br/>
-                                        <h3 class="title-centre">PARTNERS</h3>
-                                        <p class="lesson-text">                                             
-                                            <xsl:value-of select="/data/project/entry/outcome" />
-                                        </p><br/>
-                                    </div>
+                                        <div class="lesson-text">
+                                            <br/>
+                                            <h3 class="title-centre">PARTNERS</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/partners" />
+                                            </p><br/>
+                                        </div>
                                     </div>
                                     
                                     <br/><br/>
                                     <div class="drop-down-button-on-project blue-text" style="padding: 5px;">IMPLEMENTATION</div>
 
+                                    <div id="panel">
+                                        <div class="lesson-text">
+                                         <br/>
+                                            <h3 class="title-centre">STRATEGY</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/strategy" />
+                                            </p><br/>
+                                        </div>
+                                        
+
+                                        <div class="lesson-text">
+                                            <br/>
+                                            <h3 class="title-centre">EXECUTION</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/execution" />
+                                            </p><br/>
+                                        </div>
+                                    </div>
+
                                     <br/><br/>
                                     <div class="drop-down-button-on-project blue-text" style="padding: 5px;">CONCLUSION</div>
+
+                                    <div id="panel">
+
+                                        <div class="lesson-text">
+                                            <br/>
+                                            <h3 class="title-centre">OUTCOME</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/outcome" />
+                                            </p><br/>
+                                        </div>
+
+                                        <div class="lesson-text">
+                                            <br/>
+                                            <h3 class="title-centre">LESSONS LEARNT</h3>
+                                            <p class="lesson-text">                                             
+                                                <xsl:value-of select="/data/project/entry/lessonslearnt" />
+                                            </p><br/>
+                                        </div>
+                                    </div>
 
 
 
@@ -103,7 +141,7 @@
                         <div class="modules-slider">
                             <div class="modules-slider-wrapper three-slides owl-carousel">
 
-                                 <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
+                                <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
                                 <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
@@ -125,18 +163,12 @@
                     <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                         <h3 class="title" style="text-align: center; margin-bottom: 20px;" > MARKETING MATERIAL </h3>
                         <div class="row comments-inner col-md-12 col-sm-12 col-xs-12" style="margin-left: auto;">
-                             text<br/>
-                             some<br/>
-                             text<br/>
-                             some<br/>
-                             some<br/>
-                             some<br/>
                         </div>
                     </div>
                     
                         <div class="row features-item section-separator">
                             <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 30px; margin-bottom: 30px;">
-                               <xsl:apply-templates select="/data/comments/entry[1]" mode="likeviews"/>
+                               <xsl:apply-templates select="/data/comments/entry" mode="likeviews"/>
                             </div>
 
                             <xsl:call-template name="show-comments"/> 
