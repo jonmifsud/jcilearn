@@ -156,7 +156,7 @@
                         <div class="row">
                             <xsl:for-each select="lessons/item"> 
                                 <xsl:apply-templates select="/data/lesson/entry[@id = current()/@id]" mode="list-item">
-                                    <xsl:with-param name='no-link' select='true()'/>
+                                    <!-- <xsl:with-param name='no-link' select='true()'/> -->
                                 </xsl:apply-templates>
                             </xsl:for-each>
                         </div>
