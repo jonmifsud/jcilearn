@@ -144,7 +144,7 @@
                     <!-- Start: Section Header -->
                     <div class="section-header relative text-center col-xs-12" >
                     
-                        <p class="sub-heading">If you’re looking for something lighter ...</p>
+                        <p class="cta-text">If you’re looking for something lighter ...</p>
                         
                     </div> 
                     <!-- End: Section Header -->

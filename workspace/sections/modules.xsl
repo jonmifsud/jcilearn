@@ -19,8 +19,8 @@
                 </xsl:attribute>
                 <div class="modules-inner square-content">
                     <div class='square-center'>
-                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Modules Image" class="img-responsive" />
-                        <h3 class="title"><xsl:value-of select="title"/></h3>
+                        <img src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" alt="Modules Image" class="img-responsive" />
+                        <h2 class="title"><xsl:value-of select="title"/></h2>
                     </div>
                 </div>
                 <!-- TODO

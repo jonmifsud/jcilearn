@@ -32,7 +32,7 @@
                             <div class="guide-team-content col-xs-12">
                                 <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
         	                        <h3 class="title-centre">YOUR DRAFTS</h3>
-        	                        <p class="blue-text">Complete these projects and earn your active Citizenship badge!</p><br/>
+        	                        <p class="cta-text">Complete these projects and earn your active Citizenship badge!</p>
                                 </div> <!-- /.each-features -->  
 
                                 <div class="row">
@@ -79,9 +79,9 @@
                             </div>                                
 
                             <div class="btn-form col-xs-12 text-center">
-                            <p class="blue-text" style="margin-top: 100px;"> Find more projects</p>
+                            <p class="cta-text" style="margin-top: 100px;">Find more projects.</p>
                                 <p class="blue-text"></p>
-                                <a href="{/data/params/root}/explore/#projects" class="btn btn-border-button">Explore</a>
+                                <a href="{/data/params/root}/explore/#projects" class="btn btn-border">Explore</a>
                             </div>
                         </div>
                     </div>

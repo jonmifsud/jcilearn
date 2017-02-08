@@ -17,7 +17,7 @@
 
 		<div class= "col-xs-2 col-sm-2 col-md-2"></div>
 		<div class="col-xs-8 col-sm-8 col-md-8">
-			<p style="margin-bottom: 50px; margin-top: 30px;"> Sorry this page was not found, try to search further, use the button blow.</p>
+			<p class="cta-text"> Sorry, this page was not found!<br/>Try searching for something instead.</p>
 		</div>
 		<div class="col-xs-2 col-sm-2 col-md-2"></div>
 

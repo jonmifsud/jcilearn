@@ -49,7 +49,7 @@
 *****************************************************************/
 
 
-.features-item {
+.features-item { 
     .each-features {
         margin-bottom: 110px;
 
@@ -104,6 +104,7 @@
 .main-navbar-top {
     border: 0px solid;
     background-color: $main-color-1;
+    padding: 10px 0;
     top: 0px;
     @include transition( 0.4s );
 
@@ -118,8 +119,8 @@
     .navbar-header {
         .navbar-brand {
             display: inline-block;
-            height: 80px;
-            padding: 27px 25px 20px 25px;
+            height: 92px;
+            padding: 25px;
 
             img {
                 display: block;
@@ -720,10 +721,26 @@ p {
     margin-bottom: 40px;
 }
 
+.title {
+    text-transform: uppercase;
+}
+
 .cta-text {
     color:#0097d7;
     text-align: center;
-    padding:20px 0 40px 0;
+    padding:20px 0 20px 0;
+}
+
+.btn.btn-border {
+    margin-top:20px;
+}
+
+.btn.btn-border.main {
+    margin-top:0px;
+}
+
+footer {
+    margin-top:60px; 
 }
 
 
@@ -766,7 +783,7 @@ p {
 
         .each-section {
             display: inline-block;
-            margin-right: 30px;
+            margin: 0 30px;
             float: left;
 
             &:last-child {
@@ -966,7 +983,7 @@ p {
 
   }
   .error-font{
-    font-size: 300px;
+    font-size: 400px;
   }
 
   .pera{
@@ -991,6 +1008,7 @@ p {
   }
 
   .error-font{
+    margin-top: 100px;
     font-size: 200px;
   }
 
@@ -1050,6 +1068,7 @@ p {
   }
 
   .error-font{
+    margin-top: 140px;
     font-size: 150px;
   }
   .box-border{
