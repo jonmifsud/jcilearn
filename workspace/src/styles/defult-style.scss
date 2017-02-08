@@ -222,7 +222,8 @@ h6{
 }
 
 .section-header {
-    margin-bottom: 30px;
+    margin: 50px 0 50px 0;
+    padding-bottom:30px;
 
     .sub-heading {
         @include rem(font-size, 14px);
@@ -436,10 +437,10 @@ $separator-big-height: 174px;
     display: inline-block;
     @include rem(font-size,24px);
     font-style: normal;
-    margin-right: 15px;
+    // margin-right: 15px;
     overflow: hidden;
     outline: 0;
-    padding: 0 0;
+    // margin:20px 0 40px 0;
     position: relative;
     z-index: 2;
     letter-spacing: 1px;
