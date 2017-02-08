@@ -114,31 +114,31 @@
                                            <a href="#" id="show-div-landing" class="btn btn-fill text-normal">Start learning</a>
                                         </div>
                                         <div class="col-xs-12 col-md-12">
-                                            <a href="#landing-separator-1" class="text-normal btn btn-border">Tell me more</a>
+                                            <a href="#landing-separator-1" class="text-normal btn btn-border main">Tell me more</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>     
 
                             <div class="study-timeline-progress"></div> 
-                            <div id="landing-separator-1" class="line-separater" style="margin-bottom: 50px;"></div>                         
+                            <div id="landing-separator-1" style="margin-bottom: 50px;"></div>                         
                             
-                            <div class="box-border" style=" width: 90%; height: 20%; border: 0px; ">
+                            <div class="box-border" style=" width: 90%; height: 15%; border: 0px; ">
                                 <div class="col-xs-1 col-sm-1 col-md-1"></div>
-                                <div class="box-border col-xs-12 col-sm-4 col-md-4" style="width: 30%; border: 0px;">
-                                    <img class="resize-picture" src="{/data/params/workspace}/assets/img/icons/icon-3.png"/>
+                                <div class="box-border col-xs-12 col-sm-4 col-md-4-offset-1" style="width: 30%; border: 0px;">
+                                    <img class="resize-picture" src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png"/>
                                 </div>
 
-                                <div class="box-border col-xs-12 col-sm-7 col-md-6" style="width: 50%; border: 0px; padding-right: 0px;">
+                                <div class="box-border col-xs-12 col-sm-7 col-md-6" style="width: 50%; border: 0px;">
                                     <p class="headline">Today's young leaders, training tomorrow's.</p>
                                     <div class="headline-underline"></div>
-                                    <p>Explore <span style="color: #3489DA;">JCI</span><span style="color: #f37121;">Train</span>'s database of curated lessons, challenges, past projects and shared experiences contributed by JCI members themselves.</p>
+                                    <p>Explore <strong><span style="color:#b21e3b">GROW</span></strong>, the brand new knowledge platform by JCI's European Development Council; a database of curated lessons, challenges, past projects and shared experiences contributed by JCI members themselves.</p>
                                 </div>
                                 
                             </div>
 
-                            <div class="study-timeline-progress" style="margin-top: 10px;"></div>
-                            <div class="line-separater" ></div>
+                            <div class="study-timeline-progress"></div>
+                            <!-- <div class="line-separater" ></div> -->
                             
                             <div class="box-border padding-right-box" style=" width: 100%; border: 0px; margin-top: 70px;">
                                 <div class='container text-left'>
@@ -147,7 +147,7 @@
                                             <p class="headline"><strong>Learn</strong> the skills, then <strong>share</strong> them.</p>
                                             <div class="headline-underline"></div>
                                             <p>Every active citizen has something valuable to say.</p>
-                                            <a href="#" class="btn btn-border">Get started</a>
+                                            <a href="#" class="btn btn-border text-normal">Get started</a>
                                         </div>
                                     </div>
                                 </div>                     

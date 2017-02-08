@@ -80,7 +80,7 @@
                     </button>
 
                     <!-- LOGOS -->
-                    <a class="navbar-brand light-logo" href="https://jciedc.jimdo.com/"><img src="{/data/params/workspace}/assets/img/jci-edc-logo.png" alt=""/></a>
+                    <img class="navbar-brand light-logo" src="{/data/params/workspace}/assets/img/jci-edc-logo.png" alt=""/>
                     <a class="navbar-title light-logo" href="{/data/params/root}"><img src="{/data/params/workspace}/assets/img/jci-edc-grow-logo.png" alt=""/></a>
 
                 </div>

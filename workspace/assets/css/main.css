@@ -10205,6 +10205,7 @@ h6 {
   margin-bottom: 60px; }
 
 .section-header .sub-heading {
+  text-align: center;
   font-size: 24px;
   line-height: 25px;
   color: #3496DA; }
@@ -11261,7 +11262,7 @@ h6 {
   margin-bottom: 0px;
   text-transform: uppercase;
   font-size: 10pt;
-  color: #f37121; }
+  color: #b21e3b; }
 
 .progress-wrapper-div {
   width: 100%;
@@ -11273,7 +11274,7 @@ h6 {
   .progress-wrapper-div .progress-div {
     width: 0%;
     height: 100%;
-    background-color: #f37121; }
+    background-color: #b21e3b; }
 
 .blue-text-centre {
   color: #3496DA;
@@ -14619,6 +14620,7 @@ input, textarea {
 .main-navbar-top {
   border: 0px solid;
   background-color: #0097d7;
+  padding: 10px 0;
   top: 0px;
   transition: all 0.4s ease-out;
   -webkit-font-smoothing: antialiased;
@@ -14629,8 +14631,8 @@ input, textarea {
       background-color: #FFFFFF; }
   .main-navbar-top .navbar-header .navbar-brand {
     display: inline-block;
-    height: 80px;
-    padding: 27px 25px 20px 25px; }
+    height: 92px;
+    padding: 25px; }
     .main-navbar-top .navbar-header .navbar-brand img {
       display: block;
       height: 100%;
@@ -15054,10 +15056,22 @@ p {
   background: #0097d7;
   margin-bottom: 40px; }
 
+.title {
+  text-transform: uppercase; }
+
 .cta-text {
   color: #0097d7;
   text-align: center;
-  padding: 20px 0 40px 0; }
+  padding: 20px 0 20px 0; }
+
+.btn.btn-border {
+  margin-top: 20px; }
+
+.btn.btn-border.main {
+  margin-top: 0px; }
+
+footer {
+  margin-top: 60px; }
 
 /**
  * --------------
@@ -15083,7 +15097,7 @@ p {
       color: #FFFFFF; }
   .footer-section-1 .other-link .each-section {
     display: inline-block;
-    margin-right: 30px;
+    margin: 0 30px;
     float: left; }
     .footer-section-1 .other-link .each-section:last-child {
       margin-right: 0px; }
@@ -15213,7 +15227,7 @@ p {
     line-height: 3.5rem;
     line-height: 35px; }
   .error-font {
-    font-size: 300px; }
+    font-size: 400px; }
   .pera {
     font-size: 16px;
     font-size: 1.6rem;
@@ -15236,6 +15250,7 @@ p {
     line-height: 2.8rem;
     line-height: 28px !important; }
   .error-font {
+    margin-top: 100px;
     font-size: 200px; }
   p {
     font-size: 16px;
@@ -15284,6 +15299,7 @@ p {
     margin-left: auto;
     margin-right: auto; }
   .error-font {
+    margin-top: 140px;
     font-size: 150px; }
   .box-border {
     width: 100% !important; }
