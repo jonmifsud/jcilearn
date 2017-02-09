@@ -90,8 +90,9 @@
 
 
                         <div class="btn-form col-xs-12 text-center margin-t-50">
-                         <p class="blue-text" style="margin-top: 50px;">Still unsure? Ask your community. </p>
-                            <a href="{$root}/discuss/" class="btn btn-border text-normal">Discuss</a>
+                            <p class="cta-text">Still unsure? Ask your community. </p>
+                            <a href="#" class="btn btn-border text-normal">Discuss</a>
+
                         </div>
                      </div>
                     

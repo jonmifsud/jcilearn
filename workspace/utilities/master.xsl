@@ -130,10 +130,10 @@
         =================================-->
         <footer class="footer-section-1">
             <div class="container">
-                <div class="row section-separator">
+                <!-- <div class="row section-separator"> -->
                     
                     <div class="other-link col-sm-6 col-xs-12">
-                        <div class="row">
+                        <!-- <div class="row"> -->
                             
                             <div class="each-section ">
 
@@ -171,7 +171,7 @@
                                 
                             </div> <!-- End: .each-section -->
 
-                        </div>
+                        <!-- </div> -->
                     </div> <!-- End: .other-link -->
                     <div class="other-link col-sm-3 col-xs-12">
                         <div class="row">
@@ -205,7 +205,7 @@
 
                     </div> <!-- End: .about -->
 
-                </div><!-- End: .row .footer-body .section-separator  -->
+               <!--  </div> --><!-- End: .row .footer-body .section-separator  -->
             </div> <!-- End: .container  -->
         </footer>
         <!-- End: Footer Section 

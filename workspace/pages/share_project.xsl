@@ -28,10 +28,10 @@
                 <xsl:otherwise>
 
                     <div class="container">
-                        <div class="row">
+                        <!-- <div class="row"> -->
                             <div class="guide-team-content col-xs-12">
-                                <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
-        	                        <h3 class="title-centre">YOUR DRAFTS</h3>
+                                <div class="col-xs-12 each-features">
+        	                        <h2 class="title-centre">YOUR DRAFTS</h2>
         	                        <p class="cta-text">Complete these projects and earn your active Citizenship badge!</p>
                                 </div> <!-- /.each-features -->  
 
@@ -51,19 +51,19 @@
 
                                 </div>
 
-                                <div class="btn-form col-xs-12 text-center margin-t-20">
-                                    <p class="blue-text"></p>
+                                <div class="btn-form col-xs-12 text-center">
                                     <a href="{/data/params/root}/share/project/new/" class="btn btn-border-button">Start a new project</a>
                                 </div>
 
                             </div>
                           
 
-                            <div class="guide-team-content col-xs-12">
-                             	<h3 class="title-centre margin-b-30" style="margin-top: 100px;">PUBLISHED PROJECTS</h3>
+                            <div class="guide-team-content col-xs-12 margin-t-70">
+
+                             	<h2 class="title-centre margin-b-30 margin-t-70">PUBLISHED PROJECTS</h2>
                                 <div class="col-xs-12 each-features text-center">
 
-        	                        <div class="modules-slider">
+        	                        <div class="modules-slider margin-t-30">
         	                            <div class="modules-slider-wrapper three-slides owl-carousel">
 
         	                                 <!-- each one of the blow should come from "My Published Projects" if 3 + should show slider -->
@@ -79,11 +79,10 @@
                             </div>                                
 
                             <div class="btn-form col-xs-12 text-center">
-                            <p class="cta-text" style="margin-top: 100px;">Find more projects.</p>
-                                <p class="blue-text"></p>
+                                <p class="cta-text margin-t-70">Find more projects.</p>
                                 <a href="{/data/params/root}/explore/#projects" class="btn btn-border">Explore</a>
                             </div>
-                        </div>
+                        <!-- </div> -->
                     </div>
                 </xsl:otherwise>
             </xsl:choose>

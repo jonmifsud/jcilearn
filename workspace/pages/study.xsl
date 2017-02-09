@@ -32,14 +32,14 @@
                                     
                                     <div class="media-body">
 
-                                        <P class="blue-text-centre">Looking for more lessons?</P>
+                                        <P class="cta-text">Looking for more lessons?</P>
+                                        <!-- <div class="col-xs-12 text-center"> -->
+                                        <a href="{/data/params/root}/explore/#modules" class="btn btn-border    text-normal">Explore</a>
+                                        <!-- </div> -->
 
                                     </div> <!-- /.media-body -->
                                 </div> <!-- /.media -->
-
-                                <div class="btn-form col-xs-12 text-center margin-t-50" style="margin-top: 20px;">
-                                    <a href="{/data/params/root}/explore/#modules" class="btn btn-border text-normal">Explore</a>
-                                </div>
+                                
                                 
                             </div>
                         </div> <!-- /.single-comment -->

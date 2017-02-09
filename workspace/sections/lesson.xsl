@@ -66,7 +66,7 @@
                     <div class="media">
                         <div class="media-left" style="padding: 10px;" >
 
-                            <img class="media-object features-image" style="width: 50px;" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/>
+                            <img class="media-object features-image" style="width: 50px;" src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" alt="Media Team Image"/>
                         
                         </div> <!-- /.media-left -->
                         <div class="media-body">
@@ -313,7 +313,7 @@
                 <div class="media">
                     <div class="media-left">
 
-                        <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-4.png" alt="Media Team Image"/>
+                        <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" alt="Media Team Image"/>
                     
                     </div> <!-- /.media-left -->
                     <div class="media-body" style="margin-top: -10px;">
@@ -338,7 +338,7 @@
                     <div class="media">
                         <div class="media-left">
 
-                            <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/>
+                            <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" alt="Media Team Image"/>
                         
                         </div> <!-- /.media-left -->
 
@@ -451,7 +451,7 @@
                             </xsl:attribute>
                         </xsl:if>
 
-                        <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Modules Image" class="img-responsive"/>
+                        <img src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" alt="Modules Image" class="img-responsive"/>
                         <h3 class="blue-text" style="text-transform: uppercase;"><xsl:value-of select="title" /></h3>
                     </a>
                 </div>
@@ -484,7 +484,7 @@
                     <div class="media">
                         <div class="media-left">
 
-                            <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/>
+                            <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" alt="Media Team Image"/>
                         
                         </div> <!-- /.media-left -->
                         <div class="media-body">
