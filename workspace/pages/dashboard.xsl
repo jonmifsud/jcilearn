@@ -19,9 +19,9 @@
 
 		                        <div class="col-md-6 col-xs-12" style="border: 0px; height: 10%; margin-bottom: 30px;">
 			                       <div class="box-border-text-left" style="padding-left: 70px;">
-			                            <h3 class="title"> YOUR NOTEPAD</h3><br/>
+			                            <h2 class="title"> YOUR NOTEPAD</h2>
 			                            <p>"Leadership is not about strenght or size, unelss the strength and size in question are those of heart""</p>
-			                            <p style="text-align: left;"><xsl:value-of select="/data/note/entry/text"/></p>
+			                            <p><xsl:value-of select="/data/note/entry/text"/></p>
 						                      from <xsl:value-of select="/data/note/entry/author"/>'s lesson 'some are born leader'.
 						                    <p></p>
 			                            
@@ -32,30 +32,30 @@
 		                        </div>
 		                         <div class="col-md-6 col-xs-12" style="border: 0px; height: 10%; margin-bottom: 30px;">
 		                           	<div class="box-border-text-left" style="height: 380px; padding-left: 70px;">
-			                            <h3 class="title">NOTIFICATIONS</h3><br/>
+			                            <h2 class="title">NOTIFICATIONS</h2>
 			                        <div style="overflow-y: scroll; height: 350px;">
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
-			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+			                                    <img src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" />
 			                                </div>
 			                                <div class="box-poligon" style="width: 60%;">
-			                                    <p class="pera">James published his tory: Leading JCI in one of the smallest countries in the world.</p>
+			                                    <p>James published his story: Leading JCI in one of the smallest countries in the world.</p>
 			                                </div>
 			                            </div>
 			                             <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
-			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+			                                    <img src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" />
 			                                </div>
 			                                <div class="box-poligon" style="width: 60%;">
-			                                    <p class="pera">James published his tory: Leading JCI in one of the smallest countries in the world.</p>
+			                                    <p>James published his story: Leading JCI in one of the smallest countries in the world.</p>
 			                                </div>
 			                            </div>
 			                             <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
-			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+			                                    <img src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" />
 			                                </div>
 			                                <div class="box-poligon" style="width: 60%;">
-			                                    <p class="pera">James published his tory: Leading JCI in one of the smallest countries in the world.</p>
+			                                    <p>James published his story: Leading JCI in one of the smallest countries in the world.</p>
 			                                </div>
 			                            </div>
 			                        </div>			                             
@@ -64,11 +64,11 @@
 		                        
 		                        <div class="col-md-7 col-xs-12" style="border: 0px; height: 10%; margin-bottom: 30px;">
 			                       <div class="box-border-text-left" style="height: 380px; padding-left: 70px;">
-			                            <h3 class="title"> RECENT ACTIVITY<br/>IN YOUR NETWORK</h3>
+			                            <h2 class="title"> RECENT ACTIVITY<br/>IN YOUR NETWORK</h2>
 			                        <div style="overflow-y: scroll; height: 350px;">
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
-			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+			                                    <img src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" />
 			                                </div>
 			                                <div class="box-poligon" style="width: 75%;">
 			                                    <p class="pera"  style="margin-right: 20px;">James published his tory: Leading JCI in one of the smallest countries in the world.</p>
@@ -76,7 +76,7 @@
 			                            </div>
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
-			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+			                                    <img src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" />
 			                                </div>
 			                                <div class="box-poligon" style="width: 75%;">
 			                                    <p class="pera" style="margin-right: 20px;">James published his tory: Leading JCI in one of the smallest countries in the world.</p>
@@ -84,7 +84,7 @@
 			                            </div>
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
-			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+			                                    <img src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" />
 			                                </div>
 			                                <div class="box-poligon" style="width: 75%;">
 			                                    <p class="pera" style="margin-right: 20px;">James published his tory: Leading JCI in one of the smallest countries in the world.</p>
@@ -92,7 +92,7 @@
 			                            </div>
 			                            <div class="box-poligon" style="width: 100%; ">
 			                                <div class="box-poligon" style="width: 20%; ">
-			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
+			                                    <img src="{/data/params/workspace}/assets/img/icons/JCI-trophy.png" />
 			                                </div>
 			                                <div class="box-poligon" style="width: 75%;">
 			                                    <p class="pera" style="margin-right: 20px;">James published his tory: Leading JCI in one of the smallest countries in the world.</p>
@@ -111,7 +111,7 @@
 		                        </div>
 		                        <div class="col-md-5 col-xs-12" style="border: 0px; height: 10%;">
 		                           	<div class="box-border-text-left" style="height: 380px; padding-left: 70px;">
-			                            <h3 class="title"> LEADERSHIP </h3><br/>
+			                            <h2 class="title"> LEADERBOARD </h2><br/>
 			                        <div style="overflow-y: scroll; height: 350px;">
 			                            <div class="box-poligon" style="width: 100%; ">
 			                            1
@@ -119,8 +119,8 @@
 			                                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" />
 			                                </div>
 			                                <div class="box-poligon" style="width: 50%;">
-			                                    <span style="color: #f37121;font-weight:bold; float: left; font-size: 20px">580XP</span>
-			                                    <span style="color: #3496DA; size: 15px; font-weight: bold;"><br/>50XP</span>
+			                                    <h2 class="alt-color">580XP</h2>
+			                                    <p>50XP</p>
 			                                </div>
 			                            </div>
 			                           <div class="box-poligon" style="width: 100%; ">

@@ -34,16 +34,15 @@
                         <div class="row features-item section-separator">
 
                             <div class="guide-team-content col-xs-12">
-                                <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
-                                                       
-                                
-                                <div class="col-xs-1 col-sm-1 col-md-1"></div>
-                                <div class="col-xs-10 col-sm-10 col-md-10">
-                                    <h3 class="title-centre">YOUR DRAFTS</h3>
-                                    <p class="blue-text">Publishing your stories will bring you closer to your Active Citizenship badge!</p><br/>
-                                </div> <!-- /.each-features -->  
+                                <div class="col-xs-12 each-features">
+                                    <div class="col-xs-1 col-sm-1 col-md-1"/>
+                                    <div class="col-xs-10 col-sm-10 col-md-10">
+                                    <h2 class="title-centre">YOUR DRAFTS</h2>
+                                    <p class="cta-text">Publishing your stories will bring you closer to your Active Citizenship badge!</p>
+                                    </div> <!-- /.each-features -->  
                                 </div>
-                                <div class="col-xs-1 col-sm-1 col-md-1"></div>
+
+                                <div class="col-xs-1 col-sm-1 col-md-1"/>
                                 
                                 <div class="guide-team-content col-xs-12">
                                     <div class="row" >
@@ -58,8 +57,7 @@
                                 </div>  
                                
 
-                                <div class="btn-form col-xs-12 text-center margin-b-20">
-                                    <p class="blue-text"></p>
+                                <div class="btn-form col-xs-12 text-center">
                                     <a href="{/data/params/root}/share/story/new/" class="btn btn-border-button margin-b-30">Write a new story</a>
                                 </div>
 
@@ -67,7 +65,7 @@
                           
 
                             <div class="guide-team-content col-xs-12">
-                             <h3 class="title-centre margin-b-20 margin-t-50" >PUBLISHED STORIES</h3>
+                             <h2 class="title-centre margin-b-20 margin-t-50" >PUBLISHED STORIES</h2>
                                 <div class="row" >
                                     <div class="each-item col-sm-1 col-md-2"></div>
                                         <div class="each-item col-sm-10 col-md-8" >
@@ -82,9 +80,8 @@
                             </div>
 
                              <div class="btn-form col-xs-12 text-center">
-                                 <p class="blue-text margin-t-40" >Read stories from other JCI members.</p>
-                                    <p class="blue-text"></p>
-                                    <a href="{/data/params/root}/explore/#stories" class="btn btn-border-button">Explore</a>
+                                 <p class="cta-text">Read stories from other JCI members.</p>
+                                 <a href="{/data/params/root}/explore/#stories" class="btn btn-border-button">Explore</a>
                             </div>
                         </div> <!-- /.row -->
                     </div> <!-- /.container -->

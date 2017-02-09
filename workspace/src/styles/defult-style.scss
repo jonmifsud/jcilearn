@@ -70,7 +70,7 @@ h1{
 }
 h2{
     @include rem(font-size, $font-size-h2);
-    line-height:        1.5rem;
+    line-height:        120%;
 }
 h3{
     @include rem(font-size, $font-size-h3);

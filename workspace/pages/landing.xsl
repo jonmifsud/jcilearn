@@ -99,29 +99,28 @@
                     </div>
                 </div>
 
-
-
                     <div class="col-xs-12 each-features">
 
                         <div class="wide-wripper">
-                             <div id="landingTemplateSlider" class="box-border" style=" width: 70%; padding: 20px; height: 20%; margin-top: 50px; margin-bottom: 200px; border: 0px">
+                             <div id="landingTemplateSlider" class="box-border" style=" width: 70%; padding: 20px; height: 20%; margin-top: 140px; margin-bottom: 200px; border: 0px">
                                 <div class="center">
-                                    <div class="btn-form text-center margin-t-70">
+                                    <div class="text-center margin-t-70">
                                         <div class="col-xs-12 col-md-12">
                                             <p class="cta-text">Be the best <strong>active citizen</strong> you can be.</p>
                                         </div>
-                                        <div class="col-xs-12 col-md-12" style="margin-bottom: 10px;">
+                                        <div class="col-xs-12 col-md-12">
                                            <a href="#" id="show-div-landing" class="btn btn-fill text-normal">Start learning</a>
                                         </div>
                                         <div class="col-xs-12 col-md-12">
-                                            <a href="#landing-separator-1" class="text-normal btn btn-border main">Tell me more</a>
+                                            <a href="#landing-separator-1" class="text-normal btn btn-border">Tell me more</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>     
 
-                            <div class="study-timeline-progress"></div> 
-                            <div id="landing-separator-1" style="margin-bottom: 50px;"></div>                         
+                            <div class="landing-divider"></div>
+
+                            <!-- <div id="landing-separator-1"></div>   -->                       
                             
                             <div class="box-border" style=" width: 90%; height: 15%; border: 0px; ">
                                 <div class="col-xs-1 col-sm-1 col-md-1"></div>
@@ -137,7 +136,7 @@
                                 
                             </div>
 
-                            <div class="study-timeline-progress"></div>
+                            <!-- <div class="landing-divider"></div> -->
                             <!-- <div class="line-separater" ></div> -->
                             
                             <div class="box-border padding-right-box" style=" width: 100%; border: 0px; margin-top: 70px;">
