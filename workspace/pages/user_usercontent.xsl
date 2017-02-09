@@ -3,12 +3,8 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="../utilities/master.xsl"/>
-<xsl:import href="../sections/sectionmodule.xsl"/>
-<xsl:import href="../sections/learn-subheader.xsl"/>
-<xsl:import href="../sections/studyprofile.xsl"/>
 <xsl:import href="../sections/notepadmodule.xsl"/>
 <xsl:import href="../sections/yournotepad.xsl"/>
-<xsl:import href="../sections/story.xsl"/>
                                                 
     <xsl:template match="/data"> 
             <!-- Start: Features Section 

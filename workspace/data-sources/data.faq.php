@@ -1,30 +1,24 @@
 <?php
 
-class datasourcediscussion extends SectionDatasource
+class datasourcefaq extends SectionDatasource
 {
-    public $dsParamROOTELEMENT = 'discussion';
-    public $dsParamORDER = 'desc';
+    public $dsParamROOTELEMENT = 'faq';
+    public $dsParamORDER = 'asc';
     public $dsParamPAGINATERESULTS = 'no';
     public $dsParamLIMIT = '20';
     public $dsParamSTARTPAGE = '1';
     public $dsParamREDIRECTONEMPTY = 'no';
     public $dsParamREDIRECTONFORBIDDEN = 'no';
     public $dsParamREDIRECTONREQUIRED = 'no';
-    public $dsParamPARAMOUTPUT = array(
-        'system:id'
-        );
-    public $dsParamSORT = 'system:id';
+    public $dsParamSORT = 'order';
     public $dsParamHTMLENCODE = 'no';
     public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 
-    public $dsParamFILTERS = array(
-        'system:id' => '{$discussion-id}',
-    );
-
     public $dsParamINCLUDEDELEMENTS = array(
-        'title: formatted',
-        'text: formatted',
-        'date'
+        'question: formatted',
+        'answer: formatted',
+        'category',
+        'order'
     );
 
     public function __construct($env = null, $process_params = true)
@@ -36,19 +30,19 @@ class datasourcediscussion extends SectionDatasource
     public function about()
     {
         return array(
-            'name' => 'discussion',
+            'name' => 'FAQ',
             'author' => array(
                 'name' => 'Jonathan Mifsud',
                 'website' => 'http://jci-learn.dev',
                 'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2017-02-07T17:05:13+00:00'
+            'release-date' => '2017-02-07T15:23:41+00:00'
         );
     }
 
     public function getSource()
     {
-        return '82';
+        return '71';
     }
 
     public function allowEditorToParse()

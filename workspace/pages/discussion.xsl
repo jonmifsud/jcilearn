@@ -4,6 +4,32 @@
 
 <xsl:import href="../utilities/master.xsl"/>
 
+    <xsl:template name='discussion-list'>
+        
+            <xsl:for-each select="/data/discussion/entry" > 
+                <div class="padding-wrapper" >
+                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <div class="row comments-inner" style="margin-bottom: 50px;">
+                            <xsl:apply-templates select="current()" mode="list-item"/>
+                        </div>
+                    </div>
+                </div>
+            </xsl:for-each>
+
+            <div class="padding-wrapper" style="padding-left: 12%; padding-right: 12%; height: 50px;">
+                <div class="row comments-inner">
+                    <div class="each-item">
+                        <div class="each-item-inner comments-option overflow">
+                            <div class="box-border" style="width: 80%; height: 90px; border: 0px;">
+                                <a href="#" class="btn right-icon see-more pull-left">More<i class="fa fa-angle-down"></i></a>
+                                <p class="comments-pagination pull-right" style="margin-top: 10px; font-size: 15px;">3 of 14</p>
+                            </div>
+                        </div>
+                    </div> <!-- /.each-item -->
+                </div>
+            </div>
+    </xsl:template>
+
     <xsl:template match="/data">
             <!-- Start: Features Section 
             =================================-->
@@ -13,93 +39,39 @@
 
                     <div class="col-xs-12 each-features text-center">  
                         <div class="section-header relative text-center">
-                        	<br/><br/><br/>
+
                             <h2 class="section-heading">Ask Your Community.</h2>
-                            <br/>            
-                            <form class="single-form search-form" action="" method="">
+
+                           <!--  <form class="single-form search-form" action="" method="">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Search for..."/>
                                     <span class="input-group-btn">
                                         <button class="btn" type="button"><i class="fa fa-search"></i></button>
                                     </span>
-                                </div><!-- /.input-group -->
-                            </form>
+                                </div>
+                            </form> -->
                         </div>  
 
-                        <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
-                            <div class="guide-team">
-                              <div class="guide-team-inner">
+                        <xsl:choose>
+                            <xsl:when test='/data/params/discussion-id= "new"'>
+                                 <xsl:call-template name='new-discussion'/>
+                            </xsl:when>
+                            <xsl:when test='/data/params/discussion-id and /data/params/discussion-id != ""'>
+                                 <xsl:apply-templates select='/data/discussion/entry' mode='full'/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:call-template name='discussion-list'/>
+                            </xsl:otherwise>
+                        </xsl:choose>
 
-                                <div class="col-mc-3 col-sm-3"></div>
-                                <div class="section-header relative text-center col-mc-6 col-sm-6 col-xs-12">
-                                  <h2 class="section-heading">Making the best out of your weekly goal.</h2>
-                                </div>
-
-                                <div class="lesson-definitions  col-sm-7 col-md-7" style="margin-top: -30px;">
-                                  <div class="lesson-top-picture">
-                                    <div class="media">
-                                      <div class="media-body-left">
-                                        <b>Zack</b>
-                                      </div>
-                                      <div class="media-body-left">
-                                        <img class="media-object profile-pic" src="http://localhost/jcilearn/workspace/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
-                                        <img class="flag put-flag-in-corner" src="http://localhost/jcilearn/workspace/assets/img/icons/flag-1.png" alt="Flag"/>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                              </div>
-                            </div>
-                          </div>
-
-                         <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-
-                             <div class="lesson-text">
-                             <br/>
-                                <p class="lesson-text"><xsl:value-of select="/data/discussion/entry/profile/item" />
-                                	<xsl:value-of select="/data/discussion/entry/text" />
-                            	</p><br/><br/>
-                             </div>
-                        </div>
-
-                        <div class="col-xs-12 each-features" style="margin-bottom: 0px; height: 100px;">
-                            <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" >
-                                <xsl:apply-templates select="/data/discussion/entry[1]" mode="likeviews"/>
-                                
-                            </div>
-                        </div>
-
-                        <xsl:call-template name="show-comments"/> 
-
-
-                        <div class="lesson-button-organise text-center">
-                            <div class="btn-form col-xs-12 col-md-4 col-sm-4 col-md-offset-4 text-center margin-t-10">
-                                <div class="wraper-like-comment-share" style="margin-left: 15%;">
-                                    <div class="btn hovere-change" >
-                                        <i class="fa fa-like-love-streamline hovere-color-change"></i>
-                                    </div>
-                                    <div id="comment-toggle" class="btn hovere-change" >
-                                        <i class="fa fa-commenting-o hovere-color-change" aria-hidden="true"></i>
-
-                                    </div>
-                                    <div  class="btn hovere-change">
-                                        <i class="fa fa-share-square-o hovere-color-change" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="btn-form col-xs-12 text-center margin-t-50">
-                            <a href="#" class="btn btn-border text-normal">New Discussion</a>
+                            <a href="{$root}/discussion/new/" class="btn btn-border text-normal">New Discussion</a>
                         </div>
 
                     </div>
                     
                 </div> <!-- /.row -->
-                <div class="col-md-1 col-sm-1" ></div>
-
-                    <xsl:call-template name="write-comment"/> 
 
             </div> <!-- /.container -->
         </div>
