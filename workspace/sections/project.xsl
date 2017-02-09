@@ -19,6 +19,14 @@
 
     </xsl:template>
 
+    <xsl:template match="*[section/@handle='project']//entry" mode='author-picture'>
+        <xsl:param name='include-name' select='false()'/>
+
+        <xsl:apply-templates select='/data/users/entry[@id = current()/user/item/@id]' mode='user-picture-country'>
+            <xsl:with-param name='include-name' select='$include-name'/>
+        </xsl:apply-templates>
+    </xsl:template>
+
     <xsl:template match="*[section/@handle='project']//entry" mode='projectmodule'>
         <xsl:param name='edit-link' select='false()'/>
         <xsl:param name='no-link' select='false()'/>

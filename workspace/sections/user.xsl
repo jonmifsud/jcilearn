@@ -3,11 +3,12 @@
 
     <xsl:template match="*[section/@handle='user']//entry" mode='user-picture-country'>
         <xsl:param name='include-name' select='false()'/>
+        <xsl:param name='class' select='media-left'/>
 
         <xsl:variable name="lcletters">abcdefghijklmnopqrstuvwxyz-</xsl:variable>
         <xsl:variable name="ucletters">ABCDEFGHIJKLMNOPQRSTUVWXYZ </xsl:variable>
 
-        <div class="media-left" style="padding-left: 10px; padding: 0px;">
+        <div class="{$class}" style="padding-left: 10px; padding: 0px;">
             <img class="media-object profile-pic" style="padding-left: 1px; width: 50px;" alt="Media Team Profile Image">
                 <xsl:attribute name='src'>
                     <xsl:apply-templates select='.' mode='photo-url'/>

@@ -27,6 +27,20 @@
 
     </xsl:template>
 
+    <xsl:template match="*[section/@handle='interests']//entry" mode='icon'>
+        <xsl:param name='class'/>
+        <xsl:param name='dimension' select='"50x50"'/>
+
+        <img class="{$class}">
+          <xsl:attribute name='src'>
+            <xsl:apply-templates select='.' mode='icon-url'>
+                <xsl:with-param name='dimension' select='$dimension'/>
+            </xsl:apply-templates>
+          </xsl:attribute>
+        </img>
+
+    </xsl:template>
+
     <xsl:template match="*[section/@handle='interests']//entry" mode='icon-url'>
         <xsl:param name='dimension' select='"cropped"'/>
 

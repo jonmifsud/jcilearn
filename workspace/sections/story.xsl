@@ -359,9 +359,13 @@
                                 <label style="width: 100%;">
                                     <div>
                                         <h3 class="title-centre">PHOTOS</h3>
-                                        <span class="blue-text margin-b-20">drag and drop photos related to your story here</span>
-
-                                        <!-- <textarea class="your-note-text-box-shape" id="your-note" name="text" type="text" rows='15'></textarea> -->
+                                        <div class='image-upload-instructions text-center'>Click here or Drop files below to upload - Maximum File Size : 10MB</div>
+                                        
+                                        <div class='image-uploads' data-imagenumber='{count(images/item)}'>
+                                            <xsl:for-each select='images/item'>
+                                                <xsl:apply-templates select='/data/images/entry[@id = current()/@id]' mode='uploads'/>
+                                            </xsl:for-each>
+                                        </div>
                                     </div>
                                 </label>
                             </div>

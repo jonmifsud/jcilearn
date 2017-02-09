@@ -14,7 +14,9 @@
 
                         <div class="col-xs-12 each-features">
 
-                            <img src="{/data/params/workspace}/assets/img/icons/icon-3.png" class="image-centre"/>
+                            <xsl:apply-templates select='/data/interests/entry[@id=/data/project/entry/category/item/@id]' mode='icon'>
+                                <xsl:with-param name='class' select='"image-centre"'/>
+                            </xsl:apply-templates>
                             <div class="guide-team">
                                 <div class="guide-team-inner">
                                     
@@ -27,15 +29,22 @@
                                     <div class="guide-team-inner">
                                         <div class="lesson-definitions">
                                             <div class="lesson-top-picture">
-                                                <div class="media">                               
-                                                    <div class="media-body-left">
+                                                <div class="media">          
+
+                                                    <!-- <div class="media-body-left"> -->
+                                                        <xsl:apply-templates select='/data/project/entry' mode='author-picture'>
+                                                            <xsl:with-param name='class' select='"media-body-left"'/>
+                                                        </xsl:apply-templates>
+                                                    <!-- </div>                        -->
+                                                    <!-- <div class="media-body-left">
+
                                                         <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
                                                             <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
                                                     </div>   
                                                     <div class="media-body-left">
                                                         <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
                                                             <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
-                                                    </div>
+                                                    </div> -->
                                                 </div>      
                                             </div>
                                         </div>

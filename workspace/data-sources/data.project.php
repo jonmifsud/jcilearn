@@ -19,8 +19,8 @@ class datasourceproject extends SectionDatasource
     public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 
     public $dsParamFILTERS = array(
-        '319' => 'Published',
         '264' => '{$project-name}',
+        '319' => 'Published',
     );
 
     public $dsParamINCLUDEDELEMENTS = array(
@@ -29,6 +29,8 @@ class datasourceproject extends SectionDatasource
         'text: formatted',
         'date',
         'user',
+        'status',
+        'category',
         'overview: formatted',
         'problem: formatted',
         'proposedsolution: formatted',
@@ -56,7 +58,7 @@ class datasourceproject extends SectionDatasource
                 'website' => 'http://jci-learn.dev',
                 'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2017-02-08T22:09:07+00:00'
+            'release-date' => '2017-02-09T08:24:50+00:00'
         );
     }
 
