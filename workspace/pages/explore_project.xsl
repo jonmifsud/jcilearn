@@ -148,7 +148,13 @@
                         <div class="modules-slider">
                             <div class="modules-slider-wrapper three-slides owl-carousel">
 
-                                <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
+                                <xsl:for-each select='/data/project/entry[1]/images/item'>
+                                    <xsl:apply-templates select='/data/images/entry[@id=/data/project/entry[1]//images/item/@id]' mode='img'>
+                                        <xsl:with-param name='class' select='"project-image"'/>
+                                    </xsl:apply-templates>
+                                </xsl:for-each>
+
+                                <!-- <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
                                 <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
@@ -156,7 +162,7 @@
 
                                 <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
 
-                                <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/>
+                                <img src="{/data/params/workspace}/assets/img/helppic.png" style="width: 95%; height: 300px; margin-top: 120px; margin-left:10px; margin-right: 10px;"/> -->
 
                             </div> <!-- /.modules-slider-wrapper -->
                         </div> <!-- /.modules-slider -->
@@ -167,11 +173,20 @@
                     <br/>
                     </div>
 
-                    <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                        <h3 class="title" style="text-align: center; margin-bottom: 20px;" > MARKETING MATERIAL </h3>
-                        <div class="row comments-inner col-md-12 col-sm-12 col-xs-12" style="margin-left: auto;">
+                    <xsl:if test='/data/project/entry[1]/marketing-material/file'>
+                        <div class='marketing-material text-left col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12'>
+                            <h3 class='text-center'>MARKETING MATERIAL</h3>
+                            <ul>
+                                <xsl:for-each select='/data/project/entry[1]/marketing-material/file'>
+                                    <li>
+                                        <a href='{@source}'>
+                                            <xsl:value-of select='@name'/>
+                                        </a>
+                                    </li>
+                                </xsl:for-each>
+                            </ul>
                         </div>
-                    </div>
+                    </xsl:if>
                     
                         <div class="row features-item section-separator">
                             <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="margin-top: 30px; margin-bottom: 30px;">

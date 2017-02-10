@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- /.each-features -->                  
+                    </div> <!-- /.each-features -->
 
                     <div class="col-xs-12 each-features" style="margin-bottom: 0px;">
 
