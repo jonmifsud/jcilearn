@@ -34,7 +34,7 @@
         <xsl:param name='dimension' select='"180x180"'/>
         <xsl:choose>
             <xsl:when test='image/supported-dimensions/image[@dimension=""]'>
-                <xsl:value-of select='image/supported-dimensions/image[@dimension="180x180"]'/>
+                <xsl:value-of select='image/supported-dimensions/image[@dimension=$dimension]'/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select='image/supported-dimensions/image[@dimension="50x50"]'/>
