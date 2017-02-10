@@ -53,7 +53,7 @@
 
                          <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                              <div class="lesson-text">
-                                 <xsl:value-of select="/data/lesson/entry[1]/text" />
+                                 <xsl:apply-templates select="/data/lesson/entry[1]/text" mode='html-child'/>
                              </div>
                         </div>
 
