@@ -270,9 +270,9 @@
 
                                 <div class="col-xs-12 each-features">
                                     <h3 class="title-centre">Attachments</h3>
-                                    <div class='marketing-upload-instructions text-center'>Click here or Drop files below to upload - Maximum File Size : 10MB</div>
+                                    <div class='attachment-upload-instructions text-center'>Click here or Drop files below to upload - Maximum File Size : 10MB</div>
 
-                                    <div class='marketing-uploads' data-filenumber='{count(attachments/file)}'>
+                                    <div class='attachment-uploads' data-filenumber='{count(attachments/file)}'>
                                         <xsl:apply-templates select='attachments/file' mode='uploads'/>
                                     </div>
                                 </div>  

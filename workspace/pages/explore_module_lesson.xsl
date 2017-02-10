@@ -55,6 +55,21 @@
                              </div>
                         </div>
 
+                        <xsl:if test='/data/lesson/entry[1]/attachments/file'>
+                            <div class='attachments text-left col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12'>
+                                <h3>Resources</h3>
+                                <ul>
+                                    <xsl:for-each select='/data/lesson/entry[1]/attachments/file'>
+                                        <li>
+                                            <a href='{@source}'>
+                                                <xsl:value-of select='@name'/>
+                                            </a>
+                                        </li>
+                                    </xsl:for-each>
+                                </ul>
+                            </div>
+                        </xsl:if>
+
                          <!-- <div class="comments col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                              <div class="lesson-definitions">
                                 <div class="lesson-definitions-line">

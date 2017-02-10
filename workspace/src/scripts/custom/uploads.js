@@ -91,6 +91,97 @@
 		}			
 	});
 
+	$(".attachment-uploads").dropzone({ 
+		url: 'https://edc-mazedigital.s3-eu-central-1.amazonaws.com',
+		maxFilesize: "10",
+		method: "post",
+		autoProcessQueue: true,
+		maxfiles: 5,
+		parallelUploads: 2,
+		clickable: '.attachment-upload-instructions',
+		dictDefaultMessage: "Drop files here to upload - Maximum Size : 10MB",
+		previewTemplate: '<div class="dz-preview dz-file-preview">'+
+							'<div class="dz-details">'+
+								'<img data-dz-thumbnail />'+
+								'<div class="dz-text-details">'+
+									'<div class="dz-filename"><span data-dz-name></span></div>'+
+									'<div class="dz-size" data-dz-size></div>'+
+								'</div>'+
+							'</div>'+
+							'<div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>'+
+							'<div class="dz-success-mark"><span>✔</span></div>'+
+							'<div class="dz-error-mark"><span>✘</span></div>'+
+							'<div class="dz-error-message"><span data-dz-errormessage></span></div>'+
+						'</div>',
+		accept: function(file, done){
+			file.postData = [];
+			$.ajax({
+				url: '/ajax/',
+				data: {"action[generate-s3-signature]": 'submit', "fields[name]": file.name, "fields[type]": file.type, "fields[size]": file.size, "fields[id]": 326},
+				type: 'POST',
+				dataType: 'json',
+				success: function(response)
+				{
+					file.custom_status = 'ready';
+					file.postData = response;
+					$(file.previewTemplate).addClass('uploading');
+					done();
+				},
+				error: function(response)
+				{
+					file.custom_status = 'rejected';
+
+					if (response.responseText) {
+						jQuery.parseJSON(response.responseText);
+					}
+					if (response.message) {
+						done(response.message);
+					} else {
+						done('error preparing the upload');
+					}
+				}
+			});
+		},
+		sending: function(file, xhr, formData){
+			// xhr.setRequestHeader('Content-Type', file.type || 'application/octet-stream');
+			$.each(file.postData, function(k, v){
+				if (k.substr(0,1) == 'X'){
+					xhr.setRequestHeader(k,v);
+				} else {
+					formData.append(k, v);
+				}
+			});
+		},
+		success: function(file, response){
+			
+
+			var filenumber = $(".attachment-uploads").data('filenumber') ? $(".attachment-uploads").data('filenumber') : 0;
+			filenumber++;
+			$(".attachment-uploads").data('filenumber',filenumber);
+
+			$filename = $('<input/>',{
+				name: 'attachments[filename]['+filenumber+']',
+				type: 'hidden',
+				value: file.name,
+			});
+			$filepath = $('<input/>',{
+				name: 'attachments[filepath]['+filenumber+']',
+				type: 'hidden',
+				value: $(response).find('key').text(),
+			});
+			$mimetype = $('<input/>',{
+				name: 'attachments[mimetype]['+filenumber+']',
+				type: 'hidden',
+				value: file.type,
+			});
+
+			$(file.previewElement).after($filename);
+			$(file.previewElement).after($filepath);
+			$(file.previewElement).after($mimetype);
+
+		}			
+	});
+
 	$(".image-uploads").dropzone({ 
 		url: '/ajax/',
 		acceptedFiles: 'image/*',
