@@ -156,6 +156,7 @@
                                 <xsl:for-each select='/data/project/entry[1]/images/item'>
                                     <xsl:apply-templates select='/data/images/entry[@id=/data/project/entry[1]//images/item/@id]' mode='img'>
                                         <xsl:with-param name='class' select='"project-image"'/>
+                                        <xsl:with-param name='dimension' select='"330x330"'/>
                                     </xsl:apply-templates>
                                 </xsl:for-each>
 
