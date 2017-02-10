@@ -178,11 +178,11 @@
                     <br/>
                     </div>
 
-                    <xsl:if test='/data/project/entry[1]/marketing-material/file'>
+                    <xsl:if test='/data/project/entry[1]/marketing-materials/file'>
                         <div class='marketing-material text-left col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12'>
                             <h3 class='text-center'>MARKETING MATERIAL</h3>
                             <ul>
-                                <xsl:for-each select='/data/project/entry[1]/marketing-material/file'>
+                                <xsl:for-each select='/data/project/entry[1]/marketing-materials/file'>
                                     <li>
                                         <a href='{@source}'>
                                             <xsl:value-of select='@name'/>
