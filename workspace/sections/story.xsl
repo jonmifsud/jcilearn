@@ -21,7 +21,22 @@
 
 
     <xsl:template match="*[section/@handle='story']//entry" mode='explorestoriesmodule'>
-        <div class="each-item" style="margin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-bottom: 40px; margin-top: 30px;">
+        <xsl:param name='edit-link' select='false()'/>
+        <xsl:param name='no-link' select='false()'/>
+
+        <a class="each-item" style="margin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-bottom: 40px; margin-top: 30px;">
+            <xsl:attribute name='href'>
+                <xsl:choose>
+                    <xsl:when test='$no-link'>
+                    </xsl:when>
+                    <xsl:when test='$edit-link'>
+                        <xsl:apply-templates select='.' mode='edit-link'/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select='.' mode='link'/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>       
             <div class="each-item-inner">
                 <div class="content-right col-md-4 col-sm-5" style="width: 20%; height: 170px; background-color: #3489DA; border-top-left-radius: 20px; border-bottom-left-radius: 20px; margin-left: -3px;">
                 <br/>
@@ -33,7 +48,10 @@
                     <div class="media">
                         <div class="media-left">
 
-                            <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image" style="margin-top: 20px;"/>
+                            <!-- <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image" style="margin-top: 20px;"/> -->
+                            <xsl:apply-templates select='/data/users/entry[@id = current()/user/item/@id]' mode='user-picture-country'>
+                                <!-- <xsl:with-param name='include-name' select='true()'/> -->
+                            </xsl:apply-templates>
                         
                         </div> <!-- /.media-left -->
                         <div class="media-body">
@@ -48,13 +66,28 @@
                 
             </div>
             <!-- <p class="small-text"><xsl:value-of select="/user/item" /> recently enrolled form this module.</p> -->
-        </div>
+        </a>
     </xsl:template>
 
 
     <xsl:template  match="*[section/@handle='story']//entry" mode='explore-story-slider-single-item'>
+        <xsl:param name='edit-link' select='false()'/>
+        <xsl:param name='no-link' select='false()'/>
+
         <div class="guide-team-content">
-            <div class="each-item" style="margin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-bottom: 40px; margin-top: 30px;">
+            <a class="each-item" style="margin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-bottom: 40px; margin-top: 30px;">
+                <xsl:attribute name='href'>
+                    <xsl:choose>
+                        <xsl:when test='$no-link'>
+                        </xsl:when>
+                        <xsl:when test='$edit-link'>
+                            <xsl:apply-templates select='.' mode='edit-link'/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:apply-templates select='.' mode='link'/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:attribute>       
                 <div class="each-item-inner">
                     
 
@@ -68,7 +101,10 @@
                         </div> <!-- /.media-body -->
                         <div class="media-left">
 
-                            <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-1.png" alt="Media Team Image" style="margin-top: 20px;"/>
+                            <!-- <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-1.png" alt="Media Team Image" style="margin-top: 20px;"/> -->
+                            <xsl:apply-templates select='/data/users/entry[@id = current()/user/item/@id]' mode='user-picture-country'>
+                                <!-- <xsl:with-param name='include-name' select='true()'/> -->
+                            </xsl:apply-templates>
                         
                         </div> <!-- /.media-left -->
                     </div> <!-- /.media -->
@@ -79,7 +115,7 @@
                 <!-- <p class="small-text">
                     <xsl:value-of select="user/item" /> recently enrolled form this module.
                 </p> -->
-            </div>  
+            </a>  
         </div>
     </xsl:template>
 
@@ -118,8 +154,10 @@
                             <xsl:apply-templates select='.' mode='link'/>
                         </xsl:otherwise>
                     </xsl:choose>
-                </xsl:attribute>               
-                <img src="{/data/params/workspace}/assets/img/helppic.png" class=" square-picture border-radius-shape"/> 
+                </xsl:attribute>
+                <xsl:apply-templates select='/data/images/entry[@id=current()/images/item/@id]' mode='img'>
+                    <xsl:with-param name='class' select='"square-picture border-radius-shape"'/>
+                </xsl:apply-templates>
             </a>
             
             <a class="content -left col-xs-8 col-md-7 col-sm-7" style=" padding-top: 30px; padding-right: 0px; padding-bottom: 0px;">
@@ -141,7 +179,10 @@
                         <p class="pera"><xsl:value-of select="date"/></p>
                     </div> <!-- /.media-body -->
                     <div class="media-left">
-                        <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-6.png" alt="Media Team Image"/>   
+                        <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-6.png" alt="Media Team Image"/> 
+                        <!-- <xsl:apply-templates select='/data/users/entry[@id = current()/user/item/@id]' mode='user-picture-country'>
+                            <xsl:with-param name='include-name' select='true()'/> 
+                        </xsl:apply-templates>   -->
                     </div> <!-- /.media-left -->
                 </div> <!-- /.media -->
             </a> <!-- /.content-right -->
@@ -165,7 +206,9 @@
            
             <div class="content-right col-xs-12 content-defult col-sm-3" style=" overflow: hidden; padding: 0px;">
                 
-               <img src="{/data/params/workspace}/assets/img/helppic.png" class="border-radius-shape"/>
+                <xsl:apply-templates select='/data/images/entry[@id=current()/images/item/@id]' mode='img'>
+                    <xsl:with-param name='class' select='"square-picture border-radius-shape"'/>
+                </xsl:apply-templates>
 
             </div>
             
@@ -176,7 +219,10 @@
                         <p class="pera"><xsl:value-of select="date"/></p>
                     </div> <!-- /.media-body -->
                     <div class="media-left">
-                        <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-6.png" alt="Media Team Image"/>   
+                        <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-6.png" alt="Media Team Image"/>
+                        <!-- <xsl:apply-templates select='/data/users/entry[@id = current()/user/item/@id]' mode='user-picture-country'>
+                            <xsl:with-param name='include-name' select='true()'/>
+                        </xsl:apply-templates>    -->
                     </div> <!-- /.media-left -->
                 </div> <!-- /.media -->
             </div> <!-- /.content-right -->
@@ -188,8 +234,11 @@
         <div class="each-item col-sm-10 col-md-12">
             <div class=" each-item-inner height-md-story-module">
                 <div class="content-right col-xs-12 content-defult col-md-2" style=" overflow: hidden; padding: 0px;">
-                    
-                   <img class="media-object features-image" src="{/data/params/workspace}/assets/img/helppic.png" alt="Media Team Image" style="max-width: 100%; height: 200px; max-height: 200px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;"/>
+                
+                    <xsl:apply-templates select='/data/images/entry[@id=current()/images/item/@id]' mode='img'>
+                        <xsl:with-param name='class' select='"square-picture border-radius-shape"'/>
+                    </xsl:apply-templates>
+                    <!-- <img class="media-object features-image" src="{/data/params/workspace}/assets/img/helppic.png" alt="Media Team Image" style="max-width: 100%; height: 200px; max-height: 200px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;"/> -->
 
                 </div>
                 <div class="content-left col-xs-8 col-md-7" style=" padding-top: 50px;">
@@ -204,7 +253,10 @@
                         </div> <!-- /.media-body -->
                         <div class="media-left">
 
-                             <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/>
+                             <!-- <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/> -->
+                             <xsl:apply-templates select='/data/users/entry[@id = current()/user/item/@id]' mode='user-picture-country'>
+                                <!-- <xsl:with-param name='include-name' select='true()'/> -->
+                            </xsl:apply-templates>
                         
                         </div> <!-- /.media-left -->
                     </div> <!-- /.media -->

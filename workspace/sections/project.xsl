@@ -31,7 +31,7 @@
         <xsl:param name='edit-link' select='false()'/>
         <xsl:param name='no-link' select='false()'/>
 
-        <a class="box-border" style="width: 90%; height: 400px; padding: 0px; overflow: hidden;">
+        <a class="box-border square">
             <xsl:attribute name='href'>
                 <xsl:choose>
                     <xsl:when test='$no-link'>
@@ -45,13 +45,21 @@
                 </xsl:choose>
             </xsl:attribute>               
 
-            <img  src="{/data/params/workspace}/assets/img/helppic.png" style="margin: 0px; width: 100%; height: 64%; border-bottom: 2px solid #3496DA;"/>
-            <div class="box-poligon" style="width: 100%; height: 36%; margin: 0px;">
-                <div class="box-poligon" style="width: 30%; margin: 0px;">
-                    <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-6.png" alt="Media Team Image"/>
-                </div>
-                <div class="box-poligon" style="width: 60%; margin: 0px; text-align: left;">
-                    <h3 style="line-height: 100%; text-align: left;"><xsl:value-of select="title" /></h3><xsl:value-of select="date" />
+            <!-- <img  src="{/data/params/workspace}/assets/img/helppic.png" style="margin: 0px; width: 100%; height: 64%; border-bottom: 2px solid #3496DA;"/> -->
+
+            <div class="project-square square-content">
+                <div class='square-bottom'>
+                    <xsl:apply-templates select='/data/images/entry[@id=current()/images/item/@id]' mode='img'>
+                        <xsl:with-param name='class' select='"project-slide-image"'/>
+                    </xsl:apply-templates>
+                    <div class="project-title-content">
+                        <div class="col-xs-4">
+                            <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-6.png" alt="Media Team Image"/>
+                        </div>
+                        <div class="col-xs-8">
+                            <h3 style="line-height: 100%; text-align: left;"><xsl:value-of select="title" /></h3><xsl:value-of select="date" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </a>
@@ -60,7 +68,7 @@
     <xsl:template  match="*[section/@handle='project']//entry" mode='exploreprojectsmodule'>
         <xsl:param name='edit-link' select='false()'/>
         <xsl:param name='no-link' select='false()'/>
-        <a class="box-border" style="width: 95%; height: 400px; padding: 0px; overflow: hidden;">
+        <a class="box-border square">
             <xsl:attribute name='href'>
                 <xsl:choose>
                     <xsl:when test='$no-link'>
@@ -73,13 +81,21 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>              
-            <img src="{/data/params/workspace}/assets/img/helppic.png" style="margin: 0px; width: 100%; height: 64%; border-bottom: 2px solid #3496DA;"/>
-            <div class="box-poligon" style="width: 100%; height: 36%; margin: 0px;">
-                <div class="box-poligon" style="width: 30%; margin: 0px;">
-                    <img src="{/data/params/workspace}/assets/img/icons/icon-3.png"/>
-                </div>
-                <div class="box-poligon" style="width: 60%; margin: 0px; text-align: left;">
-                    <h3 style="line-height: 100%; text-align: left;"><xsl:value-of select="title"/></h3><xsl:value-of select="date"/>
+            <!-- <img src="{/data/params/workspace}/assets/img/helppic.png" style="margin: 0px; width: 100%; height: 64%; border-bottom: 2px solid #3496DA;"/> -->
+
+            <div class="project-square square-content">
+                <div class='square-bottom'>
+                    <xsl:apply-templates select='/data/images/entry[@id=current()/images/item/@id]' mode='img'>
+                        <xsl:with-param name='class' select='"project-slide-image"'/>
+                    </xsl:apply-templates>
+                    <div class="project-title-content">
+                        <div class="col-xs-4">
+                            <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-6.png" alt="Media Team Image"/>
+                        </div>
+                        <div class="col-xs-8">
+                            <h3 style="line-height: 100%; text-align: left;"><xsl:value-of select="title" /></h3><xsl:value-of select="date" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </a>
@@ -89,7 +105,7 @@
         <xsl:param name='edit-link' select='false()'/>
         <xsl:param name='no-link' select='false()'/>
         
-        <a class="box-border" style="width: 100%; height: 400px; padding: 0px; overflow: hidden;">
+        <a class="box-border square">
             <xsl:attribute name='href'>
                 <xsl:choose>
                     <xsl:when test='$no-link'>
@@ -103,8 +119,12 @@
                 </xsl:choose>
             </xsl:attribute>               
 
-            <img src="{/data/params/workspace}/assets/img/helppic.png" style="margin: 0px; width: 100%; height: 64%; border-bottom: 2px solid #3496DA;"/>
-            <div class="box-poligon" style="width: 100%; height: 36%; margin: 0px;">
+            <!-- <img src="{/data/params/workspace}/assets/img/helppic.png" style="margin: 0px; width: 100%; height: 64%; border-bottom: 2px solid #3496DA;"/> -->
+
+            <xsl:apply-templates select='/data/images/entry[@id=current()/images/item/@id]' mode='img'>
+                <xsl:with-param name='class' select='"project-slide-image"'/>
+            </xsl:apply-templates>
+            <div class="box-poligon">
                 <div class="box-poligon" style="width: 30%; margin: 0px;">
                     <img class="media-object features-image" src="{/data/params/workspace}/assets/img/icons/icon-3.png" alt="Media Team Image"/>
                 </div>
@@ -373,7 +393,7 @@
                         </div>
 
                         <div id="counter1" class="next btn-form col-xs-6 text-center margin-t-50 btn-down-positon counter1">
-                            <a href="#" class="btn btn-border text-normal">NEXT</a>
+                            <button href="#" class="btn btn-border text-normal">NEXT</button>
                         </div>
                     </div>
 

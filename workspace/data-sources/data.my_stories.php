@@ -30,10 +30,10 @@ class datasourcemy_stories extends SectionDatasource
         'text: unformatted',
         'date',
         'user',
+        'status',
         'like',
         'like: list',
-        'status',
-        'category',
+        'images'
     );
 
     public function __construct($env = null, $process_params = true)
@@ -51,7 +51,7 @@ class datasourcemy_stories extends SectionDatasource
                 'website' => 'http://jci-learn.dev',
                 'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2017-01-30T15:05:41+00:00'
+            'release-date' => '2017-02-10T05:56:36+00:00'
         );
     }
 

@@ -1,4 +1,5 @@
 <?php
+
 class datasourcestory extends SectionDatasource
 {
     public $dsParamROOTELEMENT = 'story';
@@ -18,38 +19,45 @@ class datasourcestory extends SectionDatasource
         'subtitle: formatted',
         'text: formatted',
         'date',
-        'category',
-        'user'
+        'user',
+        'status',
+        'like',
+        'images'
     );
-    
+
     public function __construct($env = null, $process_params = true)
     {
         parent::__construct($env, $process_params);
         $this->_dependencies = array();
     }
+
     public function about()
     {
         return array(
             'name' => 'story',
             'author' => array(
-                'name' => 'Zack Zili',
-                'website' => 'http://localhost/jcilearn',
-                'email' => 'zzftn90@gmail.com'),
+                'name' => 'Jonathan Mifsud',
+                'website' => 'http://jci-learn.dev',
+                'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2016-12-07T10:12:19+00:00'
+            'release-date' => '2017-02-10T05:56:20+00:00'
         );
     }
+
     public function getSource()
     {
         return '79';
     }
+
     public function allowEditorToParse()
     {
         return true;
     }
+
     public function execute(array &$param_pool = null)
     {
         $result = new XMLElement($this->dsParamROOTELEMENT);
+
         try{
             $result = parent::execute($param_pool);
         } catch (FrontendPageNotFoundException $e) {
@@ -60,12 +68,15 @@ class datasourcestory extends SectionDatasource
             $result->appendChild(new XMLElement('error', $e->getMessage() . ' on ' . $e->getLine() . ' of file ' . $e->getFile()));
             return $result;
         }
+
         if ($this->_force_empty_result) {
             $result = $this->emptyXMLSet();
         }
+
         if ($this->_negate_result) {
             $result = $this->negateXMLSet();
         }
+
         return $result;
     }
 }

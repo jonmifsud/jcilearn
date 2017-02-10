@@ -39,7 +39,8 @@ class datasourcelesson extends SectionDatasource
         'like',
         'like: list',
         'completed',
-        'completed: list'
+        'completed: list',
+        'attachments',
     );
 
     public function __construct($env = null, $process_params = true)

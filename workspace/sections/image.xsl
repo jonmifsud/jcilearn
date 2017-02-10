@@ -30,5 +30,29 @@
 
     </xsl:template>
 
+    <xsl:template match="*[section/@handle='image']/entry" mode="img-src">
+        <xsl:param name='dimension' select='"180x180"'/>
+        <xsl:choose>
+            <xsl:when test='image/supported-dimensions/image[@dimension=""]'>
+                <xsl:value-of select='image/supported-dimensions/image[@dimension="180x180"]'/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select='image/supported-dimensions/image[@dimension="50x50"]'/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="*[section/@handle='image']/entry" mode="img">
+        <xsl:param name='class' />
+        <xsl:param name='dimension' select='"180x180"'/>
+        <img class='{$class}'>
+            <xsl:attribute name='src'>
+                <xsl:apply-templates select='.' mode='img-src'>
+                    <xsl:with-param name='dimension' select='$dimension'/>
+                </xsl:apply-templates>
+            </xsl:attribute>
+        </img>
+    </xsl:template>
+
 
 </xsl:stylesheet>

@@ -109,7 +109,7 @@
                                             <p class="cta-text">Be the best <strong>active citizen</strong> you can be.</p>
                                         </div>
                                         <div class="col-xs-12 col-md-12">
-                                           <a href="#" id="show-div-landing" class="btn btn-fill text-normal">Start learning</a>
+                                           <a href="{$root}/explore/" id="show-div-landing" class="btn btn-fill text-normal">Start learning</a> <!-- href='{/data/events/oauth/facebook/@signup-url}' -->
                                         </div>
                                         <div class="col-xs-12 col-md-12">
                                             <a href="#landing-separator-1" class="text-normal btn btn-border">Tell me more</a>

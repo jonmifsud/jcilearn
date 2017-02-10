@@ -250,7 +250,7 @@
                                     </div>
                                 </label>
 
-                                <div class="col-xs-12 each-features text-center" style="margin-bottom: 40px; margin-top: 100px;">
+                                <!-- <div class="col-xs-12 each-features text-center" style="margin-bottom: 40px; margin-top: 100px;">
                                     <div class="form-inline single-form">
                                         <div class="form-group input-outer">
                                             <div class="select-outer">
@@ -264,7 +264,18 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
+
+
+
+                                <div class="col-xs-12 each-features">
+                                    <h3 class="title-centre">Attachments</h3>
+                                    <div class='marketing-upload-instructions text-center'>Click here or Drop files below to upload - Maximum File Size : 10MB</div>
+
+                                    <div class='marketing-uploads' data-filenumber='{count(attachments/file)}'>
+                                        <xsl:apply-templates select='attachments/file' mode='uploads'/>
+                                    </div>
+                                </div>  
                                 
                             </div>
 
@@ -297,7 +308,7 @@
                         </div>
 
                         <div id="counter1" class="next btn-form col-xs-6 text-center margin-t-50 btn-down-positon counter1">
-                            <a href="#" class="btn btn-border text-normal">NEXT</a>
+                            <button href="#" class="btn btn-border text-normal">NEXT</button>
                         </div>
                     </div>
                 </div>
