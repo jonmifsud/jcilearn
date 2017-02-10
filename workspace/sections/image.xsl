@@ -33,7 +33,7 @@
     <xsl:template match="*[section/@handle='image']/entry" mode="img-src">
         <xsl:param name='dimension' select='"180x180"'/>
         <xsl:choose>
-            <xsl:when test='image/supported-dimensions/image[@dimension=""]'>
+            <xsl:when test='image/supported-dimensions/image[@dimension=$dimension]'>
                 <xsl:value-of select='image/supported-dimensions/image[@dimension=$dimension]'/>
             </xsl:when>
             <xsl:otherwise>
