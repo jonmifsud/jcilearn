@@ -32,9 +32,14 @@
                                                 <div class="media">          
 
                                                     <!-- <div class="media-body-left"> -->
-                                                        <xsl:apply-templates select='/data/project/entry' mode='author-picture'>
+                                                        <!-- <xsl:apply-templates select='/data/project/entry' mode='author-picture'>
                                                             <xsl:with-param name='class' select='"media-body-left"'/>
-                                                        </xsl:apply-templates>
+                                                        </xsl:apply-templates> -->
+                                                        <xsl:apply-templates select='/data/users/entry[@id = /data/project/entry/user/item/@id]' mode='user-picture-country'>
+                                                            <xsl:with-param name='include-name' select='false()'/>
+                                                            <xsl:with-param name='class' select='"media-body-left"'/>
+                                                            <xsl:with-param name='img-class' select='""'/>
+                                                        </xsl:apply-templates> 
                                                     <!-- </div>                        -->
                                                     <!-- <div class="media-body-left">
 
