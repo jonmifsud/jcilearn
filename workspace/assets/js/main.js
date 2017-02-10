@@ -4060,17 +4060,17 @@ $(document).ready(function(){
 			$(".marketing-uploads").data('filenumber',filenumber);
 
 			$filename = $('<input/>',{
-				name: 'marketing-material[filename]['+filenumber+']',
+				name: 'marketing-materials[filename]['+filenumber+']',
 				type: 'hidden',
 				value: file.name,
 			});
 			$filepath = $('<input/>',{
-				name: 'marketing-material[filepath]['+filenumber+']',
+				name: 'marketing-materials[filepath]['+filenumber+']',
 				type: 'hidden',
 				value: $(response).find('key').text(),
 			});
 			$mimetype = $('<input/>',{
-				name: 'marketing-material[mimetype]['+filenumber+']',
+				name: 'marketing-materials[mimetype]['+filenumber+']',
 				type: 'hidden',
 				value: file.type,
 			});
