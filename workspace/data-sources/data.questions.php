@@ -19,7 +19,7 @@ class datasourcequestions extends SectionDatasource
     public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 
     public $dsParamFILTERS = array(
-        'system:id' => '{$ds-my-lessons.quiz:$ds-lesson.quiz}',
+        'system:id' => '{$ds-my-lessons.quiz:$ds-lesson.quiz:0}',
     );
 
     public $dsParamINCLUDEDELEMENTS = array(
@@ -57,7 +57,7 @@ class datasourcequestions extends SectionDatasource
                 'website' => 'http://jci-learn.dev',
                 'email' => 'jonathan@maze.digital'),
             'version' => 'Symphony 2.6.7',
-            'release-date' => '2017-02-05T08:39:48+00:00'
+            'release-date' => '2017-02-10T07:23:53+00:00'
         );
     }
 
