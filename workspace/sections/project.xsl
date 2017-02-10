@@ -125,6 +125,7 @@
 
             <xsl:apply-templates select='/data/images/entry[@id=current()/images/item/@id]' mode='img'>
                 <xsl:with-param name='class' select='"project-slide-image"'/>
+                        <xsl:with-param name='dimension' select='"330x330"'/>
             </xsl:apply-templates>
             <div class="box-poligon">
                 <div class="box-poligon" style="width: 30%; margin: 0px;">
