@@ -34,12 +34,14 @@
                                     <div class="lesson-top-picture">
                                         <div class="media">
                                             <div class="media-body-left"><p class="blue-text" style="font-size: 30px; float: left;"><b>
-                                               <xsl:value-of select="/data/lesson/entry/profile/item"/></b></p>
-                                            </div>                           
-                                            <div class="media-body-left">
-                                                <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-3.png" alt="Media Team Profile Image" style="width: 100px;"/>
-                                                    <img class="flag put-flag-in-corner" src="{/data/params/workspace}/assets/img/icons/flag-1.png"  alt="Flag"/>
-                                            </div>  
+                                               <xsl:value-of select="/data/lesson/entry/user/item"/></b></p>
+                                            </div>              
+
+                                            <xsl:apply-templates select='/data/users/entry[@id = /data/lesson/entry/user/item/@id]' mode='user-picture-country'>
+                                                <xsl:with-param name='include-name' select='false()'/>
+                                                <xsl:with-param name='class' select='"media-body-left"'/>
+                                                <xsl:with-param name='img-class' select='""'/>
+                                            </xsl:apply-templates>                
                                         </div>      
                                     </div>
                                 </div>

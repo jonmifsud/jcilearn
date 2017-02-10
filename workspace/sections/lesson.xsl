@@ -405,10 +405,10 @@
                         <div class="lesson-top-picture">
                             <div class="media">                               
                                 <div class="media-body-left">
-                                <img class="media-object profile-pic" src="{/data/params/workspace}/assets/img/icons/profile-2.png" alt="Media Team Profile Image"/>
-                                    <img class="flag" src="{/data/params/workspace}/assets/img/icons/flag-1.png" alt="Flag"/> 
-                                    <h3 class="title"><xsl:value-of select="profile/item"/></h3>
-                                </div>         
+                                    <xsl:apply-templates select='/data/users/entry[@id = current()/user/item/@id]' mode='user-picture-country'>
+                                        <xsl:with-param name='include-name' select='true()'/>
+                                    </xsl:apply-templates>   
+                                </div>
                             </div> <!-- /.media-body -->
                         </div>
                     </div>                              

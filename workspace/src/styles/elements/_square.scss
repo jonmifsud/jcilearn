@@ -51,3 +51,14 @@
 	width: 100%;
 }
 
+
+.profile-pic{
+	border-radius: 50%;
+	&.small{
+		width:50px;
+	}
+}
+.flag{
+    max-width: 43px;
+    border: solid 1px $main-color-1;
+}
